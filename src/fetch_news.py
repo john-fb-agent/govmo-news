@@ -12,23 +12,49 @@ import os
 from pathlib import Path
 from datetime import datetime
 import logging
+import json
 
 # Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent))
 
-from backend.rss_parser import RSSParser
-from utils.dedup import Deduplicator
+from rss_parser import RSSParser
 
 # Configure logging
+base_dir = Path(__file__).parent.parent
+data_dir = base_dir / "data"
+data_dir.mkdir(parents=True, exist_ok=True)
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('data/fetch.log', encoding='utf-8'),
+        logging.FileHandler(data_dir / "fetch.log", encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger(__name__)
+
+
+def load_existing_guids(processed_dir: Path) -> set:
+    """Load all existing news GUIDs from processed directory"""
+    existing_guids = set()
+    
+    if not processed_dir.exists():
+        return existing_guids
+    
+    # Walk through all JSON files and collect GUIDs
+    for json_file in processed_dir.rglob("*.json"):
+        if json_file.name == ".processed_guids.json":
+            continue
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if 'guid' in data:
+                    existing_guids.add(data['guid'])
+        except Exception as e:
+            logger.warning(f"Error reading {json_file}: {e}")
+    
+    return existing_guids
 
 
 def main():
@@ -38,7 +64,7 @@ def main():
     logger.info(f"Execution time: {datetime.now().isoformat()}")
     
     # Paths
-    base_dir = Path(__file__).parent.parent.parent
+    base_dir = Path(__file__).parent.parent
     raw_dir = base_dir / "data" / "raw"
     processed_dir = base_dir / "data" / "processed"
     
@@ -73,13 +99,12 @@ def main():
         logger.info("No news entries found")
         return 0
     
-    # Load existing IDs for deduplication
-    dedup = Deduplicator(processed_dir)
-    existing_ids = dedup.load_existing_ids()
-    logger.info(f"Existing news IDs in database: {len(existing_ids)}")
+    # Load existing GUIDs for deduplication
+    existing_guids = load_existing_guids(processed_dir)
+    logger.info(f"Existing news GUIDs in database: {len(existing_guids)}")
     
-    # Filter out duplicates
-    new_entries = [e for e in entries if e['id'] not in existing_ids]
+    # Filter out duplicates using RSS guid
+    new_entries = [e for e in entries if e['guid'] not in existing_guids]
     duplicate_count = len(entries) - len(new_entries)
     
     logger.info(f"New entries: {len(new_entries)}, Duplicates skipped: {duplicate_count}")
@@ -88,10 +113,6 @@ def main():
     if new_entries:
         if parser.save_json(new_entries, str(processed_dir), by_date=True):
             logger.info(f"Saved {len(new_entries)} new entries to JSON")
-            
-            # Update dedup database
-            dedup.add_ids([e['id'] for e in new_entries])
-            logger.info("Updated deduplication database")
         else:
             logger.error("Failed to save JSON files")
             return 1

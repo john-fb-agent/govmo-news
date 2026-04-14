@@ -16,11 +16,6 @@ env/
 *.swo
 *~
 
-# Data (generated during runtime)
-data/raw/*.xml
-data/processed/
-data/*.log
-
 # Environment
 .env
 .env.local

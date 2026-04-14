@@ -10,7 +10,6 @@ import json
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional
-import hashlib
 
 
 class RSSParser:
@@ -36,13 +35,16 @@ class RSSParser:
         
         entries = []
         for entry in self.feed.entries:
+            # Use RSS guid for deduplication
+            news_id = entry.get("id", entry.get("link", ""))
+            
             news_item = {
                 "title": entry.get("title", ""),
                 "link": entry.get("link", ""),
+                "guid": news_id,
                 "published": entry.get("published", ""),
                 "published_parsed": self._parse_date(entry.get("published_parsed")),
                 "summary": entry.get("summary", ""),
-                "id": self._generate_id(entry),
                 "fetched_at": datetime.now().isoformat()
             }
             entries.append(news_item)
@@ -64,17 +66,6 @@ class RSSParser:
             ).isoformat()
         except:
             return None
-    
-    def _generate_id(self, entry) -> str:
-        """Generate unique ID for deduplication"""
-        # Use link as primary identifier (most reliable for news)
-        link = entry.get("link", "")
-        title = entry.get("title", "")
-        published = entry.get("published", "")
-        
-        # Create hash from link + title + published date
-        unique_string = f"{link}|{title}|{published}"
-        return hashlib.md5(unique_string.encode('utf-8')).hexdigest()
     
     def save_raw_xml(self, output_path: str) -> bool:
         """Save raw RSS XML to file"""
@@ -106,7 +97,9 @@ class RSSParser:
                         output_dir = Path(output_path) / year / month / day
                         output_dir.mkdir(parents=True, exist_ok=True)
                         
-                        output_file = output_dir / f"{entry['id']}.json"
+                        # Sanitize GUID for filename (replace / and : with -)
+                        safe_guid = entry['guid'].replace('/', '-').replace(':', '-').replace('?', '-')
+                        output_file = output_dir / f"{safe_guid}.json"
                         if not output_file.exists():  # Skip if already exists (dedup)
                             with open(output_file, 'w', encoding='utf-8') as f:
                                 json.dump(entry, f, ensure_ascii=False, indent=2)
@@ -129,5 +122,6 @@ if __name__ == "__main__":
         print(f"Fetched {len(entries)} news items")
         if entries:
             print(f"First item: {entries[0]['title']}")
+            print(f"GUID: {entries[0]['guid']}")
     else:
         print("Failed to fetch RSS feed")
