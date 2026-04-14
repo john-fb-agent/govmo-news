@@ -39,29 +39,6 @@ python src/backend/fetch_news.py
 ./deployment/scripts/setup-cron.sh
 ```
 
-## 📁 目錄結構
-
-```
-govmo-news/
-├── src/
-│   ├── backend/          # 後端邏輯
-│   │   ├── fetch_news.py    # 新聞抓取主程式
-│   │   └── rss_parser.py    # RSS 解析器
-│   ├── frontend/         # 前端介面（待開發）
-│   └── utils/            # 工具函數
-│       └── dedup.py         # 去重工具
-├── data/
-│   ├── raw/              # 原始 RSS XML
-│   └── processed/        # 處理後的 JSON（按年/月/日組織）
-├── deployment/           # 部署相關
-│   ├── scripts/          # 部署腳本
-│   └── README.md         # 部署說明
-├── tests/                # 測試
-│   └── README.md         # 測試說明
-├── docs/                 # 文檔
-└── requirements.txt      # Python 依賴
-```
-
 ## 📅 定時任務時間
 
 每日執行時間（澳門時間 GMT+8）：
