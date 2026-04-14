@@ -24,7 +24,7 @@ echo "Running fetch script..."
 echo ""
 
 cd "$PROJECT_DIR"
-$PYTHON src/backend/fetch_news.py
+$PYTHON src/fetch_news.py
 
 echo ""
 echo "========================================"

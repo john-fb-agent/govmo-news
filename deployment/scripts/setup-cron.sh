@@ -24,7 +24,7 @@ else
 fi
 
 # Get absolute path to fetch script
-FETCH_SCRIPT="$PROJECT_DIR/src/backend/fetch_news.py"
+FETCH_SCRIPT="$PROJECT_DIR/src/fetch_news.py"
 LOG_FILE="$PROJECT_DIR/data/cron.log"
 
 echo "Project directory: $PROJECT_DIR"
