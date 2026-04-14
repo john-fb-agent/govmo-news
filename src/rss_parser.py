@@ -83,26 +83,30 @@ class RSSParser:
             return False
     
     def save_json(self, entries: List[Dict], output_path: str, by_date: bool = True) -> bool:
-        """Save parsed entries as JSON"""
+        """Save parsed entries as JSON - one file per day"""
         try:
             if by_date:
-                # Organize by year/month/day
+                # Group entries by date (year/month)
+                from collections import defaultdict
+                daily_entries = defaultdict(list)
+                
                 for entry in entries:
                     if entry.get("published_parsed"):
                         date_obj = datetime.fromisoformat(entry["published_parsed"])
                         year = date_obj.strftime("%Y")
                         month = date_obj.strftime("%m")
                         day = date_obj.strftime("%d")
-                        
-                        output_dir = Path(output_path) / year / month / day
-                        output_dir.mkdir(parents=True, exist_ok=True)
-                        
-                        # Sanitize GUID for filename (replace / and : with -)
-                        safe_guid = entry['guid'].replace('/', '-').replace(':', '-').replace('?', '-')
-                        output_file = output_dir / f"{safe_guid}.json"
-                        if not output_file.exists():  # Skip if already exists (dedup)
-                            with open(output_file, 'w', encoding='utf-8') as f:
-                                json.dump(entry, f, ensure_ascii=False, indent=2)
+                        date_key = f"{year}/{month}/{day}"
+                        daily_entries[date_key].append(entry)
+                
+                # Save one JSON file per day
+                for date_key, day_entries in daily_entries.items():
+                    output_dir = Path(output_path) / date_key.rsplit('/', 1)[0]  # year/month
+                    output_dir.mkdir(parents=True, exist_ok=True)
+                    
+                    output_file = output_dir / f"{date_key.rsplit('/', 1)[1]}.json"  # day.json
+                    with open(output_file, 'w', encoding='utf-8') as f:
+                        json.dump(day_entries, f, ensure_ascii=False, indent=2)
             else:
                 Path(output_path).parent.mkdir(parents=True, exist_ok=True)
                 with open(output_path, 'w', encoding='utf-8') as f:

@@ -32,3 +32,6 @@ htmlcov/
 # Deployment
 *.bak
 *.tmp
+
+# Logs
+*.log

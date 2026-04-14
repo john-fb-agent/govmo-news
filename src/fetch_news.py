@@ -43,14 +43,15 @@ def load_existing_guids(processed_dir: Path) -> set:
         return existing_guids
     
     # Walk through all JSON files and collect GUIDs
+    # Each file contains a list of news entries for one day
     for json_file in processed_dir.rglob("*.json"):
-        if json_file.name == ".processed_guids.json":
-            continue
         try:
             with open(json_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                if 'guid' in data:
-                    existing_guids.add(data['guid'])
+                if isinstance(data, list):
+                    for entry in data:
+                        if 'guid' in entry:
+                            existing_guids.add(entry['guid'])
         except Exception as e:
             logger.warning(f"Error reading {json_file}: {e}")
     
@@ -65,11 +66,9 @@ def main():
     
     # Paths
     base_dir = Path(__file__).parent.parent
-    raw_dir = base_dir / "data" / "raw"
     processed_dir = base_dir / "data" / "processed"
     
     # Ensure directories exist
-    raw_dir.mkdir(parents=True, exist_ok=True)
     processed_dir.mkdir(parents=True, exist_ok=True)
     
     # Initialize parser
@@ -83,13 +82,7 @@ def main():
     
     logger.info(f"RSS feed fetched successfully")
     
-    # Save raw XML
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    raw_xml_path = raw_dir / f"rss_{timestamp}.xml"
-    if parser.save_raw_xml(str(raw_xml_path)):
-        logger.info(f"Raw XML saved to: {raw_xml_path}")
-    else:
-        logger.warning("Failed to save raw XML")
+    # Skip raw XML saving (not needed)
     
     # Parse entries
     entries = parser.parse_entries()
