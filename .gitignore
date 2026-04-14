@@ -33,5 +33,5 @@ htmlcov/
 *.bak
 *.tmp
 
-# Logs
+# Logs (kept locally, not committed)
 *.log

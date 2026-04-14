@@ -24,12 +24,12 @@ base_dir = Path(__file__).parent.parent
 data_dir = base_dir / "data"
 data_dir.mkdir(parents=True, exist_ok=True)
 
+# Log to file only (cron will capture output)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(data_dir / "fetch.log", encoding='utf-8'),
-        logging.StreamHandler()
+        logging.FileHandler(data_dir / "fetch.log", encoding='utf-8')
     ]
 )
 logger = logging.getLogger(__name__)
