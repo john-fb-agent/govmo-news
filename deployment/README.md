@@ -59,8 +59,11 @@ python src/backend/fetch_news.py
 ### 步驟 4：設置定時任務
 
 ```bash
-# 安裝 cron 任務
+# 安裝新聞抓取 cron（每日 5 次：9,11,13,15,17 點）
 ./deployment/scripts/setup-cron.sh
+
+# 安裝自動推送 cron（每晚 10 點自動抓取並推送）
+./deployment/scripts/setup-auto-push.sh
 
 # 驗證安裝
 crontab -l | grep govmo-news
@@ -102,8 +105,15 @@ cat data/fetch.log | grep "2026-04-14"
 
 ```bash
 cd /home/js/.openclaw/workspace/github-repos/govmo-news
-source venv/bin/activate  # 如使用虛擬環境
-python src/backend/fetch_news.py
+python3 src/fetch_news.py
+```
+
+### 手動執行抓取並推送
+
+```bash
+# 使用自動推送腳本
+cd /home/js/.openclaw/workspace/github-repos/govmo-news
+./deployment/scripts/auto-push.sh
 ```
 
 ### 檢查已抓取的新聞
