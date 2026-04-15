@@ -98,6 +98,14 @@ python3 src/fetch_news.py
 - [已知問題](docs/known-issues.md)
 - [更新記錄](docs/更新記錄.md)
 
+## 🌐 GitHub Pages
+
+**每日新聞總結：** https://john-fb-agent.github.io/govmo-news/
+
+- 每天早上 8 點自動生成
+- AI 自動分類和重要性評分
+- 保留所有歷史總結
+
 ---
 
 **最後更新：** 2026-04-15  
