@@ -1,8 +1,5 @@
-# System Prompt
-你是一個專業的新聞編輯和 HTML 生成助手。請嚴格按照以下要求生成 HTML 格式的每日新聞總結。
-
 # 任務
-分析提供的澳門政府新聞 JSON 數據，生成一份精美的 HTML 總結報告。
+分析澳門政府新聞 JSON 數據，生成 HTML 格式的每日新聞總結。
 
 # 輸入數據
 {news_json}
@@ -10,246 +7,44 @@
 # 處理規則
 
 ## 1. AI 自動分類
-請根據新聞標題和摘要內容，自動分類到以下類別：
-
-| 類別 | 關鍵字 |
-|------|--------|
-| 政策 | 政策、法規、條例、政府、施政、行政、立法 |
-| 民生 | 居民、市民、服務、醫療、房屋、社福、交通 |
-| 經濟 | 經濟、產業、投資、就業、商業、金融 |
-| 旅遊 | 旅遊、遊客、酒店、娛樂、博彩、景點 |
-| 教育 | 教育、學校、學生、培訓、課程、考試 |
-| 文化 | 文化、藝術、展覽、活動、表演、博物館 |
-| 科技 | 科技、創新、數碼、AI、網絡、資訊 |
-| 其他 | 不符合以上分類 |
+根據新聞標題和摘要，自動分類到：政策、民生、經濟、旅遊、教育、文化、科技、其他
 
 ## 2. 重要性評分
-根據以下標準評分：
-
-**⭐⭐⭐ 高重要性**（需要摘要）
-- 新政策實施或重大修改
-- 重大建設/規劃公布
-- 影響廣泛民生的措施
-- 突發重要事件
-
-**⭐⭐ 中重要性**（只需標題）
-- 常規政策更新
-- 部門活動/計劃
-- 定期數據發布
-- 會議/訪問
-
-**⭐ 低重要性**（只需標題）
-- 常規會議
-- 小型活動
-- 人事任命
-- 例行公告
+**⭐⭐⭐ 高重要性**（需要摘要）：新政策、重大建設、影響廣泛民生、突發重要事件
+**⭐⭐ 中重要性**（只需標題）：常規政策、部門活動、數據發布
+**⭐ 低重要性**（只需標題）：常規會議、小型活動、人事任命
 
 ## 3. 輸出要求
-- **高重要性新聞**：標題 + 摘要（1-2 句話）+ 連結
-- **中/低重要性新聞**：標題 + 連結（在完整列表中）
-- **高重要性新聞不超過 5 則**（如果超過，選最重要的 5 則）
-- **完整列表必須包含所有新聞**
+- 高重要性新聞不超過 5 則
+- 只輸出 JSON 格式，不要其他文字
 
-# HTML 輸出格式
-
-```html
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>澳門政府新聞總結 - {日期}</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #007bff;
-        }
-        
-        h1 {
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-        
-        .date {
-            color: #666;
-            font-size: 1.2em;
-        }
-        
-        .stats {
-            color: #999;
-            margin-top: 5px;
-        }
-        
-        section {
-            margin-bottom: 40px;
-        }
-        
-        h2 {
-            color: #333;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #eee;
-        }
-        
-        .highlight-item {
-            background: #f8f9fa;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #007bff;
-        }
-        
-        .highlight-item h3 {
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-        
-        .summary {
-            color: #555;
-            margin: 10px 0;
-        }
-        
-        .news-list {
-            list-style: none;
-        }
-        
-        .news-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .news-list a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        
-        .news-list a:hover {
-            text-decoration: underline;
-        }
-        
-        .category-tag {
-            display: inline-block;
-            padding: 3px 8px;
-            background: #e9ecef;
-            border-radius: 4px;
-            font-size: 0.85em;
-            margin-right: 10px;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        
-        .stat-card {
-            background: #f8f9fa;
-            padding: 15px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        
-        .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #007bff;
-        }
-        
-        .stat-label {
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        footer {
-            text-align: center;
-            color: #999;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #eee;
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-            
-            h1 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>📰 澳門政府新聞總結</h1>
-            <p class="date">{日期}</p>
-            <p class="stats">共 {新聞總數} 則新聞</p>
-        </header>
-
-        <!-- 重點新聞（只有高重要性） -->
-        <section class="highlights">
-            <h2>🔑 重點新聞</h2>
-            {高重要性新聞列表，每則包含標題、摘要、連結}
-        </section>
-
-        <!-- 分類統計 -->
-        <section class="stats-by-category">
-            <h2>📊 分類統計</h2>
-            <div class="stats-grid">
-                {每個類別的統計卡片}
-            </div>
-        </section>
-
-        <!-- 完整列表（所有新聞） -->
-        <section class="full-list">
-            <h2>📋 完整新聞列表</h2>
-            {按類別分組的所有新聞，只有標題和連結}
-        </section>
-
-        <footer>
-            <p>自動生成於 {時間戳}</p>
-            <p>資料來源：澳門特別行政區政府新聞局</p>
-        </footer>
-    </div>
-</body>
-</html>
+# 輸出格式
+```json
+{
+  "date": "2026 年 4 月 14 日",
+  "total_count": 15,
+  "highlights": [
+    {
+      "title": "新聞標題",
+      "category": "政策",
+      "importance": 3,
+      "summary": "1-2 句話摘要",
+      "link": "https://..."
+    }
+  ],
+  "category_stats": {"政策": 3, "民生": 5, "經濟": 2, "其他": 5},
+  "all_news": [
+    {
+      "title": "新聞標題",
+      "category": "民生",
+      "importance": 2,
+      "link": "https://..."
+    }
+  ]
+}
 ```
 
 # 注意事項
-1. **只使用提供的 JSON 數據**，不要編造資訊
-2. **使用繁體中文**
-3. **日期格式**：2026 年 4 月 15 日
-4. **不要輸出任何 Markdown，只輸出純 HTML**
-5. **不要輸出任何解釋文字，只輸出 HTML**
-
-# 開始生成
-請根據以上規則，分析以下新聞數據並生成 HTML：
-
-{news_json}
+- 使用繁體中文
+- 只輸出 JSON，不要 Markdown 或其他文字
+- 高重要性新聞（importance=3）才需要 summary 字段

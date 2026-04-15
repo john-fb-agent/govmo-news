@@ -9,6 +9,12 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$(dirname "$SCRIPT_DIR")")"
 LOG_FILE="$PROJECT_DIR/data/auto-push.log"
 
+# Notification function
+send_notification() {
+    local error_msg="$1"
+    python3 "$PROJECT_DIR/src/notify_failure.py" "auto-push.sh" "$error_msg"
+}
+
 log() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
 }
@@ -45,6 +51,7 @@ git commit -m "data: 自動更新新聞數據 ($(date '+%Y-%m-%d'))
 
 if [ $? -ne 0 ]; then
     log "ERROR: Commit failed"
+    send_notification "Commit failed: git commit returned error"
     exit 1
 fi
 log "Commit completed"
@@ -55,6 +62,7 @@ git push >> "$LOG_FILE" 2>&1
 
 if [ $? -ne 0 ]; then
     log "ERROR: Push failed"
+    send_notification "Push failed: git push returned error"
     exit 1
 fi
 log "Push completed"
