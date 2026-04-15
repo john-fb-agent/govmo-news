@@ -7,13 +7,20 @@ Run daily at 8:00 AM to summarize yesterday's news
 
 import json
 import subprocess
+import sys
 from pathlib import Path
 from datetime import datetime, timedelta
+
+# Add src to path for task_monitor
+sys.path.insert(0, str(Path(__file__).parent))
+from task_monitor import task_start, task_complete, task_timeout
 
 # Configuration
 OUTPUT_DIR = Path(__file__).parent.parent / "docs" / "summary-examples"
 PROMPT_FILE = Path(__file__).parent / "summary_prompt.txt"
 LOG_FILE = Path(__file__).parent.parent / "data" / "summary.log"
+TASK_NAME = "generate_summary"
+TASK_TIMEOUT = 600  # 10 minutes
 
 def log(message):
     """Log message to file and console"""
@@ -263,22 +270,28 @@ def main():
     log("Generating daily news summary...")
     log("=" * 60)
     
+    # Register task start
+    task_start(TASK_NAME, TASK_TIMEOUT)
+    
     try:
         news_data, date = load_yesterday_news()
         if not news_data:
             log("❌ No news data to process")
+            task_complete(TASK_NAME, success=False, error="No news data to process")
             send_notification("generate_summary.py", "No news data to process")
             return 1
         
         html_content = generate_summary(news_data, date)
         if not html_content:
             log("❌ Failed to generate HTML")
+            task_complete(TASK_NAME, success=False, error="Failed to generate HTML summary")
             send_notification("generate_summary.py", "Failed to generate HTML summary")
             return 1
         
         html_file = save_html(html_content, date)
         if not html_file:
             log("❌ Failed to save HTML")
+            task_complete(TASK_NAME, success=False, error="Failed to save HTML file")
             send_notification("generate_summary.py", "Failed to save HTML file")
             return 1
         
@@ -289,11 +302,20 @@ def main():
         log("Summary generation completed!")
         log("=" * 60)
         
+        task_complete(TASK_NAME, success=True)
         return 0
+        
+    except subprocess.TimeoutExpired as e:
+        error_msg = f"TimeoutExpired: {str(e)}"
+        log(f"❌ TASK TIMEOUT: {error_msg}")
+        task_timeout(TASK_NAME, error_msg)
+        send_notification("generate_summary.py", error_msg)
+        return 1
         
     except Exception as e:
         error_msg = f"{type(e).__name__}: {str(e)}"
         log(f"❌ CRITICAL ERROR: {error_msg}")
+        task_complete(TASK_NAME, success=False, error=error_msg)
         send_notification("generate_summary.py", error_msg)
         return 1
 
