@@ -83,7 +83,7 @@ class RSSParser:
             return False
     
     def save_json(self, entries: List[Dict], output_path: str, by_date: bool = True) -> bool:
-        """Save parsed entries as JSON - one file per day"""
+        """Save parsed entries as JSON - one file per day (merge with existing)"""
         try:
             if by_date:
                 # Group entries by date (year/month)
@@ -99,14 +99,27 @@ class RSSParser:
                         date_key = f"{year}/{month}/{day}"
                         daily_entries[date_key].append(entry)
                 
-                # Save one JSON file per day
+                # Save one JSON file per day (merge with existing)
                 for date_key, day_entries in daily_entries.items():
                     output_dir = Path(output_path) / date_key.rsplit('/', 1)[0]  # year/month
                     output_dir.mkdir(parents=True, exist_ok=True)
                     
                     output_file = output_dir / f"{date_key.rsplit('/', 1)[1]}.json"  # day.json
+                    
+                    # Load existing entries if file exists
+                    existing_entries = []
+                    if output_file.exists():
+                        with open(output_file, 'r', encoding='utf-8') as f:
+                            existing_entries = json.load(f)
+                    
+                    # Merge: keep existing, add new (skip duplicates by GUID)
+                    existing_guids = {e['guid'] for e in existing_entries}
+                    new_only = [e for e in day_entries if e['guid'] not in existing_guids]
+                    merged = existing_entries + new_only
+                    
+                    # Save merged entries
                     with open(output_file, 'w', encoding='utf-8') as f:
-                        json.dump(day_entries, f, ensure_ascii=False, indent=2)
+                        json.dump(merged, f, ensure_ascii=False, indent=2)
             else:
                 Path(output_path).parent.mkdir(parents=True, exist_ok=True)
                 with open(output_path, 'w', encoding='utf-8') as f:
