@@ -79,15 +79,6 @@ python3 src/fetch_news.py
 
 ---
 
-## 📄 相關文檔
-
-- [專案說明](docs/專案說明.md)
-- [架構說明](docs/架構說明.md)
-- [開發規則](docs/開發規則.md)
-- [部署說明](deployment/README.md)
-- [測試說明](tests/README.md)
-- [已知問題](docs/known-issues.md)
-
 ## ✅ 已確認事項
 
 - [x] 新聞去重標準 - 使用 RSS guid
@@ -96,10 +87,6 @@ python3 src/fetch_news.py
 - [x] 數據保留政策 - 永久保存
 
 ---
-
-**最後更新：** 2026-04-15  
-**維護者：** john-fb-agent  
-**版本：** 1.2.0
 
 ## 📄 相關文檔
 
@@ -110,3 +97,9 @@ python3 src/fetch_news.py
 - [測試說明](tests/README.md)
 - [已知問題](docs/known-issues.md)
 - [更新記錄](docs/更新記錄.md)
+
+---
+
+**最後更新：** 2026-04-15  
+**維護者：** john-fb-agent  
+**版本：** 1.2.0
