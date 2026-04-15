@@ -105,15 +105,15 @@ fi
 #### 測試 3：日期組織結構
 
 ```bash
-# 檢查 JSON 檔案是否按年/月/日組織
+# 檢查 JSON 檔案是否按年/月組織
 find data/processed -type d -name "20*"  # 應看到年份目錄
 find data/processed -type d -name "01" -o -name "02"  # 應看到月份目錄
 find data/processed -name "*.json" | head -5  # 查看檔案結構
 ```
 
 **預期結果：**
-- ✅ 目錄結構為 `YYYY/MM/DD/*.json`
-- ✅ 每個 JSON 檔案包含完整新聞數據
+- ✅ 目錄結構為 `YYYY/MM/DD.json`（每天一個 JSON 檔）
+- ✅ 每個 JSON 檔案包含該日所有新聞（array 格式）
 
 #### 測試 4：定時任務（如已安裝）
 
@@ -121,15 +121,21 @@ find data/processed -name "*.json" | head -5  # 查看檔案結構
 # 1. 檢查 cron 任務
 crontab -l | grep govmo-news
 
-# 2. 應看到 5 個任務（9, 11, 13, 15, 17 點）
+# 2. 應看到 6 個任務：
+#    - 新聞抓取（5 次）：9, 11, 13, 15, 17 點
+#    - 自動推送（1 次）：22 點
 # 0 9 * * * ...
 # 0 11 * * * ...
 # 0 13 * * * ...
 # 0 15 * * * ...
 # 0 17 * * * ...
+# 0 22 * * * ... (auto-push.sh)
 
 # 3. 查看 cron 日誌
 tail -20 data/cron.log
+
+# 4. 查看自動推送日誌
+tail -20 data/auto-push.log
 ```
 
 ## 📊 測試檢查清單
@@ -259,5 +265,6 @@ jq '.' data/processed/2026/04/14/*.json | head -20
 
 ---
 
-**最後更新：** 2026-04-14  
-**維護者：** john-fb-agent
+**最後更新：** 2026-04-15  
+**維護者：** john-fb-agent  
+**版本：** 1.1.0

@@ -53,7 +53,7 @@ pip install -r requirements.txt
 ./deployment/scripts/test-fetch.sh
 
 # 或直接運行
-python src/backend/fetch_news.py
+python3 src/fetch_news.py
 ```
 
 ### 步驟 4：設置定時任務
@@ -76,13 +76,13 @@ crontab -l | grep govmo-news
 ```
 govmo-news/
 ├── data/
-│   ├── raw/              # 原始 RSS XML 檔案
-│   ├── processed/        # 處理後的 JSON 檔案
-│   │   ├── .processed_ids.json  # 去重數據庫
-│   │   └── YYYY/MM/DD/   # 按日期組織的新聞
-│   └── fetch.log         # 運行日誌
-│   └── cron.log          # Cron 任務日誌
-├── venv/                 # Python 虛擬環境
+│   ├── processed/        # 處理後的 JSON 檔案（提交到 Git）
+│   │   └── YYYY/MM/      # 按年/月組織
+│   │       └── DD.json   # 每天一個 JSON 檔
+│   ├── fetch.log         # 抓取日誌（本地，不提交）
+│   ├── cron.log          # Cron 日誌（本地，不提交）
+│   └── auto-push.log     # 自動推送日誌（本地，不提交）
+├── venv/                 # Python 虛擬環境（可選）
 └── ...
 ```
 
@@ -120,13 +120,13 @@ cd /home/js/.openclaw/workspace/github-repos/govmo-news
 
 ```bash
 # 查看最新新聞
-ls -lt data/processed/*/ */*/*/*.json | head -10
+ls -lt data/processed/*/*/*.json | head -10
 
 # 統計新聞數量
 find data/processed -name "*.json" | wc -l
 
-# 查看去重數據庫
-cat data/processed/.processed_ids.json | python -m json.tool
+# 查看某日新聞內容
+cat data/processed/2026/04/15.json | python -m json.tool
 ```
 
 ### 更新代碼
@@ -141,7 +141,11 @@ pip install -r requirements.txt  # 如有新依賴
 ### 移除定時任務
 
 ```bash
+# 移除新聞抓取 cron
 ./deployment/scripts/remove-cron.sh
+
+# 移除自動推送 cron
+./deployment/scripts/remove-auto-push.sh
 ```
 
 ## ⚠️ 注意事項
@@ -237,5 +241,5 @@ python src/backend/fetch_news.py  # 重新抓取
 
 ---
 
-**最後更新：** 2026-04-14  
+**最後更新：** 2026-04-15  
 **維護者：** john-fb-agent
