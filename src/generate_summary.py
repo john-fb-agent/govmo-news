@@ -69,11 +69,12 @@ def generate_summary(news_data, date):
     # This uses the openclaw CLI to call the AI
     try:
         # Use openclaw agent to generate the summary
+        # Timeout: 10 minutes (600 seconds) for AI analysis
         result = subprocess.run([
             'openclaw', 'agent',
             '--message', prompt,
             '--no-deliver'  # Don't deliver to chat, just get result
-        ], capture_output=True, text=True, timeout=120)
+        ], capture_output=True, text=True, timeout=600)
         
         if result.returncode == 0:
             html_content = result.stdout
@@ -84,7 +85,7 @@ def generate_summary(news_data, date):
             return None
             
     except subprocess.TimeoutExpired:
-        log("❌ OpenClaw call timed out")
+        log("❌ OpenClaw call timed out (10 minutes limit)")
         return None
     except Exception as e:
         log(f"❌ Error calling OpenClaw: {e}")
