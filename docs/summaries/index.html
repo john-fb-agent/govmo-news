@@ -49,6 +49,13 @@
             margin: 20px 0;
             border-radius: 4px;
         }
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -62,58 +69,14 @@
 
         <h2>📋 新聞總結列表</h2>
         <ul class="summary-list" id="summaryList">
-            <li>載入中...</li>
+            <!-- 新聞總結將由 cron 任務自動添加到這裡 -->
+            <li><a href="2026-04-14.html">📅 2026-04-14</a></li>
         </ul>
 
-        <script>
-            // Fetch the list of summary files from GitHub API
-            async function loadSummaries() {
-                try {
-                    const response = await fetch('https://api.github.com/repos/john-fb-agent/govmo-news/contents/summaries');
-                    const files = await response.json();
-                    
-                    if (Array.isArray(files)) {
-                        const htmlFiles = files
-                            .filter(f => f.name.endsWith('.html'))
-                            .sort((a, b) => b.name.localeCompare(a.name));
-                        
-                        const list = document.getElementById('summaryList');
-                        list.innerHTML = '';
-                        
-                        htmlFiles.forEach(file => {
-                            const date = file.name.replace('.html', '');
-                            const li = document.createElement('li');
-                            li.innerHTML = `<a href="${file.name}">📅 ${date}</a>`;
-                            list.appendChild(li);
-                        });
-                        
-                        if (htmlFiles.length === 0) {
-                            list.innerHTML = '<li>暫無新聞總結</li>';
-                        }
-                    }
-                } catch (error) {
-                    console.error('Error loading summaries:', error);
-                    document.getElementById('summaryList').innerHTML = '<li>載入失敗，請稍後再試</li>';
-                }
-            }
-            
-            loadSummaries();
-        </script>
-
-        <p style="margin-top: 30px; color: #666; font-size: 12px; border-top: 1px solid #eee; padding-top: 15px;">
+        <div class="footer">
             資料來源：澳門特別行政區政府新聞局<br>
-            最後更新：<span id="lastUpdate"></span>
-        </p>
-        
-        <script>
-            document.getElementById('lastUpdate').textContent = new Date().toLocaleDateString('zh-HK', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit'
-            });
-        </script>
+            最後更新：2026-04-15
+        </div>
     </div>
 </body>
 </html>
