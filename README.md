@@ -100,28 +100,26 @@ python3 src/fetch_news.py
 
 ## 🌐 GitHub Pages
 
+**已啟用！** ✅
+
+**索引頁面：** https://john-fb-agent.github.io/govmo-news/summaries/
+
 **每日新聞總結：** https://john-fb-agent.github.io/govmo-news/summaries/YYYY-MM-DD.html
 
 **文件結構：**
 ```
-summaries/
+docs/summaries/
+├── index.html          (自動索引頁面)
 ├── 2026-04-14.html
 ├── 2026-04-15.html
 └── ...
 ```
 
 **自動化：**
-- 每天早上 8 點自動生成
-- AI 自動分類和重要性評分
-- 自動提交並推送到 GitHub
-- 保留所有歷史總結
-
-**啟用 GitHub Pages：**
-1. 前往 https://github.com/john-fb-agent/govmo-news/settings/pages
-2. Source 選擇 `Deploy from a branch`
-3. Branch 選擇 `main`
-4. Folder 選擇 `/ (root)` 或 `/summaries`
-5. Save 後等待部署完成
+- ✅ 每天早上 8 點自動生成
+- ✅ AI 自動分類和重要性評分
+- ✅ 自動提交並推送到 GitHub
+- ✅ 保留所有歷史總結
 
 ---
 
