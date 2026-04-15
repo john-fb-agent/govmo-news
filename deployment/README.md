@@ -62,7 +62,7 @@ python3 src/fetch_news.py
 # 安裝新聞抓取 cron（每日 5 次：9,11,13,15,17 點）
 ./deployment/scripts/setup-cron.sh
 
-# 安裝自動推送 cron（每晚 10 點自動抓取並推送）
+# 安裝自動推送 cron（每晚 10 點自動推送，不抓取新聞）
 ./deployment/scripts/setup-auto-push.sh
 
 # 驗證安裝
@@ -111,10 +111,14 @@ python3 src/fetch_news.py
 ### 手動執行抓取並推送
 
 ```bash
-# 使用自動推送腳本
-cd /home/js/.openclaw/workspace/github-repos/govmo-news
+# 1. 先抓取新聞
+python3 src/fetch_news.py
+
+# 2. 再推送（如需要立即推送）
 ./deployment/scripts/auto-push.sh
 ```
+
+**注意：** 自動推送腳本（22:00）不會抓取新聞，只負責推送。下午 5 點抓取後的新聞會在晚上 10 點自動推送。
 
 ### 檢查已抓取的新聞
 
