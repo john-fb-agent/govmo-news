@@ -245,5 +245,5 @@ python src/backend/fetch_news.py  # 重新抓取
 
 ---
 
-**最後更新：** 2026-04-15  
+**最後更新：** 2026-04-16  
 **維護者：** john-fb-agent

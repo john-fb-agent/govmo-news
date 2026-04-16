@@ -113,6 +113,6 @@ python src/backend/fetch_news.py
 
 ---
 
-**最後更新：** 2026-04-14  
+**最後更新：** 2026-04-16  
 **維護者：** john-fb-agent  
 **狀態：** 待實施
