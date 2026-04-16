@@ -7,20 +7,14 @@
 
 ---
 
-## 📖 給閱讀此文件的 AI Agent
+## 👋 給閱讀此文件的 AI Agent
 
-> **你好！** 這份文件是之前的 AI agent 為了協助你工作而創建的。
+> 這份文件是之前的 AI agent 為了協助你工作而創建的。
 >
-> **你可以：**
-> - ✅ 根據自己的想法和需要修改這份文件
-> - ✅ 添加你認為重要的內容
-> - ✅ 刪除不再適用的部分
-> - ✅ 完全重寫（如果你有更好的想法）
+> **你可以：** 根據自己的想法修改、添加、刪除或重寫這份文件。
 >
-> **這份文件的目的：** 幫助你快速理解這個倉庫，避免重複犯錯。
->
-> **現有文檔（必讀）：**
-> 1. [README.md](README.md) - 快速開始、cron 時間表
+> **必讀文檔：**
+> 1. [README.md](README.md) - 快速開始、cron 時間
 > 2. [docs/專案說明.md](docs/專案說明.md) - 核心功能
 > 3. [docs/架構說明.md](docs/架構說明.md) - 系統設計
 > 4. [docs/開發規則.md](docs/開發規則.md) - 編碼規範
@@ -29,263 +23,84 @@
 
 ## ⚠️ 安全邊界
 
-### ✅ 可以執行的操作
-- 讀取/修改 `src/` 代碼
-- 讀取/寫入 `data/` 新聞數據
-- 更新 `docs/` 文檔
-- 執行 `python3 src/*.py` 測試
-- 使用 `gh` CLI 管理 GitHub
-- 提交並推送代碼（測試後）
-
-### ⚠️ 需要用戶確認的操作
-- 修改 cron 配置（時間、命令）
-- 刪除歷史新聞數據
-- 更改 RSS 來源 URL
-- 修改版權聲明內容
-- 更改 GitHub Pages 配置
-
-### ❌ 禁止的操作
-- 訪問外部 API（除了 RSS feed）
-- 修改其他倉庫
-- 執行未測試的危險命令
-- 推送未測試的代碼到 main 分支
+| 類型 | 操作 |
+|------|------|
+| ✅ **可以做** | 修改 `src/`、更新 `data/`、更新 `docs/`、執行測試、使用 `gh` CLI |
+| ⚠️ **需確認** | 修改 cron、刪除數據、更改 RSS URL、修改版權聲明 |
+| ❌ **禁止** | 訪問外部 API（除 RSS）、推送未測試代碼 |
 
 ---
 
-## 📋 常見任務流程
+## 📋 常見任務
 
-### 添加新功能
+### 添加功能
 ```
-1. 修改 src/ 相關文件
-   ↓
-2. 測試：python3 src/fetch_news.py
-   ↓
-3. 更新 docs/更新記錄.md（添加新版本條目）
-   ↓
-4. Commit message 包含 🤖 Model: qwen/qwen3.5-plus
-   ↓
-5. 推送前確認 cron 配置未受影響
+1. 修改 src/ → 2. 測試 → 3. 更新 docs/更新記錄.md → 4. Commit
 ```
 
 ### 修復 bug
 ```
-1. 查看日誌：
-   - data/cron.log - cron 執行日誌
-   - data/fetch.log - 抓取詳細日誌
-   ↓
-2. 定位問題代碼
-   ↓
-3. 修復後測試
-   ↓
-4. 更新 docs/known-issues.md（記錄問題和解決方案）
-   ↓
-5. 更新版本號和日期
+1. 查看 data/cron.log 或 data/fetch.log → 2. 修復 → 3. 更新 docs/known-issues.md → 4. Commit
 ```
 
 ### 文檔更新
-
-**⚠️ 重要：** 每次修改代碼後，必須同步更新文檔。
-
-#### 步驟 1：識別需要更新的文件
-
-| 修改類型 | 需要更新的文件 |
-|----------|----------------|
-| 新功能 | `docs/更新記錄.md` + `README.md` |
-| Bug 修復 | `docs/更新記錄.md` + `docs/known-issues.md` |
-| Cron 變更 | `README.md` + `docs/專案說明.md` |
-| 架構調整 | `docs/架構說明.md` |
-| 版本號變更 | **所有** `.md` 文件的版本號 |
-
-#### 步驟 2：更新 `docs/更新記錄.md`
-
-**格式：**
-```markdown
-## [版本號] - 日期
-
-### Added/Fixed/Changed/Removed
-- 📝 **標題**
-  - 問題：（如果是修復）
-  - 解決：
-  - 影響：
 ```
-
-**版本號規則：**
-- `MAJOR.MINOR.PATCH`
-- 新功能 → MINOR +1（如 1.3.0 → 1.4.0）
-- Bug 修復 → PATCH +1（如 1.3.0 → 1.3.1）
-- 重大變更 → MAJOR +1（如 1.0.0 → 2.0.0）
-
-**範例：**
-```markdown
-## [1.4.1] - 2026-04-16
-
-### Fixed
-- 🐛 **修復抓取超時問題**
-  - 問題：RSS feed 超時導致抓取失敗
-  - 解決：增加 timeout 從 30s 到 60s
-  - 影響：提高抓取成功率
-```
-
-#### 步驟 3：更新所有文件的版本號和日期
-
-**檢查清單：**
-```bash
-# 搜索所有 .md 文件的版本號
-grep -r "版本：" docs/ README.md repo-agent.md
-
-# 搜索所有「最後更新」
-grep -r "最後更新：" docs/ README.md repo-agent.md
-```
-
-**需要更新的文件：**
-- [ ] `README.md` - 版本號 + 最後更新
-- [ ] `docs/專案說明.md` - 版本號 + 最後更新
-- [ ] `docs/架構說明.md` - 版本號 + 最後更新
-- [ ] `docs/開發規則.md` - 版本號 + 最後更新
-- [ ] `docs/更新記錄.md` - 最後更新
-- [ ] `repo-agent.md` - 最後更新
-
-#### 步驟 4：驗證一致性
-
-**檢查項目：**
-```bash
-# 檢查 cron 時間是否一致
-grep -h "09:00\|18:00\|01:00\|08:00" README.md docs/專案說明.md
-
-# 檢查版本號是否一致
-grep -h "版本：" README.md docs/*.md
-```
-
-**常見錯誤：**
-- ❌ README.md 版本是 1.4.0，但 `docs/專案說明.md` 是 1.3.1
-- ❌ README.md cron 時間是 18:00，但 `docs/專案說明.md` 是 17:00
-- ❌ 更新了代碼但沒更新 `docs/更新記錄.md`
-
-#### 步驟 5：Commit
-
-**Commit message 格式：**
-```bash
-docs: 更新文檔以反映 [功能名稱]
-
-更新的文件：
-- README.md: 版本 1.4.0
-- docs/更新記錄.md: 添加 1.4.0 條目
-- docs/專案說明.md: 更新 cron 時間
-
-🤖 Model: qwen/qwen3.5-plus
+1. 更新 docs/更新記錄.md（新版本條目）
+2. 更新所有 .md 文件的版本號和「最後更新」日期
+3. 確保 cron 時間一致（README + 專案說明）
+4. Commit message 包含 🤖 Model: qwen/qwen3.5-plus
 ```
 
 ---
 
 ## 🔍 故障排除
 
-### 問題：抓取任務失敗
-**檢查：**
 ```bash
-# 查看 cron 日誌
+# 抓取失敗 - 查看日誌
 tail -50 data/cron.log
-
-# 查看抓取日誌
 tail -50 data/fetch.log
 
-# 測試 RSS 可訪問性
-curl -I https://govinfohub.gcs.gov.mo/api/rss/n/zh-hant
-```
-
-**解決方案：**
-```bash
 # 手動測試抓取
 python3 src/fetch_news.py
-```
 
----
-
-### 問題：GitHub Pages 未更新
-**檢查：**
-```bash
-# 檢查 Actions 運行狀態
+# Pages 未更新 - 檢查 Actions
 gh run list --workflow deploy-pages.yml --limit 5
 
-# 檢查 Pages 配置
-gh api repos/john-fb-agent/govmo-news/pages
-
-# 檢查 public/ 文件夾
-ls -la public/
-```
-
-**解決方案：**
-```bash
-# 手動觸發部署
-gh workflow run deploy-pages.yml
+# 驗證 JSON 累積（歷史教訓：2026-04-15 前會覆蓋）
+cat data/processed/YYYY/MM/DD.json | jq '. | length'
 ```
 
 ---
 
-### 問題：JSON 文件覆蓋（歷史教訓）
-**問題：** 2026-04-15 前，每次抓取會覆蓋當天 JSON 文件
+## ⏰ Cron 時間表
 
-**現在：** 使用合併模式（載入 → 合併 → 保存）
-
-**驗證：**
-```bash
-# 檢查當天新聞是否累積
-cat data/processed/2026/04/16.json | jq '. | length'
-```
-
----
-
-## ⏰ Cron 時間表（快速參考）
-
-| 時間 | 任務 | 腳本 |
-|------|------|------|
-| 09:00, 11:00, 13:00, 15:00, 18:00 | 新聞抓取 | `src/fetch_news.py` |
-| 01:00 | 自動抓取 + 推送 | `deployment/scripts/auto-push.sh` |
-| 08:00 | AI 新聞總結 | OpenClaw Cron |
-
-**注意：** 所有時間為澳門時間 (GMT+8)
+| 時間 | 任務 |
+|------|------|
+| 09/11/13/15/18 | 新聞抓取 |
+| 01:00 | 自動抓取 + 推送 |
+| 08:00 | AI 新聞總結 |
 
 ---
 
 ## 📁 關鍵路徑
 
 ```
-govmo-news/
-├── src/
-│   ├── fetch_news.py      # 主抓取腳本
-│   └── rss_parser.py      # RSS 解析器
-├── data/processed/YYYY/MM/DD.json  # 新聞數據
-├── public/                # GitHub Pages 文件
-├── deployment/scripts/
-│   └── auto-push.sh       # 自動推送腳本
-└── docs/                  # 文檔
+src/fetch_news.py              # 主抓取腳本
+src/rss_parser.py              # RSS 解析器
+data/processed/YYYY/MM/DD.json # 新聞數據
+public/                        # GitHub Pages
+deployment/scripts/auto-push.sh # 自動推送
 ```
 
 ---
 
-## 🔄 文件更新記錄
+## 📞 資源
 
-| 日期 | 更新內容 | AI Agent |
-|------|---------|----------|
-| 2026-04-16 20:04 | 初始創建 | qwen/qwen3.5-plus |
-
----
-
-## 📞 資源連結
-
-### 內部文檔
-- [README.md](README.md) - 主說明文件
-- [docs/專案說明.md](docs/專案說明.md)
-- [docs/架構說明.md](docs/架構說明.md)
-- [docs/開發規則.md](docs/開發規則.md)
-- [docs/更新記錄.md](docs/更新記錄.md)
-- [docs/known-issues.md](docs/known-issues.md)
-
-### 外部資源
-- RSS Feed: https://govinfohub.gcs.gov.mo/api/rss/n/zh-hant
-- GitHub Pages: https://john-fb-agent.github.io/govmo-news/
-- OpenClaw: https://docs.openclaw.ai/
+- **RSS:** https://govinfohub.gcs.gov.mo/api/rss/n/zh-hant
+- **Pages:** https://john-fb-agent.github.io/govmo-news/
+- **OpenClaw:** https://docs.openclaw.ai/
 
 ---
 
-**最後更新：** 2026-04-16 20:04  
-**維護者：** AI Agent (你可以修改這份文件！)
+**最後更新：** 2026-04-16 20:12  
+**維護者：** AI Agent（你可以修改！）
