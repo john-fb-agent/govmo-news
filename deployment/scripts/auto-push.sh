@@ -1,7 +1,7 @@
 #!/bin/bash
 # Auto-Push to GitHub
-# Run this daily to push news data to GitHub (no fetch, just push)
-# Schedule: 22:00 daily (data already fetched at 17:00)
+# Run this daily to push news data to GitHub
+# Schedule: 01:00 daily (fetches before pushing to ensure latest data)
 
 set -e
 
@@ -25,7 +25,17 @@ log "========================================"
 
 cd "$PROJECT_DIR"
 
-# Step 1: Check for changes (no fetch, data already fetched at 17:00)
+# Step 1: Fetch latest news before pushing
+log "Fetching latest news..."
+python3 "$PROJECT_DIR/src/fetch_news.py" >> "$LOG_FILE" 2>&1
+if [ $? -ne 0 ]; then
+    log "ERROR: Fetch failed"
+    send_notification "Fetch failed: fetch_news.py returned error"
+    exit 1
+fi
+log "Fetch completed"
+
+# Step 2: Check for changes
 log "Checking for changes..."
 git add data/processed/
 changes=$(git status --porcelain data/processed/ | wc -l)
@@ -35,8 +45,6 @@ if [ "$changes" -eq 0 ]; then
     log "========================================"
     log "Auto-push completed (no changes)"
     log "========================================"
-    log ""
-    log "Note: No fetch performed (data already fetched at 17:00)"
     exit 0
 fi
 
@@ -70,5 +78,3 @@ log "Push completed"
 log "========================================"
 log "Auto-push completed successfully"
 log "========================================"
-log ""
-log "Note: No fetch performed (data already fetched at 17:00)"
