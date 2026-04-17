@@ -3,250 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>澳門政府新聞總結 - 2026年4月16日</title>
+    <title>2026年4月16日 澳門政府新聞總結</title>
     <style>
-        body {
-            font-family: "Microsoft YaHei", "PingFang TC", sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #1a1a1a;
-            border-bottom: 3px solid #0066cc;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #0066cc;
-            margin-top: 30px;
-            border-left: 4px solid #0066cc;
-            padding-left: 12px;
-        }
-        .summary-box {
-            background-color: #e6f3ff;
-            padding: 20px;
-            border-radius: 6px;
-            margin-bottom: 25px;
-            border: 1px solid #b3d9ff;
-        }
-        .news-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #fafafa;
-            border-radius: 6px;
-            border-left: 4px solid #0066cc;
-        }
-        .news-item h3 {
-            margin: 0 0 10px 0;
-            color: #333;
-        }
-        .news-item a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .news-item a:hover {
-            text-decoration: underline;
-        }
-        .news-meta {
-            font-size: 0.85em;
-            color: #666;
-            margin-top: 8px;
-        }
-        .stats-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        .stats-table th, .stats-table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        .stats-table th {
-            background-color: #0066cc;
-            color: white;
-        }
-        .stats-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .priority-high {
-            border-left-color: #cc0000;
-        }
-        .priority-medium {
-            border-left-color: #ff9900;
-        }
-        .priority-low {
-            border-left-color: #999;
-        }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #ddd;
-            font-size: 0.85em;
-            color: #666;
-            text-align: center;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 5px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #1a365d; border-bottom: 3px solid #3182ce; padding-bottom: 15px; margin-bottom: 30px; font-size: 28px; }
+        h2 { color: #2d3748; margin: 30px 0 15px; font-size: 22px; border-left: 4px solid #3182ce; padding-left: 12px; }
+        h3 { color: #4a5568; margin: 20px 0 10px; font-size: 18px; }
+        .summary-box { background: #ebf8ff; padding: 20px; border-radius: 6px; margin: 20px 0; border-left: 4px solid #3182ce; }
+        .news-item { background: #fafafa; padding: 15px; margin: 15px 0; border-radius: 6px; border: 1px solid #e2e8f0; }
+        .news-item.high { border-left: 4px solid #e53e3e; }
+        .news-item.medium { border-left: 4px solid #dd6b20; }
+        .news-item.low { border-left: 4px solid #38a169; }
+        .news-title { font-weight: 600; color: #1a365d; margin-bottom: 8px; }
+        .news-title a { color: #3182ce; text-decoration: none; }
+        .news-title a:hover { text-decoration: underline; }
+        .news-summary { color: #4a5568; font-size: 14px; margin-top: 8px; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; margin-left: 8px; }
+        .badge-high { background: #fed7d7; color: #c53030; }
+        .badge-medium { background: #feebc8; color: #c05621; }
+        .badge-low { background: #c6f6d5; color: #276749; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px 0; }
+        .stat-card { background: #f7fafc; padding: 15px; border-radius: 6px; text-align: center; border: 1px solid #e2e8f0; }
+        .stat-number { font-size: 32px; font-weight: 700; color: #3182ce; }
+        .stat-label { color: #718096; font-size: 14px; margin-top: 5px; }
+        .category-list { margin: 15px 0; }
+        .category-item { padding: 8px 0; border-bottom: 1px solid #e2e8f0; }
+        .category-item:last-child { border-bottom: none; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #e2e8f0; color: #718096; font-size: 13px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
+        .footer-item { background: #f7fafc; padding: 12px; border-radius: 6px; }
+        ul { padding-left: 20px; }
+        li { margin: 8px 0; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📰 澳門政府新聞總結 - 2026年4月16日</h1>
-        <p style="color: #666; margin-bottom: 25px;">共收錄新聞 30 則</p>
+        <h1>📰 澳門政府新聞總結</h1>
+        <p style="color: #718096; font-size: 16px; margin-bottom: 20px;">2026年4月16日（星期四）</p>
 
+        <h2>📝 今日綜合摘要</h2>
         <div class="summary-box">
-            <h2 style="margin-top: 0; border-left: none; padding-left: 0;">今日綜合摘要</h2>
-            <p>2026年4月16日，澳門特區政府多項重要工作同步推進。<strong>政治層面</strong>，國務院根據行政長官岑浩輝建議，免去戴建業的經濟財政司司長職務，行政長官將暫行行使該職權，並着手提名新任司長。岑浩輝將於4月17日率團訪問葡萄牙、西班牙、瑞士及比利時，深化與葡語國家、歐盟及國際組織的交流合作。</p>
-            
-            <p><strong>經濟發展方面</strong>，科技基金首4個月促成31組產學研合作，同比增長逾一倍，涵蓋中醫藥、高新科技、現代金融等領域。第十四屆澳門國際旅遊（產業）博覽會圓滿結束，吸引逾3.8萬人次入場，促成79份簽約項目及逾2萬場商務配對。澳琴攜手18家企業亮相新加坡會展盛事，推廣「一會展兩地」模式。</p>
-            
-            <p><strong>民生與教育</strong>，教青局推出「澳門大專學生內地實習計劃」及「青年善用餘暇計劃」，合共提供超過1,000個實習崗位。勞工局與工聯合辦三場行業專場配對會，提供195個職位空缺。衛生局加強蚊媒傳播疾病防控，呼籲居民做好防蚊措施，並接獲1宗流感樣疾病群集性感染報告。</p>
-            
-            <p><strong>國家安全與法治</strong>，第九屆「全民國家安全教育展」引入人工智能機械人導賞，展出國產航空母艦模型。法務局與保安高校合辦憲法與基本法專題活動。廉政公署恭賀亞洲監察專員協會成立30周年。</p>
-            
-            <p><strong>基礎建設</strong>，配合大潭山隧道工程，飛機場圓形地一帶將於4月18日起實施臨時交通改道。海域管理及發展統籌委員會討論海域管理工作，推進大型涉海項目。</p>
+            <p>4月16日澳門政府新聞焦點集中於重大人事變動、國際外訪及經濟多元發展。國務院批准免去戴建業的經濟財政司司長職務，行政長官岑浩輝將率團訪問葡萄牙、西班牙、瑞士及比利時，深化國際合作。第十四屆澳門國際旅遊（產業）博覽會圓滿結束，吸引逾3.8萬人次入場，促成79份簽約項目。科技基金首4個月促成31組產學研合作，同比增逾一倍，展現"1+4"多元發展策略成效。衛生局加強蚊媒傳播疾病防控，應對邻近地區"雙熱"傳播風險。多個紀律部隊舉行新入職人員就職儀式，壯大公務員隊伍。</p>
         </div>
 
-        <h2>🔴 重點新聞（高重要性）</h2>
+        <h2>🔥 重點新聞（高重要性）</h2>
         
-        <div class="news-item priority-high">
-            <h3>1. 國務院根據行政長官建議決定免去戴建業的經濟財政司司長職務</h3>
-            <p>國務院今日公布，中央人民政府依照《澳門特別行政區基本法》的有關規定，根據澳門特別行政區行政長官岑浩輝的建議，決定免去戴建業的經濟財政司司長職務。戴建業因個人原因提出辭職請求。行政長官表示將着手跟進新任經濟財政司司長的提名工作，在新任司長就職前將行使經濟財政司司長的一切職權。</p>
-            <div class="news-meta">📅 10:08 | 🏷️ 政治 | 🔴 高重要性</div>
-            <div class="news-meta"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPaFsnh" target="_blank">閱讀原文 →</a></div>
+        <div class="news-item high">
+            <div class="news-title">
+                <span class="badge badge-high">重要性：高</span>
+                <a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPaFsnh" target="_blank">國務院根據行政長官建議決定免去戴建業的經濟財政司司長職務</a>
+            </div>
+            <div class="news-summary">
+                國務院公布，中央人民政府依照《澳門基本法》有關規定，根據行政長官岑浩輝的建議，決定免去戴建業的經濟財政司司長職務。戴建業因個人原因提出辭職請求。行政長官肯定其任內推動經濟財政範疇工作取得的進展。新任司長提名工作將適時提請中央人民政府任命，在此之前由行政長官行使相關職權。
+            </div>
         </div>
 
-        <div class="news-item priority-high">
-            <h3>2. 行政長官岑浩輝將率團訪問葡萄牙、西班牙、瑞士及比利時</h3>
-            <p>行政長官岑浩輝將於4月17日啟程，率領特區政府代表團及企業家代表團訪問葡萄牙和西班牙，隨後轉往瑞士及比利時，於4月26日返澳。此行將拜會葡萄牙、西班牙相關官員，深化澳葡合作，延伸澳門平台至西語國家，並與世貿組織等國際組織加強聯繫。特區政府首次組織內地重點企業代表與澳門、橫琴企業家同行，以「拼船出海」新模式共拓海外市場。</p>
-            <div class="news-meta">📅 12:04 | 🏷️ 外交 | 🔴 高重要性</div>
-            <div class="news-meta"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPrFwIn" target="_blank">閱讀原文 →</a></div>
+        <div class="news-item high">
+            <div class="news-title">
+                <span class="badge badge-high">重要性：高</span>
+                <a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPrFwIn" target="_blank">行政長官岑浩輝將率團訪問葡萄牙、西班牙、瑞士及比利時</a>
+            </div>
+            <div class="news-summary">
+                行政長官岑浩輝於4月17日啟程，率領特區政府代表團及企業家代表團訪問四國，於4月26日返澳。行程包括拜會葡萄牙、西班牙、比利時及歐盟官員，深化與世貿組織等國際組織聯繫。特區政府首次組織內地重點企業與澳琴企業家"拼船出海"共拓海外市場，發揮澳門作為中國與葡語、西語國家"精準聯繫人"作用。行政長官外訪期間由行政法務司司長黃少澤臨時代理職務。
+            </div>
         </div>
 
-        <div class="news-item priority-high">
-            <h3>3. 第十四屆澳門國際旅遊（產業）博覽會圓滿舉行</h3>
-            <p>第十四屆澳門國際旅遊（產業）博覽會於4月12日圓滿結束，一連三天吸引超過3.8萬人次公眾入場。來自59個國家及地區的730家企業及官方機構參展，設置超過1,500個展位。展會期間促成79份簽約項目，較去年增加34%；線上及線下商務配對合共超過2萬場，創歷屆新高。旅博會獲UFI認證，彰顯澳門國際展會實力。</p>
-            <div class="news-meta">📅 18:16 | 🏷️ 旅遊 | 🔴 高重要性</div>
-            <div class="news-meta"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP82SGD" target="_blank">閱讀原文 →</a></div>
+        <div class="news-item high">
+            <div class="news-title">
+                <span class="badge badge-high">重要性：高</span>
+                <a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP82SGD" target="_blank">第十四屆澳門國際旅遊（產業）博覽會圓滿舉行</a>
+            </div>
+            <div class="news-summary">
+                旅博會於4月12日圓滿結束，一連三天吸引超過3.8萬人次入場。來自59個國家及地區的730家企業參展，設置超過1,500個展位。促成79份簽約項目（較去年增34%），商務配對超過2萬場。海內外特邀買家642位創歷屆新高。展會首次組織中亞旅遊業界訪澳考察，持續獲UFI認證，彰顯澳門舉辦大型國際展會實力。
+            </div>
         </div>
 
-        <div class="news-item priority-high">
-            <h3>4. 科技基金首4月促成31組產學研合作 同比增逾一倍</h3>
-            <p>科學技術發展基金2026年首4個月已成功促成共31組企業及高校的產學研合作，較去年同期的13組增加超過一倍以上。合作項目涵蓋中醫藥大健康、高新科技、現代金融、智慧文旅等多個領域，與特區政府「1+4」經濟適度多元發展策略高度配合。科技基金以「配對服務+資助」模式，深化澳門產學研生態。</p>
-            <div class="news-meta">📅 11:30 | 🏷️ 科技 | 🔴 高重要性</div>
-            <div class="news-meta"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPuShsd" target="_blank">閱讀原文 →</a></div>
+        <div class="news-item high">
+            <div class="news-title">
+                <span class="badge badge-high">重要性：高</span>
+                <a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPuShsd" target="_blank">科技基金首4月促成31組產學研合作 同比增逾一倍</a>
+            </div>
+            <div class="news-summary">
+                科學技術發展基金2026年首4個月成功促成31組企業及高校產學研合作，較去年同期13組增加超過一倍。合作項目涵蓋中醫藥大健康、高新科技、現代金融、智慧文旅等領域，配合"1+4"經濟適度多元發展策略。科技基金以"配對服務+資助"模式，為企業引入高校科研團隊支援，促進科研成果轉化應用。
+            </div>
         </div>
 
-        <div class="news-item priority-high">
-            <h3>5. 海域管理及發展統籌委員會討論海域管理工作</h3>
-            <p>海域管理及發展統籌委員會昨日召開會議，由運輸工務司司長譚偉文主持。委員會回顧了2025年度海域管理工作，包括澳門海域利用現況、《澳門特別行政區海域規劃》執行情況、海上疏濬物跨區傾倒工作進度等。現時本澳各項保障民生工程、防洪排澇工程、濱海優化工程等涉海項目正有序推進，基本實現海域規劃的近期目標。</p>
-            <div class="news-meta">📅 09:51 | 🏷️ 基建 | 🔴 高重要性</div>
-            <div class="news-meta"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPstueC" target="_blank">閱讀原文 →</a></div>
+        <div class="news-item high">
+            <div class="news-title">
+                <span class="badge badge-high">重要性：高</span>
+                <a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPstueC" target="_blank">海域管理及發展統籌委員會討論海域管理工作</a>
+            </div>
+            <div class="news-summary">
+                海域管理及發展統籌委員會召開會議，由運輸工務司司長譚偉文主持。會議回顧2025年度海域管理工作，包括澳門海域利用現況、《澳門特別行政區海域規劃》執行情況、海上疏濬物跨區傾倒工作進度等。現時本澳各項涉海項目正有序推進，基本實現海域規劃近期目標，相關部門將繼續推進落實中長期目標。
+            </div>
         </div>
 
         <h2>📊 分類統計</h2>
-        <table class="stats-table">
-            <thead>
-                <tr>
-                    <th>範疇</th>
-                    <th>新聞數量</th>
-                    <th>佔比</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>🏛️ 政治/政府</td>
-                    <td>6</td>
-                    <td>20%</td>
-                </tr>
-                <tr>
-                    <td>💼 經濟/科技</td>
-                    <td>5</td>
-                    <td>17%</td>
-                </tr>
-                <tr>
-                    <td>🎓 教育/青年</td>
-                    <td>5</td>
-                    <td>17%</td>
-                </tr>
-                <tr>
-                    <td>🏥 衛生/醫療</td>
-                    <td>3</td>
-                    <td>10%</td>
-                </tr>
-                <tr>
-                    <td>🚓 保安/法治</td>
-                    <td>5</td>
-                    <td>17%</td>
-                </tr>
-                <tr>
-                    <td>🏗️ 基建/交通</td>
-                    <td>3</td>
-                    <td>10%</td>
-                </tr>
-                <tr>
-                    <td>🎭 文化/旅遊</td>
-                    <td>3</td>
-                    <td>10%</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">28</div>
+                <div class="stat-label">新聞總數</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #e53e3e;">5</div>
+                <div class="stat-label">高重要性</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #dd6b20;">12</div>
+                <div class="stat-label">中重要性</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #38a169;">11</div>
+                <div class="stat-label">低重要性</div>
+            </div>
+        </div>
+
+        <h3>按範疇分類</h3>
+        <div class="category-list">
+            <div class="category-item"><strong>政治/政府：</strong> 6 則新聞（人事變動、外訪、國家安全）</div>
+            <div class="category-item"><strong>經濟/科技：</strong> 5 則新聞（產學研合作、會展推廣、招商引資）</div>
+            <div class="category-item"><strong>教育/青年：</strong> 5 則新聞（實習計劃、培訓資助、青年活動）</div>
+            <div class="category-item"><strong>衛生/健康：</strong> 3 則新聞（流感群組、蚊媒防控）</div>
+            <div class="category-item"><strong>交通/基建：</strong> 3 則新聞（臨時交管、停車場競投）</div>
+            <div class="category-item"><strong>文化/旅遊：</strong> 3 則新聞（旅博會、青年樂師培訓、國風工房）</div>
+            <div class="category-item"><strong>紀律部隊：</strong> 3 則新聞（消防、治安警、海關就職）</div>
+        </div>
 
         <h2>📋 全部新聞列表</h2>
         <ul>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPaFsnh" target="_blank">國務院根據行政長官建議決定免去戴建業的經濟財政司司長職務</a> (10:08)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPgH4A7" target="_blank">經濟財政司司長戴建業發表關於請辭司長職務的聲明</a> (10:07)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPstueC" target="_blank">海域管理及發展統籌委員會討論海域管理工作</a> (09:51)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPIICVO" target="_blank">澳門青年樂師培訓計劃即日起接受報名</a> (12:57)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPismNk" target="_blank">"感受澳門"馬德里路展4月17至21日舉行</a> (12:55)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPGUInN" target="_blank">教青局推"澳門大專學生內地實習計劃"及"青年善用餘暇計劃"</a> (12:14)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPrFwIn" target="_blank">行政長官岑浩輝將率團訪問葡萄牙、西班牙、瑞士及比利時</a> (12:04)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPtsrSG" target="_blank">勞工局與工聯4月下旬舉辦三場配對會 提供逾190個職缺</a> (11:45)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPuShsd" target="_blank">科技基金首4月促成31組產學研合作 同比增逾一倍</a> (11:30)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPuu7l8" target="_blank">2026年"青年社團年度培訓活動資助計劃"即日起接受第二輪申請</a> (11:24)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPfUA3Y" target="_blank">本土社團的多元視角研究《成長與變革：澳門社團實證研究》出版</a> (11:01)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP142Cv" target="_blank">法務局與保安高校合辦憲法與基本法專題系列活動</a> (15:00)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPlkyoM" target="_blank">個資局正式成為葡語系個人資料保護網絡成員</a> (13:00)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPXzK2g" target="_blank">配合大潭山隧道工程 飛機場圓形地一帶18日起實施臨時交管</a> (17:59)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPBvvmx" target="_blank">消防局舉行新入職消防員就職儀式</a> (17:49)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPysIzR" target="_blank">全民國家安全教育展引入機械人導賞 科技元素賦能國安教育</a> (17:47)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPtv7sL" target="_blank">市政署五月親近大自然活動接受報名</a> (17:35)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPBoAYL" target="_blank">澳門理工大學學生於"人工智能護國安"徵文比賽 勇奪一等獎</a> (17:25)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPb8WoO" target="_blank">廉政公署恭賀亞洲監察專員協會成立30周年</a> (17:23)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPcUOmt" target="_blank">市政署辦"國風拾趣工房"加深公眾認識中華民族多元文化與藝術特色</a> (17:09)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPUV8qI" target="_blank">鐵人三項賽 澳門大學校區4月19日上午臨時交管</a> (15:46)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPirjRh" target="_blank">澳琴攜手18企業亮相新加坡會展盛事 推廣"一會展兩地"模式</a> (15:06)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPsCzKT" target="_blank">社工局支援西望洋斜巷單位火警受影響住戶</a> (23:58)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPjqwlV" target="_blank">治安警察局舉行新入職警員就職儀式</a> (22:42)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP5ur2E" target="_blank">招商局組織企業家代表團隨特區政府考察葡西 推動科技及大健康產業協同發展</a> (21:45)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPLNkDc" target="_blank">澳大與科英布拉大學共建"賈梅士實驗室"</a> (19:55)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPrJFgD" target="_blank">衛生局接獲1宗流感樣疾病群集性感染報告</a> (19:37)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPQW1p8" target="_blank">衛生局舉行"蚊媒傳播疾病防控"新聞發佈會</a> (19:35)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPjlsgC" target="_blank">13公司競投祐漢公園及海灣南街等6公共停車場公共泊車服務經營批給</a> (18:19)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP82SGD" target="_blank">第十四屆澳門國際旅遊（產業）博覽會圓滿舉行</a> (18:16)</li>
-            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP106jP" target="_blank">澳門海關舉行38名新入職關員就職儀式</a> (18:07)</li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPaFsnh" target="_blank">國務院根據行政長官建議決定免去戴建業的經濟財政司司長職務</a> <span class="badge badge-high">高</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPgH4A7" target="_blank">經濟財政司司長戴建業發表關於請辭司長職務的聲明</a> <span class="badge badge-high">高</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPrFwIn" target="_blank">行政長官岑浩輝將率團訪問葡萄牙、西班牙、瑞士及比利時</a> <span class="badge badge-high">高</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP82SGD" target="_blank">第十四屆澳門國際旅遊（產業）博覽會圓滿舉行</a> <span class="badge badge-high">高</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPuShsd" target="_blank">科技基金首4月促成31組產學研合作 同比增逾一倍</a> <span class="badge badge-high">高</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPstueC" target="_blank">海域管理及發展統籌委員會討論海域管理工作</a> <span class="badge badge-high">高</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPismNk" target="_blank">"感受澳門"馬德里路展4月17至21日舉行</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPGUInN" target="_blank">教青局推"澳門大專學生內地實習計劃"及"青年善用餘暇計劃"</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPtsrSG" target="_blank">勞工局與工聯4月下旬舉辦三場配對會 提供逾190個職缺</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPysIzR" target="_blank">全民國家安全教育展引入機械人導賞 科技元素賦能國安教育</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPirjRh" target="_blank">澳琴攜手18企業亮相新加坡會展盛事 推廣"一會展兩地"模式</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP5ur2E" target="_blank">招商局組織企業家代表團隨特區政府考察葡西</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPQW1p8" target="_blank">衛生局舉行"蚊媒傳播疾病防控"新聞發佈會</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPPrJFgD" target="_blank">衛生局接獲1宗流感樣疾病群集性感染報告</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPlkyoM" target="_blank">個資局正式成為葡語系個人資料保護網絡成員</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPXzK2g" target="_blank">配合大潭山隧道工程 飛機場圓形地一帶18日起實施臨時交管</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPjlsgC" target="_blank">13公司競投祐漢公園及海灣南街等6公共停車場經營批給</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPUV8qI" target="_blank">鐵人三項賽 澳門大學校區4月19日上午臨時交管</a> <span class="badge badge-medium">中</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPIICVO" target="_blank">澳門青年樂師培訓計劃即日起接受報名</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPuu7l8" target="_blank">2026年"青年社團年度培訓活動資助計劃"即日起接受第二輪申請</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPfUA3Y" target="_blank">本土社團的多元視角研究《成長與變革：澳門社團實證研究》出版</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP142Cv" target="_blank">法務局與保安高校合辦憲法與基本法專題系列活動</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPBvvmx" target="_blank">消防局舉行新入職消防員就職儀式</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPjqwlV" target="_blank">治安警察局舉行新入職警員就職儀式</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DP106jP" target="_blank">澳門海關舉行38名新入職關員就職儀式</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPtv7sL" target="_blank">市政署五月親近大自然活動接受報名</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPcUOmt" target="_blank">市政署辦"國風拾趣工房"加深公眾認識中華民族多元文化</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPBoAYL" target="_blank">澳門理工大學學生於"人工智能護國安"徵文比賽 勇奪一等獎</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPb8WoO" target="_blank">廉政公署恭賀亞洲監察專員協會成立30周年</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPLNkDc" target="_blank">澳大與科英布拉大學共建"賈梅士實驗室"</a> <span class="badge badge-low">低</span></li>
+            <li><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DPsCzKT" target="_blank">社工局支援西望洋斜巷單位火警受影響住戶</a> <span class="badge badge-low">低</span></li>
         </ul>
 
-        <div class="footer">
-            <p><strong>資料來源：</strong>澳門特別行政區政府新聞局</p>
-            <p><strong>生成時間：</strong>2026年4月17日 08:18 (澳門時間)</p>
-            <p><strong>Provider:</strong> Qwen | <strong>Model:</strong> qwen3.5-plus</p>
-        </div>
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-item">
+                    <strong>📍 資料來源</strong><br>
+                    澳門特別行政區政府新聞局<br>
+                    <a href="https://www.gcs.gov.mo" target="_blank">www.gcs.gov.mo</a>
+                </div>
+                <div class="footer-item">
+                    <strong>🕐 生成時間</strong><br>
+                    2026年4月17日 08:20<br>
+                    （澳門時間）
+                </div>
+                <div class="footer-item">
+                    <strong>🤖 Provider</strong><br>
+                    Qwen<br>
+                    Model: qwen3.5-plus
+                </div>
+                <div class="footer-item">
+                    <strong>📁 存檔位置</strong><br>
+                    public/2026-04-16.html<br>
+                    govmo-news GitHub Repo
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px; color: #a0aec0;">© 2026 澳門政府新聞總結 | 自動生成</p>
+        </footer>
     </div>
 </body>
 </html>
