@@ -70,13 +70,17 @@ def generate_summary(news_data, date):
     
     log("🤖 Calling OpenClaw AI...")
     
-    # Use openclaw infer model run
-    # Timeout: 10 minutes (600 seconds) for AI analysis
+    # Use openclaw infer model run with full PATH
+    # Timeout: 15 minutes (900 seconds) for AI analysis (large news sets)
+    import os
+    env = os.environ.copy()
+    env['PATH'] = '/home/js/.npm-global/bin:' + env.get('PATH', '')
+    
     result = subprocess.run([
-        'openclaw', 'infer', 'model', 'run',
+        '/home/js/.npm-global/bin/openclaw', 'infer', 'model', 'run',
         '--prompt', prompt,
         '--model', 'qwen/qwen3.5-plus'
-    ], capture_output=True, text=True, timeout=600)
+    ], capture_output=True, text=True, timeout=900, env=env)
     
     if result.returncode == 0:
         log("✅ AI analysis completed")

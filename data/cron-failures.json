@@ -4,5 +4,11 @@
     "script": "generate_summary.py",
     "error": "FileNotFoundError: [Errno 2] No such file or directory: 'openclaw'",
     "notified": false
+  },
+  {
+    "timestamp": "2026-04-17T08:00:01.601960",
+    "script": "generate_summary.py",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'openclaw'",
+    "notified": false
   }
 ]
