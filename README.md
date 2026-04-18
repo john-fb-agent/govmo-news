@@ -3,9 +3,10 @@
 > 🤖 自動抓取、轉換並存儲澳門政府新聞局（GCS）RSS 新聞，提供 AI 每日總結與 GitHub Pages 展示
 
 [![Version](https://img.shields.io/badge/version-1.4.0-blue)](docs/更新記錄.md)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-yellow)](https://python.org)
 [![Status](https://img.shields.io/badge/status-✅%20Running-success)](docs/known-issues.md)
+
+**🌐 查看最新新聞總結：** https://john-fb-agent.github.io/govmo-news/
 
 ---
 
@@ -14,11 +15,10 @@
 - [快速開始](#-快速開始)
 - [功能特點](#-功能特點)
 - [定時任務](#-定時任務)
-- [專案結構](#-專案結構)
 - [AI 新聞總結](#-ai-新聞總結)
+- [專案結構](#-專案結構)
 - [文檔導航](#-文檔導航)
 - [版權聲明](#-版權聲明)
-- [支援](#-支援)
 
 ---
 
@@ -26,11 +26,8 @@
 
 ### 前置條件
 
-```bash
-Python 3.8+
-Git
-pip
-```
+- Python 3.8+
+- Git
 
 ### 安裝與運行
 
@@ -72,17 +69,30 @@ python3 src/fetch_news.py
 | **自動分類** | 政策、民生、經濟等 8 個類別 | ✅ |
 | **重要性評分** | ⭐⭐⭐ 高 / ⭐⭐ 中 / ⭐ 低 | ✅ |
 
-**🌐 線上查看：** https://john-fb-agent.github.io/govmo-news/
-
 ---
 
 ## ⏰ 定時任務
 
-| 時間 | 任務 | 說明 |
+| 時間（澳門 GMT+8） | 任務 | 說明 |
 |------|------|------|
 | **09:00, 11:00, 13:00, 15:00, 18:00** | 新聞抓取 | 從 RSS 抓取最新新聞 |
 | **01:00** | 自動推送 | 先抓取再推送到 GitHub |
 | **08:00** | AI 總結 | 生成前日新聞 HTML 摘要 |
+
+---
+
+## 🧠 AI 新聞總結
+
+每天早上 8 點自動執行，使用 OpenClaw + Qwen 模型生成新聞摘要。
+
+**輸出內容：**
+- ✅ **自動分類** — 政策、民生、經濟、旅遊、教育、文化、科技、其他
+- ✅ **重要性評分** — 最多 5 則高重要性新聞
+- ✅ **重點摘要** — 每則新聞 1-2 句概述
+- ✅ **HTML 輸出** — 美觀的網頁格式
+- ✅ **自動部署** — GitHub Actions 自動發布到 Pages
+
+**查看範例：** https://john-fb-agent.github.io/govmo-news/2026-04-17.html
 
 ---
 
@@ -103,24 +113,9 @@ govmo-news/
 ├── deployment/
 │   ├── README.md            # 部署指南
 │   └── scripts/             # 部署腳本
-├── docs/                    # 文檔
+├── docs/                    # 詳細文檔
 └── tests/                   # 測試
 ```
-
----
-
-## 🧠 AI 新聞總結
-
-每天早上 8 點自動執行，使用 OpenClaw + Qwen 模型生成新聞摘要。
-
-**輸出內容：**
-- ✅ **自動分類** — 政策、民生、經濟、旅遊、教育、文化、科技、其他
-- ✅ **重要性評分** — 最多 5 則高重要性新聞
-- ✅ **重點摘要** — 每則新聞 1-2 句概述
-- ✅ **HTML 輸出** — 美觀的網頁格式
-- ✅ **自動部署** — GitHub Actions 自動發布到 Pages
-
-**查看範例：** https://john-fb-agent.github.io/govmo-news/2026-04-17.html
 
 ---
 
@@ -128,7 +123,7 @@ govmo-news/
 
 | 文檔 | 說明 |
 |------|------|
-| [專案說明](docs/專案說明.md) | 專案目標與範圍 |
+| [專案說明](docs/專案說明.md) | 專案目標、核心功能、技術選型 |
 | [架構說明](docs/架構說明.md) | 技術架構與數據流 |
 | [開發規則](docs/開發規則.md) | 開發規範與最佳實踐 |
 | [部署說明](deployment/README.md) | 部署指南 |
