@@ -1,6 +1,7 @@
 # AI Agent 指南
 
-**創建：** 2026-04-16 20:04 | **Provider:** Qwen | **Model:** qwen/qwen3.5-plus
+**創建：** 2026-04-16 20:04 | **Provider:** Qwen | **Model:** qwen/qwen3.5-plus  
+**最後更新：** 2026-04-20 | **Last Review：** 2026-04-20
 
 ---
 
@@ -73,4 +74,6 @@ deployment/scripts/auto-push.sh
 
 ---
 
-**最後更新：** 2026-04-16 20:15 | **維護者：** AI Agent
+---
+
+**最後更新：** 2026-04-20 | **Last Review：** 2026-04-20 | **維護者：** AI Agent
