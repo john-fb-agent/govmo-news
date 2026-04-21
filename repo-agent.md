@@ -108,6 +108,17 @@ deployment/scripts/auto-push.sh
 - **日期格式：** `<p><strong>日期：</strong>YYYY 年 M 月 D 日（星期 X）</p>`
 - **時區：** Asia/Macau
 
+### 頁尾 Metadata 格式（Issue #9）
+- **統一格式：**
+  ```html
+  <div class="footer">
+      <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
+      <strong>生成時間：</strong>YYYY-MM-DD HH:MM (Asia/Macau)<br>
+      <strong>Provider:</strong> Qwen | <strong>Model:</strong> qwen3.5-plus
+  </div>
+  ```
+- **所有頁面：** public/2026-04-14.html 至 public/2026-04-20.html 已統一
+
 ---
 
 **最後更新：** 2026-04-21 | **Last Review：** 2026-04-21 | **維護者：** AI Agent
