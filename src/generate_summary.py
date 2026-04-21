@@ -113,9 +113,12 @@ def build_html(summary_data, date):
     # Build highlights HTML
     highlights_html = ""
     for news in summary_data.get("highlights", []):
+        importance = news.get('importance', 3)  # Default to high for highlights
+        importance_text = {1: '低', 2: '中', 3: '高'}.get(importance, '高')
+        badge_class = {1: 'badge-low', 2: 'badge-medium', 3: 'badge-high'}.get(importance, 'badge-high')
         highlights_html += f"""
         <div class="highlight-item">
-            <h3>⭐⭐⭐ {news['title']}</h3>
+            <h3>{news['title']} <span class="importance-badge {badge_class}">{importance_text}</span></h3>
             <p><span class="category-tag">{news['category']}</span></p>
             <p class="summary">{news.get('summary', '')}</p>
             <p><a href="{news['link']}" target="_blank">查看原文 →</a></p>
@@ -142,8 +145,10 @@ def build_html(summary_data, date):
     for category, news_list in sorted(by_category.items()):
         full_list_html += f"<h3>{category}</h3><ul class='news-list'>"
         for news in news_list:
-            stars = "⭐" * news.get('importance', 1)
-            full_list_html += f"<li><span class='category-tag'>{stars}</span><a href='{news['link']}' target='_blank'>{news['title']}</a></li>"
+            importance = news.get('importance', 1)
+            importance_text = {1: '低', 2: '中', 3: '高'}.get(importance, '低')
+            badge_class = {1: 'badge-low', 2: 'badge-medium', 3: 'badge-high'}.get(importance, 'badge-low')
+            full_list_html += f"<li><span class='importance-badge {badge_class}'>{importance_text}</span><a href='{news['link']}' target='_blank'>{news['title']}</a></li>"
         full_list_html += "</ul>"
     
     html = f"""<!DOCTYPE html>
