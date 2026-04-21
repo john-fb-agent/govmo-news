@@ -366,6 +366,12 @@ def main():
         if not classification_file:
             log("⚠️ Failed to save classification data (continuing anyway)")
         
+        # Generate classification statistics
+        log("Generating classification statistics...")
+        stats_script = Path(__file__).parent / "generate_classification_stats.py"
+        if stats_script.exists():
+            subprocess.run(['python3', str(stats_script)], cwd=Path(__file__).parent.parent)
+        
         if not commit_and_push(html_file, date):
             log("⚠️ Failed to commit/push (continuing anyway)")
         
