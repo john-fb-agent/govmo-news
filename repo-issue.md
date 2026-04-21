@@ -20,13 +20,15 @@ Implement department statistics from RSS dc:creator field:
 
 ## 2. TODO List
 
-- [x] Update rss_parser.py to extract dc:creator
+- [x] Update rss_parser.py to extract department from RSS author field
 - [x] Create stat/ folder structure
 - [x] Create department statistics script (generate_department_stats.py)
 - [x] Update generate_summary.py to display department stats
 - [x] Integrated dept stats generation into fetch_news.py
-- [ ] Test with today's data
-- [ ] Commit and push changes
+- [x] Test with today's data (2026-04-21)
+  - Department field now recorded in JSON
+  - Stats: 治安警察局：1
+- [x] Commit and push changes
 - [ ] Update documentation ⚠️ (requires user approval)
 
 ---

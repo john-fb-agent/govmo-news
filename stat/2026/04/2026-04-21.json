@@ -2,8 +2,11 @@
   "date": "2026-04-21",
   "total_count": 5,
   "department_stats": {
-    "治安警察局": 1
+    "治安警察局": 1,
+    "文化局": 2,
+    "澳門旅遊大學": 1,
+    "澳門金融管理局": 1
   },
-  "no_department_count": 4,
-  "generated_at": "2026-04-21T12:55:01.690458"
+  "no_department_count": 0,
+  "generated_at": "2026-04-21T12:58:21.680815"
 }
