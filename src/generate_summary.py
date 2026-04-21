@@ -179,6 +179,8 @@ def build_html(summary_data, date):
         .stat-card {{ background: #f8f9fa; padding: 15px; text-align: center; border-radius: 8px; }}
         .stat-number {{ font-size: 2em; font-weight: bold; color: #007bff; }}
         .stat-label {{ color: #666; font-size: 0.9em; }}
+        .back-link {{ display: inline-block; margin-bottom: 20px; color: #007bff; text-decoration: none; }}
+        .back-link:hover {{ text-decoration: underline; }}
         footer {{ text-align: center; color: #999; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; }}
         @media (max-width: 600px) {{ .container {{ padding: 20px; }} h1 {{ font-size: 1.5em; }} }}
     </style>
@@ -208,6 +210,7 @@ def build_html(summary_data, date):
             {full_list_html}
         </section>
 
+        <a href="index.html" class="back-link">← 返回索引頁</a>
         <footer>
             <p>自動生成於 {timestamp}</p>
             <p>資料來源：澳門特別行政區政府新聞局</p>
