@@ -206,7 +206,7 @@ def build_html(summary_data, date):
         </section>
 
         <section class="full-list">
-            <h2>📋 完整新聞列表</h2>
+            <h2>📋 全部新聞列表</h2>
             {full_list_html}
         </section>
 
