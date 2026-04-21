@@ -1,7 +1,9 @@
 {
   "date": "2026-04-21",
-  "total_count": 3,
-  "department_stats": {},
-  "no_department_count": 3,
-  "generated_at": "2026-04-21T12:50:22.125848"
+  "total_count": 5,
+  "department_stats": {
+    "治安警察局": 1
+  },
+  "no_department_count": 4,
+  "generated_at": "2026-04-21T12:55:01.690458"
 }
