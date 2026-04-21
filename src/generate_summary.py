@@ -247,7 +247,10 @@ def build_html(summary_data, date):
     return html
 
 def save_classification_data(summary_data, date, raw_news_data=None):
-    """Save classification data to data/classification/YYYY-MM-DD.json"""
+    """Save classification data to data/classification/YYYY-MM-DD.json
+    
+    Stores raw classification only (no stats - separate script for statistics)
+    """
     classification_dir = Path(__file__).parent.parent / "data" / "classification"
     classification_dir.mkdir(parents=True, exist_ok=True)
     
@@ -262,12 +265,10 @@ def save_classification_data(summary_data, date, raw_news_data=None):
             if guid:
                 guid_lookup[news.get('title', '')] = guid
     
-    # Extract classification data
+    # Extract classification data (raw only, no stats)
     classification_data = {
         "date": date_str,
-        "total_count": summary_data.get('total_count', 0),
-        "category_stats": summary_data.get('category_stats', {}),
-        "all_news": [
+        "news": [
             {
                 "guid": guid_lookup.get(news.get('title', ''), ''),
                 "title": news.get('title', ''),
