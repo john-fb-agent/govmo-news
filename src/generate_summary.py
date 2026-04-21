@@ -211,10 +211,11 @@ def build_html(summary_data, date):
         </section>
 
         <a href="index.html" class="back-link">← 返回索引頁</a>
-        <footer>
-            <p>自動生成於 {timestamp}</p>
-            <p>資料來源：澳門特別行政區政府新聞局</p>
-        </footer>
+        <div class="footer">
+            <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
+            <strong>生成時間：</strong>{timestamp} (Asia/Macau)<br>
+            <strong>Provider:</strong> Qwen | <strong>Model:</strong> qwen3.5-plus
+        </div>
     </div>
 </body>
 </html>"""
