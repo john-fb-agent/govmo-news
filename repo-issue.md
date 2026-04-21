@@ -25,6 +25,8 @@ Implement Issue #3: Standardize the "Key News" (重點新聞) section header sty
 - [x] Analyze current header styles across all pages
 - [x] Fix inconsistent headers (2026-04-14, 2026-04-17, 2026-04-18)
 - [x] Update generate_summary.py template
+- [x] Standardize CSS class names (.badge → .importance-badge in 2026-04-15, 2026-04-16)
+- [x] Update summary_prompt.txt (remove ⭐ emojis)
 - [ ] Commit and push changes
 - [ ] Update documentation ⚠️ (requires user approval)
 
@@ -36,12 +38,20 @@ Implement Issue #3: Standardize the "Key News" (重點新聞) section header sty
 - public/2026-04-14.html (was: 重點新聞 → now: 🔥 重點新聞)
 - public/2026-04-17.html (was: 重點新聞 → now: 🔥 重點新聞)
 - public/2026-04-18.html (was: ⭐ 重點新聞 → now: 🔥 重點新聞)
+- public/2026-04-15.html (was: .badge → now: .importance-badge)
+- public/2026-04-16.html (was: .badge → now: .importance-badge)
 - src/generate_summary.py (was: 🔑 重點新聞 → now: 🔥 重點新聞（高重要性）)
+- src/summary_prompt.txt (removed ⭐⭐⭐ emojis from importance descriptions)
 
-**Standard format:** `🔥 重點新聞（高重要性）`
+**Standard format:** 
+- Header: `🔥 重點新聞（高重要性）`
+- Importance badges: `.importance-badge` with `.badge-high`, `.badge-medium`, `.badge-low`
+- Badge text: `高`, `中`, `低` (no numbers, no stars)
 
 **Commands used:**
 ```bash
 sed -i 's/<h2>重點新聞（高重要性）<\/h2>/<h2>🔥 重點新聞（高重要性）<\/h2>/g' public/2026-04-14.html public/2026-04-17.html
 sed -i 's/<h2>⭐ 重點新聞（高重要性）<\/h2>/<h2>🔥 重點新聞（高重要性）<\/h2>/g' public/2026-04-18.html
+sed -i 's/class="badge badge-high"/class="importance-badge badge-high"/g' public/2026-04-15.html public/2026-04-16.html
+sed -i 's/\.badge {/\.importance-badge {/g' public/2026-04-15.html public/2026-04-16.html
 ```
