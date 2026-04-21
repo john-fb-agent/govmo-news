@@ -119,6 +119,13 @@ deployment/scripts/auto-push.sh
   ```
 - **所有頁面：** public/2026-04-14.html 至 public/2026-04-20.html 已統一
 
+### 部門每日統計（Issue #14）
+- **數據來源：** RSS dc:creator 欄位（feedparser 映射為 author）
+- **存儲位置：** stat/dept/YYYY/MM/DD.json
+- **生成時機：** 每次 fetch_news.py 執行後自動生成
+- **網頁顯示：** 分類統計下方，顯示 🏛️ 部門統計區塊
+- **開始日期：** 2026-04-21（不追溯）
+
 ---
 
 **最後更新：** 2026-04-21 | **Last Review：** 2026-04-21 | **維護者：** AI Agent
