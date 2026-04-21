@@ -59,12 +59,8 @@ def generate_stats(news_data, date_str):
     return stats
 
 def save_stats(stats, date_str):
-    """Save statistics to stat/YYYY/MM/DD.json"""
-    today = datetime.now()
-    year = today.strftime("%Y")
-    month = today.strftime("%m")
-    
-    output_dir = STAT_DIR / year / month
+    """Save statistics to stat/dept/YYYY-MM-DD.json"""
+    output_dir = STAT_DIR / "dept"
     output_dir.mkdir(parents=True, exist_ok=True)
     
     output_file = output_dir / f"{date_str}.json"
