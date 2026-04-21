@@ -99,6 +99,15 @@ deployment/scripts/auto-push.sh
 - **CSS：** `.back-link { display: inline-block; margin-bottom: 20px; color: #00A86B; text-decoration: none; }`
 - **所有頁面：** public/2026-04-14.html 至 public/2026-04-20.html 已統一
 
+### 章節命名（Issue #7）
+- **統一格式：** `📋 全部新聞列表`、`📊 分類統計`
+- **避免混用：** 不要用 `全部新聞` 或 `新聞分類統計`
+
+### 頁面標題與日期格式（Issue #8）
+- **Title 格式：** `澳門政府新聞總結 - YYYY-MM-DD`
+- **日期格式：** `<p><strong>日期：</strong>YYYY 年 M 月 D 日（星期 X）</p>`
+- **時區：** Asia/Macau
+
 ---
 
 **最後更新：** 2026-04-21 | **Last Review：** 2026-04-21 | **維護者：** AI Agent

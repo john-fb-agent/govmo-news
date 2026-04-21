@@ -2,7 +2,7 @@
 
 > 🤖 自動抓取、轉換並存儲澳門政府新聞局（GCS）RSS 新聞，提供 AI 每日總結與 GitHub Pages 展示
 
-[![Version](https://img.shields.io/badge/version-1.5.0-blue)](docs/更新記錄.md)
+[![Version](https://img.shields.io/badge/version-1.6.0-blue)](docs/更新記錄.md)
 [![Python](https://img.shields.io/badge/python-3.8+-yellow)](https://python.org)
 [![Status](https://img.shields.io/badge/status-✅%20Running-success)](docs/known-issues.md)
 
@@ -153,5 +153,5 @@ govmo-news/
 - **提交 Issue：** https://github.com/john-fb-agent/govmo-news/issues
 - **查看範例：** https://john-fb-agent.github.io/govmo-news/
 
-**最新版本：** 1.5.0（2026-04-21）  
+**最新版本：** 1.6.0（2026-04-21）  
 **維護者：** [@john-fb-agent](https://github.com/john-fb-agent)
