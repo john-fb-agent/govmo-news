@@ -246,13 +246,21 @@ def build_html(summary_data, date):
     
     return html
 
-def save_classification_data(summary_data, date):
+def save_classification_data(summary_data, date, raw_news_data=None):
     """Save classification data to data/classification/YYYY-MM-DD.json"""
     classification_dir = Path(__file__).parent.parent / "data" / "classification"
     classification_dir.mkdir(parents=True, exist_ok=True)
     
     date_str = date.strftime("%Y-%m-%d")
     output_file = classification_dir / f"{date_str}.json"
+    
+    # Build GUID lookup from raw news data
+    guid_lookup = {}
+    if raw_news_data:
+        for news in raw_news_data:
+            guid = news.get('guid', '')
+            if guid:
+                guid_lookup[news.get('title', '')] = guid
     
     # Extract classification data
     classification_data = {
@@ -261,6 +269,7 @@ def save_classification_data(summary_data, date):
         "category_stats": summary_data.get('category_stats', {}),
         "all_news": [
             {
+                "guid": guid_lookup.get(news.get('title', ''), ''),
                 "title": news.get('title', ''),
                 "category": news.get('category', ''),
                 "importance": news.get('importance', 1),
@@ -351,8 +360,8 @@ def main():
             send_notification("generate_summary.py", "Failed to save HTML file")
             return 1
         
-        # Save classification data
-        classification_file = save_classification_data(summary_data, date)
+        # Save classification data with GUIDs
+        classification_file = save_classification_data(summary_data, date, news_data)
         if not classification_file:
             log("⚠️ Failed to save classification data (continuing anyway)")
         
