@@ -1,50 +1,59 @@
-# Task: Classification System Upgrade (Issue #15)
+# Task: Store Classification Data (Issue #15 follow-up)
 
-**Created:** 2026-04-21 19:13  
-**Status:** Pending Verification  
+**Created:** 2026-04-21 19:45  
+**Status:** In Progress  
 **Model:** qwen/qwen3.5-plus  
-**Related Issue:** #15 (Reopened)
+**Related Issue:** #15 (classification system)
 
 ---
 
 ## 1. Work Brief
 
-**⚠️ Reopened for verification**
+Store AI-generated classification data for each news item during summary generation.
 
-Classification system updated from 8 to 10 categories. Awaiting user verification before marking complete.
-
-**Changes made:**
-- Updated summary_prompt.txt with 10 new categories
-- All category names standardized to 4 characters
-- Updated documentation (repo-agent.md, 更新記錄.md, README.md)
-- Version bumped to 1.9.0
-- Release tag v1.9.0 created
+**Requirements:**
+- Save classification results to `data/classification/YYYY-MM-DD.json`
+- Include: category, importance, title, link for each news item
+- Include category_stats summary
+- Run automatically during generate_summary.py execution
 
 ---
 
 ## 2. TODO List
 
-- [x] Update summary_prompt.txt with 10 categories
-- [x] Update repo-agent.md
-- [x] Update docs/更新記錄.md
-- [x] Update README.md
-- [x] Create release tag v1.9.0
-- [ ] **⚠️ PENDING: User verification**
-- [ ] Close Issue #15 after verification
+- [x] Create data/classification/ folder
+- [x] Add save_classification_data() function to generate_summary.py
+- [x] Integrate into save_html() workflow
+- [ ] Test with today's data
+- [ ] Commit and push changes
+- [ ] Update documentation ⚠️ (requires user approval)
 
 ---
 
 ## 3. Information
 
-**10 New Categories:**
-| 🏦 金融財政 | 💼 經濟產業 | 🔬 科技創新 |
-| 🎭 文化體育 | 🚦 交通運輸 | 🎓 教育發展 |
-| 👥 人才發展 | 🛡️ 國家安全 | 🏠 社會服務 |
-| 🏛️ 政府管治 | | |
+**File structure:**
+```
+data/
+└── classification/
+    ├── 2026-04-21.json
+    └── (future daily files)
+```
 
-**Files modified:**
-- src/summary_prompt.txt
-- repo-agent.md
-- docs/更新記錄.md
-- README.md
-- GITHUB-HISTORY.md
+**JSON format:**
+```json
+{
+  "date": "2026-04-21",
+  "total_count": 5,
+  "category_stats": {"金融財政": 1, "文化體育": 2, ...},
+  "all_news": [
+    {
+      "title": "...",
+      "category": "金融財政",
+      "importance": 2,
+      "link": "..."
+    }
+  ],
+  "generated_at": "2026-04-21T..."
+}
+```

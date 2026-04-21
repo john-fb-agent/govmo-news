@@ -246,6 +246,38 @@ def build_html(summary_data, date):
     
     return html
 
+def save_classification_data(summary_data, date):
+    """Save classification data to data/classification/YYYY-MM-DD.json"""
+    classification_dir = Path(__file__).parent.parent / "data" / "classification"
+    classification_dir.mkdir(parents=True, exist_ok=True)
+    
+    date_str = date.strftime("%Y-%m-%d")
+    output_file = classification_dir / f"{date_str}.json"
+    
+    # Extract classification data
+    classification_data = {
+        "date": date_str,
+        "total_count": summary_data.get('total_count', 0),
+        "category_stats": summary_data.get('category_stats', {}),
+        "all_news": [
+            {
+                "title": news.get('title', ''),
+                "category": news.get('category', ''),
+                "importance": news.get('importance', 1),
+                "link": news.get('link', '')
+            }
+            for news in summary_data.get('all_news', [])
+        ],
+        "generated_at": datetime.now().isoformat()
+    }
+    
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(classification_data, f, ensure_ascii=False, indent=2)
+    
+    log(f"📊 Classification saved to: {output_file}")
+    
+    return output_file
+
 def save_html(html_content, date):
     """Save HTML to docs/summary-examples/YYYY-MM-DD.html"""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -318,6 +350,11 @@ def main():
             log("❌ Failed to save HTML")
             send_notification("generate_summary.py", "Failed to save HTML file")
             return 1
+        
+        # Save classification data
+        classification_file = save_classification_data(summary_data, date)
+        if not classification_file:
+            log("⚠️ Failed to save classification data (continuing anyway)")
         
         if not commit_and_push(html_file, date):
             log("⚠️ Failed to commit/push (continuing anyway)")
