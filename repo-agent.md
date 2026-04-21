@@ -1,7 +1,7 @@
 # AI Agent 指南
 
 **創建：** 2026-04-16 20:04 | **Provider:** Qwen | **Model:** qwen/qwen3.5-plus  
-**最後更新：** 2026-04-20 | **Last Review：** 2026-04-20
+**最後更新：** 2026-04-21 | **Last Review：** 2026-04-21
 
 ---
 
@@ -60,6 +60,8 @@ gh run list --workflow deploy-pages.yml --limit 5
 ```
 src/fetch_news.py          # 主抓取
 src/rss_parser.py          # RSS 解析
+src/generate_summary.py    # AI 總結生成
+src/summary_prompt.txt     # AI 提示詞模板
 data/processed/YYYY/MM/DD.json
 public/                    # GitHub Pages
 deployment/scripts/auto-push.sh
@@ -71,9 +73,26 @@ deployment/scripts/auto-push.sh
 
 - RSS: https://govinfohub.gcs.gov.mo/api/rss/n/zh-hant
 - Pages: https://john-fb-agent.github.io/govmo-news/
+- GitHub Issues: https://github.com/john-fb-agent/govmo-news/issues
 
 ---
 
+## 📝 重要標準格式（2026-04-21 統一）
+
+### 重要性標籤
+- **格式：** `高`、`中`、`低`（不用數字或星星）
+- **CSS class：** `.importance-badge` + `.badge-high`/`.badge-medium`/`.badge-low`
+- **HTML 範例：** `<span class="importance-badge badge-high">高</span>`
+
+### 重點新聞標題
+- **統一格式：** `🔥 重點新聞（高重要性）`
+- **位置：** `<h2>` 標籤內
+- **所有頁面：** public/2026-04-14.html 至 public/2026-04-20.html 已統一
+
+### AI 提示詞（summary_prompt.txt）
+- **重要性描述：** 使用 高/中/低，不用 ⭐⭐⭐
+- **importance 值：** 3=高，2=中，1=低
+
 ---
 
-**最後更新：** 2026-04-20 | **Last Review：** 2026-04-20 | **維護者：** AI Agent
+**最後更新：** 2026-04-21 | **Last Review：** 2026-04-21 | **維護者：** AI Agent

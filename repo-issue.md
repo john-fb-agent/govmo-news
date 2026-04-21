@@ -27,7 +27,7 @@ Implement Issue #3: Standardize the "Key News" (重點新聞) section header sty
 - [x] Update generate_summary.py template
 - [x] Standardize CSS class names (.badge → .importance-badge in 2026-04-15, 2026-04-16)
 - [x] Update summary_prompt.txt (remove ⭐ emojis)
-- [ ] Commit and push changes
+- [x] Commit and push changes (commit: 52cfe45)
 - [ ] Update documentation ⚠️ (requires user approval)
 
 ---
