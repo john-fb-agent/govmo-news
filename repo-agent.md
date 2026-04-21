@@ -93,6 +93,12 @@ deployment/scripts/auto-push.sh
 - **重要性描述：** 使用 高/中/低，不用 ⭐⭐⭐
 - **importance 值：** 3=高，2=中，1=低
 
+### 返回索引頁連結
+- **格式：** `<a href="index.html" class="back-link">← 返回索引頁</a>`
+- **位置：** Footer 之前
+- **CSS：** `.back-link { display: inline-block; margin-bottom: 20px; color: #00A86B; text-decoration: none; }`
+- **所有頁面：** public/2026-04-14.html 至 public/2026-04-20.html 已統一
+
 ---
 
 **最後更新：** 2026-04-21 | **Last Review：** 2026-04-21 | **維護者：** AI Agent
