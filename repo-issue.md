@@ -25,7 +25,10 @@ Store AI-generated classification data for each news item during summary generat
 - [x] Add save_classification_data() function to generate_summary.py
 - [x] Include GUID field for linking to original data
 - [x] Integrate into save_html() workflow
-- [ ] Test with today's data
+- [x] Create generate_classification_stats.py script
+- [x] Store stats in stat/class/YYYY/MM/DD.json
+- [x] Integrated into generate_summary.py workflow
+- [x] Test with today's data
 - [ ] Commit and push changes
 - [ ] Update documentation ⚠️ (requires user approval)
 
