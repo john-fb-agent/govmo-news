@@ -192,7 +192,7 @@ def build_html(summary_data, date):
         </header>
 
         <section class="highlights">
-            <h2>🔑 重點新聞</h2>
+            <h2>🔥 重點新聞（高重要性）</h2>
             {highlights_html}
         </section>
 
