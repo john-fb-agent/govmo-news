@@ -134,7 +134,10 @@ deployment/scripts/auto-push.sh
   - 👥 人才發展、🛡️ 國家安全、🏠 社會服務
   - 🏛️ 政府管治
 - **AI 提示詞：** src/summary_prompt.txt
-- **實施日期：** 2026-04-21 起（待確認）
+- **分類數據存儲：** data/classification/YYYY-MM-DD.json
+- **統計數據存儲：** stat/class/YYYY/MM/DD.json
+- **生成腳本：** generate_summary.py + generate_classification_stats.py
+- **實施日期：** 2026-04-21 起
 
 ---
 
