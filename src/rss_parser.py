@@ -38,6 +38,13 @@ class RSSParser:
             # Use RSS guid for deduplication
             news_id = entry.get("id", entry.get("link", ""))
             
+            # Extract dc:creator (department) - may be in different namespaces
+            department = None
+            for key in entry.keys():
+                if 'creator' in key.lower() or 'dc:creator' in key.lower():
+                    department = entry[key]
+                    break
+            
             news_item = {
                 "title": entry.get("title", ""),
                 "link": entry.get("link", ""),
@@ -45,6 +52,7 @@ class RSSParser:
                 "published": entry.get("published", ""),
                 "published_parsed": self._parse_date(entry.get("published_parsed")),
                 "summary": entry.get("summary", ""),
+                "department": department,  # dc:creator
                 "fetched_at": datetime.now().isoformat()
             }
             entries.append(news_item)

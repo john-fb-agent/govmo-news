@@ -135,6 +135,18 @@ def build_html(summary_data, date):
         </div>
         """
     
+    # Build department stats HTML
+    dept_stats_html = ""
+    dept_stats = summary_data.get("department_stats", {})
+    if dept_stats:
+        for dept, count in sorted(dept_stats.items(), key=lambda x: x[1], reverse=True):
+            dept_stats_html += f"""
+            <div class="dept-stat-item">
+                <span class="dept-name">{dept}</span>
+                <span class="dept-count">{count}</span>
+            </div>
+            """
+    
     # Build full list HTML (grouped by category)
     from collections import defaultdict
     by_category = defaultdict(list)
@@ -179,6 +191,11 @@ def build_html(summary_data, date):
         .stat-card {{ background: #f8f9fa; padding: 15px; text-align: center; border-radius: 8px; }}
         .stat-number {{ font-size: 2em; font-weight: bold; color: #007bff; }}
         .stat-label {{ color: #666; font-size: 0.9em; }}
+        .dept-stats {{ margin-bottom: 30px; }}
+        .dept-stats-list {{ display: flex; flex-wrap: wrap; gap: 10px; }}
+        .dept-stat-item {{ background: #e3f2fd; padding: 8px 15px; border-radius: 20px; display: flex; align-items: center; gap: 10px; }}
+        .dept-name {{ color: #1976d2; font-weight: 600; }}
+        .dept-count {{ background: #1976d2; color: white; padding: 2px 10px; border-radius: 12px; font-size: 0.85em; font-weight: bold; }}
         .back-link {{ display: inline-block; margin-bottom: 20px; color: #007bff; text-decoration: none; }}
         .back-link:hover {{ text-decoration: underline; }}
         footer {{ text-align: center; color: #999; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; }}
@@ -202,6 +219,13 @@ def build_html(summary_data, date):
             <h2>📊 分類統計</h2>
             <div class="stats-grid">
                 {stats_html}
+            </div>
+        </section>
+
+        <section class="dept-stats">
+            <h2>🏛️ 部門統計</h2>
+            <div class="dept-stats-list">
+                {dept_stats_html}
             </div>
         </section>
 

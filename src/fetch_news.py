@@ -124,6 +124,12 @@ def main():
         logger.info(f"Duplicates skipped: {duplicate_count}")
         logger.info("=" * 60)
         
+        # Generate department statistics
+        logger.info("Generating department statistics...")
+        dept_stats_script = base_dir / "src" / "generate_department_stats.py"
+        if dept_stats_script.exists():
+            subprocess.run(['python3', str(dept_stats_script)], cwd=base_dir)
+        
         return 0
         
     except Exception as e:
