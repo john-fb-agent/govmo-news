@@ -1,42 +1,229 @@
 {
   "date": "2026-04-21",
-  "news": [
+  "total_news": 24,
+  "classifications": [
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DT5ykAa",
-      "title": "澳旅大聯同騰訊智慧文旅 與業界共探AI賦能酒旅行業新機遇",
-      "category": "科技創新",
-      "importance": 3,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DT5ykAa"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DVmsUtY",
-      "title": "氣象局舉行內部熱帶氣旋演習 持續提升預報預警與應急處理能力",
-      "category": "交通運輸",
+      "index": 1,
+      "title": "打擊非法工作行動2026年3月份統計資料",
+      "department": "治安警察局",
+      "category": "政府管治",
       "importance": 2,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVmsUtY"
+      "importance_reason": "執法統計數據公佈，巡查445地點、截獲79人，常規執法報告"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DVon9wr",
-      "title": "房屋局開展23間公屋商舖租賃之公開招標 設3個月免租優惠",
+      "index": 2,
+      "title": "大漢氣象──徐州漢代文物精品展覽開放參觀",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 1,
+      "importance_reason": "文物展覽，常規文化活動"
+    },
+    {
+      "index": 3,
+      "title": "全國政協委員賀凱琪與澳門旅遊大學學生分享交流",
+      "department": "澳門旅遊大學",
+      "category": "教育發展",
+      "importance": 2,
+      "importance_reason": "政協委員與學生交流，涉及大灣區文旅機遇及十五五規劃，有一定政策含義"
+    },
+    {
+      "index": 4,
+      "title": "金管局赴深圳舉辦澳門投資基金業務推介活動",
+      "department": "澳門金融管理局",
+      "category": "金融財政",
+      "importance": 2,
+      "importance_reason": "跨境金融推介會，宣介《投資基金法》，吸引投資落戶澳門，涉及深澳金融合作"
+    },
+    {
+      "index": 5,
+      "title": "「海倫娜·阿爾梅達：我在這裡」展覽月杪結束",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 1,
+      "importance_reason": "當代藝術展覽，常規文化活動"
+    },
+    {
+      "index": 6,
+      "title": "市政署驗出生醃蝦樣本含過量副溶血性弧菌 勒令停售",
+      "department": "市政署",
       "category": "社會服務",
-      "importance": 3,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVon9wr"
+      "importance": 2,
+      "importance_reason": "食品安全事故執法，涉及公眾健康，常規食安抽檢後的跟進處理"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DUgcWX2",
-      "title": "第二期基本生命支持課程（BLS）自今（22）日起接受報名",
+      "index": 7,
+      "title": "市政署關注多個地區出現高致病性禽流感",
+      "department": "市政署",
       "category": "社會服務",
-      "importance": 3,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUgcWX2"
+      "importance": 2,
+      "importance_reason": "公共衛生風險預警，涉及印度、智利、英國H5N1疫區入口管制，預防性措施"
     },
     {
-      "guid": "",
-      "title": "66人獲選為「閱讀達人」 首場青年讀書會邀王十月來澳分享",
+      "index": 8,
+      "title": "大連理工大學代表團來訪澳門理工大學深化合作",
+      "department": "澳門理工大學",
+      "category": "教育發展",
+      "importance": 1,
+      "importance_reason": "高校代表團來訪，常規校際交流活動"
+    },
+    {
+      "index": 9,
+      "title": "「預防蚊媒傳染病社區諮詢站」活動圓滿結束 逾萬人次參與",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "防治登革熱及基孔肯雅熱的社區防疫行動，跨部門合作，觸及萬人次，公共衛生"
+    },
+    {
+      "index": 10,
+      "title": "行政長官岑浩輝拜會葡萄牙總統塞古羅",
+      "department": "新聞局",
+      "category": "政府管治",
+      "importance": 3,
+      "importance_reason": "行政長官首次外訪並拜會葡國總統，談一國兩制成功實踐、中葡平台、十五五規劃對接、三五規劃編製、中葡論壇部長級會議籌備，屬重大外交行動"
+    },
+    {
+      "index": 11,
+      "title": "行政長官岑浩輝拜會葡萄牙總理蒙特內格羅",
+      "department": "新聞局",
+      "category": "政府管治",
+      "importance": 3,
+      "importance_reason": "行政長官拜會葡國總理，談澳葡經贸合作、司法、文化、葡語推廣、开通直航、澳葡聯合委員會，代表團含內地省市企業家，屬重大外交行動"
+    },
+    {
+      "index": 12,
+      "title": "行政長官岑浩輝拜會葡萄牙最高司法法院院長馬里亞諾",
+      "department": "新聞局",
+      "category": "政府管治",
+      "importance": 2,
+      "importance_reason": "司法領域交流，涉及葡籍法官招聘、第十三屆葡語國家最高法院論壇，重要性中等"
+    },
+    {
+      "index": 13,
+      "title": "行政長官岑浩輝拜會葡萄牙議會議長阿吉亞爾-布蘭科",
+      "department": "新聞局",
+      "category": "政府管治",
+      "importance": 3,
+      "importance_reason": "行政高峰會見，澳葡立法機關友好交往、互鑑立法經驗，一國兩制國際典範，屬重大外交行動"
+    },
+    {
+      "index": 14,
+      "title": "行政長官岑浩輝與葡萄牙國務部長兼外交部長保羅·蘭熱爾會面",
+      "department": "新聞局",
+      "category": "政府管治",
+      "importance": 2,
+      "importance_reason": "外交部長級會面，談人才引進、葡語教育、澳門葡文學校、創科合作，重要性中等"
+    },
+    {
+      "index": 15,
+      "title": "岑浩輝總結訪葡行程取得積極成效",
+      "department": "新聞局",
+      "category": "政府管治",
+      "importance": 3,
+      "importance_reason": "行政長官外訪總結，涉及61項合作協議簽署，涵蓋經贸高新科技旅遊教育大健康會展文化，重大外交成果報告"
+    },
+    {
+      "index": 16,
+      "title": "澳大學人分享電力電子技術構建低碳智慧城市",
+      "department": "澳門大學",
+      "category": "科技創新",
+      "importance": 1,
+      "importance_reason": "學術講座，分享電力電子、無線電力傳輸研究，常規學術活動"
+    },
+    {
+      "index": 17,
+      "title": "澳大與美高梅合辦領導技巧證書課程",
+      "department": "澳門大學",
+      "category": "人才發展",
+      "importance": 1,
+      "importance_reason": "領導力培訓課程，校企合作小型人才培育項目"
+    },
+    {
+      "index": 18,
+      "title": "教青局組織穗澳葡學生在葡進行文化活動",
+      "department": "教育及青年發展局",
+      "category": "教育發展",
+      "importance": 2,
+      "importance_reason": "三地姐妹學校交流，30多名師生在葡進行跨洋對話，涉及愛國情懷及中葡人文交流，重要教育外交"
+    },
+    {
+      "index": 19,
+      "title": "「澳門—葡萄牙經貿合作推介會」促成43份簽約及94場商業配對",
+      "department": "招商投資促進局",
+      "category": "經濟產業",
+      "importance": 3,
+      "importance_reason": "重大經贸推介活動，約300位政商代表參與，43份簽約，94場商業配對，涉及高新科技、旅遊基建、國際仲裁新能源，直接推動中葡商貿合作"
+    },
+    {
+      "index": 20,
+      "title": "衛生局接獲1例軍團菌病例通報",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "傳染病個案通報，71歲居民感染，病情穩定，屬常規公共衛生監測"
+    },
+    {
+      "index": 21,
+      "title": "衛生局接獲6宗流感樣疾病群集性感染報告",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "6間學校共48名學生感染乙型流感，1人住院，屬季節性流感群集性爆發"
+    },
+    {
+      "index": 22,
+      "title": "澳門非遺傳習群體赴葡大放異彩",
+      "department": "文化局",
       "category": "文化體育",
       "importance": 2,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVdYR5Q"
+      "importance_reason": "粵劇、舞獅、詠春拳、神像雕刻赴葡里斯本表演，4場工作坊，配合鏡海融光展覽，中葡文化交流"
+    },
+    {
+      "index": 23,
+      "title": "生產力中心與工聯婦聯簽署職業技能考試合作協議",
+      "department": "生產力暨科技轉移中心",
+      "category": "人才發展",
+      "importance": 2,
+      "importance_reason": "職業技能電子化考試合作協議，對接國家標準，資源共享，電子化評核，涉及澳門技能評價體系現代化"
+    },
+    {
+      "index": 24,
+      "title": "「科學精神 青春綻放—杭州科創企業與澳門青年面對面2026」下周一舉行",
+      "department": "教育及青年發展局",
+      "category": "人才發展",
+      "importance": 2,
+      "importance_reason": "6家杭州科技企業來澳與青年交流，包括機械人及腦機接口等前沿科技，進校分享，有助青年科技視野拓展"
+    },
+    {
+      "index": 25,
+      "title": "衛生局聯同教青局為教師舉辦健康促進培訓課程",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 1,
+      "importance_reason": "教師健康促進培訓，8場課程至11月，常規健康社區計劃進校園"
+    },
+    {
+      "index": 26,
+      "title": "內地首個澳門稅務服務專窗落地橫琴",
+      "department": "橫琴粵澳深度合作區商事服務局",
+      "category": "金融財政",
+      "importance": 2,
+      "importance_reason": "澳門稅務服務專窗正式啟用，琴澳跨境政務服務創新，5項代收服務，涉及澳人澳企便民利企，規則銜接機制對接"
     }
   ],
-  "generated_at": "2026-04-22T17:53:05.337166",
-  "model": "MiniMax-M2.7"
+  "category_summary": {
+    "政府管治": 7,
+    "社會服務": 5,
+    "教育發展": 3,
+    "人才發展": 3,
+    "文化體育": 3,
+    "金融財政": 2,
+    "經濟產業": 1,
+    "科技創新": 1
+  },
+  "importance_summary": {
+    "高（3分）": 5,
+    "中（2分）": 14,
+    "低（1分）": 7
+  }
 }

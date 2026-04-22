@@ -1,0 +1,123 @@
+{
+  "date": "2026-04-22",
+  "total_news": 13,
+  "classifications": [
+    {
+      "index": 1,
+      "title": "澳旅大聯同騰訊智慧文旅 與業界共探AI賦能酒旅行業新機遇",
+      "department": "澳門旅遊大學",
+      "category": "科技創新",
+      "importance": 2,
+      "importance_reason": "AI應用於旅遊業的產學研合作，涉及騰訊與綜合度假村，但屬部門活動非重大政策"
+    },
+    {
+      "index": 2,
+      "title": "氣象局舉行內部熱帶氣旋演習 持續提升預報預警與應急處理能力",
+      "department": "地球物理氣象局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "年度內部颱風演習，常規應急準備，但涉及公眾安全及風季來臨前的警示"
+    },
+    {
+      "index": 3,
+      "title": "房屋局開展23間公屋商舖租賃之公開招標 設3個月免租優惠",
+      "department": "房屋局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "公共房屋商舖招標，常規政府採購，直接關係社區商業配套與中小企商機"
+    },
+    {
+      "index": 4,
+      "title": "第二期基本生命支持課程（BLS）自今（22）日起接受報名",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 1,
+      "importance_reason": "醫療人員培訓課程，常規部門活動，規模有限"
+    },
+    {
+      "index": 5,
+      "title": "66人獲選為「閱讀達人」 首場青年讀書會邀王十月來澳分享",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 1,
+      "importance_reason": "閱讀推廣小活動，66人參與，為常规文化項目"
+    },
+    {
+      "index": 6,
+      "title": "第一屆「走進澳門街」短視頻比賽現正接受報名",
+      "department": "生產力暨科技轉移中心 / 勞工事務局",
+      "category": "文化體育",
+      "importance": 1,
+      "importance_reason": "社區文化短視頻比賽，社區經濟與文化傳承結合的小型活動"
+    },
+    {
+      "index": 7,
+      "title": "市政署每月公開會議於本周五舉行",
+      "department": "市政署",
+      "category": "政府管治",
+      "importance": 1,
+      "importance_reason": "每月例行公開會議，常規政府管治實踐"
+    },
+    {
+      "index": 8,
+      "title": "跨部門推出「休」遊巴士·社區探趣 三主題六路線九上落點聯動三百特色商戶",
+      "department": "經濟及科技發展局 / 旅遊局 / 博彩監察協調局 / 交通事務局 / 治安警察局 / 市政署",
+      "category": "交通運輸",
+      "importance": 2,
+      "importance_reason": "六大部門跨局協作配合綜合度假休閒企業，涉及交通與社區經濟，受影響面廣，但非立法或重大政策"
+    },
+    {
+      "index": 9,
+      "title": "澳門招商局於西班牙路展設展位 以會展帶動中西經貿合作與投資",
+      "department": "招商投資促進局",
+      "category": "經濟產業",
+      "importance": 2,
+      "importance_reason": "海外路展招商，常規經貿推廣活動，涉及120人企業家代表團及第31屆MIF西語國家展區推介"
+    },
+    {
+      "index": 10,
+      "title": "最新超市物價調查已上線供比較",
+      "department": "消費者委員會",
+      "category": "社會服務",
+      "importance": 1,
+      "importance_reason": "物價資訊發布，常規消費者保護工作"
+    },
+    {
+      "index": 11,
+      "title": "就《殘疾人權利公約》第四及第五次合併履約報告收集公眾意見",
+      "department": "法務局",
+      "category": "政府管治",
+      "importance": 2,
+      "importance_reason": "向聯合國提交履約報告前的公眾諮詢，涉及國際公約義務與殘疾人權利保障，重要性中等"
+    },
+    {
+      "index": 12,
+      "title": "「一戶通」增殘疾評估登記證續期及殘疾津貼申請辦理功能",
+      "department": "社會工作局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "電子政務擴展到殘疾服務，影響弱勢群體日常行政便利，為重要民生服務改進"
+    },
+    {
+      "index": 13,
+      "title": "2026年第一季共發現1,524宗違法個案 衛生局呼籲業界遵守《控煙法》和《控酒法》規定",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "執法數據公佈及公眾呼籲，非新政策但涉及公共衛生執法，違法吸煙場所涵蓋娛樂場等公共地方"
+    }
+  ],
+  "category_summary": {
+    "社會服務": 5,
+    "政府管治": 2,
+    "科技創新": 1,
+    "交通運輸": 1,
+    "經濟產業": 1,
+    "文化體育": 2
+  },
+  "importance_summary": {
+    "高（3分）": 0,
+    "中（2分）": 8,
+    "低（1分）": 5
+  }
+}
