@@ -1,7 +1,7 @@
 # AI Agent 指南
 
-**創建：** 2026-04-16 20:04 | **Provider:** Qwen | **Model:** qwen/qwen3.5-plus  
-**最後更新：** 2026-04-21 | **Last Review：** 2026-04-21
+**創建：** 2026-04-16 20:04 | **Provider:** OpenClaw | **Model:** minimax/MiniMax-M2.7  
+**最後更新：** 2026-04-22 | **Last Review：** 2026-04-22
 
 ---
 
@@ -49,22 +49,32 @@ gh run list --workflow deploy-pages.yml --limit 5
 
 ## ⏰ Cron
 
-| 09/11/13/15/18 | 01:00 | 08:00 |
-|----------------|-------|-------|
-| 新聞抓取 | 自動推送 | AI 總結 |
+| 時間 | 任務 |
+|------|------|
+| 09/11/13/15/18 時 | 新聞抓取 |
+| 08:00 UTC (16:00 Macau) | AI 總結生成 |
+
+**Cron ID:** `6d4bc06c-6dfe-4801-ba12-af71874a1a58`
+**Session:** `isolated` + `session-key: agent:main:main`（使用 main session 的 AI 憑證）
+**Timeout:** 1800s（30 分鐘）
+**Delivery:** none
+
+⚠️ 重要：不要使用 `--session main`（需要 systemEvent payload），使用 `session-key agent:main:main` 代替。
 
 ---
 
 ## 📁 關鍵文件
 
 ```
-src/fetch_news.py          # 主抓取
-src/rss_parser.py          # RSS 解析
-src/generate_summary.py    # AI 總結生成
-src/summary_prompt.txt     # AI 提示詞模板
-data/processed/YYYY/MM/DD.json
-public/                    # GitHub Pages
-deployment/scripts/auto-push.sh
+src/fetch_news.py                      # 新聞抓取
+src/rss_parser.py                      # RSS 解析
+src/generate_summary.py                 # AI 總結生成（使用 OpenClaw agent CLI）
+src/generate_classification_stats.py    # 分類統計（支援 YYYY-MM-DD 參數）
+src/summary_prompt.txt                  # AI 提示詞模板
+data/processed/YYYY/MM/DD.json          # 原始新聞數據
+data/classification/YYYY-MM-DD.json   # 分類結果
+stat/class/YYYY/MM/DD.json             # 分類統計
+public/                                # GitHub Pages
 ```
 
 ---
@@ -114,10 +124,9 @@ deployment/scripts/auto-push.sh
   <div class="footer">
       <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
       <strong>生成時間：</strong>YYYY-MM-DD HH:MM (Asia/Macau)<br>
-      <strong>Provider:</strong> Qwen | <strong>Model:</strong> qwen3.5-plus
+      <strong>Provider:</strong> OpenClaw | <strong>Model:</strong> minimax/MiniMax-M2.7
   </div>
   ```
-- **所有頁面：** public/2026-04-14.html 至 public/2026-04-20.html 已統一
 
 ### 部門每日統計（Issue #14）
 - **數據來源：** RSS dc:creator 欄位（feedparser 映射為 author）
@@ -127,18 +136,22 @@ deployment/scripts/auto-push.sh
 - **開始日期：** 2026-04-21（不追溯）
 
 ### 新聞分類系統（Issue #15）
-- **分類數量：** 10 類（全部 4 個字）
+- **分類數量：** 10 類
 - **分類列表：**
   - 🏦 金融財政、💼 經濟產業、🔬 科技創新
   - 🎭 文化體育、🚦 交通運輸、🎓 教育發展
   - 👥 人才發展、🛡️ 國家安全、🏠 社會服務
   - 🏛️ 政府管治
 - **AI 提示詞：** src/summary_prompt.txt
-- **分類數據存儲：** data/classification/YYYY-MM-DD.json
+- **分類數據存儲：** data/classification/YYYY-MM-DD.json（鍵名：`classifications`）
 - **統計數據存儲：** stat/class/YYYY/MM/DD.json
-- **生成腳本：** generate_summary.py + generate_classification_stats.py
+- **生成腳本：**
+  - `generate_summary.py` — 主腳本，生成 HTML + 分類 + 統計
+  - `generate_classification_stats.py` — 獨立統計腳本，支援 `python3 script.py YYYY-MM-DD`
+- **重要：** `generate_summary.py` 的 `save_html()` 不再覆蓋 `index.html`
+- **HTML 章節順序：** 頁面標題 → 🔥 今日綜合摘要 → 📊 分類統計 → 🔥 重點新聞 → 📋 全部新聞列表
 - **實施日期：** 2026-04-21 起
 
 ---
 
-**最後更新：** 2026-04-21 | **Last Review：** 2026-04-21 | **維護者：** AI Agent
+**最後更新：** 2026-04-22 | **Last Review：** 2026-04-22 | **維護者：** AI Agent
