@@ -2,11 +2,11 @@
 
 > 🤖 自動抓取、轉換並存儲澳門政府新聞局（GCS）RSS 新聞，提供 AI 每日總結與 GitHub Pages 展示
 
-[![Version](https://img.shields.io/badge/version-1.10.0-blue)](docs/更新記錄.md)
+[![Version](https://img.shields.io/badge/version-1.11.0-blue)](docs/更新記錄.md)
 [![Python](https://img.shields.io/badge/python-3.8+-yellow)](https://python.org)
 [![Status](https://img.shields.io/badge/status-✅%20Running-success)](docs/known-issues.md)
 
-**🌐 查看最新新聞總結：** https://john-fb-agent.github.io/govmo-news/
+**🌐 查看最新新聞總結：** https://john-fb-agent.github.io/govmo-news/index.html
 
 ---
 
@@ -94,7 +94,7 @@ python3 src/fetch_news.py
 - ✅ **HTML 輸出** — 美觀的網頁格式
 - ✅ **自動部署** — GitHub Actions 自動發布到 Pages
 
-**查看範例：** https://john-fb-agent.github.io/govmo-news/2026-04-17.html
+**查看範例：** https://john-fb-agent.github.io/govmo-news/2026-04-21.html
 
 ---
 
@@ -103,10 +103,11 @@ python3 src/fetch_news.py
 ```
 govmo-news/
 ├── src/
-│   ├── fetch_news.py        # 主抓取腳本
-│   ├── rss_parser.py        # RSS 解析器
-│   ├── generate_summary.py  # AI 總結生成
-│   └── summary_prompt.txt   # AI 提示詞模板
+│   ├── fetch_news.py                   # 新聞抓取
+│   ├── rss_parser.py                    # RSS 解析器
+│   ├── generate_summary.py              # AI 總結生成（OpenClaw agent CLI）
+│   ├── generate_classification_stats.py  # 分類統計（支援 YYYY-MM-DD）
+│   └── summary_prompt.txt              # AI 提示詞模板
 ├── data/
 │   └── processed/           # 新聞 JSON（年/月/日.json）
 ├── public/                  # GitHub Pages 輸出
@@ -155,5 +156,5 @@ govmo-news/
 - **提交 Issue：** https://github.com/john-fb-agent/govmo-news/issues
 - **查看範例：** https://john-fb-agent.github.io/govmo-news/
 
-**最新版本：** 1.10.0（2026-04-21）  
+**最新版本：** 1.11.0（2026-04-21）  
 **維護者：** [@john-fb-agent](https://github.com/john-fb-agent)
