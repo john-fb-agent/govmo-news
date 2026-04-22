@@ -26,7 +26,7 @@
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DUgcWX2",
       "title": "第二期基本生命支持課程（BLS）自今（22）日起接受報名",
       "category": "社會服務",
-      "importance": 2,
+      "importance": 3,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUgcWX2"
     },
     {
@@ -37,6 +37,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVdYR5Q"
     }
   ],
-  "generated_at": "2026-04-22T17:48:51.144027",
+  "generated_at": "2026-04-22T17:53:05.337166",
   "model": "MiniMax-M2.7"
 }
