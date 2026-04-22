@@ -232,9 +232,6 @@ def save_html(html, date):
     out_file = OUTPUT_DIR / f"{date_str}.html"
     with open(out_file, "w", encoding="utf-8") as f:
         f.write(html)
-    # update index
-    with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
-        f.write(html)
     log(f"HTML saved: {out_file}")
     return out_file
 
