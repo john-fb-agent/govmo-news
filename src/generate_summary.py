@@ -1,233 +1,179 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Generate Daily News Summary HTML
-Run daily at 8:00 AM to summarize yesterday's news
-"""
+"""Generate Daily News Summary HTML using MiniMax direct API."""
 
-import json
-import subprocess
+import json, re, requests, subprocess, time, os
 from pathlib import Path
 from datetime import datetime, timedelta
+from collections import Counter, defaultdict
 
-# Configuration
-OUTPUT_DIR = Path(__file__).parent.parent / "docs" / "summary-examples"
+API_KEY = os.environ.get("MINIMAX_API_KEY", "")
+if not API_KEY:
+    cred = Path.home() / ".openclaw" / "credentials" / "minimax-default.apikey.json"
+    if cred.exists():
+        API_KEY = json.loads(cred.read_text())["apiKey"]
+if not API_KEY:
+    raise ValueError("MINIMAX_API_KEY not set")
+API_URL  = "https://api.minimaxi.com/v1/chat/completions"
+MODEL    = "MiniMax-M2.7"
+BATCH_SIZE      = 5
+REQUEST_TIMEOUT = 120
+API_DELAY       = 0.3
+MAX_TOKENS      = 2500
+
 PROMPT_FILE = Path(__file__).parent / "summary_prompt.txt"
-LOG_FILE = Path(__file__).parent.parent / "data" / "summary.log"
+OUTPUT_DIR  = Path(__file__).parent.parent / "public"
+LOG_FILE    = Path(__file__).parent.parent / "data" / "summary.log"
 
-def log(message):
-    """Log message to file and console"""
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log_msg = f"{timestamp} - {message}"
-    print(log_msg)
-    with open(LOG_FILE, 'a', encoding='utf-8') as f:
-        f.write(log_msg + "\n")
+def log(msg):
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    line = f"{ts} - {msg}"
+    print(line)
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(line + "\n")
 
-def load_yesterday_news():
-    """Load yesterday's news JSON"""
-    yesterday = datetime.now() - timedelta(days=1)
+def call_minimax(prompt):
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {API_KEY}",
+    }
+    payload = {
+        "model": MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": MAX_TOKENS,
+        "temperature": 0.1,
+    }
+    resp = requests.post(API_URL, headers=headers, json=payload, timeout=REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    raw = resp.json()["choices"][0]["message"]["content"]
+    # Strip <thinking> tags
+    content = re.sub(r"<[^>]*>", "", raw).strip()
+    return content
+
+def load_news(date):
+    """Load news JSON for a given date."""
     news_file = Path(__file__).parent.parent / "data" / "processed" / \
-                yesterday.strftime("%Y") / yesterday.strftime("%m") / \
-                f"{yesterday.strftime('%d')}.json"
-    
+                date.strftime("%Y") / date.strftime("%m") / f"{date.strftime('%d')}.json"
     if not news_file.exists():
-        log(f"❌ News file not found: {news_file}")
-        return None, yesterday
-    
-    with open(news_file, 'r', encoding='utf-8') as f:
-        news_data = json.load(f)
-    
-    log(f"📰 Loaded {len(news_data)} news items from {yesterday.strftime('%Y-%m-%d')}")
-    return news_data, yesterday
+        log(f"  File not found: {news_file}")
+        return None
+    with open(news_file, "r", encoding="utf-8") as f:
+        return json.load(f)
 
-def classify_news_batch(news_batch, batch_num, total_batches):
-    """Classify a single batch of news (max 10 items)"""
-    import re
-    import os
-    
-    # Load prompt template
-    with open(PROMPT_FILE, 'r', encoding='utf-8') as f:
-        prompt_template = f.read()
-    
-    # Simplify news data
-    simplified_news = []
-    for news in news_batch:
-        summary = news.get("summary", "")
-        summary = re.sub(r'<[^>]+>', '', summary)
-        summary = summary[:40]  # Very short to fit in context window
-        
-        simplified_news.append({
-            "title": news.get("title", ""),
-            "summary": summary,
-            "link": news.get("link", "")
-        })
-    
-    # Modify prompt for batch processing
-    batch_prompt = prompt_template.replace(
-        "{news_json}", 
-        json.dumps(simplified_news, ensure_ascii=False)
-    )
-    batch_prompt += f"\n\n# Note: This is batch {batch_num}/{total_batches}. Classify only the news items provided above."
-    
-    log(f"🤖 Classifying batch {batch_num}/{total_batches} ({len(news_batch)} items)...")
-    
-    env = os.environ.copy()
-    env['PATH'] = '/home/js/.npm-global/bin:' + env.get('PATH', '')
-    env['MINIMAX_API_KEY'] = 'sk-cp-Az2RcC4KRghqVKofbSjGIg9wNOtdqfVaSkIWOR5zwygg6ko9DJEtl01cqTpdPGpeH8qAIEdaCpJ6ez2wd0Sp6_cMFSdv0537pkjtNT_XyqS2X5oywBcEiQ4'
-    
-    proc = subprocess.Popen(
-        ['/home/js/.npm-global/bin/openclaw', 'infer', 'model', 'run',
-         '--prompt', batch_prompt,
-         '--model', 'minimax/MiniMax-M2.5'],
-        stdin=subprocess.DEVNULL,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        env=env
-    )
-    try:
-        stdout, stderr = proc.communicate(timeout=300)
-    except subprocess.TimeoutExpired:
-        proc.kill()
-        stdout, stderr = proc.communicate()
-        log(f"❌ Batch {batch_num} timed out after 300s")
-        return None
-    result = type('obj', (object,), {'returncode': proc.returncode, 'stdout': stdout, 'stderr': stderr})()
-    
-    if result.returncode == 0:
+def build_classify_prompt(news_items, batch_num, total_batches):
+    """Build the classification prompt from summary_prompt.txt template."""
+    with open(PROMPT_FILE, "r", encoding="utf-8") as f:
+        template = f.read()
+    # Simplify items
+    simplified = []
+    for n in news_items:
+        s = re.sub(r"<[^>]+>", "", n.get("summary", ""))[:30]
+        simplified.append({"title": n.get("title",""), "summary": s, "link": n.get("link","")})
+    prompt = template.replace("{news_json}", json.dumps(simplified, ensure_ascii=False))
+    prompt += f"\n\n# Note: This is batch {batch_num}/{total_batches}."
+    return prompt
+
+def classify_batch(news_batch, batch_num, total_batches):
+    """Call MiniMax API for a batch of news. Retries once on JSON parse failure."""
+    prompt = build_classify_prompt(news_batch, batch_num, total_batches)
+    log(f"  Batch {batch_num}/{total_batches}: calling API ({len(news_batch)} items)...")
+
+    def _try_parse(raw):
+        if "{" not in raw:
+            return None, f"no brace: {raw[:80]}"
+        # Find JSON start — scan for outermost '{'
+        start = raw.find("{")
+        json_str = raw[start:]
+        # Use raw_decode to auto-find valid JSON end
         try:
-            ai_output = result.stdout.strip()
-            if ai_output.startswith('```json'):
-                ai_output = ai_output[7:]
-            if ai_output.endswith('```'):
-                ai_output = ai_output[:-3]
-            
-            batch_result = json.loads(ai_output.strip())
-            log(f"✅ Batch {batch_num}/{total_batches} completed")
-            return batch_result.get('all_news', [])
+            obj, idx = json.JSONDecoder().raw_decode(json_str)
+        except json.JSONDecodeError as e:
+            return None, f"JSON error: {e}"
+        items = obj.get("all_news", [])
+        return items, None
+
+    for attempt in range(2):
+        try:
+            raw = call_minimax(prompt)
+            items, err = _try_parse(raw)
+            if err:
+                log(f"  Batch {batch_num} attempt {attempt+1} failed: {err}")
+                if attempt == 0:
+                    time.sleep(2)  # brief pause before retry
+                    continue
+                return None
+            log(f"  Batch {batch_num} OK: {len(items)} classified")
+            return items
         except Exception as e:
-            log(f"❌ Failed to parse batch {batch_num}: {e}")
+            log(f"  Batch {batch_num} error: {e}")
             return None
-    else:
-        log(f"❌ Batch {batch_num} failed: {result.stderr[:200]}")
-        return None
+    return None
 
 def generate_summary(news_data, date):
-    """Call OpenClaw AI to generate JSON summary, then convert to HTML
-    
-    Processes news in batches of 10 to avoid timeout issues.
-    """
+    """Classify all news items and build summary data dict."""
     if not PROMPT_FILE.exists():
-        log(f"❌ Prompt file not found: {PROMPT_FILE}")
+        log(f"Prompt file not found: {PROMPT_FILE}")
         return None
-    
-    # Process in batches of 5 items (smaller batches to avoid timeout)
-    BATCH_SIZE = 5
+    total = len(news_data)
+    total_batches = (total + BATCH_SIZE - 1) // BATCH_SIZE
     all_classified = []
-    total_batches = (len(news_data) + BATCH_SIZE - 1) // BATCH_SIZE
-    
-    for i in range(0, len(news_data), BATCH_SIZE):
-        batch = news_data[i:i + BATCH_SIZE]
-        batch_num = (i // BATCH_SIZE) + 1
-        
-        batch_result = classify_news_batch(batch, batch_num, total_batches)
-        if batch_result:
-            all_classified.extend(batch_result)
+    for i in range(0, total, BATCH_SIZE):
+        batch = news_data[i:i+BATCH_SIZE]
+        batch_num = i // BATCH_SIZE + 1
+        result = classify_batch(batch, batch_num, total_batches)
+        if result:
+            all_classified.extend(result)
         else:
-            log(f"⚠️ Batch {batch_num} failed, skipping...")
-    
+            log(f"  Batch {batch_num} failed, skipping...")
+        time.sleep(API_DELAY)
     if not all_classified:
-        log("❌ All batches failed")
+        log("All batches failed")
         return None
-    
-    log(f"✅ All batches completed. Total classified: {len(all_classified)}")
-    
-    # Build summary data from classified news
-    from collections import Counter
-    category_stats = Counter(item.get('category', '其他') for item in all_classified)
-    
-    # Get highlights (importance >= 3)
-    highlights = [item for item in all_classified if item.get('importance', 1) >= 3][:5]
-    
-    summary_data = {
-        "date": date.strftime("%Y年%m月%d日"),
+    log(f"Classified {len(all_classified)} items total")
+    category_stats = Counter(it.get("category","其他") for it in all_classified)
+    highlights = [it for it in all_classified if it.get("importance",1) >= 3][:5]
+    return {
+        "date": date.strftime("YYYY年MM月DD日").replace("YYYY", str(date.year)).replace("MM", f"{date.month:02d}").replace("DD", f"{date.day:02d}"),
         "total_count": len(all_classified),
         "highlights": highlights,
         "category_stats": dict(category_stats),
-        "all_news": all_classified
+        "all_news": all_classified,
     }
-    
-    try:
-        html_content = build_html(summary_data, date)
-        log("✅ HTML generated successfully")
-        return html_content
-    except Exception as e:
-            log(f"❌ Failed to parse AI output: {e}")
-            log(f"Output: {result.stdout[:500]}...")
-            return None
-    else:
-        log(f"❌ OpenClaw call failed: {result.stderr}")
-        return None
 
 def build_html(summary_data, date):
-    """Build HTML from AI summary JSON"""
-    date_str = date.strftime("%Y年%m月%d日")
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    
-    # Build highlights HTML
-    highlights_html = ""
-    for news in summary_data.get("highlights", []):
-        importance = news.get('importance', 3)  # Default to high for highlights
-        importance_text = {1: '低', 2: '中', 3: '高'}.get(importance, '高')
-        badge_class = {1: 'badge-low', 2: 'badge-medium', 3: 'badge-high'}.get(importance, 'badge-high')
-        highlights_html += f"""
+    """Build HTML from summary_data dict."""
+    date_str = date.strftime("YYYY年MM月DD日").replace("YYYY", str(date.year)).replace("MM", f"{date.month:02d}").replace("DD", f"{date.day:02d}")
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    imp_label = {1:"低",2:"中",3:"高"}
+    imp_class = {1:"badge-low",2:"badge-medium",3:"badge-high"}
+
+    hi_html = ""
+    for n in summary_data.get("highlights",[]):
+        imp = n.get("importance",3)
+        hi_html += f"""
         <div class="highlight-item">
-            <h3>{news['title']} <span class="importance-badge {badge_class}">{importance_text}</span></h3>
-            <p><span class="category-tag">{news['category']}</span></p>
-            <p class="summary">{news.get('summary', '')}</p>
-            <p><a href="{news['link']}" target="_blank">查看原文 →</a></p>
-        </div>
-        """
-    
-    # Build category stats HTML
+            <h3>{n["title"]} <span class="importance-badge {imp_class.get(imp,"badge-high")}">{imp_label.get(imp,"高")}</span></h3>
+            <p><span class="category-tag">{n.get("category","")}</span></p>
+            <p class="summary">{n.get("summary","")}</p>
+            <p><a href="{n["link"]}" target="_blank">查看原文 →</a></p>
+        </div>"""
+
     stats_html = ""
-    for category, count in summary_data.get("category_stats", {}).items():
-        stats_html += f"""
-        <div class="stat-card">
-            <div class="stat-number">{count}</div>
-            <div class="stat-label">{category}</div>
-        </div>
-        """
-    
-    # Build department stats HTML
-    dept_stats_html = ""
-    dept_stats = summary_data.get("department_stats", {})
-    if dept_stats:
-        for dept, count in sorted(dept_stats.items(), key=lambda x: x[1], reverse=True):
-            dept_stats_html += f"""
-            <div class="dept-stat-item">
-                <span class="dept-name">{dept}</span>
-                <span class="dept-count">{count}</span>
-            </div>
-            """
-    
-    # Build full list HTML (grouped by category)
-    from collections import defaultdict
-    by_category = defaultdict(list)
-    for news in summary_data.get("all_news", []):
-        by_category[news['category']].append(news)
-    
-    full_list_html = ""
-    for category, news_list in sorted(by_category.items()):
-        full_list_html += f"<h3>{category}</h3><ul class='news-list'>"
-        for news in news_list:
-            importance = news.get('importance', 1)
-            importance_text = {1: '低', 2: '中', 3: '高'}.get(importance, '低')
-            badge_class = {1: 'badge-low', 2: 'badge-medium', 3: 'badge-high'}.get(importance, 'badge-low')
-            full_list_html += f"<li><span class='importance-badge {badge_class}'>{importance_text}</span><a href='{news['link']}' target='_blank'>{news['title']}</a></li>"
-        full_list_html += "</ul>"
-    
-    html = f"""<!DOCTYPE html>
+    for cat, cnt in summary_data.get("category_stats",{}).items():
+        stats_html += f'<div class="stat-card"><div class="stat-number">{cnt}</div><div class="stat-label">{cat}</div></div>'
+
+    by_cat = defaultdict(list)
+    for n in summary_data.get("all_news",[]):
+        by_cat[n.get("category","其他")].append(n)
+    list_html = ""
+    for cat, items in sorted(by_cat.items()):
+        list_html += f"<h3>{cat}</h3><ul class='news-list'>"
+        for n in items:
+            imp = n.get("importance",1)
+            list_html += f"<li><span class='importance-badge {imp_class.get(imp,"badge-low")}'>{imp_label.get(imp,"低")}</span><a href='{n['link']}' target='_blank'>{n['title']}</a></li>"
+        list_html += "</ul>"
+
+    return f"""<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
@@ -255,11 +201,6 @@ def build_html(summary_data, date):
         .stat-card {{ background: #f8f9fa; padding: 15px; text-align: center; border-radius: 8px; }}
         .stat-number {{ font-size: 2em; font-weight: bold; color: #007bff; }}
         .stat-label {{ color: #666; font-size: 0.9em; }}
-        .dept-stats {{ margin-bottom: 30px; }}
-        .dept-stats-list {{ display: flex; flex-wrap: wrap; gap: 10px; }}
-        .dept-stat-item {{ background: #e3f2fd; padding: 8px 15px; border-radius: 20px; display: flex; align-items: center; gap: 10px; }}
-        .dept-name {{ color: #1976d2; font-weight: 600; }}
-        .dept-count {{ background: #1976d2; color: white; padding: 2px 10px; border-radius: 12px; font-size: 0.85em; font-weight: bold; }}
         .back-link {{ display: inline-block; margin-bottom: 20px; color: #007bff; text-decoration: none; }}
         .back-link:hover {{ text-decoration: underline; }}
         footer {{ text-align: center; color: #999; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; }}
@@ -271,204 +212,108 @@ def build_html(summary_data, date):
         <header>
             <h1>📰 澳門政府新聞總結</h1>
             <p class="date">{date_str}</p>
-            <p class="stats">共 {summary_data.get('total_count', 0)} 則新聞</p>
+            <p class="stats">共 {summary_data.get("total_count",0)} 則新聞</p>
         </header>
-
         <section class="highlights">
             <h2>🔥 重點新聞（高重要性）</h2>
-            {highlights_html}
+            {hi_html}
         </section>
-
         <section class="stats-by-category">
             <h2>📊 分類統計</h2>
-            <div class="stats-grid">
-                {stats_html}
-            </div>
+            <div class="stats-grid">{stats_html}</div>
         </section>
-
-        <section class="dept-stats">
-            <h2>🏛️ 部門統計</h2>
-            <div class="dept-stats-list">
-                {dept_stats_html}
-            </div>
-        </section>
-
         <section class="full-list">
             <h2>📋 全部新聞列表</h2>
-            {full_list_html}
+            {list_html}
         </section>
-
         <a href="index.html" class="back-link">← 返回索引頁</a>
         <div class="footer">
             <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
-            <strong>生成時間：</strong>{timestamp} (Asia/Macau)<br>
-            <strong>Provider:</strong> Qwen | <strong>Model:</strong> qwen3.5-plus
+            <strong>生成時間：</strong>{ts} (Asia/Macau)<br>
+            <strong>Provider:</strong> MiniMax | <strong>Model:</strong> {MODEL}
         </div>
     </div>
 </body>
 </html>"""
-    
-    return html
 
-def save_classification_data(summary_data, date, raw_news_data=None):
-    """Save classification data to data/classification/YYYY-MM-DD.json
-    
-    Stores raw classification only (no stats - separate script for statistics)
-    """
-    classification_dir = Path(__file__).parent.parent / "data" / "classification"
-    classification_dir.mkdir(parents=True, exist_ok=True)
-    
-    date_str = date.strftime("%Y-%m-%d")
-    output_file = classification_dir / f"{date_str}.json"
-    
-    # Build GUID lookup from raw news data
-    guid_lookup = {}
-    if raw_news_data:
-        for news in raw_news_data:
-            guid = news.get('guid', '')
-            if guid:
-                guid_lookup[news.get('title', '')] = guid
-    
-    # Extract classification data (raw only, no stats)
-    classification_data = {
-        "date": date_str,
-        "news": [
-            {
-                "guid": guid_lookup.get(news.get('title', ''), ''),
-                "title": news.get('title', ''),
-                "category": news.get('category', ''),
-                "importance": news.get('importance', 1),
-                "link": news.get('link', '')
-            }
-            for news in summary_data.get('all_news', [])
-        ],
-        "generated_at": datetime.now().isoformat()
-    }
-    
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(classification_data, f, ensure_ascii=False, indent=2)
-    
-    log(f"📊 Classification saved to: {output_file}")
-    
-    return output_file
-
-def save_html(html_content, date):
-    """Save HTML to docs/summary-examples/YYYY-MM-DD.html"""
+def save_html(html, date):
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    
     date_str = date.strftime("%Y-%m-%d")
-    output_file = OUTPUT_DIR / f"{date_str}.html"
-    
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write(html_content)
-    
-    log(f"✅ HTML saved to: {output_file}")
-    
-    # Also update index.html (latest summary)
-    index_file = OUTPUT_DIR / "index.html"
-    with open(index_file, 'w', encoding='utf-8') as f:
-        f.write(html_content)
-    
-    log(f"✅ Index updated: {index_file}")
-    
-    return output_file
+    out_file = OUTPUT_DIR / f"{date_str}.html"
+    with open(out_file, "w", encoding="utf-8") as f:
+        f.write(html)
+    # update index
+    with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    log(f"HTML saved: {out_file}")
+    return out_file
 
-def commit_and_push(html_file, date):
-    """Commit and push HTML to GitHub"""
-    repo_dir = Path(__file__).parent.parent
+def save_classification(summary_data, date, news_data):
+    """Save classification JSON to data/classification/."""
+    out_dir = Path(__file__).parent.parent / "data" / "classification"
+    out_dir.mkdir(parents=True, exist_ok=True)
     date_str = date.strftime("%Y-%m-%d")
-    
+    guid_map = {n.get("title",""): n.get("guid","") for n in news_data}
+    classified = []
+    for n in summary_data.get("all_news",[]):
+        classified.append({
+            "guid": guid_map.get(n.get("title",""),""),
+            "title": n.get("title",""),
+            "category": n.get("category",""),
+            "importance": n.get("importance",1),
+            "link": n.get("link","")
+        })
+    data = {
+        "date": date_str,
+        "news": classified,
+        "generated_at": datetime.now().isoformat(),
+        "model": MODEL
+    }
+    out_file = out_dir / f"{date_str}.json"
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    log(f"Classification saved: {out_file}")
+    return out_file
+
+def commit_and_push(date):
+    repo = Path(__file__).parent.parent
     try:
-        subprocess.run(['git', 'add', 'docs/summary-examples/'], cwd=repo_dir, check=True)
-        result = subprocess.run(['git', 'diff', '--cached', '--quiet'], cwd=repo_dir)
-        if result.returncode == 0:
-            log("ℹ️ No changes to commit")
+        subg = subprocess.run(["git", "add", "public/", "data/classification/"], cwd=repo, check=True, capture_output=True, text=True)
+        r = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=repo)
+        if r.returncode == 0:
+            log("No changes to commit")
             return True
-        
-        commit_msg = f"feat: add daily news summary ({date_str})\n\n🤖 Model: qwen/qwen3.5-plus"
-        subprocess.run(['git', 'commit', '-m', commit_msg], cwd=repo_dir, check=True)
-        log("✅ Committed changes")
-        
-        subprocess.run(['git', 'push'], cwd=repo_dir, check=True)
-        log("✅ Pushed to GitHub")
-        
+        date_str = date.strftime("%Y-%m-%d")
+        msg = f"feat: add daily news summary ({date_str})\n\n🤖 Model: {MODEL}"
+        subprocess.run(["git", "commit", "-m", msg], cwd=repo, check=True)
+        subprocess.run(["git", "push"], cwd=repo, check=True)
+        log("Committed and pushed")
         return True
-    except subprocess.CalledProcessError as e:
-        log(f"❌ Git operation failed: {e}")
-        return False
     except Exception as e:
-        log(f"❌ Error during commit/push: {e}")
+        log(f"Git error: {e}")
         return False
 
 def main():
-    """Main execution"""
     log("=" * 60)
-    log("Generating daily news summary...")
+    log("Generating daily news summary (direct API)...")
     log("=" * 60)
-    
-    try:
-        news_data, date = load_yesterday_news()
-        if not news_data:
-            log("❌ No news data to process")
-            send_notification("generate_summary.py", "No news data to process")
-            return 1
-        
-        html_content = generate_summary(news_data, date)
-        if not html_content:
-            log("❌ Failed to generate HTML")
-            send_notification("generate_summary.py", "Failed to generate HTML summary")
-            return 1
-        
-        html_file = save_html(html_content, date)
-        if not html_file:
-            log("❌ Failed to save HTML")
-            send_notification("generate_summary.py", "Failed to save HTML file")
-            return 1
-        
-        # Save classification data with GUIDs
-        classification_file = save_classification_data(summary_data, date, news_data)
-        if not classification_file:
-            log("⚠️ Failed to save classification data (continuing anyway)")
-        
-        # Generate classification statistics
-        log("Generating classification statistics...")
-        stats_script = Path(__file__).parent / "generate_classification_stats.py"
-        if stats_script.exists():
-            subprocess.run(['python3', str(stats_script)], cwd=Path(__file__).parent.parent)
-        
-        if not commit_and_push(html_file, date):
-            log("⚠️ Failed to commit/push (continuing anyway)")
-        
-        log("=" * 60)
-        log("Summary generation completed!")
-        log("=" * 60)
-        
-        return 0
-        
-    except subprocess.TimeoutExpired as e:
-        error_msg = f"TimeoutExpired: {str(e)}"
-        log(f"❌ TASK TIMEOUT: {error_msg}")
-        send_notification("generate_summary.py", error_msg)
+    yesterday = datetime.now() - timedelta(days=1)
+    log(f"Target date: {yesterday.strftime('%Y-%m-%d')}")
+    news_data = load_news(yesterday)
+    if not news_data:
+        log("No news data found")
         return 1
-        
-    except Exception as e:
-        error_msg = f"{type(e).__name__}: {str(e)}"
-        log(f"❌ CRITICAL ERROR: {error_msg}")
-        send_notification("generate_summary.py", error_msg)
+    log(f"Loaded {len(news_data)} news items")
+    summary = generate_summary(news_data, yesterday)
+    if not summary:
+        log("Classification failed")
         return 1
-
-def send_notification(script_name: str, error_message: str):
-    """Send failure notification via notify_failure.py"""
-    notify_script = Path(__file__).parent / "notify_failure.py"
-    if notify_script.exists():
-        try:
-            subprocess.run(
-                ['python3', str(notify_script), script_name, error_message],
-                capture_output=True,
-                timeout=30
-            )
-        except Exception as e:
-            log(f"⚠️ Failed to send notification: {e}")
+    html = build_html(summary, yesterday)
+    save_html(html, yesterday)
+    save_classification(summary, yesterday, news_data)
+    commit_and_push(yesterday)
+    log("Done!")
+    return 0
 
 if __name__ == "__main__":
     import sys
