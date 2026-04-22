@@ -40,24 +40,21 @@ def load_yesterday_news():
     log(f"📰 Loaded {len(news_data)} news items from {yesterday.strftime('%Y-%m-%d')}")
     return news_data, yesterday
 
-def generate_summary(news_data, date):
-    """Call OpenClaw AI to generate JSON summary, then convert to HTML"""
-    # Load prompt template
-    if not PROMPT_FILE.exists():
-        log(f"❌ Prompt file not found: {PROMPT_FILE}")
-        return None
+def classify_news_batch(news_batch, batch_num, total_batches):
+    """Classify a single batch of news (max 10 items)"""
+    import re
+    import os
     
+    # Load prompt template
     with open(PROMPT_FILE, 'r', encoding='utf-8') as f:
         prompt_template = f.read()
     
-    # Simplify news data (remove HTML tags to reduce size)
-    import re
+    # Simplify news data
     simplified_news = []
-    for news in news_data:
-        # Remove HTML tags from summary
+    for news in news_batch:
         summary = news.get("summary", "")
-        summary = re.sub(r'<[^>]+>', '', summary)  # Remove HTML tags
-        summary = summary[:150]  # Limit length
+        summary = re.sub(r'<[^>]+>', '', summary)
+        summary = summary[:40]  # Very short to fit in context window
         
         simplified_news.append({
             "title": news.get("title", ""),
@@ -65,39 +62,106 @@ def generate_summary(news_data, date):
             "link": news.get("link", "")
         })
     
-    # Replace placeholder with simplified data
-    prompt = prompt_template.replace("{news_json}", json.dumps(simplified_news, ensure_ascii=False))
+    # Modify prompt for batch processing
+    batch_prompt = prompt_template.replace(
+        "{news_json}", 
+        json.dumps(simplified_news, ensure_ascii=False)
+    )
+    batch_prompt += f"\n\n# Note: This is batch {batch_num}/{total_batches}. Classify only the news items provided above."
     
-    log("🤖 Calling OpenClaw AI...")
+    log(f"🤖 Classifying batch {batch_num}/{total_batches} ({len(news_batch)} items)...")
     
-    # Use openclaw infer model run with full PATH
-    # Timeout: 15 minutes (900 seconds) for AI analysis (large news sets)
-    import os
     env = os.environ.copy()
     env['PATH'] = '/home/js/.npm-global/bin:' + env.get('PATH', '')
+    env['MINIMAX_API_KEY'] = 'sk-cp-Az2RcC4KRghqVKofbSjGIg9wNOtdqfVaSkIWOR5zwygg6ko9DJEtl01cqTpdPGpeH8qAIEdaCpJ6ez2wd0Sp6_cMFSdv0537pkjtNT_XyqS2X5oywBcEiQ4'
     
-    result = subprocess.run([
-        '/home/js/.npm-global/bin/openclaw', 'infer', 'model', 'run',
-        '--prompt', prompt,
-        '--model', 'qwen/qwen3.5-plus'
-    ], capture_output=True, text=True, timeout=900, env=env)
+    proc = subprocess.Popen(
+        ['/home/js/.npm-global/bin/openclaw', 'infer', 'model', 'run',
+         '--prompt', batch_prompt,
+         '--model', 'minimax/MiniMax-M2.5'],
+        stdin=subprocess.DEVNULL,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        env=env
+    )
+    try:
+        stdout, stderr = proc.communicate(timeout=300)
+    except subprocess.TimeoutExpired:
+        proc.kill()
+        stdout, stderr = proc.communicate()
+        log(f"❌ Batch {batch_num} timed out after 300s")
+        return None
+    result = type('obj', (object,), {'returncode': proc.returncode, 'stdout': stdout, 'stderr': stderr})()
     
     if result.returncode == 0:
-        log("✅ AI analysis completed")
-        # Parse JSON and generate HTML
         try:
-            # Extract JSON from response
             ai_output = result.stdout.strip()
             if ai_output.startswith('```json'):
                 ai_output = ai_output[7:]
             if ai_output.endswith('```'):
                 ai_output = ai_output[:-3]
             
-            summary_data = json.loads(ai_output.strip())
-            html_content = build_html(summary_data, date)
-            log("✅ HTML generated successfully")
-            return html_content
+            batch_result = json.loads(ai_output.strip())
+            log(f"✅ Batch {batch_num}/{total_batches} completed")
+            return batch_result.get('all_news', [])
         except Exception as e:
+            log(f"❌ Failed to parse batch {batch_num}: {e}")
+            return None
+    else:
+        log(f"❌ Batch {batch_num} failed: {result.stderr[:200]}")
+        return None
+
+def generate_summary(news_data, date):
+    """Call OpenClaw AI to generate JSON summary, then convert to HTML
+    
+    Processes news in batches of 10 to avoid timeout issues.
+    """
+    if not PROMPT_FILE.exists():
+        log(f"❌ Prompt file not found: {PROMPT_FILE}")
+        return None
+    
+    # Process in batches of 5 items (smaller batches to avoid timeout)
+    BATCH_SIZE = 5
+    all_classified = []
+    total_batches = (len(news_data) + BATCH_SIZE - 1) // BATCH_SIZE
+    
+    for i in range(0, len(news_data), BATCH_SIZE):
+        batch = news_data[i:i + BATCH_SIZE]
+        batch_num = (i // BATCH_SIZE) + 1
+        
+        batch_result = classify_news_batch(batch, batch_num, total_batches)
+        if batch_result:
+            all_classified.extend(batch_result)
+        else:
+            log(f"⚠️ Batch {batch_num} failed, skipping...")
+    
+    if not all_classified:
+        log("❌ All batches failed")
+        return None
+    
+    log(f"✅ All batches completed. Total classified: {len(all_classified)}")
+    
+    # Build summary data from classified news
+    from collections import Counter
+    category_stats = Counter(item.get('category', '其他') for item in all_classified)
+    
+    # Get highlights (importance >= 3)
+    highlights = [item for item in all_classified if item.get('importance', 1) >= 3][:5]
+    
+    summary_data = {
+        "date": date.strftime("%Y年%m月%d日"),
+        "total_count": len(all_classified),
+        "highlights": highlights,
+        "category_stats": dict(category_stats),
+        "all_news": all_classified
+    }
+    
+    try:
+        html_content = build_html(summary_data, date)
+        log("✅ HTML generated successfully")
+        return html_content
+    except Exception as e:
             log(f"❌ Failed to parse AI output: {e}")
             log(f"Output: {result.stdout[:500]}...")
             return None
