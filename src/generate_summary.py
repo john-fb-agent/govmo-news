@@ -265,7 +265,7 @@ def save_classification(summary_data, date, news_data):
 def commit_and_push(date):
     repo = Path(__file__).parent.parent
     try:
-        subprocess.run(["git", "add", "public/", "data/classification/"], cwd=repo, check=True, capture_output=True, text=True)
+        subprocess.run(["git", "add", "public/", "data/classification/", "stat/"], cwd=repo, check=True, capture_output=True, text=True)
         r = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=repo)
         if r.returncode == 0:
             log("No changes to commit")
@@ -299,6 +299,21 @@ def main(target_date=None):
     html = build_html(summary, target_date)
     save_html(html, target_date)
     save_classification(summary, target_date, news_data)
+
+    # Run classification statistics script
+    stats_script = Path(__file__).parent / "generate_classification_stats.py"
+    if stats_script.exists():
+        log("Running classification statistics script...")
+        date_str = target_date.strftime("%Y-%m-%d")
+        r = subprocess.run(
+            ["python3", str(stats_script), date_str],
+            capture_output=True, text=True
+        )
+        if r.returncode == 0:
+            log("Classification stats generated successfully.")
+        else:
+            log(f"Classification stats script failed: {r.stderr}")
+
     commit_and_push(target_date)
     log("Done!")
     return 0

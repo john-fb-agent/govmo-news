@@ -44,7 +44,7 @@ def get_today_classification():
 
 def generate_stats(classification_data, date_str):
     """Generate statistics from classification data"""
-    news_items = classification_data.get('news', [])
+    news_items = classification_data.get('news', []) or classification_data.get('classifications', [])
     
     # Count by category
     category_counter = Counter()
@@ -90,23 +90,29 @@ def save_stats(stats, date_str):
     
     return output_file
 
-def main():
+def main(target_date=None):
     """Main execution"""
     log("=" * 60)
     log("Generating classification statistics...")
     log("=" * 60)
-    
+
+    if target_date is None:
+        target_date = datetime.now().strftime("%Y-%m-%d")
+
+    classification_file = CLASSIFICATION_DIR / f"{target_date}.json"
+    if not classification_file.exists():
+        log(f"❌ Classification file not found: {classification_file}")
+        return 1
+
+    with open(classification_file, 'r', encoding='utf-8') as f:
+        classification_data = json.load(f)
+
+    log(f"📊 Loaded classification data for {target_date}")
+
     try:
-        # Get today's classification data
-        classification_data, date_str = get_today_classification()
-        
-        if not classification_data:
-            log("❌ No classification data to process")
-            return 1
-        
         # Generate stats
-        stats = generate_stats(classification_data, date_str)
-        
+        stats = generate_stats(classification_data, target_date)
+
         log(f"📊 Total news: {stats['total_count']}")
         log(f"📊 Category breakdown:")
         for category, count in sorted(stats['category_stats'].items(), key=lambda x: x[1], reverse=True):
@@ -115,16 +121,16 @@ def main():
         log(f"   高：{stats['importance_stats']['高']}")
         log(f"   中：{stats['importance_stats']['中']}")
         log(f"   低：{stats['importance_stats']['低']}")
-        
+
         # Save stats
-        save_stats(stats, date_str)
-        
+        save_stats(stats, target_date)
+
         log("=" * 60)
         log("Classification statistics generation completed!")
         log("=" * 60)
-        
+
         return 0
-        
+
     except Exception as e:
         error_msg = f"{type(e).__name__}: {str(e)}"
         log(f"❌ CRITICAL ERROR: {error_msg}")
@@ -133,4 +139,6 @@ def main():
 
 if __name__ == "__main__":
     import sys
-    sys.exit(main())
+    # Support python3 script.py YYYY-MM-DD
+    target = sys.argv[1] if len(sys.argv) > 1 else None
+    sys.exit(main(target_date=target))
