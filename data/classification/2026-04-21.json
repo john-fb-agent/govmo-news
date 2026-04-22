@@ -2,169 +2,118 @@
   "date": "2026-04-21",
   "news": [
     {
-      "title": "打擊非法工作行動2026年3月份統計資料",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUZPgBT",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "大漢氣象──徐州漢代文物精品展開放參觀",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUJ4QrW",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "全國政協委員賀凱琪與澳門旅遊大學學生分享交流 暢談大灣區文旅機遇",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DT9tLBm",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "金管局赴深圳舉辦澳門投資基金業務推介活動",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DULPKI2",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "“海倫娜‧阿爾梅達：我在這裡——在場與迴響”月杪結束 全面回顧當代藝術巨匠創作歷程",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUexdD1",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "市政署驗出一外賣店生醃蝦樣本含過量副溶血性弧菌 已勒令停售",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUloT63",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "市政署關注多個地區出現高致病性禽流感",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUatjj1",
-      "category": "社會服務",
-      "importance": 1
-    },
-    {
-      "title": "大連理工大學代表團來訪澳門理工大學深化合作",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUIknij",
-      "category": "教育發展",
-      "importance": 1
-    },
-    {
-      "title": "一連兩日“預防蚊媒傳染病社區諮詢站”活動圓滿結束   逾萬人次參與 共築社區防疫網",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUyFLaZ",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "行政長官岑浩輝拜會葡萄牙議會議長阿吉亞爾-布蘭科",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DV6oTOV",
-      "category": "政府管治",
-      "importance": 2
-    },
-    {
-      "title": "行政長官岑浩輝拜會葡萄牙最高司法法院院長馬里亞諾",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVdBwLR",
-      "category": "政府管治",
-      "importance": 2
-    },
-    {
-      "title": "行政長官岑浩輝拜會葡萄牙總理蒙特內格羅",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVcBua0",
-      "category": "其他",
-      "importance": 1
-    },
-    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DUvbP63",
       "title": "行政長官岑浩輝拜會葡萄牙總統塞古羅",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUvbP63",
-      "category": "其他",
-      "importance": 1
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUvbP63"
     },
     {
-      "title": "行政長官岑浩輝與葡萄牙國務部長兼外交部長\r\n保羅•蘭熱爾會面",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUX52JU",
-      "category": "其他",
-      "importance": 1
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DVcBua0",
+      "title": "行政長官岑浩輝拜會葡萄牙總理蒙特內格羅",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVcBua0"
     },
     {
-      "title": "澳大學人分享電力電子技術構建低碳智慧城市",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DULS7NE",
-      "category": "其他",
-      "importance": 1
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DVdBwLR",
+      "title": "行政長官岑浩輝拜會葡萄牙最高司法法院院長馬里亞諾",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVdBwLR"
     },
     {
-      "title": "澳大與美高梅合辦領導技巧證書課程",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUSqFnD",
-      "category": "其他",
-      "importance": 1
+      "guid": "",
+      "title": "行政長官岑浩輝與葡萄牙國務部長兼外交部長保羅•蘭熱爾會面",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUX52JU"
     },
     {
-      "title": "教青局組織穗澳葡學生在葡進行文化活動 擴大中葡青年朋友圈交流",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUI8xZE",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "“澳門—葡萄牙經貿合作推介會”促成多份合作項目及商業配對  擴展中葡商貿合作網絡",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUFGiBi",
-      "category": "其他",
-      "importance": 1
-    },
-    {
-      "title": "衛生局接獲1例軍團菌病例通報",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUBKJUr",
-      "category": "其他",
-      "importance": 1
-    },
-    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DUkJ5tt",
       "title": "衛生局接獲6宗流感樣疾病群集性感染報告",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUkJ5tt",
       "category": "社會服務",
-      "importance": 2
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUkJ5tt"
     },
     {
-      "title": "澳門非遺傳習群體赴葡大放異彩",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DU3AvGv",
-      "category": "文化體育",
-      "importance": 2
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DUBKJUr",
+      "title": "衛生局接獲1例軍團菌病例通報",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUBKJUr"
     },
     {
-      "title": "生產力中心與工聯婦聯簽署職業技能考試合作協議  推動電子化與資源共享",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUi5gcb",
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DULS7NE",
+      "title": "澳大學人分享電力電子技術構建低碳智慧城市",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DULS7NE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DUSqFnD",
+      "title": "澳大與美高梅合辦領導技巧證書課程",
       "category": "教育發展",
-      "importance": 2
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUSqFnD"
     },
     {
-      "title": "“科學精神 青春綻放—杭州科創企業與澳門青年面對面2026”下周一舉行 拓寬澳門青年科技視野",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DU7SrvB",
-      "category": "其他",
-      "importance": 1
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DUI8xZE",
+      "title": "教青局組織穗澳葡學生在葡進行文化活動 擴大中葡青年朋友圈交流",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUI8xZE"
     },
     {
-      "title": "衛生局聯同教青局為教師舉辦健康促進培訓課程   讓健康元素深植校園 共同守護學生身心健康",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUGgSgC",
-      "category": "其他",
-      "importance": 1
+      "guid": "",
+      "title": "「澳門—葡萄牙經貿合作推介會」促成多份合作項目及商業配對 擴展中葡商貿合作網絡",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUFGiBi"
     },
     {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DUeNdPB",
       "title": "正式啟用！內地首個澳門稅務服務專窗落地橫琴",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUeNdPB",
-      "category": "其他",
-      "importance": 1
+      "category": "金融財政",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUeNdPB"
     },
     {
-      "title": "岑浩輝總結訪葡行程取得積極成效\r\n深化澳葡傳統友誼　拓展更多實務合作",
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVuu8TW",
-      "category": "其他",
-      "importance": 1
+      "guid": "",
+      "title": "岑浩輝總結訪葡行程取得積極成效　深化澳葡傳統友誼　拓展更多實務合作",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DVuu8TW"
+    },
+    {
+      "guid": "",
+      "title": "“科學精神 青春綻放—杭州科創企業與澳門青年面對面2026”下周一舉行",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DU7SrvB"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DU3AvGv",
+      "title": "澳門非遺傳習群體赴葡大放異彩",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DU3AvGv"
+    },
+    {
+      "guid": "",
+      "title": "生產力中心與工聯婦聯簽署職業技能考試合作協議 推動電子化與資源共享",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUi5gcb"
+    },
+    {
+      "guid": "",
+      "title": "衛生局聯同教青局為教師舉辦健康促進培訓課程",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DUGgSgC"
     }
   ],
-  "category_stats": {
-    "其他": 19,
-    "社會服務": 2,
-    "教育發展": 2,
-    "政府管治": 2,
-    "文化體育": 1
-  },
-  "generated_at": "2026-04-22T12:18:43.130754",
-  "method": "MiniMax-M2.7 (direct API)"
+  "generated_at": "2026-04-22T17:38:41.485959",
+  "model": "MiniMax-M2.7"
 }
