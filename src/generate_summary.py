@@ -1,24 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Generate Daily News Summary HTML using MiniMax direct API."""
+"""Generate Daily News Summary HTML using OpenClaw agent CLI."""
 
-import json, re, requests, subprocess, time, os
+import json, re, subprocess, time, os
 from pathlib import Path
 from datetime import datetime, timedelta
 from collections import Counter, defaultdict
 
-API_KEY = os.environ.get("MINIMAX_API_KEY", "")
-if not API_KEY:
-    cred = Path.home() / ".openclaw" / "credentials" / "minimax-default.apikey.json"
-    if cred.exists():
-        API_KEY = json.loads(cred.read_text())["apiKey"]
-if not API_KEY:
-    raise ValueError("MINIMAX_API_KEY not set")
-API_URL  = "https://api.minimaxi.com/v1/chat/completions"
-MODEL    = "MiniMax-M2.7"
+MODEL    = "minimax/MiniMax-M2.7"
 BATCH_SIZE      = 5
-REQUEST_TIMEOUT = 120
-API_DELAY       = 0.3
+REQUEST_TIMEOUT = 300
+API_DELAY       = 1
 MAX_TOKENS      = 2500
 
 PROMPT_FILE = Path(__file__).parent / "summary_prompt.txt"
@@ -32,22 +24,21 @@ def log(msg):
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(line + "\n")
 
-def call_minimax(prompt):
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {API_KEY}",
-    }
-    payload = {
-        "model": MODEL,
-        "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": MAX_TOKENS,
-        "temperature": 0.1,
-    }
-    resp = requests.post(API_URL, headers=headers, json=payload, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
-    raw = resp.json()["choices"][0]["message"]["content"]
+def call_openclaw(prompt):
+    """Call OpenClaw agent via CLI instead of direct API."""
+    cmd = [
+        "openclaw", "agent",
+        "--session-id", "agent:main:main",
+        "--message", prompt,
+        "--timeout", str(REQUEST_TIMEOUT),
+        "--json"
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=REQUEST_TIMEOUT + 30)
+    if result.returncode != 0:
+        raise RuntimeError(f"openclaw agent failed: {result.stderr}")
+    output = result.stdout.strip()
     # Strip <thinking> tags
-    content = re.sub(r"<[^>]*>", "", raw).strip()
+    content = re.sub(r"<[^>]*>", "", output).strip()
     return content
 
 def load_news(date):
@@ -74,17 +65,15 @@ def build_classify_prompt(news_items, batch_num, total_batches):
     return prompt
 
 def classify_batch(news_batch, batch_num, total_batches):
-    """Call MiniMax API for a batch of news. Retries once on JSON parse failure."""
+    """Call OpenClaw agent for a batch of news. Retries once on JSON parse failure."""
     prompt = build_classify_prompt(news_batch, batch_num, total_batches)
-    log(f"  Batch {batch_num}/{total_batches}: calling API ({len(news_batch)} items)...")
+    log(f"  Batch {batch_num}/{total_batches}: calling OpenClaw agent ({len(news_batch)} items)...")
 
     def _try_parse(raw):
         if "{" not in raw:
             return None, f"no brace: {raw[:80]}"
-        # Find JSON start — scan for outermost '{'
         start = raw.find("{")
         json_str = raw[start:]
-        # Use raw_decode to auto-find valid JSON end
         try:
             obj, idx = json.JSONDecoder().raw_decode(json_str)
         except json.JSONDecodeError as e:
@@ -94,12 +83,12 @@ def classify_batch(news_batch, batch_num, total_batches):
 
     for attempt in range(2):
         try:
-            raw = call_minimax(prompt)
+            raw = call_openclaw(prompt)
             items, err = _try_parse(raw)
             if err:
                 log(f"  Batch {batch_num} attempt {attempt+1} failed: {err}")
                 if attempt == 0:
-                    time.sleep(2)  # brief pause before retry
+                    time.sleep(2)
                     continue
                 return None
             log(f"  Batch {batch_num} OK: {len(items)} classified")
@@ -173,7 +162,7 @@ def build_html(summary_data, date):
             list_html += f"<li><span class='importance-badge {imp_class.get(imp,"badge-low")}'>{imp_label.get(imp,"低")}</span><a href='{n['link']}' target='_blank'>{n['title']}</a></li>"
         list_html += "</ul>"
 
-    return f"""<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
@@ -230,11 +219,12 @@ def build_html(summary_data, date):
         <div class="footer">
             <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
             <strong>生成時間：</strong>{ts} (Asia/Macau)<br>
-            <strong>Provider:</strong> MiniMax | <strong>Model:</strong> {MODEL}
+            <strong>Provider:</strong> OpenClaw | <strong>Model:</strong> {MODEL}
         </div>
     </div>
 </body>
 </html>"""
+    return html
 
 def save_html(html, date):
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -278,7 +268,7 @@ def save_classification(summary_data, date, news_data):
 def commit_and_push(date):
     repo = Path(__file__).parent.parent
     try:
-        subg = subprocess.run(["git", "add", "public/", "data/classification/"], cwd=repo, check=True, capture_output=True, text=True)
+        subprocess.run(["git", "add", "public/", "data/classification/"], cwd=repo, check=True, capture_output=True, text=True)
         r = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=repo)
         if r.returncode == 0:
             log("No changes to commit")
@@ -293,25 +283,26 @@ def commit_and_push(date):
         log(f"Git error: {e}")
         return False
 
-def main():
+def main(target_date=None):
     log("=" * 60)
-    log("Generating daily news summary (direct API)...")
+    log("Generating daily news summary (OpenClaw agent CLI)...")
     log("=" * 60)
-    yesterday = datetime.now() - timedelta(days=1)
-    log(f"Target date: {yesterday.strftime('%Y-%m-%d')}")
-    news_data = load_news(yesterday)
+    if target_date is None:
+        target_date = datetime.now() - timedelta(days=1)
+    log(f"Target date: {target_date.strftime('%Y-%m-%d')}")
+    news_data = load_news(target_date)
     if not news_data:
         log("No news data found")
         return 1
     log(f"Loaded {len(news_data)} news items")
-    summary = generate_summary(news_data, yesterday)
+    summary = generate_summary(news_data, target_date)
     if not summary:
         log("Classification failed")
         return 1
-    html = build_html(summary, yesterday)
-    save_html(html, yesterday)
-    save_classification(summary, yesterday, news_data)
-    commit_and_push(yesterday)
+    html = build_html(summary, target_date)
+    save_html(html, target_date)
+    save_classification(summary, target_date, news_data)
+    commit_and_push(target_date)
     log("Done!")
     return 0
 

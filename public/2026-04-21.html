@@ -7,29 +7,43 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; padding: 20px; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 3px solid #007bff; }
         h1 { color: #007bff; margin-bottom: 10px; }
         .date { color: #666; font-size: 1.2em; }
         .stats { color: #999; margin-top: 5px; }
+        .summary-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; font-size: 0.95em; line-height: 1.8; }
+        .summary-box h2 { color: white; border: none; margin-bottom: 15px; padding: 0; }
         section { margin-bottom: 40px; }
         h2 { color: #333; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #eee; }
-        h3 { color: #007bff; margin: 20px 0 10px 0; }
-        .highlight-item { background: #f8f9fa; padding: 20px; margin-bottom: 15px; border-radius: 8px; border-left: 4px solid #007bff; }
-        .summary { color: #555; margin: 10px 0; }
+        h3 { color: #555; margin: 20px 0 10px 0; font-size: 1em; font-weight: normal; border-left: 3px solid #ddd; padding-left: 10px; }
+        .highlight-item { background: #f8f9fa; padding: 20px; margin-bottom: 15px; border-radius: 8px; border-left: 4px solid #dc3545; }
+        .highlight-item h3 { color: #222; margin: 0 0 8px 0; border: none; padding: 0; }
+        .highlight-item h3 .cat-tag { display: inline-block; font-size: 0.7em; padding: 2px 8px; background: #007bff; color: white; border-radius: 4px; margin-left: 10px; vertical-align: middle; font-weight: normal; }
+        .highlight-item h3 .imp-tag { display: inline-block; font-size: 0.65em; padding: 2px 6px; background: #dc3545; color: white; border-radius: 4px; margin-left: 6px; vertical-align: middle; font-weight: bold; }
+        .summary { color: #555; margin: 8px 0; font-size: 0.9em; }
+        .highlight-item .link { font-size: 0.85em; }
+        .highlight-item .link a { color: #007bff; text-decoration: none; }
         .news-list { list-style: none; }
-        .news-list li { padding: 10px 0; border-bottom: 1px solid #eee; }
-        .news-list a { color: #007bff; text-decoration: none; }
-        .news-list a:hover { text-decoration: underline; }
-        .category-tag { display: inline-block; padding: 3px 8px; background: #e9ecef; border-radius: 4px; font-size: 0.85em; margin-right: 10px; }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .news-list li { padding: 8px 0; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px; }
+        .news-list li:last-child { border-bottom: none; }
+        .news-list a { color: #333; text-decoration: none; flex: 1; }
+        .news-list a:hover { color: #007bff; text-decoration: underline; }
+        .category-tag { display: inline-block; padding: 3px 8px; background: #e9ecef; border-radius: 4px; font-size: 0.8em; color: #555; white-space: nowrap; }
+        .imp-tag-list { font-size: 0.75em; padding: 2px 6px; border-radius: 4px; color: white; font-weight: bold; white-space: nowrap; }
+        .imp-high { background: #dc3545; }
+        .imp-medium { background: #fd7e14; }
+        .imp-low { background: #6c757d; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-bottom: 30px; }
         .stat-card { background: #f8f9fa; padding: 15px; text-align: center; border-radius: 8px; }
         .stat-number { font-size: 2em; font-weight: bold; color: #007bff; }
-        .stat-label { color: #666; font-size: 0.9em; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #007bff; text-decoration: none; }
+        .stat-label { color: #666; font-size: 0.85em; margin-top: 5px; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #007bff; text-decoration: none; font-size: 0.9em; }
         .back-link:hover { text-decoration: underline; }
-        footer { text-align: center; color: #999; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; }
-        @media (max-width: 600px) { .container { padding: 20px; } h1 { font-size: 1.5em; } }
+        footer { text-align: center; color: #999; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; font-size: 0.85em; line-height: 2; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .section-count { background: #007bff; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; }
+        @media (max-width: 600px) { .container { padding: 20px; } h1 { font-size: 1.5em; } .stats-grid { grid-template-columns: repeat(2, 1fr); } }
     </style>
 </head>
 <body>
@@ -37,44 +51,154 @@
         <header>
             <h1>📰 澳門政府新聞總結</h1>
             <p class="date">2026年04月21日</p>
-            <p class="stats">共 5 則新聞</p>
+            <p class="stats">共 26 則新聞</p>
         </header>
+
+        <div class="summary-box">
+            <h2>📝 今日綜合摘要</h2>
+            2026年4月21日，澳門特區行政長官岑浩輝率團展開就任後首次外訪，密集拜會葡萄牙四位最高層領導人——總統塞古羅、總理蒙特內格羅、議會議長阿吉亞爾-布蘭科及最高司法法院院長馬里亞諾，全面介紹「一國兩制」成功實踐及澳門中葡平台優勢，雙方達成深化全方位合作的廣泛共識，並落實61項合作協議。同日，「澳門—葡萄牙經貿合作推介會」促成43份簽約及94場商業配對，「澳門稅務服務專窗」正式落地橫琴，成為內地首個澳門稅務專屬政務窗口。此外，衛生局接獲6宗流感群集性感染（6校48人），市政署抽驗發現生醃蝦含弧菌並勒令停售，社區防疫及食品安全均受關注。文化層面，澳門非遺傳習群體在里斯本大放異彩，展現中西文化交融底蘊。
+        </div>
+
         <section class="highlights">
             <h2>🔥 重點新聞（高重要性）</h2>
-            
-        <div class="highlight-item">
-            <h3>澳旅大聯同騰訊智慧文旅 與業界共探AI賦能酒旅行業新機遇 <span class="importance-badge badge-high">高</span></h3>
-            <p><span class="category-tag">科技創新</span></p>
-            <p class="summary"></p>
-            <p><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DT5ykAa" target="_blank">查看原文 →</a></p>
-        </div>
-        <div class="highlight-item">
-            <h3>房屋局開展23間公屋商舖租賃之公開招標 設3個月免租優惠 <span class="importance-badge badge-high">高</span></h3>
-            <p><span class="category-tag">社會服務</span></p>
-            <p class="summary"></p>
-            <p><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DVon9wr" target="_blank">查看原文 →</a></p>
-        </div>
-        <div class="highlight-item">
-            <h3>第二期基本生命支持課程（BLS）自今（22）日起接受報名 <span class="importance-badge badge-high">高</span></h3>
-            <p><span class="category-tag">社會服務</span></p>
-            <p class="summary"></p>
-            <p><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUgcWX2" target="_blank">查看原文 →</a></p>
-        </div>
+
+            <div class="highlight-item">
+                <h3>行政長官岑浩輝拜會葡萄牙總統塞古羅 <span class="cat-tag">政府管治</span> <span class="imp-tag">高</span></h3>
+                <p class="summary">里斯本貝倫宮會晤，岑浩輝介紹「一國兩制」成功實踐及澳門中葡平台優勢，獲塞古羅肯定澳門在中葡全面戰略夥伴關係中的重要角色，雙方同意持續深化多領域合作，明年共同推動中葡論壇第七屆部長級會議在澳舉行。</p>
+                <p class="link"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUvbP63" target="_blank">查看原文 →</a></p>
+            </div>
+
+            <div class="highlight-item">
+                <h3>行政長官岑浩輝拜會葡萄牙總理蒙特內格羅 <span class="cat-tag">政府管治</span> <span class="imp-tag">高</span></h3>
+                <p class="summary">商討澳葡經貿、葡語推廣、人才培育、高新科技、旅遊文化及司法協作等領域合作，雙方同意透過澳門平台加強中葡經贸合作，並探討推動澳葡企業聯手開拓其他葡語國家市場，盡快召開新一屆澳葡聯合委員會會議。</p>
+                <p class="link"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DVcBua0" target="_blank">查看原文 →</a></p>
+            </div>
+
+            <div class="highlight-item">
+                <h3>行政長官岑浩輝拜會葡萄牙議會議長阿吉亞爾-布蘭科 <span class="cat-tag">政府管治</span> <span class="imp-tag">高</span></h3>
+                <p class="summary">探討澳葡立法機關友好交往與互鑑立法經驗，議長肯定「一國兩制」是中國制度創新，更是不同制度和諧共存的國際典範，雙方同意在複雜國際形勢下持續深化互信對話。</p>
+                <p class="link"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DV6oTOV" target="_blank">查看原文 →</a></p>
+            </div>
+
+            <div class="highlight-item">
+                <h3>行政長官岑浩輝拜會葡萄牙最高司法法院院長馬里亞諾 <span class="cat-tag">政府管治</span> <span class="imp-tag">高</span></h3>
+                <p class="summary">探討司法領域交流，涉及葡籍法官赴澳工作及第十三屆葡語國家最高法院論壇。岑浩輝強調澳葡司法協作對深化雙方多領域務實交流具有重要意義，期望推動雙方法官互訪。</p>
+                <p class="link"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DVdBwLR" target="_blank">查看原文 →</a></p>
+            </div>
+
+            <div class="highlight-item">
+                <h3>「澳門—葡萄牙經貿合作推介會」促成43份簽約及94場商業配對 <span class="cat-tag">經濟產業</span> <span class="imp-tag">高</span></h3>
+                <p class="summary">約300位政商代表出席，簽約範疇涵蓋高新科技、旅遊、大型基建、國際仲裁及新能源汽車等領域。企業家代表團翌日轉赴西班牙馬德里出席「感受澳門」路展並考察科技及大健康產業。</p>
+                <p class="link"><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUFGiBi" target="_blank">查看原文 →</a></p>
+            </div>
+
         </section>
+
         <section class="stats-by-category">
             <h2>📊 分類統計</h2>
-            <div class="stats-grid"><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">科技創新</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">交通運輸</div></div><div class="stat-card"><div class="stat-number">2</div><div class="stat-label">社會服務</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">文化體育</div></div></div>
+            <div class="stats-grid">
+                <div class="stat-card"><div class="stat-number">7</div><div class="stat-label">政府管治</div></div>
+                <div class="stat-card"><div class="stat-number">5</div><div class="stat-label">社會服務</div></div>
+                <div class="stat-card"><div class="stat-number">3</div><div class="stat-label">教育發展</div></div>
+                <div class="stat-card"><div class="stat-number">3</div><div class="stat-label">人才發展</div></div>
+                <div class="stat-card"><div class="stat-number">3</div><div class="stat-label">文化體育</div></div>
+                <div class="stat-card"><div class="stat-number">2</div><div class="stat-label">金融財政</div></div>
+                <div class="stat-card"><div class="stat-number">1</div><div class="stat-label">經濟產業</div></div>
+                <div class="stat-card"><div class="stat-number">1</div><div class="stat-label">科技創新</div></div>
+            </div>
         </section>
+
         <section class="full-list">
             <h2>📋 全部新聞列表</h2>
-            <h3>交通運輸</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DVmsUtY' target='_blank'>氣象局舉行內部熱帶氣旋演習 持續提升預報預警與應急處理能力</a></li></ul><h3>文化體育</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DVdYR5Q' target='_blank'>66人獲選為「閱讀達人」 首場青年讀書會邀王十月來澳分享</a></li></ul><h3>社會服務</h3><ul class='news-list'><li><span class='importance-badge badge-high'>高</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DVon9wr' target='_blank'>房屋局開展23間公屋商舖租賃之公開招標 設3個月免租優惠</a></li><li><span class='importance-badge badge-high'>高</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DUgcWX2' target='_blank'>第二期基本生命支持課程（BLS）自今（22）日起接受報名</a></li></ul><h3>科技創新</h3><ul class='news-list'><li><span class='importance-badge badge-high'>高</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DT5ykAa' target='_blank'>澳旅大聯同騰訊智慧文旅 與業界共探AI賦能酒旅行業新機遇</a></li></ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">政府管治（7則）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-high">高</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUvbP63" target="_blank">行政長官岑浩輝拜會葡萄牙總統塞古羅</a></li>
+                <li><span class="imp-tag-list imp-high">高</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DVcBua0" target="_blank">行政長官岑浩輝拜會葡萄牙總理蒙特內格羅</a></li>
+                <li><span class="imp-tag-list imp-high">高</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DV6oTOV" target="_blank">行政長官岑浩輝拜會葡萄牙議會議長阿吉亞爾-布蘭科</a></li>
+                <li><span class="imp-tag-list imp-high">高</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DVdBwLR" target="_blank">行政長官岑浩輝拜會葡萄牙最高司法法院院長馬里亞諾</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUX52JU" target="_blank">行政長官岑浩輝與葡萄牙國務部長兼外交部長保羅·蘭熱爾會面</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DVuu8TW" target="_blank">岑浩輝總結訪葡行程取得積極成效 深化澳葡傳統友誼</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUZPgBT" target="_blank">打擊非法工作行動2026年3月份統計資料（巡查445地點、截獲79人）</a></li>
+            </ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">社會服務（5則）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUkJ5tt" target="_blank">衛生局接獲6宗流感樣疾病群集性感染報告（6校48名學生染乙型流感）</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUyFLaZ" target="_blank">預防蚊媒傳染病社區諮詢站活動圓滿結束 逾萬人次參與</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUloT63" target="_blank">市政署驗出生醃蝦含過量副溶血性弧菌 勒令外賣店停售</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUatjj1" target="_blank">市政署關注印度、智利、英國爆發高致病性H5N1禽流感</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUBKJUr" target="_blank">衛生局接獲1例軍團菌病例通報（71歲居民，病情穩定）</a></li>
+            </ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">教育發展（3則）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUI8xZE" target="_blank">教青局組織穗澳葡三地學生在葡進行「同源共聲·文化互鑒」交流</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DT9tLBm" target="_blank">全國政協委員賀凱琪與澳門旅遊大學學生分享交流 暢談大灣區文旅機遇</a></li>
+                <li><span class="imp-tag-list imp-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUIknij" target="_blank">大連理工大學代表團來訪澳門理工大學深化合作</a></li>
+            </ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">人才發展（3則）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DU7SrvB" target="_blank">「科學精神 青春綻放—杭州科創企業與澳門青年面對面2026」下周一舉行</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUi5gcb" target="_blank">生產力中心與工聯婦聯簽署職業技能考試合作協議 推動電子化評核</a></li>
+                <li><span class="imp-tag-list imp-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUSqFnD" target="_blank">澳大與美高梅合辦領導技巧證書課程</a></li>
+            </ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">文化體育（3則）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DU3AvGv" target="_blank">澳門非遺傳習群體赴葡萄牙大放異彩（粵劇、舞獅、詠春拳、木雕）</a></li>
+                <li><span class="imp-tag-list imp-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUJ4QrW" target="_blank">大漢氣象──徐州漢代文物精品展開放參觀（至6月14日）</a></li>
+                <li><span class="imp-tag-list imp-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUexdD1" target="_blank">「海倫娜·阿爾梅達：我在這裡」展覽月杪結束（至4月26日）</a></li>
+            </ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">金融財政（2則）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUeNdPB" target="_blank">內地首個澳門稅務服務專窗落地橫琴 首批推出5項代收服務</a></li>
+                <li><span class="imp-tag-list imp-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DULPKI2" target="_blank">金管局赴深圳舉辦澳門投資基金業務推介會 四場累計逾530代表出席</a></li>
+            </ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">經濟產業（1則）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-high">高</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUFGiBi" target="_blank">「澳門—葡萄牙經貿合作推介會」促成43份簽約及94場商業配對</a></li>
+            </ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">科技創新（1則）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DULS7NE" target="_blank">澳大學人分享電力電子技術構建低碳智慧城市</a></li>
+            </ul>
+
+            <div class="section-header">
+                <h3 style="border:none; padding:0; margin:0;">社會服務（附加）</h3>
+            </div>
+            <ul class="news-list">
+                <li><span class="imp-tag-list imp-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DUGgSgC" target="_blank">衛生局聯同教青局為教師舉辦健康促進培訓課程（8場至11月）</a></li>
+            </ul>
+
         </section>
+
         <a href="index.html" class="back-link">← 返回索引頁</a>
-        <div class="footer">
+        <footer>
             <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
-            <strong>生成時間：</strong>2026-04-22 17:53:05 (Asia/Macau)<br>
-            <strong>Provider:</strong> MiniMax | <strong>Model:</strong> MiniMax-M2.7
-        </div>
+            <strong>生成時間：</strong>2026-04-22 20:18 (Asia/Macau)<br>
+            <strong>Provider:</strong> OpenClaw | <strong>Model:</strong> minimax/MiniMax-M2.7
+        </footer>
     </div>
 </body>
 </html>
