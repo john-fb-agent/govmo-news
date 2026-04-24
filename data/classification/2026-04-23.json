@@ -1,0 +1,254 @@
+{
+  "date": "2026-04-23",
+  "total_news": 29,
+  "classifications": [
+    {
+      "index": 1,
+      "title": "低空經濟發展工作組赴深圳開展拜訪交流",
+      "department": "經濟及科技發展局",
+      "category": "科技創新",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 2,
+      "title": "內地輸澳動植物產品檢驗檢疫證書無紙化即日起全面實施",
+      "department": "市政署",
+      "category": "政府管治",
+      "importance": 3,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 3,
+      "title": "南岸海濱綠廊二期二區今起開放使用",
+      "department": "市政署",
+      "category": "文化體育",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 4,
+      "title": "澳門特區與越南草簽《刑事司法協助協定》",
+      "department": "法務局",
+      "category": "政府管治",
+      "importance": 3,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 5,
+      "title": "「水晶魚2026」民防颱風演習將於4月25日下午進行",
+      "department": "警察總局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 6,
+      "title": "勞工局舉辦殘疾人士就業配對會  與社會各界共同推動共融就業",
+      "department": "勞工事務局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 7,
+      "title": "首辦「澳門—西班牙經貿合作推介會」 達成43份合作項目簽署及安排104場商業配對",
+      "department": "招商投資促進局",
+      "category": "經濟產業",
+      "importance": 3,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 8,
+      "title": "岑浩輝：澳門與西班牙合作關係邁上新台階",
+      "department": "新聞局",
+      "category": "對外交往",
+      "importance": 3,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 9,
+      "title": "慎防假冒「勞工事務局」之詐騙電話",
+      "department": "勞工事務局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 10,
+      "title": "立法會主席張永春率團訪京",
+      "department": "立法會",
+      "category": "對外交往",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 11,
+      "title": "警察總局金融情報辦公室拜訪澳門律師公會",
+      "department": "警察總局",
+      "category": "政府管治",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 12,
+      "title": "二零二六年「《齊清潔，迎新歲》幸運大抽獎」得獎名單公布",
+      "department": "市政署",
+      "category": "社會服務",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 13,
+      "title": "市政署關注丹麥和美國部分地區出現高致病性禽流感",
+      "department": "市政署",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 14,
+      "title": "經科局舉辦系列活動響應「世界知識產權日」",
+      "department": "經濟及科技發展局",
+      "category": "科技創新",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 15,
+      "title": "五名內地人士涉將假貨幣轉手被羈押",
+      "department": "檢察院",
+      "category": "政府管治",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 16,
+      "title": "環境衛生專責小組辦建築業防治蚊鼠講座　提升工地衛生管理水平",
+      "department": "市政署",
+      "category": "社會服務",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 17,
+      "title": "2026年5月份立法會議員接見市民的安排",
+      "department": "立法會",
+      "category": "政府管治",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 18,
+      "title": "衛生局於周六舉行「健康社區快閃活動」 呼籲居民接种疫苗 守護健康",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 19,
+      "title": "行政長官岑浩輝拜會西班牙第二副首相佩雷斯",
+      "department": "新聞局",
+      "category": "對外交往",
+      "importance": 3,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 20,
+      "title": "「開卷澳門‧2026全民閱讀活動周」正式啟動　倡導每天閱讀10分鐘　攜手共建閱讀之城",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 21,
+      "title": "衛生局接獲1例流感重症及6宗流感樣疾病群集性感染報告   呼籲高風險人群儘早接种流感疫苗",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 22,
+      "title": "銀齡綻放光彩　文化點亮社區 樂齡導賞員培訓計劃現接受報名",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 23,
+      "title": "澳門中樂團赴京參加「國樂之春」 國家大劇院奏響《澳門明信片》大獲好評",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 24,
+      "title": "春季塔石藝墟開幕",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 25,
+      "title": "瑞士蒙特勒工商管理大學校長到訪澳門旅遊大學　推進澳琴大學城合作",
+      "department": "澳門旅遊大學",
+      "category": "教育發展",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 26,
+      "title": "衛生局推動「患者血液管理」規範化和高效化 舉辦「香港與新加坡患者血液管理實務經驗分享專題講座」",
+      "department": "衛生局",
+      "category": "社會服務",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 27,
+      "title": "澳門理工大學國際化辦學榮獲泰晤士高等教育亞洲大獎",
+      "department": "澳門理工大學",
+      "category": "教育發展",
+      "importance": 3,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 28,
+      "title": "新一屆澳大校園記者和學生公關大使就職",
+      "department": "澳門大學",
+      "category": "教育發展",
+      "importance": 1,
+      "importance_reason": "（人工分類）"
+    },
+    {
+      "index": 29,
+      "title": "7公司競投青洲坊及青濤等6公共停車場公共泊車服務經營批給",
+      "department": "交通事務局",
+      "category": "交通運輸",
+      "importance": 2,
+      "importance_reason": "（人工分類）"
+    }
+  ],
+  "category_summary": {
+    "社會服務": 9,
+    "政府管治": 5,
+    "文化體育": 5,
+    "對外交往": 3,
+    "教育發展": 3,
+    "科技創新": 2,
+    "經濟產業": 1,
+    "交通運輸": 1
+  },
+  "importance_summary": {
+    "高（3分）": 6,
+    "中（2分）": 14,
+    "低（1分）": 9
+  },
+  "generated_at": "2026-04-24T08:11:16.366910"
+}
