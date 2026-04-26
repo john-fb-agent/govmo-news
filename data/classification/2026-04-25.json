@@ -1,0 +1,70 @@
+{
+  "date": "2026-04-25",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DY9JwDO",
+      "title": "教青局辦中國航天日專題活動推廣科普教育",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DY9JwDO"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DZ0dFyZ",
+      "title": "「水晶魚2026」民防颱風演習—強化聯動機制  提升防災韌性",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DZ0dFyZ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DY31cOH",
+      "title": "行政長官岑浩輝與歐洲議會副議長奧馬吉會面",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DY31cOH"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DY88D1Q",
+      "title": "行政長官岑浩輝與中國駐歐盟使團團長蔡潤會面",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DY88D1Q"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DYZ6TJx",
+      "title": "行政長官岑浩輝與中國駐比利時大使費勝潮會面",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DYZ6TJx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DYGY8wg",
+      "title": "第三十一屆「澳門中學生讀後感徵文比賽」頒獎禮圓滿舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DYGY8wg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DYqe7vR",
+      "title": "2026年粵港澳「4‧23世界閱讀日創作比賽」（澳門區）頒獎典禮及文化局公共圖書館義工嘉許禮圓滿舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DYqe7vR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DYtaPis",
+      "title": "企業家代表團出訪葡西進行商務交流考察  發揮澳門平台作用助推中葡西產業鏈高質量合作",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DYtaPis"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DYgpCmC",
+      "title": "博監局與旅遊局聯合巡查「休」遊巴士站點 確保引客入區順暢有序",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DYgpCmC"
+    }
+  ],
+  "generated_at": "2026-04-26T00:00:00.000000",
+  "model": "minimax/MiniMax-M2.7"
+}
