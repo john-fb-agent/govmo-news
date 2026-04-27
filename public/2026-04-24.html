@@ -6,63 +6,181 @@
     <title>澳門政府新聞總結 - 2026年04月24日</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; padding: 20px; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 3px solid #007bff; }
-        h1 { color: #007bff; margin-bottom: 10px; }
-        .date { color: #666; font-size: 1.2em; }
-        .stats { color: #999; margin-top: 5px; }
-        section { margin-bottom: 40px; }
-        h2 { color: #333; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #eee; }
-        h3 { color: #007bff; margin: 20px 0 10px 0; }
-        .ai-summary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; line-height: 1.8; font-size: 1.05em; }
-        .ai-summary p { margin: 0; }
-        .highlight-item { background: #f8f9fa; padding: 20px; margin-bottom: 15px; border-radius: 8px; border-left: 4px solid #007bff; }
-        .summary { color: #555; margin: 10px 0; }
-        .news-list { list-style: none; }
-        .news-list li { padding: 10px 0; border-bottom: 1px solid #eee; }
-        .news-list a { color: #007bff; text-decoration: none; }
-        .news-list a:hover { text-decoration: underline; }
-        .category-tag { display: inline-block; padding: 3px 8px; background: #e9ecef; border-radius: 4px; font-size: 0.85em; margin-right: 10px; }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 15px; margin-bottom: 30px; }
-        .stat-card { background: #f8f9fa; padding: 15px; text-align: center; border-radius: 8px; }
-        .stat-number { font-size: 2em; font-weight: bold; color: #007bff; }
-        .stat-label { color: #666; font-size: 0.9em; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #007bff; text-decoration: none; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; color: #333; background: #f0f4f8; }
+        .container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+        header { text-align: center; margin-bottom: 30px; }
+        header h1 { font-size: 1.8em; color: #00A86B; margin-bottom: 6px; }
+        header .subtitle { color: #888; font-size: 0.9em; }
+        .card { background: white; border-radius: 12px; padding: 28px 30px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .card h2 { font-size: 1.1em; color: #00A86B; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #e8f5f0; display: flex; align-items: center; gap: 8px; }
+        .summary-text { font-size: 0.95em; color: #444; line-height: 1.9; text-align: justify; }
+        .summary-text strong { color: #00A86B; }
+        .summary-text p { margin-bottom: 12px; }
+        .summary-text p:last-child { margin-bottom: 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 12px; }
+        .stat-card { background: #f8faf9; border: 1px solid #e0f0e8; border-radius: 8px; padding: 14px 10px; text-align: center; }
+        .stat-num { font-size: 1.8em; font-weight: 700; color: #00A86B; }
+        .stat-label { font-size: 0.78em; color: #666; margin-top: 3px; }
+        .imp-note { font-size: 0.8em; color: #888; margin-top: 12px; text-align: center; }
+        .highlight-card { background: #fff9f0; border-radius: 12px; padding: 20px 22px; margin-bottom: 14px; border-left: 5px solid #ff6b35; }
+        .highlight-card h3 { font-size: 0.95em; color: #222; margin-bottom: 8px; line-height: 1.5; }
+        .highlight-card h3 .cat { display: inline-block; font-size: 0.72em; padding: 2px 8px; background: #00A86B; color: white; border-radius: 4px; margin-right: 8px; vertical-align: middle; }
+        .highlight-card h3 .imp { display: inline-block; font-size: 0.68em; padding: 2px 6px; background: #ff6b35; color: white; border-radius: 4px; margin-left: 6px; vertical-align: middle; font-weight: 700; }
+        .highlight-card .summary { font-size: 0.88em; color: #555; margin-bottom: 8px; line-height: 1.7; }
+        .cat-group { margin-bottom: 22px; }
+        .cat-group h3 { font-size: 0.85em; color: #555; margin-bottom: 8px; padding-left: 10px; border-left: 3px solid #ccc; }
+        .news-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #f0f0f0; }
+        .news-row:last-child { border-bottom: none; }
+        .news-row .imp-dot { font-size: 0.65em; font-weight: 700; padding: 2px 7px; border-radius: 4px; color: white; white-space: nowrap; flex-shrink: 0; }
+        .dot-high { background: #dc3545; }
+        .dot-medium { background: #fd7e14; }
+        .dot-low { background: #aaa; }
+        .news-row a { font-size: 0.88em; color: #333; text-decoration: none; flex: 1; }
+        .news-row a:hover { color: #00A86B; text-decoration: underline; }
+        .footer { text-align: center; color: #aaa; font-size: 0.8em; line-height: 2; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+        .back-link { display: inline-block; margin-bottom: 15px; color: #00A86B; text-decoration: none; font-size: 0.88em; }
         .back-link:hover { text-decoration: underline; }
-        footer { text-align: center; color: #999; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; }
-        @media (max-width: 600px) { .container { padding: 20px; } h1 { font-size: 1.5em; } }
+        @media (max-width: 600px) { .container { padding: 15px 12px; } .card { padding: 18px 16px; } header h1 { font-size: 1.4em; } }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>📰 澳門政府新聞總結</h1>
-            <p class="date">2026年04月24日</p>
-            <p class="stats">共 29 則新聞</p>
+            <p class="subtitle">2026年04月24日 · 共 29 則新聞</p>
         </header>
-        <section class="ai-summary-section"><h2>🔥 今日綜合摘要</h2><div class="ai-summary">岑浩輝率團外訪歐洲成果豐碩，成為今日最矚目焦點。行政高峰先後會見歐盟對外行動署副秘書長斯庫格、比利時副首相克拉蘭瓦爾、中國常駐世貿組織代表李詠箑及常駐聯合國日內瓦代表賈桂德，並視察澳門駐世貿組織日內瓦經貿辦事處，積極拓展澳門對外合作網絡。同時，第十一個全民國家安全教育日相關活動持續深化，澳門禁毒委員會赴上海交流，顯示特區在國安領域的積極姿態。
+        
+        <div class="card">
+            <h2>🔥 今日綜合摘要</h2>
+            <p class="summary-text">
+                <p>岑浩輝特首外訪歐洲行程今日續有重大進展，先後會見歐盟對外行動署副秘書長斯庫格及比利時副首相克拉蘭瓦爾，並視察澳門駐世貿組織日內瓦經貿辦事處，積極拓展澳門在國際組織的多邊合作網絡。在國家安全領域，特區政府持續深化國安教育工作，第十一個全民國家安全教育日系列活動有序推進，禁毒委員會赴上海與內地對口部門交流，深化兩地禁毒合作。
 
-社區經濟方面，「休」遊巴士明日開始試運行，六條路線連接北區至媽閣各大社區，並配合五一假期在氹仔舊城區及關前後街設立行人專用區，有望帶動社區商戶客流。社會服務方面，衛生局接獲8宗流感群集性感染報告，市政署同步關注日本爆發的高致病性禽流感並啟動風雨季應對預案，「水晶魚2026」民防演習亦將於25日舉行，提升公眾防災意識。
+社區經濟方面，「休」遊巴士明日開始試運行，六條主題路線覆蓋北區至媽閣各大社區，聯動六大綜合度假休閒企業及約三百家特色商戶。同時特區政府宣布五一假期在氹仔舊城區及關前後街設置行人專用區，以舒緩節日人流、帶動社區消費。交通及民防方面，「水晶魚2026」民防演習將於二十五日舉行，當局透過「一戶通」發佈演習訊息，提升公眾防災意識。
 
-教育文化領域傳來振奮消息，澳門高校在《泰晤士高等教育》世界大學排名再創歷史佳績，師生代表團赴南韓參與志願軍烈士遺骸迎回安葬活動，弘揚愛國主義精神，澳大AI平台亦成功助力老人癡呆中藥研發。經濟層面，第一季入境旅客按年上升逾一成三，消費物價指數及就業調查數據顯示經濟運行保持平穩。文化方面，明清山水畫展、青年讀書會相繼啟動，為社會注入濃厚的文化氛圍。</div></section>
-        <section class="stats-by-category">
+社會服務方面值得關注，衛生局接獲八宗流感群集性感染報告，市政署同步啟動風雨季應對預案並密切監察日本爆發的高致病性禽流感。本澳高校在《泰晤士高等教育》世界大學排名再創歷史佳績，師生代表團赴南韓參與志願軍烈士遺骸迎回安葬活動，弘揚愛國主義精神。經濟數據顯示，第一季入境旅客按年上升逾一成三，反映旅遊業持續復蘇，就業市場保持平穩。文化領域則有明清山水畫展及「澳門青年讀書會」相繼啟動，為社會注入濃厚的文化氣息。</p>
+            </p>
+        </div>
+        
+        <div class="card">
             <h2>📊 分類統計</h2>
-            <div class="stats-grid"><div class="stat-card"><div class="stat-number">5</div><div class="stat-label">國家安全</div></div><div class="stat-card"><div class="stat-number">3</div><div class="stat-label">政府管治</div></div><div class="stat-card"><div class="stat-number">7</div><div class="stat-label">社會服務</div></div><div class="stat-card"><div class="stat-number">4</div><div class="stat-label">交通運輸</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">科技創新</div></div><div class="stat-card"><div class="stat-number">4</div><div class="stat-label">教育發展</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">金融財政</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">經濟產業</div></div><div class="stat-card"><div class="stat-number">3</div><div class="stat-label">文化體育</div></div></div>
-        </section>
-        <section class="highlights">
+            <div class="stats-grid">
+                <div class="stat-card"><div class="stat-num">5</div><div class="stat-label" style="color:#28a745;font-weight:600">國家安全</div></div><div class="stat-card"><div class="stat-num">3</div><div class="stat-label" style="color:#17a2b8;font-weight:600">政府管治</div></div><div class="stat-card"><div class="stat-num">7</div><div class="stat-label" style="color:#fd7e14;font-weight:600">社會服務</div></div><div class="stat-card"><div class="stat-num">4</div><div class="stat-label" style="color:#dc3545;font-weight:600">交通運輸</div></div><div class="stat-card"><div class="stat-num">1</div><div class="stat-label" style="color:#6610f2;font-weight:600">科技創新</div></div><div class="stat-card"><div class="stat-num">4</div><div class="stat-label" style="color:#6f42c1;font-weight:600">教育發展</div></div><div class="stat-card"><div class="stat-num">1</div><div class="stat-label" style="color:#ffc107;font-weight:600">金融財政</div></div><div class="stat-card"><div class="stat-num">1</div><div class="stat-label" style="color:#e83e8c;font-weight:600">經濟產業</div></div><div class="stat-card"><div class="stat-num">3</div><div class="stat-label" style="color:#00a86b;font-weight:600">文化體育</div></div>
+            </div>
+            <p class="imp-note">高重要性（紅）0則 · 中重要性（橙）22則 · 低重要性（灰）7則</p>
+        </div>
+        
+        <div class="card">
             <h2>🔥 重點新聞（高重要性）</h2>
             
-        </section>
-        <section class="full-list">
+        <div class="highlight-card">
+            <h3>
+                <span class="cat">國家安全</span>
+                行政長官與中國常駐世界貿易組織代表李詠箑會面
+                <span class="imp">中</span>
+            </h3>
+        </div>
+        <div class="highlight-card">
+            <h3>
+                <span class="cat">政府管治</span>
+                「水晶魚2026」民防演習25日舉行「一戶通」將配合發佈演習訊息
+                <span class="imp">中</span>
+            </h3>
+        </div>
+        <div class="highlight-card">
+            <h3>
+                <span class="cat">社會服務</span>
+                第四場「社文茶座．社文範疇齊齊傾」於4月29日舉行  聚焦「活力耆年 幸福澳門」
+                <span class="imp">中</span>
+            </h3>
+        </div>
+        <div class="highlight-card">
+            <h3>
+                <span class="cat">國家安全</span>
+                第六屆特區政府帶領社會各界築牢國家安全屏障
+                <span class="imp">中</span>
+            </h3>
+        </div>
+        <div class="highlight-card">
+            <h3>
+                <span class="cat">國家安全</span>
+                行政長官與中國常駐聯合國日內瓦辦事處和瑞士其他國際組織代表賈桂德會面
+                <span class="imp">中</span>
+            </h3>
+        </div>
+        <div class="highlight-card">
+            <h3>
+                <span class="cat">交通運輸</span>
+                「休」遊巴士·社區探趣明開始試運行
+                <span class="imp">中</span>
+            </h3>
+        </div>
+        </div>
+        
+        <div class="card">
             <h2>📋 全部新聞列表</h2>
-            <h3>交通運輸</h3><ul class='news-list'><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXpFsQc' target='_blank'>單車聯賽  路氹體育館大馬路4月25日起實施臨時交管</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXX5dwf' target='_blank'>「休」遊巴士·社區探趣明開始試運行</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXzaDjh' target='_blank'>特區政府五一假期設置氹仔舊城區及關前後街行人專用區</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXijqYY' target='_blank'>配合搬運設備 爐石塘巷一帶4月28日下午短暫交管</a></li></ul><h3>國家安全</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXxLZdd' target='_blank'>行政長官與中國常駐世界貿易組織代表李詠箑會面</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXlkhS9' target='_blank'>第六屆特區政府帶領社會各界築牢國家安全屏障</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX95Ybm' target='_blank'>行政長官與中國常駐聯合國日內瓦辦事處和瑞士其他國際組織代表賈桂德會面</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DYM8nls' target='_blank'>行政長官與歐盟對外行動署副秘書長斯庫格會面</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DYQCDNi' target='_blank'>行政長官拜會比利時副首相克拉蘭瓦爾</a></li></ul><h3>政府管治</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DWIegsS' target='_blank'>「水晶魚2026」民防演習25日舉行「一戶通」將配合發佈演習訊息</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX8E0GH' target='_blank'>澳門特區政府禁毒委員會拜訪上海市禁毒委員會辦公室</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DYIM4rj' target='_blank'>岑浩輝視察澳門駐世貿組織經貿辦事處  冀為澳門拓展對外經贸合作深化聯繫工作</a></li></ul><h3>教育發展</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXxCiiK' target='_blank'>澳門高校2026年國際排名再創歷史佳績</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX7F4YM' target='_blank'>澳門師生代表團參與第十三批在韓中國人民志願軍烈士遺骸迎回安葬活動緬懷英烈</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXiWRbM' target='_blank'>開卷澳門　共讀灣區「澳門青年讀書會」正式啟動</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXbfzLL' target='_blank'>澳大辦語言文化日　讓國際師生感受多元文化</a></li></ul><h3>文化體育</h3><ul class='news-list'><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX0xi6g' target='_blank'>市政署首辦「國際茶日嘉年華」向公眾推廣茶文化</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXFLCZo' target='_blank'>「山川響答——中國國家博物館藏明清山水畫展」開幕</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXx5Jc1' target='_blank'>「活力社區 - 大眾康體日」4月25日在祐漢街市公園舉行</a></li></ul><h3>社會服務</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXkjfpE' target='_blank'>第四場「社文茶座．社文範疇齊齊傾」於4月29日舉行  聚焦「活力耆年 幸福澳門」</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DVoCDHy' target='_blank'>加蓋「澳門退休人士協會成立二十五周年紀念」紀念郵戳</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXAxn0h' target='_blank'>市政署關注日本一地區出現高致病性禽流感</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXtaWJO' target='_blank'>市政署多措並舉應對風雨季</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXVA7KW' target='_blank'>2026年1月至3月就業調查</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXV4vgd' target='_blank'>衛生局接獲8宗流感樣疾病群集性感染報告</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXDnEs9' target='_blank'>澳門家居適老化改造展示區及長者智慧照顧與樂齡科技展銷會</a></li></ul><h3>科技創新</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXAwKGB' target='_blank'>澳大成功構建人工智能平台　助力老人癡呆中藥研發</a></li></ul><h3>經濟產業</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXm9Yvg' target='_blank'>2026年第一季入境旅客</a></li></ul><h3>金融財政</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX5yhc0' target='_blank'>2026年3月消費物價指數</a></li></ul>
-        </section>
+            <div class="cat-group">
+<h3>交通運輸</h3>
+<div class="news-row"><span class="imp-dot dot-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXpFsQc" target="_blank">單車聯賽  路氹體育館大馬路4月25日起實施臨時交管</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXX5dwf" target="_blank">「休」遊巴士·社區探趣明開始試運行</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXzaDjh" target="_blank">特區政府五一假期設置氹仔舊城區及關前後街行人專用區</a></div>
+<div class="news-row"><span class="imp-dot dot-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXijqYY" target="_blank">配合搬運設備 爐石塘巷一帶4月28日下午短暫交管</a></div>
+</div>
+<div class="cat-group">
+<h3>國家安全</h3>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXxLZdd" target="_blank">行政長官與中國常駐世界貿易組織代表李詠箑會面</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXlkhS9" target="_blank">第六屆特區政府帶領社會各界築牢國家安全屏障</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DX95Ybm" target="_blank">行政長官與中國常駐聯合國日內瓦辦事處和瑞士其他國際組織代表賈桂德會面</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DYM8nls" target="_blank">行政長官與歐盟對外行動署副秘書長斯庫格會面</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DYQCDNi" target="_blank">行政長官拜會比利時副首相克拉蘭瓦爾</a></div>
+</div>
+<div class="cat-group">
+<h3>政府管治</h3>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DWIegsS" target="_blank">「水晶魚2026」民防演習25日舉行「一戶通」將配合發佈演習訊息</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DX8E0GH" target="_blank">澳門特區政府禁毒委員會拜訪上海市禁毒委員會辦公室</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DYIM4rj" target="_blank">岑浩輝視察澳門駐世貿組織經貿辦事處  冀為澳門拓展對外經贸合作深化聯繫工作</a></div>
+</div>
+<div class="cat-group">
+<h3>教育發展</h3>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXxCiiK" target="_blank">澳門高校2026年國際排名再創歷史佳績</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DX7F4YM" target="_blank">澳門師生代表團參與第十三批在韓中國人民志願軍烈士遺骸迎回安葬活動緬懷英烈</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXiWRbM" target="_blank">開卷澳門　共讀灣區「澳門青年讀書會」正式啟動</a></div>
+<div class="news-row"><span class="imp-dot dot-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXbfzLL" target="_blank">澳大辦語言文化日　讓國際師生感受多元文化</a></div>
+</div>
+<div class="cat-group">
+<h3>文化體育</h3>
+<div class="news-row"><span class="imp-dot dot-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DX0xi6g" target="_blank">市政署首辦「國際茶日嘉年華」向公眾推廣茶文化</a></div>
+<div class="news-row"><span class="imp-dot dot-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXFLCZo" target="_blank">「山川響答——中國國家博物館藏明清山水畫展」開幕</a></div>
+<div class="news-row"><span class="imp-dot dot-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXx5Jc1" target="_blank">「活力社區 - 大眾康體日」4月25日在祐漢街市公園舉行</a></div>
+</div>
+<div class="cat-group">
+<h3>社會服務</h3>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXkjfpE" target="_blank">第四場「社文茶座．社文範疇齊齊傾」於4月29日舉行  聚焦「活力耆年 幸福澳門」</a></div>
+<div class="news-row"><span class="imp-dot dot-low">低</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DVoCDHy" target="_blank">加蓋「澳門退休人士協會成立二十五周年紀念」紀念郵戳</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXAxn0h" target="_blank">市政署關注日本一地區出現高致病性禽流感</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXtaWJO" target="_blank">市政署多措並舉應對風雨季</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXVA7KW" target="_blank">2026年1月至3月就業調查</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXV4vgd" target="_blank">衛生局接獲8宗流感樣疾病群集性感染報告</a></div>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXDnEs9" target="_blank">澳門家居適老化改造展示區及長者智慧照顧與樂齡科技展銷會</a></div>
+</div>
+<div class="cat-group">
+<h3>科技創新</h3>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXAwKGB" target="_blank">澳大成功構建人工智能平台　助力老人癡呆中藥研發</a></div>
+</div>
+<div class="cat-group">
+<h3>經濟產業</h3>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXm9Yvg" target="_blank">2026年第一季入境旅客</a></div>
+</div>
+<div class="cat-group">
+<h3>金融財政</h3>
+<div class="news-row"><span class="imp-dot dot-medium">中</span><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DX5yhc0" target="_blank">2026年3月消費物價指數</a></div>
+</div>
+
+        </div>
         <a href="index.html" class="back-link">← 返回索引頁</a>
         <div class="footer">
-            <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
-            <strong>生成時間：</strong>2026-04-27 14:46:14 (Asia/Macau)<br>
-            <strong>Provider:</strong> OpenClaw | <strong>Model:</strong> minimax/MiniMax-M2.7
+            資料來源：澳門特別行政區政府新聞局 (GCS)<br>
+            生成時間：2026-04-27 14:57 (Asia/Macau)<br>
+            Provider: OpenClaw | Model: minimax/MiniMax-M2.7
         </div>
     </div>
 </body>
