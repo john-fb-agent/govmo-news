@@ -15,6 +15,8 @@
         section { margin-bottom: 40px; }
         h2 { color: #333; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #eee; }
         h3 { color: #007bff; margin: 20px 0 10px 0; }
+        .ai-summary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; line-height: 1.8; font-size: 1.05em; }
+        .ai-summary p { margin: 0; }
         .highlight-item { background: #f8f9fa; padding: 20px; margin-bottom: 15px; border-radius: 8px; border-left: 4px solid #007bff; }
         .summary { color: #555; margin: 10px 0; }
         .news-list { list-style: none; }
@@ -29,9 +31,6 @@
         .back-link { display: inline-block; margin-bottom: 20px; color: #007bff; text-decoration: none; }
         .back-link:hover { text-decoration: underline; }
         footer { text-align: center; color: #999; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; }
-        .badge-low { background: #28a745; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; }
-        .badge-medium { background: #ffc107; color: #333; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; }
-        .badge-high { background: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; }
         @media (max-width: 600px) { .container { padding: 20px; } h1 { font-size: 1.5em; } }
     </style>
 </head>
@@ -40,56 +39,30 @@
         <header>
             <h1>📰 澳門政府新聞總結</h1>
             <p class="date">2026年04月24日</p>
-            <p class="stats">共 26 則新聞</p>
+            <p class="stats">共 29 則新聞</p>
         </header>
-        <section class="highlights">
-            <h2>🔥 重點新聞（高重要性）</h2>
-            <div class='highlight-item'>
-        <h3>行政長官與中國常駐世界貿易組織代表李詠箑會面 <span class='importance-badge badge-high'>高</span></h3>
-        <p><span class='category-tag'>政府管治</span></p>
-        <p class='summary'>行政長官岑浩輝於當地時間23日下午，與中國常駐世界貿易組織代表、特命全權大使李詠箑會面，就進一步加強相互聯繫，支持澳門持續深化與世貿組織的交流合作等議題交換意見。
-岑浩輝感謝中國常駐世貿組織代表團對澳門特區參與多邊貿易事務的長期支持和指導。他表示，澳門自回歸以來，在“一國兩制”方針下，以“中國澳門”名義作為世貿組織成員，積極參與多邊貿易體制的各項活動。澳門駐世界貿易組織經濟貿易辦事處與中國常駐世貿</p>
-        <p><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXxLZdd" target='_blank'>查看原文 →</a></p>
-    </div><div class='highlight-item'>
-        <h3>“水晶魚2026”民防演習25日舉行“一戶通”將配合發佈演習訊息 <span class='importance-badge badge-high'>高</span></h3>
-        <p><span class='category-tag'>政府管治</span></p>
-        <p class='summary'>為共同應對本年度的颱風及風暴潮並作充足準備，“水晶魚2026”民防演習將於4月25日（星期六）舉行，屆時“一戶通”將配合發佈演習訊息。
-“一戶通”作為統一官方信息發佈平台，將分散在各部門網站和手機應用程式的重要資訊匯聚，加強特區政府資訊發放功能，尤其是民防、重大和突發消息，以及信息澄清等資訊。
-因應本澳即將踏入颱風季節，為讓市民熟悉在“一戶通”上查閱民防消息，於“水晶魚2026”民防演習當日，將會</p>
-        <p><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DWIegsS" target='_blank'>查看原文 →</a></p>
-    </div><div class='highlight-item'>
-        <h3>第六屆特區政府帶領社會各界築牢國家安全屏障 <span class='importance-badge badge-high'>高</span></h3>
-        <p><span class='category-tag'>政府管治</span></p>
-        <p class='summary'>2026年4月15日是我國第十一個“全民國家安全教育日”，澳門特別行政區政府與中央人民政府駐澳門特別行政區聯絡辦公室連續第九年聯合舉辦的“全民國家安全教育展”於當天揭幕。截至4月23日，逾20,700人次進場參觀展覽，專題網站也錄得超過91,700次點擊瀏覽。
-本次展覽以“統籌發展和安全　護航‘十五五’新征程”為主題，內容分為前言、序章和五個專題部分。第一部分以“憶昔撫今　時移世變　澳門推動發展和</p>
-        <p><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXlkhS9" target='_blank'>查看原文 →</a></p>
-    </div><div class='highlight-item'>
-        <h3>特區政府五一假期設置氹仔舊城區及關前後街行人專用區 <span class='importance-badge badge-high'>高</span></h3>
-        <p><span class='category-tag'>交通運輸</span></p>
-        <p class='summary'>為營造舒適安全的假日出行環境，特區政府將於5月1日至4日期間，每日中午12時至晚上7時，在氹仔舊城區及關前後街設置“五一假期行人專用區”，由經濟及科技發展局、市政署、旅遊局、治安警察局、消防局、文化局及交通事務局聯同社團商會合作協調落實。
-氹仔舊城區行人專用區範圍由飛能便度街與素啤古街交界（原嘉模泳池巴士站位置）延伸至告利雅施利華街與巴波沙總督街交界（路氹歷史館位置）；關前後街行人專用區範圍位於大</p>
-        <p><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DXzaDjh" target='_blank'>查看原文 →</a></p>
-    </div><div class='highlight-item'>
-        <h3>行政長官與中國常駐聯合國日內瓦辦事處和瑞士其他國際組織代表賈桂德會面 <span class='importance-badge badge-high'>高</span></h3>
-        <p><span class='category-tag'>政府管治</span></p>
-        <p class='summary'>行政長官岑浩輝於當地時間23日下午，與中國常駐聯合國日內瓦辦事處和瑞士其他國際組織代表、特命全權大使賈桂德會面，就進一步加強雙方聯繫、強化平台對接、深化澳門與國際組織交流合作等議題交換意見。
-岑浩輝感謝中國常駐日內瓦代表團，長期以來在澳門對外事務方面給予的大力支持與協助。他表示，本屆特區政府履職一年多以來的施政工作，獲得中央充分肯定。未來再接再厲，繼續全面貫徹落實習近平主席的重要講話及指示精神，更</p>
-        <p><a href="https://www.gcs.gov.mo/detail/zh-hant/N26DX95Ybm" target='_blank'>查看原文 →</a></p>
-    </div>
-        </section>
+        <section class="ai-summary-section"><h2>🔥 今日綜合摘要</h2><div class="ai-summary">岑浩輝率團外訪歐洲成果豐碩，成為今日最矚目焦點。行政高峰先後會見歐盟對外行動署副秘書長斯庫格、比利時副首相克拉蘭瓦爾、中國常駐世貿組織代表李詠箑及常駐聯合國日內瓦代表賈桂德，並視察澳門駐世貿組織日內瓦經貿辦事處，積極拓展澳門對外合作網絡。同時，第十一個全民國家安全教育日相關活動持續深化，澳門禁毒委員會赴上海交流，顯示特區在國安領域的積極姿態。
+
+社區經濟方面，「休」遊巴士明日開始試運行，六條路線連接北區至媽閣各大社區，並配合五一假期在氹仔舊城區及關前後街設立行人專用區，有望帶動社區商戶客流。社會服務方面，衛生局接獲8宗流感群集性感染報告，市政署同步關注日本爆發的高致病性禽流感並啟動風雨季應對預案，「水晶魚2026」民防演習亦將於25日舉行，提升公眾防災意識。
+
+教育文化領域傳來振奮消息，澳門高校在《泰晤士高等教育》世界大學排名再創歷史佳績，師生代表團赴南韓參與志願軍烈士遺骸迎回安葬活動，弘揚愛國主義精神，澳大AI平台亦成功助力老人癡呆中藥研發。經濟層面，第一季入境旅客按年上升逾一成三，消費物價指數及就業調查數據顯示經濟運行保持平穩。文化方面，明清山水畫展、青年讀書會相繼啟動，為社會注入濃厚的文化氛圍。</div></section>
         <section class="stats-by-category">
             <h2>📊 分類統計</h2>
-            <div class="stats-grid"><div class='stat-card'><div class='stat-number'>6</div><div class='stat-label'>社會服務</div></div><div class='stat-card'><div class='stat-number'>5</div><div class='stat-label'>教育發展</div></div><div class='stat-card'><div class='stat-number'>4</div><div class='stat-label'>政府管治</div></div><div class='stat-card'><div class='stat-number'>4</div><div class='stat-label'>交通運輸</div></div><div class='stat-card'><div class='stat-number'>3</div><div class='stat-label'>文化體育</div></div><div class='stat-card'><div class='stat-number'>3</div><div class='stat-label'>統計數據</div></div><div class='stat-card'><div class='stat-number'>1</div><div class='stat-label'>醫療衛生</div></div></div>
+            <div class="stats-grid"><div class="stat-card"><div class="stat-number">5</div><div class="stat-label">國家安全</div></div><div class="stat-card"><div class="stat-number">3</div><div class="stat-label">政府管治</div></div><div class="stat-card"><div class="stat-number">7</div><div class="stat-label">社會服務</div></div><div class="stat-card"><div class="stat-number">4</div><div class="stat-label">交通運輸</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">科技創新</div></div><div class="stat-card"><div class="stat-number">4</div><div class="stat-label">教育發展</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">金融財政</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">經濟產業</div></div><div class="stat-card"><div class="stat-number">3</div><div class="stat-label">文化體育</div></div></div>
+        </section>
+        <section class="highlights">
+            <h2>🔥 重點新聞（高重要性）</h2>
+            
         </section>
         <section class="full-list">
             <h2>📋 全部新聞列表</h2>
-            <h3>交通運輸</h3><ul class='news-list'><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXpFsQc' target='_blank'>單車聯賽  路氹體育館大馬路4月25日起實施臨時交管</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXX5dwf' target='_blank'>「休」遊巴士·社區探趣明開始試運行</a></li><li><span class='importance-badge badge-high'>高</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXzaDjh' target='_blank'>特區政府五一假期設置氹仔舊城區及關前後街行人專用區</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXijqYY' target='_blank'>配合搬運設備 爐石塘巷一帶4月28日下午短暫交管</a></li></ul><h3>政府管治</h3><ul class='news-list'><li><span class='importance-badge badge-high'>高</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXxLZdd' target='_blank'>行政長官與中國常駐世界貿易組織代表李詠箑會面</a></li><li><span class='importance-badge badge-high'>高</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DWIegsS' target='_blank'>“水晶魚2026”民防演習25日舉行“一戶通”將配合發佈演習訊息</a></li><li><span class='importance-badge badge-high'>高</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXlkhS9' target='_blank'>第六屆特區政府帶領社會各界築牢國家安全屏障</a></li><li><span class='importance-badge badge-high'>高</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX95Ybm' target='_blank'>行政長官與中國常駐聯合國日內瓦辦事處和瑞士其他國際組織代表賈桂德會面</a></li></ul><h3>教育發展</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXAwKGB' target='_blank'>澳大成功構建人工智能平台　助力老人癡呆中藥研發</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX7F4YM' target='_blank'>澳門師生代表團參與第十三批在韓中國人民志願軍烈士遺骸迎回安葬活動緬懷英烈</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXxCiiK' target='_blank'>澳門高校2026年國際排名再創歷史佳績</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXiWRbM' target='_blank'>開卷澳門　共讀灣區 “澳門青年讀書會”正式啟動</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXbfzLL' target='_blank'>澳大辦語言文化日　讓國際師生感受多元文化</a></li></ul><h3>文化體育</h3><ul class='news-list'><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DVoCDHy' target='_blank'>加蓋“澳門退休人士協會成立二十五周年紀念”紀念郵戳</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXFLCZo' target='_blank'>“山川響答——中國國家博物館藏明清山水畫展”開幕 展現文人藝術成就及山水行旅美學</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXx5Jc1' target='_blank'>“活力社區 - 大眾康體日” 4月25日在祐漢街市公園舉行</a></li></ul><h3>社會服務</h3><ul class='news-list'><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXkjfpE' target='_blank'>第四場“社文茶座‧社文範疇齊齊傾”於4月29日舉行  聚焦“活力耆年 幸福澳門”歡迎居民參與</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX8E0GH' target='_blank'>澳門特區政府禁毒委員會拜訪上海市禁毒委員會辦公室</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXAxn0h' target='_blank'>市政署關注日本一地區出現高致病性禽流感</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXtaWJO' target='_blank'>市政署多措並舉應對風雨季</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX0xi6g' target='_blank'>市政署首辦“國際茶日嘉年華”向公眾推廣茶文化</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXDnEs9' target='_blank'>澳門家居適老化改造展示區及長者智慧照顧與樂齡科技展銷會</a></li></ul><h3>統計數據</h3><ul class='news-list'><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX5yhc0' target='_blank'>2026年3月消費物價指數</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXm9Yvg' target='_blank'>2026年第一季入境旅客</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXVA7KW' target='_blank'>2026年1月至3月就業調查</a></li></ul><h3>醫療衛生</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXV4vgd' target='_blank'>衛生局接獲8宗流感樣疾病群集性感染報告</a></li></ul>
+            <h3>交通運輸</h3><ul class='news-list'><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXpFsQc' target='_blank'>單車聯賽  路氹體育館大馬路4月25日起實施臨時交管</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXX5dwf' target='_blank'>「休」遊巴士·社區探趣明開始試運行</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXzaDjh' target='_blank'>特區政府五一假期設置氹仔舊城區及關前後街行人專用區</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXijqYY' target='_blank'>配合搬運設備 爐石塘巷一帶4月28日下午短暫交管</a></li></ul><h3>國家安全</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXxLZdd' target='_blank'>行政長官與中國常駐世界貿易組織代表李詠箑會面</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXlkhS9' target='_blank'>第六屆特區政府帶領社會各界築牢國家安全屏障</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX95Ybm' target='_blank'>行政長官與中國常駐聯合國日內瓦辦事處和瑞士其他國際組織代表賈桂德會面</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DYM8nls' target='_blank'>行政長官與歐盟對外行動署副秘書長斯庫格會面</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DYQCDNi' target='_blank'>行政長官拜會比利時副首相克拉蘭瓦爾</a></li></ul><h3>政府管治</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DWIegsS' target='_blank'>「水晶魚2026」民防演習25日舉行「一戶通」將配合發佈演習訊息</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX8E0GH' target='_blank'>澳門特區政府禁毒委員會拜訪上海市禁毒委員會辦公室</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DYIM4rj' target='_blank'>岑浩輝視察澳門駐世貿組織經貿辦事處  冀為澳門拓展對外經贸合作深化聯繫工作</a></li></ul><h3>教育發展</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXxCiiK' target='_blank'>澳門高校2026年國際排名再創歷史佳績</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX7F4YM' target='_blank'>澳門師生代表團參與第十三批在韓中國人民志願軍烈士遺骸迎回安葬活動緬懷英烈</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXiWRbM' target='_blank'>開卷澳門　共讀灣區「澳門青年讀書會」正式啟動</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXbfzLL' target='_blank'>澳大辦語言文化日　讓國際師生感受多元文化</a></li></ul><h3>文化體育</h3><ul class='news-list'><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX0xi6g' target='_blank'>市政署首辦「國際茶日嘉年華」向公眾推廣茶文化</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXFLCZo' target='_blank'>「山川響答——中國國家博物館藏明清山水畫展」開幕</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXx5Jc1' target='_blank'>「活力社區 - 大眾康體日」4月25日在祐漢街市公園舉行</a></li></ul><h3>社會服務</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXkjfpE' target='_blank'>第四場「社文茶座．社文範疇齊齊傾」於4月29日舉行  聚焦「活力耆年 幸福澳門」</a></li><li><span class='importance-badge badge-low'>低</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DVoCDHy' target='_blank'>加蓋「澳門退休人士協會成立二十五周年紀念」紀念郵戳</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXAxn0h' target='_blank'>市政署關注日本一地區出現高致病性禽流感</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXtaWJO' target='_blank'>市政署多措並舉應對風雨季</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXVA7KW' target='_blank'>2026年1月至3月就業調查</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXV4vgd' target='_blank'>衛生局接獲8宗流感樣疾病群集性感染報告</a></li><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXDnEs9' target='_blank'>澳門家居適老化改造展示區及長者智慧照顧與樂齡科技展銷會</a></li></ul><h3>科技創新</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXAwKGB' target='_blank'>澳大成功構建人工智能平台　助力老人癡呆中藥研發</a></li></ul><h3>經濟產業</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DXm9Yvg' target='_blank'>2026年第一季入境旅客</a></li></ul><h3>金融財政</h3><ul class='news-list'><li><span class='importance-badge badge-medium'>中</span><a href='https://www.gcs.gov.mo/detail/zh-hant/N26DX5yhc0' target='_blank'>2026年3月消費物價指數</a></li></ul>
         </section>
         <a href="index.html" class="back-link">← 返回索引頁</a>
         <div class="footer">
             <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
-            <strong>生成時間：</strong>2026-04-25 08:06:49 (Asia/Macau)<br>
-            <strong>Provider:</strong> OpenClaw
+            <strong>生成時間：</strong>2026-04-27 14:46:14 (Asia/Macau)<br>
+            <strong>Provider:</strong> OpenClaw | <strong>Model:</strong> minimax/MiniMax-M2.7
         </div>
     </div>
 </body>
