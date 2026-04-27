@@ -1,0 +1,31 @@
+{
+  "date": "2026-04-26",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DZF8ujq",
+      "title": "「2026澳門國際幻彩大巡遊」攝影比賽頒獎禮順利舉辦",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DZF8ujq",
+      "department": "文化局"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DZ7fG8L",
+      "title": "岑浩輝訪歐行程成果豐碩　有效拓展對外多方位合作",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DZ7fG8L",
+      "department": "新聞局"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DZuC6X9",
+      "title": "「活力社區—2026全澳殘疾人士運動日」圓滿舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DZuC6X9",
+      "department": "體育局"
+    }
+  ],
+  "generated_at": "2026-04-27T08:00:00.000000",
+  "model": "minimax/MiniMax-M2.7"
+}
