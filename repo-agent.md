@@ -154,4 +154,32 @@ public/                                # GitHub Pages
 
 ---
 
-**最後更新：** 2026-04-22 | **Last Review：** 2026-04-22 | **維護者：** AI Agent
+**最後更新：** 2026-04-27 | **Last Review：** 2026-04-27 | **維護者：** AI Agent
+
+---
+
+## 🖼️ HTML 模板標準（2026-04-27 更新）
+
+**⚠️ 重要：任何時候都不應完全替換 `build_html()` 模板！**
+
+`generate_summary.py` 中的 `build_html()` 使用固定的卡片式模板，已經是 04-14 至 04-23 的統一風格。修改時只能：
+- ✅ 新增功能（如 AI 摘要）
+- ✅ 調整變量（如 importance threshold）
+- ❌ 不可完全重寫 `build_html()` 或替換整個 HTML/CSS 結構
+
+**模板關鍵元素：**
+- **外層結構：** `.card` 包圍每個內容區塊（白底、圓角、陰影）
+- **標題：** `<h2>🔥 今日綜合摘要</h2>`、`<h2>📊 分類統計</h2>`、`<h2>🔥 重點新聞（高重要性）</h2>`、`<h2>📋 全部新聞列表</h2>`
+- **摘要文字：** `.summary-text`（行高 1.9、段落 `<p>` 包裹）
+- **統計卡片：** `.stats-grid` > `.stat-card` > `.stat-num` + `.stat-label`
+- **重點新聞卡：** `.highlight-card`（橙左邊框 `#ff6b35`、`.cat` 綠標籤、`.imp` 橙標籤）
+- **新聞列表：** `.cat-group` > `.news-row` > `.imp-dot`（dot-high/medium/low）+ `<a>`
+- **Footer：** `.footer` + `.back-link`
+- **主色：** `#00A86B`（綠色）
+- **重要性 dots：** `.dot-high`=#dc3545、`.dot-medium`=#fd7e14、`.dot-low`=#aaa
+
+**模板調用方式：**
+```python
+html = build_html(summary_data, date)  # 傳入 summary dict 和 datetime 對象
+save_html(html, date)
+```
