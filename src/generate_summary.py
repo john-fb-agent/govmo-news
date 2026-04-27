@@ -17,6 +17,14 @@ PROMPT_FILE = Path(__file__).parent / "summary_prompt.txt"
 OUTPUT_DIR  = Path(__file__).parent.parent / "public"
 LOG_FILE    = Path(__file__).parent.parent / "data" / "summary.log"
 
+# Importance colors for stats
+IMP_COLORS = {
+    3: "#dc3545",  # red - high
+    2: "#fd7e14",  # orange - medium
+    1: "#aaa",     # gray - low
+}
+IMP_LABELS = {3: "高", 2: "中", 1: "低"}
+
 def log(msg):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     line = f"{ts} - {msg}"
@@ -37,7 +45,17 @@ def call_openclaw(prompt):
     if result.returncode != 0:
         raise RuntimeError(f"openclaw agent failed: {result.stderr}")
     output = result.stdout.strip()
-    # Strip <thinking> tags
+    # Parse JSON wrapper to extract actual response text
+    try:
+        response_obj = json.loads(output)
+        if "result" in response_obj and "payloads" in response_obj["result"]:
+            payloads = response_obj["result"]["payloads"]
+            if payloads and "text" in payloads[0]:
+                content = payloads[0]["text"]
+                content = re.sub(r"<[^>]*>", "", content).strip()
+                return content
+    except (json.JSONDecodeError, KeyError, IndexError):
+        pass
     content = re.sub(r"<[^>]*>", "", output).strip()
     return content
 
@@ -51,11 +69,24 @@ def load_news(date):
     with open(news_file, "r", encoding="utf-8") as f:
         return json.load(f)
 
+SUMMARY_AI_PROMPT = """你是一位澳門政府新聞分析師。請根據以下今日澳門政府新聞，生成一段 200-300 字的繁體中文綜合摘要，總結今日最重要的新聞主題和趨勢。
+
+規則：
+- 使用繁體中文
+- 摘要應該是連貫的段落，不是列表
+- 重點提及高重要性新聞
+- 提及至少3個不同類別的新聞
+- 不要提及具體的新聞數量
+
+新聞資料：
+{news_json}
+
+只輸出摘要文字，不要其他內容。"""
+
 def build_classify_prompt(news_items, batch_num, total_batches):
     """Build the classification prompt from summary_prompt.txt template."""
     with open(PROMPT_FILE, "r", encoding="utf-8") as f:
         template = f.read()
-    # Simplify items
     simplified = []
     for n in news_items:
         s = re.sub(r"<[^>]+>", "", n.get("summary", ""))[:30]
@@ -63,6 +94,28 @@ def build_classify_prompt(news_items, batch_num, total_batches):
     prompt = template.replace("{news_json}", json.dumps(simplified, ensure_ascii=False))
     prompt += f"\n\n# Note: This is batch {batch_num}/{total_batches}."
     return prompt
+
+def generate_ai_summary(news_items):
+    """Generate AI summary text using OpenClaw agent."""
+    simplified = []
+    for n in news_items:
+        s = re.sub(r"<[^>]+>", "", n.get("summary", ""))
+        imp_lbl = IMP_LABELS.get(n.get("importance", 1), "低")
+        simplified.append({
+            "title": n.get("title", ""),
+            "summary": s[:100] if s else "",
+            "importance": imp_lbl,
+            "category": n.get("category", "")
+        })
+    prompt = SUMMARY_AI_PROMPT.replace("{news_json}", json.dumps(simplified, ensure_ascii=False, indent=2))
+    log("Generating AI summary...")
+    try:
+        summary_text = call_openclaw(prompt)
+        log(f"AI summary generated ({len(summary_text)} chars)")
+        return summary_text
+    except Exception as e:
+        log(f"AI summary generation failed: {e}")
+        return None
 
 def classify_batch(news_batch, batch_num, total_batches):
     """Call OpenClaw agent for a batch of news. Retries once on JSON parse failure."""
@@ -119,48 +172,129 @@ def generate_summary(news_data, date):
         log("All batches failed")
         return None
     log(f"Classified {len(all_classified)} items total")
+
+    # Generate AI summary text
+    ai_summary = generate_ai_summary(all_classified)
+
     category_stats = Counter(it.get("category","其他") for it in all_classified)
-    highlights = [it for it in all_classified if it.get("importance",1) >= 3][:5]
+    # Use importance >= 2 as "high" threshold (original template style)
+    highlights = [it for it in all_classified if it.get("importance",1) >= 2][:6]
+
+    # Importance breakdown
+    imp_count = Counter(it.get("importance",1) for it in all_classified)
+    imp_breakdown = f"高重要性（紅）{imp_count.get(3,0)}則 · 中重要性（橙）{imp_count.get(2,0)}則 · 低重要性（灰）{imp_count.get(1,0)}則"
+
     return {
-        "date": date.strftime("YYYY年MM月DD日").replace("YYYY", str(date.year)).replace("MM", f"{date.month:02d}").replace("DD", f"{date.day:02d}"),
+        "date": date.strftime("%Y年%m月%d日"),
+        "date_short": date.strftime("%Y年%m月%d日"),
         "total_count": len(all_classified),
+        "ai_summary": ai_summary,
         "highlights": highlights,
         "category_stats": dict(category_stats),
+        "imp_breakdown": imp_breakdown,
         "all_news": all_classified,
     }
 
 def build_html(summary_data, date):
-    """Build HTML from summary_data dict."""
-    date_str = date.strftime("YYYY年MM月DD日").replace("YYYY", str(date.year)).replace("MM", f"{date.month:02d}").replace("DD", f"{date.day:02d}")
-    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    imp_label = {1:"低",2:"中",3:"高"}
-    imp_class = {1:"badge-low",2:"badge-medium",3:"badge-high"}
+    """Build HTML from summary_data dict - original card-based style."""
+    date_str = summary_data["date_short"]
+    total = summary_data.get("total_count", 0)
+    ai_summary = summary_data.get("ai_summary", "")
+    imp_breakdown = summary_data.get("imp_breakdown", "")
 
-    hi_html = ""
-    for n in summary_data.get("highlights",[]):
-        imp = n.get("importance",3)
-        hi_html += f"""
-        <div class="highlight-item">
-            <h3>{n["title"]} <span class="importance-badge {imp_class.get(imp,"badge-high")}">{imp_label.get(imp,"高")}</span></h3>
-            <p><span class="category-tag">{n.get("category","")}</span></p>
-            <p class="summary">{n.get("summary","")}</p>
-            <p><a href="{n["link"]}" target="_blank">查看原文 →</a></p>
+    # AI Summary card
+    ai_card = ""
+    if ai_summary:
+        # Format summary text: split on <br> or newlines into paragraphs
+        paras = re.split(r'<br\s*/?>\s*', ai_summary)
+        para_html = ""
+        for p in paras:
+            p = p.strip()
+            if not p:
+                continue
+            # Bold keywords at start of sentence
+            para_html += f"<p>{p}</p>\n"
+        ai_card = f"""
+        <div class="card">
+            <h2>🔥 今日綜合摘要</h2>
+            <p class="summary-text">
+                {para_html.strip()}
+            </p>
         </div>"""
 
+    # Stats card
     stats_html = ""
-    for cat, cnt in summary_data.get("category_stats",{}).items():
-        stats_html += f'<div class="stat-card"><div class="stat-number">{cnt}</div><div class="stat-label">{cat}</div></div>'
+    cat_colors = ["#28a745","#17a2b8","#fd7e14","#dc3545","#6610f2",
+                  "#6f42c1","#ffc107","#e83e8c","#00a86b","#6c757d"]
+    for i, (cat, cnt) in enumerate(summary_data.get("category_stats", {}).items()):
+        color = cat_colors[i % len(cat_colors)]
+        stats_html += f'<div class="stat-card"><div class="stat-num">{cnt}</div><div class="stat-label" style="color:{color};font-weight:600">{cat}</div></div>'
 
+    stats_card = f"""
+        <div class="card">
+            <h2>📊 分類統計</h2>
+            <div class="stats-grid">
+                {stats_html}
+            </div>
+            <p class="imp-note">{imp_breakdown}</p>
+        </div>"""
+
+    # Highlights card
+    hi_html = ""
+    imp_dot_class = {3: "dot-high", 2: "dot-medium", 1: "dot-low"}
+    for n in summary_data.get("highlights", []):
+        imp = n.get("importance", 2)
+        imp_lbl = IMP_LABELS.get(imp, "高")
+        cat = n.get("category", "")
+        summary_txt = n.get("summary", "")
+        if summary_txt:
+            hi_html += f"""
+        <div class="highlight-card">
+            <h3>
+                <span class="cat">{cat}</span>
+                {n["title"]}
+                <span class="imp">{imp_lbl}</span>
+            </h3>
+            <p class="summary">{summary_txt}</p>
+        </div>"""
+        else:
+            hi_html += f"""
+        <div class="highlight-card">
+            <h3>
+                <span class="cat">{cat}</span>
+                {n["title"]}
+                <span class="imp">{imp_lbl}</span>
+            </h3>
+        </div>"""
+
+    highlights_card = f"""
+        <div class="card">
+            <h2>🔥 重點新聞（高重要性）</h2>
+            {hi_html}
+        </div>"""
+
+    # Full news list card
     by_cat = defaultdict(list)
-    for n in summary_data.get("all_news",[]):
-        by_cat[n.get("category","其他")].append(n)
+    for n in summary_data.get("all_news", []):
+        by_cat[n.get("category", "其他")].append(n)
+
     list_html = ""
     for cat, items in sorted(by_cat.items()):
-        list_html += f"<h3>{cat}</h3><ul class='news-list'>"
+        list_html += f'<div class="cat-group">\n<h3>{cat}</h3>\n'
         for n in items:
-            imp = n.get("importance",1)
-            list_html += f"<li><span class='importance-badge {imp_class.get(imp,"badge-low")}'>{imp_label.get(imp,"低")}</span><a href='{n['link']}' target='_blank'>{n['title']}</a></li>"
-        list_html += "</ul>"
+            imp = n.get("importance", 1)
+            imp_lbl = IMP_LABELS.get(imp, "低")
+            imp_cls = imp_dot_class.get(imp, "dot-low")
+            title = n.get("title", "")
+            link = n.get("link", "#")
+            list_html += f'<div class="news-row"><span class="imp-dot {imp_cls}">{imp_lbl}</span><a href="{link}" target="_blank">{title}</a></div>\n'
+        list_html += '</div>\n'
+
+    newslist_card = f"""
+        <div class="card">
+            <h2>📋 全部新聞列表</h2>
+            {list_html}
+        </div>"""
 
     html = f"""<!DOCTYPE html>
 <html lang="zh-Hant">
@@ -170,56 +304,58 @@ def build_html(summary_data, date):
     <title>澳門政府新聞總結 - {date_str}</title>
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; padding: 20px; }}
-        .container {{ max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }}
-        header {{ text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 3px solid #007bff; }}
-        h1 {{ color: #007bff; margin-bottom: 10px; }}
-        .date {{ color: #666; font-size: 1.2em; }}
-        .stats {{ color: #999; margin-top: 5px; }}
-        section {{ margin-bottom: 40px; }}
-        h2 {{ color: #333; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #eee; }}
-        h3 {{ color: #007bff; margin: 20px 0 10px 0; }}
-        .highlight-item {{ background: #f8f9fa; padding: 20px; margin-bottom: 15px; border-radius: 8px; border-left: 4px solid #007bff; }}
-        .summary {{ color: #555; margin: 10px 0; }}
-        .news-list {{ list-style: none; }}
-        .news-list li {{ padding: 10px 0; border-bottom: 1px solid #eee; }}
-        .news-list a {{ color: #007bff; text-decoration: none; }}
-        .news-list a:hover {{ text-decoration: underline; }}
-        .category-tag {{ display: inline-block; padding: 3px 8px; background: #e9ecef; border-radius: 4px; font-size: 0.85em; margin-right: 10px; }}
-        .stats-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 15px; margin-bottom: 30px; }}
-        .stat-card {{ background: #f8f9fa; padding: 15px; text-align: center; border-radius: 8px; }}
-        .stat-number {{ font-size: 2em; font-weight: bold; color: #007bff; }}
-        .stat-label {{ color: #666; font-size: 0.9em; }}
-        .back-link {{ display: inline-block; margin-bottom: 20px; color: #007bff; text-decoration: none; }}
+        body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; color: #333; background: #f0f4f8; }}
+        .container {{ max-width: 900px; margin: 0 auto; padding: 30px 20px; }}
+        header {{ text-align: center; margin-bottom: 30px; }}
+        header h1 {{ font-size: 1.8em; color: #00A86B; margin-bottom: 6px; }}
+        header .subtitle {{ color: #888; font-size: 0.9em; }}
+        .card {{ background: white; border-radius: 12px; padding: 28px 30px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }}
+        .card h2 {{ font-size: 1.1em; color: #00A86B; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #e8f5f0; display: flex; align-items: center; gap: 8px; }}
+        .summary-text {{ font-size: 0.95em; color: #444; line-height: 1.9; text-align: justify; }}
+        .summary-text strong {{ color: #00A86B; }}
+        .summary-text p {{ margin-bottom: 12px; }}
+        .summary-text p:last-child {{ margin-bottom: 0; }}
+        .stats-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 12px; }}
+        .stat-card {{ background: #f8faf9; border: 1px solid #e0f0e8; border-radius: 8px; padding: 14px 10px; text-align: center; }}
+        .stat-num {{ font-size: 1.8em; font-weight: 700; color: #00A86B; }}
+        .stat-label {{ font-size: 0.78em; color: #666; margin-top: 3px; }}
+        .imp-note {{ font-size: 0.8em; color: #888; margin-top: 12px; text-align: center; }}
+        .highlight-card {{ background: #fff9f0; border-radius: 12px; padding: 20px 22px; margin-bottom: 14px; border-left: 5px solid #ff6b35; }}
+        .highlight-card h3 {{ font-size: 0.95em; color: #222; margin-bottom: 8px; line-height: 1.5; }}
+        .highlight-card h3 .cat {{ display: inline-block; font-size: 0.72em; padding: 2px 8px; background: #00A86B; color: white; border-radius: 4px; margin-right: 8px; vertical-align: middle; }}
+        .highlight-card h3 .imp {{ display: inline-block; font-size: 0.68em; padding: 2px 6px; background: #ff6b35; color: white; border-radius: 4px; margin-left: 6px; vertical-align: middle; font-weight: 700; }}
+        .highlight-card .summary {{ font-size: 0.88em; color: #555; margin-bottom: 8px; line-height: 1.7; }}
+        .cat-group {{ margin-bottom: 22px; }}
+        .cat-group h3 {{ font-size: 0.85em; color: #555; margin-bottom: 8px; padding-left: 10px; border-left: 3px solid #ccc; }}
+        .news-row {{ display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #f0f0f0; }}
+        .news-row:last-child {{ border-bottom: none; }}
+        .news-row .imp-dot {{ font-size: 0.65em; font-weight: 700; padding: 2px 7px; border-radius: 4px; color: white; white-space: nowrap; flex-shrink: 0; }}
+        .dot-high {{ background: #dc3545; }}
+        .dot-medium {{ background: #fd7e14; }}
+        .dot-low {{ background: #aaa; }}
+        .news-row a {{ font-size: 0.88em; color: #333; text-decoration: none; flex: 1; }}
+        .news-row a:hover {{ color: #00A86B; text-decoration: underline; }}
+        .footer {{ text-align: center; color: #aaa; font-size: 0.8em; line-height: 2; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0; }}
+        .back-link {{ display: inline-block; margin-bottom: 15px; color: #00A86B; text-decoration: none; font-size: 0.88em; }}
         .back-link:hover {{ text-decoration: underline; }}
-        footer {{ text-align: center; color: #999; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; }}
-        @media (max-width: 600px) {{ .container {{ padding: 20px; }} h1 {{ font-size: 1.5em; }} }}
+        @media (max-width: 600px) {{ .container {{ padding: 15px 12px; }} .card {{ padding: 18px 16px; }} header h1 {{ font-size: 1.4em; }} }}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>📰 澳門政府新聞總結</h1>
-            <p class="date">{date_str}</p>
-            <p class="stats">共 {summary_data.get("total_count",0)} 則新聞</p>
+            <p class="subtitle">{date_str} · 共 {total} 則新聞</p>
         </header>
-        <section class="highlights">
-            <h2>🔥 重點新聞（高重要性）</h2>
-            {hi_html}
-        </section>
-        <section class="stats-by-category">
-            <h2>📊 分類統計</h2>
-            <div class="stats-grid">{stats_html}</div>
-        </section>
-        <section class="full-list">
-            <h2>📋 全部新聞列表</h2>
-            {list_html}
-        </section>
+        {ai_card}
+        {stats_card}
+        {highlights_card}
+        {newslist_card}
         <a href="index.html" class="back-link">← 返回索引頁</a>
         <div class="footer">
-            <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
-            <strong>生成時間：</strong>{ts} (Asia/Macau)<br>
-            <strong>Provider:</strong> OpenClaw | <strong>Model:</strong> {MODEL}
+            資料來源：澳門特別行政區政府新聞局 (GCS)<br>
+            生成時間：{datetime.now().strftime("%Y-%m-%d %H:%M")} (Asia/Macau)<br>
+            Provider: OpenClaw | Model: {MODEL}
         </div>
     </div>
 </body>
