@@ -1,0 +1,43 @@
+{
+  "date": "2026-05-01",
+  "total_count": 4,
+  "news": [
+    {
+      "title": "澳門堅持統籌發展和安全  以新安全格局保障新發展格局",
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EAW3ET7",
+      "summary": "澳門持續堅持總體國家安全觀，落實「愛國者治澳」原則，以特區「三五」規劃為抓手，統籌發展和安全，更好融入和服務國家發展大局。第九次合辦的「全民國家安全教育展」逾40,400人次進場參觀。",
+      "department": "新聞局",
+      "category": "國家安全",
+      "importance": 3,
+      "importance_label": "高"
+    },
+    {
+      "title": "長者事務委員會2026年第一次全體會議",
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EAJYr7w",
+      "summary": "長者事務委員會舉行2026年第一次全體會議，匯報「2026至2035年長者服務十年行動計劃」工作計劃、引介「獨居和兩老家庭長者資料庫」，以及介紹「社區長者健康站」計劃。",
+      "department": "社會工作局",
+      "category": "社會服務",
+      "importance": 2,
+      "importance_label": "中"
+    },
+    {
+      "title": "【圖文包】2026年5月2日澳門戶外表演區活動《K-SPARK IN MACAU 》訊息",
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EAvPVcy",
+      "summary": "2026年5月2日澳門戶外表演區大型演出活動《K-SPARK IN MACAU》訊息圖文包。",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 1,
+      "importance_label": "低"
+    },
+    {
+      "title": "文化局與警方聯合視察戶外表演區大型活動籌備情況",
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EAROcJC",
+      "summary": "澳門戶外表演區明日迎來近三萬名觀眾的大型演出活動，警察總局、文化局、治安警察局聯合視察，確保演出活動安全有序開展。離場時段特設免費接駁專車及輕軌服務。",
+      "department": "文化局",
+      "category": "文化體育",
+      "importance": 3,
+      "importance_label": "高"
+    }
+  ],
+  "generated_at": "2026-05-02T08:00:00"
+}
