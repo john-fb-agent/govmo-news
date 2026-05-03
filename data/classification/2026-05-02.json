@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-02",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Dd3m84n",
+      "title": "善用土地  優化氹仔泊車配套　沙維斯街公共停車場5月4日啟用",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Dd3m84n"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EBmeTbL",
+      "title": "懲教管理局與澳門戒毒康復協會合辦「藝展重生——在囚人及院生手工藝品展」",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EBmeTbL"
+    }
+  ],
+  "generated_at": "2026-05-03T08:00:00",
+  "model": "minimax/MiniMax-M2.7"
+}
