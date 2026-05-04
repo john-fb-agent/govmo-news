@@ -47,19 +47,17 @@ gh run list --workflow deploy-pages.yml --limit 5
 
 ---
 
-## ⏰ Cron
+## ⏰ Cron（系統 crontab）
 
-| 時間 | 任務 |
-|------|------|
+⚠️ OpenClaw cron（6d4bc06c）已移除，統一使用系統 crontab。
+
+| 時間（系統時區 Asia/Macau） | 任務 |
+|----------------------------|------|
 | 09/11/13/15/18 時 | 新聞抓取 |
-| 08:00 UTC (16:00 Macau) | AI 總結生成 |
+| 08:00 | AI 總結生成 |
+| 01:00 | 自動推送 |
 
-**Cron ID:** `6d4bc06c-6dfe-4801-ba12-af71874a1a58`
-**Session:** `isolated` + `session-key: agent:main:main`（使用 main session 的 AI 憑證）
-**Timeout:** 1800s（30 分鐘）
-**Delivery:** none
-
-⚠️ 重要：不要使用 `--session main`（需要 systemEvent payload），使用 `session-key agent:main:main` 代替。
+**驗證：** `crontab -l | grep govmo-news`
 
 ---
 
