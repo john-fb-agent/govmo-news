@@ -1,6 +1,6 @@
 {
   "date": "2026-04-21",
-  "total_count": 26,
+  "news_count": 26,
   "department_stats": {
     "治安警察局": 1,
     "文化局": 3,
@@ -17,5 +17,5 @@
     "橫琴粵澳深度合作區商事服務局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:47.523895"
+  "generated_at": "2026-05-04T20:34:03.403037"
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-04-22",
-  "total_count": 28,
+  "news_count": 28,
   "department_stats": {
     "澳門旅遊大學": 1,
     "地球物理氣象局": 1,
@@ -26,5 +26,5 @@
     "體育局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:47.547369"
+  "generated_at": "2026-05-04T20:34:03.424560"
 }

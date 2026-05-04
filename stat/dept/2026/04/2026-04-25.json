@@ -1,6 +1,6 @@
 {
   "date": "2026-04-25",
-  "total_count": 10,
+  "news_count": 10,
   "department_stats": {
     "教育及青年發展局": 1,
     "警察總局": 1,
@@ -12,5 +12,5 @@
     "旅遊局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:47.616673"
+  "generated_at": "2026-05-04T20:34:03.485375"
 }

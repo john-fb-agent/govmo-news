@@ -1,6 +1,6 @@
 {
   "date": "2026-04-28",
-  "total_count": 31,
+  "news_count": 31,
   "department_stats": {
     "交通事務局": 1,
     "教育及青年發展局": 3,
@@ -26,5 +26,5 @@
     "市政署": 2
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:47.686234"
+  "generated_at": "2026-05-04T20:34:03.554334"
 }

@@ -56,7 +56,7 @@ def generate_stats(news_data, date_str):
     # Build stats object
     stats = {
         "date": date_str,
-        "total_count": len(news_data),
+        "news_count": len(news_data),
         "department_stats": dict(dept_counter),
         "no_department_count": no_dept_count,
         "generated_at": datetime.now().isoformat()

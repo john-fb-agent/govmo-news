@@ -1,6 +1,6 @@
 {
   "date": "2026-04-23",
-  "total_count": 30,
+  "news_count": 30,
   "department_stats": {
     "經濟及科技發展局": 2,
     "市政署": 5,
@@ -19,5 +19,5 @@
     "交通事務局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:47.570517"
+  "generated_at": "2026-05-04T20:34:03.445131"
 }

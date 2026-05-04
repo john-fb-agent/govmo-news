@@ -1,6 +1,6 @@
 {
   "date": "2026-04-30",
-  "total_count": 41,
+  "news_count": 41,
   "department_stats": {
     "離島醫療綜合體北京協和醫院澳門醫學中心": 1,
     "衛生局": 4,
@@ -25,5 +25,5 @@
     "新聞局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:47.736382"
+  "generated_at": "2026-05-04T20:34:03.602066"
 }

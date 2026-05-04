@@ -1,6 +1,6 @@
 {
   "date": "2026-04-27",
-  "total_count": 28,
+  "news_count": 28,
   "department_stats": {
     "行政公職局": 3,
     "澳門旅遊大學": 1,
@@ -24,5 +24,5 @@
     "海事及水務局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:47.658103"
+  "generated_at": "2026-05-04T20:34:03.526817"
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-05-03",
-  "total_count": 6,
+  "news_count": 6,
   "department_stats": {
     "土地工務局": 1,
     "交通事務局": 2,
@@ -14,5 +14,5 @@
     "文化局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:49.985972"
+  "generated_at": "2026-05-04T20:34:03.662678"
 }

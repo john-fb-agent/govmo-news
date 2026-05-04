@@ -1,6 +1,6 @@
 {
   "date": "2026-04-24",
-  "total_count": 29,
+  "news_count": 29,
   "department_stats": {
     "新聞局": 6,
     "郵電局": 1,
@@ -22,5 +22,5 @@
     "衛生局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:47.593751"
+  "generated_at": "2026-05-04T20:34:03.465382"
 }

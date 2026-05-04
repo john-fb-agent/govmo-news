@@ -1,6 +1,6 @@
 {
   "date": "2026-05-04",
-  "total_count": 21,
+  "news_count": 21,
   "department_stats": {
     "警察總局": 1,
     "澳門大學": 2,
@@ -20,5 +20,5 @@
     "澳門金融管理局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-05-04T20:27:50.013579"
+  "generated_at": "2026-05-04T20:34:03.683490"
 }
