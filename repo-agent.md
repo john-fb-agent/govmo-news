@@ -68,13 +68,16 @@ gh run list --workflow deploy-pages.yml --limit 5
 ```
 src/fetch_news.py                      # 新聞抓取
 src/rss_parser.py                      # RSS 解析
-src/generate_summary.py                 # AI 總結生成（使用 OpenClaw agent CLI）
-src/generate_classification_stats.py    # 分類統計（支援 YYYY-MM-DD 參數）
+src/generate_summary.py                # AI 總結生成（使用 OpenClaw agent CLI）
+src/generate_classification_stats.py   # 分類統計（支援 YYYY-MM-DD 參數）
 src/summary_prompt.txt                  # AI 提示詞模板
-data/processed/YYYY/MM/DD.json          # 原始新聞數據
-data/classification/YYYY-MM-DD.json   # 分類結果
+data/processed/YYYY/MM/DD.json         # 原始新聞數據
+data/classification/YYYY-MM-DD.json     # 分類結果
 stat/class/YYYY/MM/DD.json             # 分類統計
 public/                                # GitHub Pages
+public/index.html                      # 主索引頁（按年份導航）
+public/YYYY/MM/index.html               # 月份索引頁
+public/YYYY/MM/YYYY-MM-DD.html          # 每日新聞頁
 ```
 
 ---
@@ -134,6 +137,17 @@ public/                                # GitHub Pages
 - **生成時機：** 每次 fetch_news.py 執行後自動生成
 - **網頁顯示：** generate_summary.py 整合部門統計到 HTML
 - **開始日期：** 2026-04-21（不追溯）
+
+### GitHub Pages 結構（2026-05-04）
+
+**頁面組織：** 按年份/月份分層目錄
+- `public/YYYY/MM/YYYY-MM-DD.html` — 每日新聞頁
+- `public/YYYY/MM/index.html` — 月份索引頁（自動生成）
+- `public/index.html` — 主索引頁，按年份/月份導航（自動生成）
+
+**URL 變更：** 所有舊連結 `public/YYYY-MM-DD.html` → `public/YYYY/MM/YYYY-MM-DD.html`
+- 每日頁面 back-link 改為 `../../index.html`
+- `generate_summary.py` 的 `rebuild_index_pages()` 自動更新所有索引頁
 
 ### 新聞分類系統（Issue #15）
 - **分類數量：** 10 類
