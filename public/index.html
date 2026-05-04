@@ -1,101 +1,76 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>澳門政府新聞總結 - 索引</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background: white;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #1a1a1a;
-            border-bottom: 3px solid #00A86B;
-            padding-bottom: 15px;
-        }
-        .summary-list {
-            list-style: none;
-            padding: 0;
-        }
-        .summary-list li {
-            padding: 12px 15px;
-            margin: 10px 0;
-            background: #f9f9f9;
-            border-radius: 4px;
-            border-left: 4px solid #00A86B;
-        }
-        .summary-list a {
-            color: #00A86B;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .summary-list a:hover {
-            text-decoration: underline;
-        }
-        .note {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .footer {
-            margin-top: 30px;
-            color: #666;
-            font-size: 12px;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f0f4f8; color: #333; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+        header { background: #00A86B; color: white; border-radius: 12px; padding: 28px 32px; margin-bottom: 28px; box-shadow: 0 4px 12px rgba(0,168,107,0.25); }
+        header h1 { font-size: 1.7em; margin-bottom: 6px; }
+        header p { opacity: 0.88; font-size: 0.9em; }
+        .card { background: white; border-radius: 12px; padding: 24px 28px; margin-bottom: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+        .card h2 { color: #00A86B; font-size: 1em; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #e8f5f0; display: flex; align-items: center; gap: 8px; }
+        .year-section { margin-bottom: 24px; }
+        .year-header { font-size: 1.15em; font-weight: 700; color: #1a1a1a; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .year-header .year-badge { background: #00A86B; color: white; padding: 2px 12px; border-radius: 20px; font-size: 0.85em; }
+        .month-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+        .month-card { background: #f8faf9; border: 1px solid #e0f0e8; border-radius: 10px; padding: 14px 16px; text-decoration: none; color: #333; transition: all 0.2s ease; display: block; }
+        .month-card:hover { background: #e8f5f0; border-color: #00A86B; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,168,107,0.15); }
+        .month-card .month-name { font-weight: 600; color: #00A86B; font-size: 0.95em; margin-bottom: 4px; }
+        .month-card .month-count { font-size: 0.78em; color: #888; }
+        .month-card .month-latest { font-size: 0.75em; color: #aaa; margin-top: 3px; }
+        .year-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+        .year-nav a { padding: 6px 16px; background: #f0f0f0; border-radius: 20px; text-decoration: none; color: #555; font-weight: 600; font-size: 0.88em; transition: all 0.2s; }
+        .year-nav a:hover, .year-nav a.active { background: #00A86B; color: white; }
+        .note { background: #fffbeb; border-left: 4px solid #ffc107; padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 0.88em; color: #666; margin-bottom: 20px; }
+        .footer { text-align: center; color: #aaa; font-size: 0.8em; padding-top: 20px; border-top: 1px solid #e0e0e0; margin-top: 30px; }
+        @media (max-width: 600px) { .container { padding: 15px 12px; } .month-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); } }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📰 澳門政府新聞總結</h1>
-        <p>每日新聞總結索引頁面</p>
-        
-        <div class="note">
-            <strong>注意：</strong> 此頁面會自動更新。每天早上 8 點會生成前一天的新聞總結。
+        <header>
+            <h1>📰 澳門政府新聞總結</h1>
+            <p>澳門特別行政區政府新聞局 (GCS) 每日新聞索引</p>
+        </header>
+        <div class="note">📅 此頁面會自動更新。每天早上 8 點（澳門時間）會生成前一天的新聞總結。</div>
+        <div class="card">
+            <h2>🗂️ 按年份瀏覽</h2>
+            <div class="year-nav" id="yearNav"></div>
+            <div id="content"></div>
         </div>
-
-        <h2>📋 新聞總結列表</h2>
-        <ul class="summary-list" id="summaryList">
-            <!-- 新聞總結將由 cron 任務自動添加到這裡 -->
-            <li><a href="2026-05-03.html">📅 2026-05-03</a></li>
-            <li><a href="2026-05-02.html">📅 2026-05-02</a></li>
-            <li><a href="2026-05-01.html">📅 2026-05-01</a></li>
-            <li><a href="2026-04-30.html">📅 2026-04-30</a></li>
-            <li><a href="2026-04-29.html">📅 2026-04-29</a></li>
-            <li><a href="2026-04-28.html">📅 2026-04-28</a></li>
-            <li><a href="2026-04-27.html">📅 2026-04-27</a></li>
-            <li><a href="2026-04-26.html">📅 2026-04-26</a></li>
-            <li><a href="2026-04-25.html">📅 2026-04-25</a></li>
-            <li><a href="2026-04-24.html">📅 2026-04-24</a></li>
-            <li><a href="2026-04-23.html">📅 2026-04-23</a></li>
-            <li><a href="2026-04-22.html">📅 2026-04-22</a></li>
-            <li><a href="2026-04-21.html">📅 2026-04-21</a></li>
-            <li><a href="2026-04-20.html">📅 2026-04-20</a></li>
-            <li><a href="2026-04-19.html">📅 2026-04-19</a></li>
-            <li><a href="2026-04-18.html">📅 2026-04-18</a></li>
-            <li><a href="2026-04-17.html">📅 2026-04-17</a></li>
-            <li><a href="2026-04-16.html">📅 2026-04-16</a></li>
-            <li><a href="2026-04-15.html">📅 2026-04-15</a></li>
-            <li><a href="2026-04-14.html">📅 2026-04-14</a></li>
-        </ul>
-
-        <div class="footer">
-            資料來源：澳門特別行政區政府新聞局<br>
-            最後更新：2026-05-04
-        </div>
+        <div class="footer">資料來源：澳門特別行政區政府新聞局 (GCS)<br>最後更新：2026-05-04 15:31 &nbsp;·&nbsp; 由 OpenClaw AI 自動生成</div>
     </div>
+    <script>
+    const INDEX_DATA = [{"year": "2026", "months": [{"month": "04", "month_full": "4", "label": "2026 年 4 月", "count": 17, "latest": "2026-04-30"}, {"month": "05", "month_full": "5", "label": "2026 年 5 月", "count": 3, "latest": "2026-05-03"}]}];
+    function renderIndex() {
+            const nav = document.getElementById('yearNav');
+            const content = document.getElementById('content');
+            nav.innerHTML = INDEX_DATA.map(y =>
+                '<a href="#year-' + y.year + '" onclick="scrollToYear('' + y.year + ''); return false;">' + y.year + '</a>'
+            ).join('');
+            content.innerHTML = INDEX_DATA.map(y => {
+                let html = '<div class="year-section" id="year-' + y.year + '">' +
+                    '<div class="year-header"><span class="year-badge">' + y.year + '</span></div>' +
+                    '<div class="month-grid">';
+                html += y.months.map(m => {
+                    return '<a class="month-card" href="' + y.year + '/' + m.month + '/index.html">' +
+                        '<div class="month-name">' + y.year + ' 年 ' + m.month_full + ' 月</div>' +
+                        '<div class="month-count">' + m.count + ' 篇總結</div>' +
+                        '<div class="month-latest">最新：' + m.latest + '</div>' +
+                    '</a>';
+                }).join('');
+                html += '</div></div>';
+                return html;
+            }).join('');
+        })();
+    function scrollToYear(year) {
+        document.getElementById('year-' + year).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    renderIndex();
+    </script>
 </body>
 </html>
