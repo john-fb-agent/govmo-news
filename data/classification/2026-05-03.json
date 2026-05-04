@@ -1,0 +1,77 @@
+{
+  "date": "2026-05-03",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DddSCp5",
+      "title": "政府上月拆三危樓保障公眾安全",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DddSCp5"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DdshAE1",
+      "title": "連勝街重整行人路　5月6日起鏡湖巴士站臨時遷移",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DdshAE1"
+    },
+    {
+      "guid": "",
+      "title": "「2026中小企業數字化支援服務」舉辦供應商招募說明會",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EAXeypq"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ECNJBO1",
+      "title": "中葡論壇常設秘書處代表團赴福州 參加數位中國建設峰會並在當地參訪交流",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ECNJBO1"
+    },
+    {
+      "guid": "",
+      "title": "「五一假期行人專用區」運作暢順 明（4）日最後一天",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ECmH2Zw"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DddSCp5",
+      "title": "政府上月拆三危樓保障公眾安全",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DddSCp5"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26DdshAE1",
+      "title": "連勝街重整行人路　5月6日起鏡湖巴士站臨時遷移",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26DdshAE1"
+    },
+    {
+      "guid": "",
+      "title": "「2026中小企業數字化支援服務」舉辦供應商招募說明會",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EAXeypq"
+    },
+    {
+      "guid": "",
+      "title": "中葡論壇常設秘書處代表團赴福州參加數位中國建設峰會並在當地參訪交流",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ECNJBO1"
+    },
+    {
+      "guid": "",
+      "title": "「五一假期行人專用區」運作暢順",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ECmH2Zw"
+    }
+  ],
+  "generated_at": "2026-05-04T08:03:51.930770",
+  "model": "minimax/MiniMax-M2.7"
+}
