@@ -1,10 +1,11 @@
 {
   "date": "2026-04-26",
-  "total_count": 2,
+  "total_count": 3,
   "department_stats": {
     "文化局": 1,
-    "新聞局": 1
+    "新聞局": 1,
+    "體育局": 1
   },
   "no_department_count": 0,
-  "generated_at": "2026-04-26T18:00:01.905616"
+  "generated_at": "2026-05-04T20:27:47.637666"
 }
