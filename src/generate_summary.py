@@ -494,7 +494,7 @@ def rebuild_index_pages():
             const nav = document.getElementById('yearNav');
             const content = document.getElementById('content');
             nav.innerHTML = INDEX_DATA.map(y =>
-                '<a href="#year-' + y.year + '" onclick="scrollToYear(\'' + y.year + '\'); return false;">' + y.year + '</a>'
+                '<a href="#year-' + y.year + '" onclick="scrollToYear(&#39;' + y.year + '&#39;); return false;">' + y.year + '</a>'
             ).join('');
             content.innerHTML = INDEX_DATA.map(y => {{
                 let html = '<div class="year-section" id="year-' + y.year + '">' +
@@ -510,7 +510,8 @@ def rebuild_index_pages():
                 html += '</div></div>';
                 return html;
             }}).join('');
-        }});
+        }}
+
     function scrollToYear(year) {{
         document.getElementById('year-' + year).scrollIntoView({{ behavior: 'smooth', block: 'start' }});
     }}
