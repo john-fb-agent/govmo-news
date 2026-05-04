@@ -457,6 +457,13 @@ def rebuild_index_pages():
         .year-nav a:hover, .year-nav a.active {{ background: #00A86B; color: white; }}
         .note {{ background: #fffbeb; border-left: 4px solid #ffc107; padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 0.88em; color: #666; margin-bottom: 20px; }}
         .footer {{ text-align: center; color: #aaa; font-size: 0.8em; padding-top: 20px; border-top: 1px solid #e0e0e0; margin-top: 30px; }}
+        .recent-list {{ list-style: none; }}
+        .recent-list li {{ display: flex; align-items: center; padding: 9px 0; border-bottom: 1px solid #f0f0f0; }}
+        .recent-list li:last-child {{ border-bottom: none; }}
+        .recent-list .date {{ font-weight: 600; color: #888; min-width: 110px; font-size: 0.88em; }}
+        .recent-list a {{ color: #00A86B; text-decoration: none; font-weight: 600; flex: 1; }}
+        .recent-list a:hover {{ text-decoration: underline; }}
+        .recent-list .weekday {{ color: #aaa; font-size: 0.8em; margin-left: 8px; }}
         @media (max-width: 600px) {{ .container {{ padding: 15px 12px; }} .month-grid {{ grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }} }}
     </style>
 </head>
@@ -467,8 +474,15 @@ def rebuild_index_pages():
             <p>澳門特別行政區政府新聞局 (GCS) 每日新聞索引</p>
         </header>
         <div class="note">📅 此頁面會自動更新。每天早上 8 點（澳門時間）會生成前一天的新聞總結。</div>
+
         <div class="card">
-            <h2>🗂️ 按年份瀏覽</h2>
+            <h2>📅 最近 7 天</h2>
+            <ul class="recent-list">
+{recent_html}            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🗂️ 按月份瀏覽</h2>
             <div class="year-nav" id="yearNav"></div>
             <div id="content"></div>
         </div>
@@ -510,6 +524,7 @@ def rebuild_index_pages():
     from datetime import datetime as _dt
 
     index_data = []
+    recent_files = []  # [(date_str, href), ...] for recent-days list
     for year_dir in sorted(OUTPUT_DIR.iterdir()):
         if not year_dir.is_dir() or year_dir.name.startswith('.'):
             continue
@@ -523,6 +538,8 @@ def rebuild_index_pages():
             if not files:
                 continue
             latest = files[0].stem  # YYYY-MM-DD
+            for f in files:
+                recent_files.append((f.stem, year + '/' + month + '/' + f.name))
             months.append({
                 "month": month,
                 "month_full": MONTH_FULL.get(month, month),
@@ -549,11 +566,25 @@ def rebuild_index_pages():
         if months:
             index_data.append({"year": year, "months": months})
 
+    # Sort recent_files by date descending, take last 7
+    recent_files.sort(key=lambda x: x[0], reverse=True)
+    recent_7 = recent_files[:7]
+
+    # Build recent days HTML
+    recent_html = ""
+    for date_str, href in recent_7:
+        try:
+            wd = ["一","二","三","四","五","六","日"][_dt.strptime(date_str, "%Y-%m-%d").weekday()]
+        except:
+            wd = ""
+        recent_html += f'                <li><span class="date">{date_str}</span><a href="{href}">{date_str}</a><span class="weekday">星期{wd}</span></li>\n'
+
     # Build main index
     last_update = _dt.now().strftime("%Y-%m-%d %H:%M")
     main_html = main_index_template.format(
         index_json=_json.dumps(index_data, ensure_ascii=False),
-        last_update=last_update
+        last_update=last_update,
+        recent_html=recent_html.rstrip() if recent_html else ""
     )
     (OUTPUT_DIR / "index.html").write_text(main_html, encoding="utf-8")
     log(f"Main index updated: {OUTPUT_DIR / 'index.html'}")
