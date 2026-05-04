@@ -1,6 +1,6 @@
 # AI Agent 指南
 
-**創建：** 2026-04-16 20:04 | **Provider:** OpenClaw | **Model:** minimax/MiniMax-M2.7  
+**創建：** 2026-04-16 20:04 | **Provider:** OpenClaw | **Model:** minimax/MiniMax-M2.7-highspeed
 **最後更新：** 2026-04-22 | **Last Review：** 2026-04-22
 
 ---
@@ -107,10 +107,10 @@ public/YYYY/MM/YYYY-MM-DD.html          # 每日新聞頁
 - **importance 值：** 3=高，2=中，1=低
 
 ### 返回索引頁連結
-- **格式：** `<a href="index.html" class="back-link">← 返回索引頁</a>`
+- **格式：** `<a href="../../index.html" class="back-link">← 返回索引頁</a>`
 - **位置：** Footer 之前
 - **CSS：** `.back-link { display: inline-block; margin-bottom: 20px; color: #00A86B; text-decoration: none; }`
-- **所有頁面：** public/2026-04-14.html 至 public/2026-04-20.html 已統一
+- **原因：** 每日頁面在 `public/YYYY/MM/YYYY-MM-DD.html`，需回溯兩層
 
 ### 章節命名（Issue #7）
 - **統一格式：** `📋 全部新聞列表`、`📊 分類統計`
@@ -137,6 +137,13 @@ public/YYYY/MM/YYYY-MM-DD.html          # 每日新聞頁
 - **生成時機：** 每次 fetch_news.py 執行後自動生成
 - **網頁顯示：** generate_summary.py 整合部門統計到 HTML
 - **開始日期：** 2026-04-21（不追溯）
+
+### 主索引頁（2026-05-04 新增）
+- **位置：** `public/index.html`
+- **內容：** 📅 最近 7 天（Server-Side Rendered）+ 🗂️ 按月份瀏覽（JS 渲染）
+- **最近 7 天：** 自動列出最新的 7 篇新聞，直接連結到當日頁面
+- **按月份瀏覽：** 點擊年份按鈕跳轉，或直接點擊月份卡片
+- **URL：** 所有連結為相對路徑（如 `2026/05/index.html`）
 
 ### GitHub Pages 結構（2026-05-04）
 
@@ -168,7 +175,7 @@ public/YYYY/MM/YYYY-MM-DD.html          # 每日新聞頁
 
 ---
 
-**最後更新：** 2026-04-27 | **Last Review：** 2026-04-27 | **維護者：** AI Agent
+**最後更新：** 2026-05-04 | **Last Review：** 2026-05-04 | **維護者：** AI Agent
 
 ---
 
