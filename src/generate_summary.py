@@ -510,7 +510,7 @@ def rebuild_index_pages():
                 html += '</div></div>';
                 return html;
             }}).join('');
-        }})();
+        }});
     function scrollToYear(year) {{
         document.getElementById('year-' + year).scrollIntoView({{ behavior: 'smooth', block: 'start' }});
     }}
