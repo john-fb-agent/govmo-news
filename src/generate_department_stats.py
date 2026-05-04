@@ -36,14 +36,17 @@ def get_today_path():
 
 def generate_stats(news_data, date_str):
     """Generate department statistics from news data"""
-    # Count by department
+    # Count by department (split by " / " for multi-department entries)
     dept_counter = Counter()
     no_dept_count = 0
     
     for news in news_data:
         dept = news.get('department')
         if dept:
-            dept_counter[dept] += 1
+            # Split by " / " for entries like "經濟及科技發展局 / 旅遊局 / 博彩監察協調局"
+            departments = [d.strip() for d in dept.split(' / ') if d.strip()]
+            for d in departments:
+                dept_counter[d] += 1
         else:
             no_dept_count += 1
     
