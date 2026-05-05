@@ -201,9 +201,12 @@ def build_html(summary_data, date, back_link_path="index.html"):
     back_link_path: relative path from the output HTML file to index.html.
     For public/YYYY/MM/YYYY-MM-DD.html, this is "../../index.html".
     """
+    date_str = date.strftime("%Y-%m-%d")
+    total = summary_data.get("total_count", 0)
 
     # AI Summary card
     ai_card = ""
+    ai_summary = summary_data.get("ai_summary")
     if ai_summary:
         # Format summary text: split on <br> or newlines into paragraphs
         paras = re.split(r'<br\s*/?>\s*', ai_summary)
@@ -236,7 +239,7 @@ def build_html(summary_data, date, back_link_path="index.html"):
             <div class="stats-grid">
                 {stats_html}
             </div>
-            <p class="imp-note">{imp_breakdown}</p>
+            <p class="imp-note">{summary_data.get("imp_breakdown", "")}</p>
         </div>"""
 
     # Highlights card
