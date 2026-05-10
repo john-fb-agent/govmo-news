@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-09",
+  "news_count": 4,
+  "department_stats": {
+    "文化局": 1,
+    "衛生局": 1,
+    "司法警察局": 1,
+    "市政署": 1
+  },
+  "no_department_count": 0,
+  "generated_at": "2026-05-10T01:02:21.867348"
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-09",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EIDDMca",
+      "title": "“雅古納的複調”威尼斯雙年展中國澳門展區隆重揭幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EIDDMca"
+    },
+    {
+      "guid": "",
+      "title": "“全城家家戶戶清積水”大行動今啟動 聯動社團提前部署防控“雙熱” 築牢社區防線",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EIRfCwn"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EIPjkYj",
+      "title": "警情通告：提防假冒澳電「催繳電費」短訊 以免個資及信用卡資料被盜用",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EIPjkYj"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EI84t8O",
+      "title": "市容美化整潔工作組今於黑沙及竹灣海灘辦清潔活動",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EI84t8O"
+    }
+  ],
+  "generated_at": "2026-05-10T08:01:48.579849",
+  "model": "minimax/MiniMax-M2.7"
+}
