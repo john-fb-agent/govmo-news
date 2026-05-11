@@ -1,0 +1,28 @@
+{
+  "date": "2026-05-10",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EJli01f",
+      "title": "核電站運行事件通報",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EJli01f"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EJtHOD2",
+      "title": "衛生局接獲1宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EJtHOD2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EJqpNGF",
+      "title": "活力社區動起來—運動減壓x社區運動同樂日圓滿舉行",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EJqpNGF"
+    }
+  ],
+  "generated_at": "2026-05-11T08:05:16.565180",
+  "model": "minimax/MiniMax-M2.7"
+}
