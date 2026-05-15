@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-14",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENsG8Kf",
+      "title": "市政署維修水管　A2連接橋往新城A區方向5月15至16日臨時封閉",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENsG8Kf"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EMYrpAn",
+      "title": "海事局排查內港漁船  保障海上安全及潔淨",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EMYrpAn"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENqKY55",
+      "title": "澳時裝設計學員專場秀 亮相中國國際大學生時裝周",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENqKY55"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EN1DpGQ",
+      "title": "警情通告：提防「自來水」詐騙短訊 切勿點擊短訊連結",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EN1DpGQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENOs9xX",
+      "title": "市政署關注波蘭一地區出現高致病性禽流感",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENOs9xX"
+    }
+  ],
+  "generated_at": "2026-05-15T08:02:39.562414",
+  "model": "minimax/MiniMax-M2.7"
+}
