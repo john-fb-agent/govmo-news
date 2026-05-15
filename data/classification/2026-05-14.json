@@ -2,6 +2,13 @@
   "date": "2026-05-14",
   "news": [
     {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EN1DpGQ",
+      "title": "警情通告：提防「自來水」詐騙短訊 切勿點擊短訊連結",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EN1DpGQ"
+    },
+    {
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENsG8Kf",
       "title": "市政署維修水管　A2連接橋往新城A區方向5月15至16日臨時封閉",
       "category": "交通運輸",
@@ -23,20 +30,118 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENqKY55"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EN1DpGQ",
-      "title": "警情通告：提防「自來水」詐騙短訊 切勿點擊短訊連結",
-      "category": "社會服務",
-      "importance": 3,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EN1DpGQ"
-    },
-    {
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENOs9xX",
       "title": "市政署關注波蘭一地區出現高致病性禽流感",
       "category": "社會服務",
       "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENOs9xX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EN6VOIu",
+      "title": "活力社區— 2026親子運動日 6月7日舉行",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EN6VOIu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENdh11S",
+      "title": "市政署六月親近大自然活動接受報名",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENdh11S"
+    },
+    {
+      "guid": "",
+      "title": "響應 \"世界高血壓日\"  衛生局舉行新聞發佈會 持續提升高血壓知曉率、治療率和治療控制率",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EN7q6tT"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENfzGR2",
+      "title": "2026幸福家庭月系列活動",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENfzGR2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENfuTOO",
+      "title": "首屆中國岩石力學國際研討會在澳大舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENfuTOO"
+    },
+    {
+      "guid": "",
+      "title": "「琴澳家庭醫學聯合培訓中心」於橫琴揭牌 致力提升兩地家庭醫學培訓、基層服務能力和社區健康管理水平",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENGXEqC"
+    },
+    {
+      "guid": "",
+      "title": "宋玉生廣場「吸煙區」內一指定吸煙點 5月16日起以「吸煙間」形式試行",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENEWj74"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENiarn0",
+      "title": "藝術節本周上演音樂劇、南音爵士與獨腳戲 中西文化跨界演出展現藝海新航魅力",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENiarn0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENCEsgP",
+      "title": "澳門演藝學院戲劇學校匯報演出《亡目》 門票免費登記索取",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENCEsgP"
+    },
+    {
+      "guid": "",
+      "title": "教青局與衛生局合辦「滅蚊技術應用」培訓講座 賦能學校人員掌握滅蚊實務技巧",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENzhvVt"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EN9GIwu",
+      "title": "警情通告：慎防假冒「一戶通」欠費通知 警惕所有附連結短訊",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EN9GIwu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENuwm5C",
+      "title": "澳門理工大學連續四年參與世界數字教育大會 攜手全球夥伴共建AI+教育治理新格局",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENuwm5C"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENqcrOa",
+      "title": "「活力社區—2026澳門競技障礙挑戰賽」第一回合接受報名",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENqcrOa"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENp0cZa",
+      "title": "衛生局持續關注郵輪出現漢坦病毒感染事件進展 呼籲居民外遊加強注意及防範",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENp0cZa"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ENKubPZ",
+      "title": "衛生局接獲1宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ENKubPZ"
     }
   ],
-  "generated_at": "2026-05-15T08:02:39.562414",
+  "generated_at": "2026-05-15T08:14:09.300135",
   "model": "minimax/MiniMax-M2.7"
 }
