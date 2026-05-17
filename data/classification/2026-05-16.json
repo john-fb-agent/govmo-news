@@ -16,13 +16,13 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EPAnWzC"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EPJJCsv",
-      "title": "“藝遊雅文”活動及澳門戶外表演區親子設施周日暫停",
+      "guid": "",
+      "title": "「藝遊雅文」活動及澳門戶外表演區親子設施周日暫停",
       "category": "文化體育",
       "importance": 1,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EPJJCsv"
     }
   ],
-  "generated_at": "2026-05-17T08:02:38.834680",
+  "generated_at": "2026-05-17T09:48:35.230497",
   "model": "minimax/MiniMax-M2.7"
 }
