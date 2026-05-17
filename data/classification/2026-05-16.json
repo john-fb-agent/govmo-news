@@ -1,0 +1,28 @@
+{
+  "date": "2026-05-16",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EP6MWNd",
+      "title": "立法會開放日明舉行",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EP6MWNd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EPAnWzC",
+      "title": "公共建設局走進社區 就路環西側防洪排澇工程與居民深入交流並聽取意見",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EPAnWzC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EPJJCsv",
+      "title": "“藝遊雅文”活動及澳門戶外表演區親子設施周日暫停",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EPJJCsv"
+    }
+  ],
+  "generated_at": "2026-05-17T08:02:38.834680",
+  "model": "minimax/MiniMax-M2.7"
+}
