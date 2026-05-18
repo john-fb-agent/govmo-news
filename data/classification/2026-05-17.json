@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-17",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EQo8NSF",
+      "title": "澳門國際博物館日嘉年華開幕 26間博物館聯手呈獻文博盛事",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EQo8NSF"
+    }
+  ],
+  "generated_at": "2026-05-18T08:00:36.779465",
+  "model": "minimax/MiniMax-M2.7"
+}
