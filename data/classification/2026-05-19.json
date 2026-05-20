@@ -108,7 +108,7 @@
     },
     {
       "guid": "",
-      "title": "衛生局今啟動「航空業及機場工作人員麻疹疫苗接種計劃」 為前線人員築牢免疫屏障",
+      "title": "衛生局今啟動「航空業及機場工作人員麻疹疫苗接种計劃」 為前線人員築牢免疫屏障",
       "category": "社會服務",
       "importance": 3,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ESV7SCo"
@@ -149,6 +149,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ESAQDdU"
     }
   ],
-  "generated_at": "2026-05-20T08:05:14.944257",
+  "generated_at": "2026-05-20T08:23:11.730667",
   "model": "minimax/MiniMax-M2.7"
 }
