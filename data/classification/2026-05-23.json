@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-23",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EV44yGC",
+      "title": "科技基金深化科技人才培養及交流 與中科院合辦澳門科技工作者研修班",
+      "category": "科技創新",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EV44yGC"
+    },
+    {
+      "guid": "",
+      "title": "產業園參與巴西衛健戰略研討 推動中醫藥進入巴西衛生系統",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EWlRw2z"
+    }
+  ],
+  "generated_at": "2026-05-24T10:21:18.129508",
+  "model": "minimax/MiniMax-M2.7"
+}
