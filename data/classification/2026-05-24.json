@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-24",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EXPgSpy",
+      "title": "衛生局接獲1宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EXPgSpy"
+    }
+  ],
+  "generated_at": "2026-05-25T08:00:33.765339",
+  "model": "minimax/MiniMax-M2.7"
+}
