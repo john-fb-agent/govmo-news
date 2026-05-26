@@ -1,0 +1,56 @@
+{
+  "date": "2026-05-25",
+  "news": [
+    {
+      "guid": "",
+      "title": "琴澳合辦「2026年度醫療補貼計劃講解會」 為醫療業界拓展業務至大灣區創造條件",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EYcqo5s"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EYgDEP6",
+      "title": "衛生局明（26）日暫停提供捐血車服務",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EYgDEP6"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EYCb4o0",
+      "title": "藥監局舉辦醫械法施行細則說明會及技術性指示諮詢會",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EYCb4o0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EYjw6hZ",
+      "title": "避暑中心開放",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EYjw6hZ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EYgplMc",
+      "title": "橫琴垃圾分類藝術科普課程上新 8場手作課等你來",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EYgplMc"
+    },
+    {
+      "guid": "",
+      "title": "身心健康跨部門工作組藉「全國大學生心理健康日」  呼籲大學生科學調適心理狀態",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EYC0xHk"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EYez0Bt",
+      "title": "衛生局動態調整埃博拉病毒病防控策略 加強高風險地區入境人士21天自我健康管理",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EYez0Bt"
+    }
+  ],
+  "generated_at": "2026-05-26T08:00:51.819148",
+  "model": "minimax/MiniMax-M2.7"
+}
