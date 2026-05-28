@@ -1,0 +1,98 @@
+{
+  "date": "2026-05-27",
+  "news": [
+    {
+      "guid": "",
+      "title": "響應「中國文化和自然遺產日」 文化局辦世遺景點活動及工作坊",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Eaarj2c"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EaH0vuO",
+      "title": "天氣酷熱　衛生局呼籲居民慎防中暑",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EaH0vuO"
+    },
+    {
+      "guid": "",
+      "title": "「總體規劃」第一次修改草案6月29日起公開諮詢",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EaKQ1FG"
+    },
+    {
+      "guid": "",
+      "title": "「休漁漁家樂」啟航　逢週三至五售票",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ea5CL5C"
+    },
+    {
+      "guid": "",
+      "title": "勞工局與美高梅合作推出就業+培訓專項計劃　5月29日起接受網上申請",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EavoYci"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EaaEFTH",
+      "title": "虛報僱員資料偽造文件罪成　香港燈光師質疑四年入境禁令敗訴",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EaaEFTH"
+    },
+    {
+      "guid": "",
+      "title": "澳大推出葡語播客「講吓呢啲．講吓嗰啲」",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EaC4IbT"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EaKK8YG",
+      "title": "中國人民解放軍駐澳門部隊組織第23次獻血活動",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EaKK8YG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Ea7D45D",
+      "title": "最新超市物價調查已上線供比較",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ea7D45D"
+    },
+    {
+      "guid": "",
+      "title": "市政署辦「食得安全 食得健康」講座  歡迎市民報名參加",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EaYSKv8"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EaxFucO",
+      "title": "市政署每月公開會議於本周五舉行",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EaxFucO"
+    },
+    {
+      "guid": "",
+      "title": "舉辦「我與基本法」網上問答遊戲",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EUoBmG9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EaQklRs",
+      "title": "橫琴執委會澳門員額制招聘即將截止 50個崗位期待你的加入",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EaQklRs"
+    }
+  ],
+  "generated_at": "2026-05-28T08:01:37.520270",
+  "model": "minimax/MiniMax-M2.7"
+}
