@@ -52,7 +52,7 @@
     },
     {
       "guid": "",
-      "title": "「邁向高質量發展」「星級服務方程式」系列活動今（28日）啟動 剖析奢華服務核心理念",
+      "title": "「星級服務方程式」系列活動今（28日）啟動 剖析奢華服務核心理念",
       "category": "經濟產業",
       "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EbyCrug"
@@ -152,7 +152,7 @@
       "guid": "",
       "title": "澳大與港中大（深圳）書院締結「友好書院」",
       "category": "教育發展",
-      "importance": 1,
+      "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ebw8Jvg"
     },
     {
@@ -177,6 +177,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Eb2zthb"
     }
   ],
-  "generated_at": "2026-05-29T08:02:53.637322",
+  "generated_at": "2026-05-29T10:01:55.501513",
   "model": "minimax/MiniMax-M2.7"
 }
