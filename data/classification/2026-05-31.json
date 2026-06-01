@@ -1,0 +1,77 @@
+{
+  "date": "2026-05-31",
+  "news": [
+    {
+      "guid": "",
+      "title": "澳門虛擬圖書館送上六‧一節日禮物 「童讀澳門」網上書展  點亮親子共讀時光",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ecog3cN"
+    },
+    {
+      "guid": "",
+      "title": "衛生局舉辦第12場「澳門中醫業界學術傳承創新講座」 持續搭建業界交流平台 首設中醫藥健康文化宣傳技巧培訓",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EedsvWW"
+    },
+    {
+      "guid": "",
+      "title": "6月1日起「2026年度醫療補貼計劃」正式啟動 澳門居民可於廣東省內參與計劃的醫療機構使用電子醫療券",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EelTXgF"
+    },
+    {
+      "guid": "",
+      "title": "「孫逸仙大馬路／觀光塔街」巴士站6月3日啟用  提升南岸海濱綠廊公共巴士覆蓋",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ee5etSR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EemCliU",
+      "title": "【五周年館慶】澳門大賽車博物館6日1日免費開放  特備活動與眾同樂",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EemCliU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Ee4O6Hb",
+      "title": "「活力社區—2026澳門競技障礙挑戰賽」第一回合圓滿舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ee4O6Hb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EeZ5B5a",
+      "title": "第六屆澳門高校外交演講比賽成功舉辦",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EeZ5B5a"
+    },
+    {
+      "guid": "",
+      "title": "「三無大廈公共衛生行動」於今（31）日正式啟動   排查評估分級應對   聯動社團共建健康社區",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EeKG6OF"
+    },
+    {
+      "guid": "",
+      "title": "「煙害諮詢站」活動圓滿結束   逾4,000人次參與  共建「無煙社會」",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EetjUPn"
+    },
+    {
+      "guid": "",
+      "title": "第八屆「澳門‧珠海警務論壇」於澳門舉行",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EeAYM5W"
+    }
+  ],
+  "generated_at": "2026-06-01T08:05:46.391116",
+  "model": "minimax/MiniMax-M2.7"
+}
