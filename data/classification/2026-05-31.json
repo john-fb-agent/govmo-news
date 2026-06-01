@@ -5,7 +5,7 @@
       "guid": "",
       "title": "澳門虛擬圖書館送上六‧一節日禮物 「童讀澳門」網上書展  點亮親子共讀時光",
       "category": "文化體育",
-      "importance": 2,
+      "importance": 1,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ecog3cN"
     },
     {
@@ -26,14 +26,14 @@
       "guid": "",
       "title": "「孫逸仙大馬路／觀光塔街」巴士站6月3日啟用  提升南岸海濱綠廊公共巴士覆蓋",
       "category": "交通運輸",
-      "importance": 3,
+      "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ee5etSR"
     },
     {
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26EemCliU",
       "title": "【五周年館慶】澳門大賽車博物館6日1日免費開放  特備活動與眾同樂",
       "category": "文化體育",
-      "importance": 3,
+      "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EemCliU"
     },
     {
@@ -72,6 +72,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26EeAYM5W"
     }
   ],
-  "generated_at": "2026-06-01T08:05:46.391116",
+  "generated_at": "2026-06-01T08:06:44.183493",
   "model": "minimax/MiniMax-M2.7"
 }
