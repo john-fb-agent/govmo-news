@@ -37,41 +37,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWTzVm"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAw4mli",
-      "title": "《澳門✦品牌計劃》正式啟動  助力本地優秀品牌產品及直播帶貨達人出海",
-      "category": "經濟產業",
-      "importance": 3,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAw4mli"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAvsjp1",
-      "title": "市政署關注加拿大一地區出現高致病性禽流感",
-      "category": "社會服務",
-      "importance": 2,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAvsjp1"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAzP5CK",
-      "title": "司法警察局刑事技術鑑定處處長就職",
-      "category": "政府管治",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAzP5CK"
-    },
-    {
-      "guid": "",
-      "title": "「誠牽澳琴」2026年度小學生填色比賽(澳門區)結果公佈",
-      "category": "教育發展",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA4UFa4"
-    },
-    {
-      "guid": "",
-      "title": "勞工事務局推出「職前培訓計劃」　助力青年提升專業技能與就業競爭力",
-      "category": "人才發展",
-      "importance": 3,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7Deem"
-    },
-    {
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAkWVUq",
       "title": "公共建設局完成架構重組 配合職能調整優化服務",
       "category": "政府管治",
@@ -121,6 +86,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7qKou"
     }
   ],
-  "generated_at": "2026-06-02T10:12:37.325023",
+  "generated_at": "2026-06-02T10:13:51.490203",
   "model": "minimax/MiniMax-M2.7"
 }
