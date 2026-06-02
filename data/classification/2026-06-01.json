@@ -70,8 +70,92 @@
       "category": "交通運輸",
       "importance": 3,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWTzVm"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAw4mli",
+      "title": "《澳門✦品牌計劃》正式啟動  助力本地優秀品牌產品及直播帶貨達人出海",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAw4mli"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAvsjp1",
+      "title": "市政署關注加拿大一地區出現高致病性禽流感",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAvsjp1"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAzP5CK",
+      "title": "司法警察局刑事技術鑑定處處長就職",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAzP5CK"
+    },
+    {
+      "guid": "",
+      "title": "「誠牽澳琴」2026年度小學生填色比賽(澳門區)結果公佈",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA4UFa4"
+    },
+    {
+      "guid": "",
+      "title": "勞工事務局推出「職前培訓計劃」　助力青年提升專業技能與就業競爭力",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7Deem"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAkWVUq",
+      "title": "公共建設局完成架構重組 配合職能調整優化服務",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAkWVUq"
+    },
+    {
+      "guid": "",
+      "title": "土地工委局完成合併重組今日正式運作",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAKnY3m"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAmdVm7",
+      "title": "市政署續辦「國風拾趣工房」系列手作坊 歡迎市民報名參加",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAmdVm7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWwYnY",
+      "title": "共建美麗澳門  齊參與生態區6月生態活動",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWwYnY"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAuHSpL",
+      "title": "2026年6月份稅務責任",
+      "category": "金融財政",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAuHSpL"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAiMSO8",
+      "title": "新一期《澳門醫學雜誌》今（1）日起徵稿",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAiMSO8"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7qKou",
+      "title": "氣象局6月親子活動即日起接受公眾報名",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7qKou"
     }
   ],
-  "generated_at": "2026-06-02T09:41:57.944450",
+  "generated_at": "2026-06-02T09:44:49.366390",
   "model": "minimax/MiniMax-M2.7"
 }
