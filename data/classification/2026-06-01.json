@@ -107,41 +107,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7Deem"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAkWVUq",
-      "title": "公共建設局完成架構重組 配合職能調整優化服務",
-      "category": "政府管治",
-      "importance": 2,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAkWVUq"
-    },
-    {
-      "guid": "",
-      "title": "土地工委局完成合併重組今日正式運作",
-      "category": "政府管治",
-      "importance": 2,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAKnY3m"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAmdVm7",
-      "title": "市政署續辦「國風拾趣工房」系列手作坊 歡迎市民報名參加",
-      "category": "文化體育",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAmdVm7"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWwYnY",
-      "title": "共建美麗澳門  齊參與生態區6月生態活動",
-      "category": "社會服務",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWwYnY"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAuHSpL",
-      "title": "2026年6月份稅務責任",
-      "category": "金融財政",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAuHSpL"
-    },
-    {
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAiMSO8",
       "title": "新一期《澳門醫學雜誌》今（1）日起徵稿",
       "category": "社會服務",
@@ -156,6 +121,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7qKou"
     }
   ],
-  "generated_at": "2026-06-02T10:03:21.270818",
+  "generated_at": "2026-06-02T10:04:47.130577",
   "model": "minimax/MiniMax-M2.7"
 }
