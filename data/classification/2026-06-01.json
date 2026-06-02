@@ -3,6 +3,41 @@
   "news": [
     {
       "guid": "",
+      "title": "「六·一國際兒童節組織委員會」及社會團體向住院兒童送贈禮物",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAzq2Zi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FApKqCo",
+      "title": "澳門理工大學新任校長周仲榮及副校長羅曼儀宣誓就任",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FApKqCo"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAe6KfY",
+      "title": "澳門保安部隊事務局推出Facebook專頁",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAe6KfY"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAFBDrm",
+      "title": "衛生局與澳門執業西醫公會合辦乙肝及愛滋病快速測試工作坊    致力提升本澳醫生專業技術及社區篩檢能力",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAFBDrm"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAYeaxZ",
+      "title": "衛生局接獲4宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAYeaxZ"
+    },
+    {
+      "guid": "",
       "title": "「5.17血壓齊齊Check」活動近4.5萬人次參與   衛生局呼籲成年居民每年至少測量血壓一次",
       "category": "社會服務",
       "importance": 2,
@@ -37,55 +72,41 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWTzVm"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAkWVUq",
-      "title": "公共建設局完成架構重組 配合職能調整優化服務",
-      "category": "政府管治",
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAw4mli",
+      "title": "《澳門✦品牌計劃》正式啟動  助力本地優秀品牌產品及直播帶貨達人出海",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAw4mli"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAvsjp1",
+      "title": "市政署關注加拿大一地區出現高致病性禽流感",
+      "category": "社會服務",
       "importance": 2,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAkWVUq"
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAvsjp1"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAzP5CK",
+      "title": "司法警察局刑事技術鑑定處處長就職",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAzP5CK"
     },
     {
       "guid": "",
-      "title": "土地工委局完成合併重組今日正式運作",
-      "category": "政府管治",
-      "importance": 2,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAKnY3m"
+      "title": "「誠牽澳琴」2026年度小學生填色比賽(澳門區)結果公佈",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA4UFa4"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAmdVm7",
-      "title": "市政署續辦「國風拾趣工房」系列手作坊 歡迎市民報名參加",
-      "category": "文化體育",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAmdVm7"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWwYnY",
-      "title": "共建美麗澳門  齊參與生態區6月生態活動",
-      "category": "社會服務",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAWwYnY"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAuHSpL",
-      "title": "2026年6月份稅務責任",
-      "category": "金融財政",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAuHSpL"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FAiMSO8",
-      "title": "新一期《澳門醫學雜誌》今（1）日起徵稿",
-      "category": "社會服務",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FAiMSO8"
-    },
-    {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7qKou",
-      "title": "氣象局6月親子活動即日起接受公眾報名",
-      "category": "文化體育",
-      "importance": 1,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7qKou"
+      "guid": "",
+      "title": "勞工事務局推出「職前培訓計劃」　助力青年提升專業技能與就業競爭力",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FA7Deem"
     }
   ],
-  "generated_at": "2026-06-02T10:13:51.490203",
+  "generated_at": "2026-06-02T10:14:30.925666",
   "model": "minimax/MiniMax-M2.7"
 }
