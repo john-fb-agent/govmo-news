@@ -16,15 +16,15 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FCYz2vt"
     },
     {
-      "guid": "",
-      "title": "勞工局與澳門建築安全協會合辦學術論文徵文比賽 報名截止日期延長至6月15日",
-      "category": "教育發展",
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FCC6FOI",
+      "title": "勞工局與澳門建築安全協會合辦學術論文徵文比賽   報名截止日期延長至6月15日",
+      "category": "人才發展",
       "importance": 1,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FCC6FOI"
     },
     {
-      "guid": "",
-      "title": "勞工局續辦休閒企業配對會 提供407個職缺配對",
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FCN300j",
+      "title": "勞工局續辦休閒企業配對會　提供407個職缺配對",
       "category": "人才發展",
       "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FCN300j"
@@ -33,7 +33,7 @@
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FCYnk4C",
       "title": "市政署市政管理委員會成員宣誓就職",
       "category": "政府管治",
-      "importance": 2,
+      "importance": 1,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FCYnk4C"
     },
     {
@@ -149,6 +149,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FCIYk6S"
     }
   ],
-  "generated_at": "2026-06-04T08:05:54.273138",
+  "generated_at": "2026-06-04T08:06:09.186703",
   "model": "minimax/MiniMax-M2.7"
 }
