@@ -1,0 +1,105 @@
+{
+  "date": "2026-06-04",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FC8FWM2",
+      "title": "依託澳門中葡平台優勢 國際基建論壇深化中葡基建重點合作",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FC8FWM2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FDLoN6E",
+      "title": "澳資企業突破八千戶 琴澳一體化發展再譜新篇",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDLoN6E"
+    },
+    {
+      "guid": "",
+      "title": "勞工局和永利合作推出就業+培訓專項計劃   明(5)起接受網上申請",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDFrmlz"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FD6y4mm",
+      "title": "新城A區B13地段運動場地建造工程公開開標",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FD6y4mm"
+    },
+    {
+      "guid": "",
+      "title": "\"受資助社會服務設施資訊輔助技術員培訓課程\"開課",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDUdWlB"
+    },
+    {
+      "guid": "",
+      "title": "澳大團隊於《自然》評論「AI時代」師徒制",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDWHvYd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FDRxS0D",
+      "title": "澳門理工大學研究團隊開發生成式模型：AI賦能胎兒超聲成像新時代",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDRxS0D"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FDniPWO",
+      "title": "廉政公署揭發教育機構詐騙持續進修資助",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDniPWO"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FDABL3w",
+      "title": "行政長官岑浩輝與河北省省長王正譜會面",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDABL3w"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FDH2euO",
+      "title": "衛生局接獲2宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDH2euO"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FDoEibt",
+      "title": "衛生局接獲1宗腸病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDoEibt"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FD2JMRz",
+      "title": "教青局強調須嚴格使用進修資助 勿被誘使違法",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FD2JMRz"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FDjQPh7",
+      "title": "避暑中心開放",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDjQPh7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FDKwm8N",
+      "title": "社工局支援白灰街大廈火警受影響住戶",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FDKwm8N"
+    }
+  ],
+  "generated_at": "2026-06-05T08:05:28.364902",
+  "model": "minimax/MiniMax-M2.7"
+}
