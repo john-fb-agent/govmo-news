@@ -2,13 +2,6 @@
   "date": "2026-06-06",
   "news": [
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFy3nq6",
-      "title": "《澳門特別行政區經濟和社會發展第三個五年規劃（2026-2030年）》公開諮詢舉行首場公眾專場諮詢會",
-      "category": "經濟產業",
-      "importance": 3,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFy3nq6"
-    },
-    {
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FE5eavX",
       "title": "【吸引國際旅客】旅遊局在馬來西亞及泰國接連舉辦澳門旅遊推介洽談會 續拓東南亞市場",
       "category": "文化體育",
@@ -16,11 +9,11 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FE5eavX"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFjJ9T5",
-      "title": "跨越時空展現城市光影記憶 澳門檔案館歷史圖片展六月中旬舉行",
-      "category": "文化體育",
-      "importance": 2,
-      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFjJ9T5"
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFy3nq6",
+      "title": "《澳門特別行政區經濟和社會發展第三個五年規劃（2026-2030年）》公開諮詢舉行首場公眾專場諮詢會",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFy3nq6"
     },
     {
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFpsdXs",
@@ -28,6 +21,13 @@
       "category": "文化體育",
       "importance": 1,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFpsdXs"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFjJ9T5",
+      "title": "跨越時空展現城市光影記憶 澳門檔案館歷史圖片展六月中旬舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFjJ9T5"
     },
     {
       "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FF76tAk",
@@ -79,6 +79,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFDfzDi"
     }
   ],
-  "generated_at": "2026-06-07T08:03:07.532059",
+  "generated_at": "2026-06-07T08:05:01.846161",
   "model": "minimax/MiniMax-M2.7"
 }
