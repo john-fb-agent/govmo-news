@@ -1,0 +1,84 @@
+{
+  "date": "2026-06-06",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFy3nq6",
+      "title": "《澳門特別行政區經濟和社會發展第三個五年規劃（2026-2030年）》公開諮詢舉行首場公眾專場諮詢會",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFy3nq6"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FE5eavX",
+      "title": "【吸引國際旅客】旅遊局在馬來西亞及泰國接連舉辦澳門旅遊推介洽談會 續拓東南亞市場",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FE5eavX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFjJ9T5",
+      "title": "跨越時空展現城市光影記憶 澳門檔案館歷史圖片展六月中旬舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFjJ9T5"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFpsdXs",
+      "title": "活力社區 —2026親子運動日延期舉行",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFpsdXs"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FF76tAk",
+      "title": "玫瑰聖母堂（板樟堂）及玫瑰堂聖物寶庫 進行維護工程暫停對外開放",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FF76tAk"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FF0U03l",
+      "title": "文化局赴珠出席粵港澳文化合作第二十四次會議",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FF0U03l"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFUIWOD",
+      "title": "2026國際禁毒日系列活動正式啟動",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFUIWOD"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FFPFPOR",
+      "title": "協和澳門醫學中心開放日圓滿舉行  五大主題講座與健康諮詢反應熱烈",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFPFPOR"
+    },
+    {
+      "guid": "",
+      "title": "「2026年活力心晴社區活動」圓滿舉行  守護兒童及青少年身心健康 共建全社會保護網",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFY6dgx"
+    },
+    {
+      "guid": "",
+      "title": "「三五」規劃公開諮詢舉行全國人大代表和全國政協委員兩場專場諮詢會",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FF2zTEP"
+    },
+    {
+      "guid": "",
+      "title": "2026年六五環境日國家主場活動澳門區啟動禮暨「全民節能減碳」行動發佈儀式今舉行",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FFDfzDi"
+    }
+  ],
+  "generated_at": "2026-06-07T08:03:07.532059",
+  "model": "minimax/MiniMax-M2.7"
+}
