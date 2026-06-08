@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-07",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FEjnNE0",
+      "title": "工務局辦建築業界座談會講解新法及部門重組後業務安排",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FEjnNE0"
+    },
+    {
+      "guid": "",
+      "title": "\"2026社區消費大獎賞\"長者卡及殘疾卡最後申領階段明（8）日截止",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FElrs94"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FENYdYH",
+      "title": "回歸自然 獨抒性靈——陳危冰田園山水詩意畫作品巡迴展（澳門站） 即將揭幕",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FENYdYH"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FGfN8zA",
+      "title": "停課通知（2026-06-07 13:44）",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FGfN8zA"
+    },
+    {
+      "guid": "",
+      "title": "衛生局落實\"資源下沉\" 聯動社團設\"社區門診\" 明（8）日起提供服務 推動公私醫療機構協同發展",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FEQP8x6"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FEKP2d3",
+      "title": "統一司法見解：使用偽造文件進行詐騙構成偽造文件罪與詐騙罪的實質競合",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FEKP2d3"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FGv0rn2",
+      "title": "12名涉嫌操控賣淫犯罪集團嫌犯被羈押",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FGv0rn2"
+    }
+  ],
+  "generated_at": "2026-06-08T08:03:50.329271",
+  "model": "minimax/MiniMax-M2.7"
+}
