@@ -3,35 +3,35 @@
   "news": [
     {
       "guid": "",
-      "title": "\"粵港澳三地警方刑偵主管第二十九次工作會晤\"在香港舉行",
+      "title": "「粵港澳三地警方刑偵主管第二十九次工作會晤」在香港舉行",
       "category": "國家安全",
       "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FMcopod"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FMcWP00",
-      "title": "下水道維修工程  氹仔基馬拉斯大馬路一帶6月15日起分階段實施臨時交通措施",
+      "guid": "",
+      "title": "下水道維修工程氹仔基馬拉斯大馬路一帶6 月15 日起分階段實施臨時交通措施",
       "category": "交通運輸",
       "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FMcWP00"
     },
     {
       "guid": "",
-      "title": "【續拓歐洲客源】旅遊局參加葡萄牙\"流行街道巡遊\"推廣澳門多元文化共融",
+      "title": "【續拓歐洲客源】旅遊局參加葡萄牙「流行街道巡遊」推廣澳門多元文化共融",
       "category": "文化體育",
       "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FMIpoE8"
     },
     {
       "guid": "",
-      "title": "\"第三屆澳門醫學論壇\"今開幕 \"急救培訓中心\"及\"卒中中心\"同步揭牌 強化急重症救治體系",
+      "title": "「第三屆澳門醫學論壇」今開幕「急救培訓中心」及「卒中中心」同步揭牌強化急重症救治體系",
       "category": "社會服務",
       "importance": 3,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FM5wjeq"
     },
     {
-      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FMsyPA9",
-      "title": "澳門醫學專科學院2026年度傑出學人講座 暨院士頒授儀式圓滿舉行",
+      "guid": "",
+      "title": "澳門醫學專科學院2026 年度傑出學人講座暨院士頒授儀式圓滿舉行",
       "category": "社會服務",
       "importance": 1,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FMsyPA9"
@@ -44,6 +44,6 @@
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FM9vqaA"
     }
   ],
-  "generated_at": "2026-06-14T08:00:51.778230",
+  "generated_at": "2026-06-14T08:04:14.881071",
   "model": "minimax/MiniMax-M2.7"
 }
