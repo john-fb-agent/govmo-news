@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-14",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FLsVVZE",
+      "title": "2026年國家統一法律職業資格考試明起網上報名",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FLsVVZE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FNmhbn9",
+      "title": "文體聯動打造端午節慶 持續深化主題盛事",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FNmhbn9"
+    },
+    {
+      "guid": "",
+      "title": "\"2026澳娛綜合澳門國際龍舟賽\"澳娛綜合金禧包辦標準龍公開組、混合組冠軍 銀河明珠奪女子組桂冠",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FNezYxP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FN7w8k1",
+      "title": "《澳門特別行政區經濟和社會發展第三個五年規劃（2026-2030年）》公開諮詢舉行第二場公眾專場諮詢會",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FN7w8k1"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FNF3NJU",
+      "title": "智能行動輔具設計比賽舉行決賽及頒獎禮",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FNF3NJU"
+    }
+  ],
+  "generated_at": "2026-06-15T08:01:25.979929",
+  "model": "minimax/MiniMax-M2.7"
+}
