@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-19",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FSt8mKu",
+      "title": "教青局舉辦國家地圖與地理教學專題講座　夯實教學人員總體國家安全",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FSt8mKu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FSSvRor",
+      "title": "“2026澳娛綜合澳門國際龍舟賽”中國南海九江再度衛冕國際龍舟邀請賽標準龍公開組及女子組冠軍",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FSSvRor"
+    }
+  ],
+  "generated_at": "2026-06-20T08:00:33.988442",
+  "model": "minimax/MiniMax-M2.7"
+}
