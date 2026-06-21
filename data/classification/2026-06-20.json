@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-20",
+  "news": [
+    {
+      "guid": "",
+      "title": "「齊動手清積水，自主防蚊要做足！」有獎遊戲鼓勵居民清積水 齊心防蚊患",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FRFZ5tu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FT7TEkE",
+      "title": "衛生局接獲1宗新冠病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FT7TEkE"
+    }
+  ],
+  "generated_at": "2026-06-21T08:03:06.777353",
+  "model": "minimax/MiniMax-M2.7"
+}
