@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-21",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FTKy8Mg",
+      "title": "衛生局於6月26日晚上進行電腦網絡系統升級和維護 醫療服務不受影響",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FTKy8Mg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FUGfeyo",
+      "title": "避暑中心開放",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FUGfeyo"
+    }
+  ],
+  "generated_at": "2026-06-22T08:03:32.853134",
+  "model": "minimax/MiniMax-M2.7"
+}
