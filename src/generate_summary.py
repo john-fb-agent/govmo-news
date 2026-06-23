@@ -7,7 +7,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from collections import Counter, defaultdict
 
-MODEL    = "minimax/MiniMax-M2.7"
+MODEL    = "minimax/MiniMax-M3"
 BATCH_SIZE      = 5
 REQUEST_TIMEOUT = 300
 API_DELAY       = 1
