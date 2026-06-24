@@ -117,6 +117,7 @@
 | 已知限制 | 1 |
 | 輕微問題 | 1 |
 | 已確認事項 | 6 |
+| 已解決問題 | 2 |
 
 ## 🔄 本文件何時需要更新
 
@@ -132,6 +133,7 @@
 | 問題 | 解決日期 | 解決方式 |
 |------|---------|----------|
 | JSON 文件覆蓋 bug | 2026-04-15 | 改為合併模式（載入現有 → 合併 → 保存） |
+| `openclaw agent --session-id` 旗標錯誤導致 8AM cron 跑失敗 | 2026-06-24 | 改用 `--session-key agent:main:main`（commit `da322ce`） |
 
 | 問題 | 解決日期 | 解決方式 |
 |------|---------|---------|
@@ -139,6 +141,34 @@
 
 ---
 
-**最後更新：2026-05-04  
+## 🔧 已解決問題詳情
+
+### `openclaw agent` CLI 旗標陷阱（2026-06-24 fix，commit `da322ce`）
+
+**症狀：** 2026-06-23 早上 8AM daily-summary cron 第一次跑失敗，三個 batch 全部報錯：
+
+```
+Invalid session ID
+```
+
+**根因：** `src/generate_summary.py` 的 `call_openclaw()` 用了 `--session-id` 旗標呼叫 `openclaw agent` CLI，但 Gateway 實際接受的旗標是 `--session-key`。
+
+**修正：** `src/generate_summary.py` line 39
+
+```diff
+-        "--session-id", "agent:main:main",
++        "--session-key", "agent:main:main",
+```
+
+**驗證：** 修正後重跑，14 則新聞全部成功分類、AI 摘要、HTML 寫入、index 重建、commit + push 到 main 都正常完成。
+
+**給未來 coder agent 的提醒：**
+- `openclaw agent` 的 session 識別旗標是 `--session-key`，不是 `--session-id`。
+- 修改後第一次跑失敗看到 "Invalid session ID" 時，先確認旗標名稱（`openclaw agent --help`）再排查。
+- 詳見 `repo-agent.md` 的「🚧 執行注意事項」section。
+
+---
+
+**最後更新：2026-06-24  
 **維護者：** john-fb-agent  
-**版本：** 1.11.0
+**版本：** 1.12.1

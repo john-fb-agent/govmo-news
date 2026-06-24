@@ -1,7 +1,7 @@
 # AI Agent 指南
 
 **創建：** 2026-04-16 20:04 | **Provider:** OpenClaw | **Model:** minimax/MiniMax-M2.7-highspeed
-**最後更新：** 2026-04-22 | **Last Review：** 2026-04-22
+**最後更新：** 2026-06-24 | **Last Review：** 2026-06-24
 
 ---
 
@@ -44,6 +44,32 @@ python3 src/fetch_news.py
 # Pages 檢查
 gh run list --workflow deploy-pages.yml --limit 5
 ```
+
+---
+
+## 🚧 執行注意事項 / Known Pitfalls
+
+### `openclaw agent` CLI 旗標（2026-06-24 fix，commit `da322ce`）
+
+**症狀：** 8AM daily-summary cron 跑失敗，三個 batch 全部報 `Invalid session ID`。
+
+**原因：** `src/generate_summary.py` 的 `call_openclaw()` 用 `--session-id` 旗標呼叫 `openclaw agent`，Gateway 直接拒絕。
+
+**正確旗標：** `--session-key agent:main:main`（**不是** `--session-id`）。
+
+**修正：** `src/generate_summary.py` line 39
+
+```diff
+-        "--session-id", "agent:main:main",
++        "--session-key", "agent:main:main",
+```
+
+**驗證：** 修正後重跑，14 則新聞全部成功分類、HTML 寫入、index 重建、commit + push 到 main 都正常。
+
+**避免再踩：**
+- 任何時候用 `openclaw agent` CLI 前先 `openclaw agent --help` 確認旗標（不要憑印象）。
+- cron 第一次跑失敗看到 `Invalid session ID` 字串時，第一個懷疑就是旗標名稱。
+- 詳見 `docs/known-issues.md` 的「已解決問題詳情」section。
 
 ---
 
@@ -173,7 +199,7 @@ public/YYYY/MM/YYYY-MM-DD.html          # 每日新聞頁
 
 ---
 
-**最後更新：** 2026-05-04 | **Last Review：** 2026-05-04 | **維護者：** AI Agent
+**最後更新：** 2026-06-24 | **Last Review：** 2026-06-24 | **維護者：** AI Agent
 
 ---
 
