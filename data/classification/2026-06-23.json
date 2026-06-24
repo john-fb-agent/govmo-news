@@ -1,0 +1,105 @@
+{
+  "date": "2026-06-23",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWkmHNe",
+      "title": "經科局消委會會見石油業界　跟進補貼情況及敦促調整油品價格",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWkmHNe"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWbfB5u",
+      "title": "勞工局與團體合辦外牆與高空工作安全講座  提升本澳業界職安健水平",
+      "category": "人才發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWbfB5u"
+    },
+    {
+      "guid": "",
+      "title": "\"職出前程實習計劃2026\" 7月3日截止申請",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWH3jWv"
+    },
+    {
+      "guid": "",
+      "title": "第三屆\"全民禁毒週\"揭幕　深入推廣禁毒守法意識",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FW693pR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWTss25",
+      "title": "粵港澳聯合海上演習　提升搜救聯動能力",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWTss25"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FW6OFkZ",
+      "title": "2026河馬英語趣味挑戰中國全明星輪 於澳門理工大學圓滿舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FW6OFkZ"
+    },
+    {
+      "guid": "",
+      "title": "澳門2026專項世界集郵展覽之 \"童童顏色 ʻ郵ʼ 你猜\"得獎名單正式公佈",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWk2psH"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWuKa1C",
+      "title": "澳大與中國科學院深圳先進技術研究院簽署合作框架協議",
+      "category": "科技創新",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWuKa1C"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWIhBug",
+      "title": "衛生局接獲2宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWIhBug"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWNf6Vf",
+      "title": "澳門當代藝術創作亮相巴西庫里蒂巴國際雙年展 以文化為紐帶打造文明交流互鑒窗口",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWNf6Vf"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWq0XWs",
+      "title": "澳門藝術節壓軸呈獻《明堂夜雪》",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWq0XWs"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWCuhED",
+      "title": "APEC旅遊工作組會議明召開　與會代表陸續抵澳",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWCuhED"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FWQrLgb",
+      "title": "衛生局接獲1宗新冠病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FWQrLgb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FW9YZon",
+      "title": "衛生局接獲1宗腸病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FW9YZon"
+    }
+  ],
+  "generated_at": "2026-06-24T08:05:03.411127",
+  "model": "minimax/MiniMax-M3"
+}
