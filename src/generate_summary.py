@@ -36,7 +36,7 @@ def call_openclaw(prompt):
     """Call OpenClaw agent via CLI instead of direct API."""
     cmd = [
         "openclaw", "agent",
-        "--session-id", "agent:main:main",
+        "--session-key", "agent:main:main",
         "--message", prompt,
         "--timeout", str(REQUEST_TIMEOUT),
         "--json"
