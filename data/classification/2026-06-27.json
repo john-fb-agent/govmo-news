@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-27",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FahasVK",
+      "title": "市政署完成松山纜車安全檢查 今中午恢復行駛",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FahasVK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Fa7l79y",
+      "title": "社會文化司司長柯嵐沉痛悼念梁秀珍女士",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Fa7l79y"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Fampldi",
+      "title": "衛生局接獲1宗新冠病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Fampldi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FaM9Frf",
+      "title": "衛生局接獲1宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FaM9Frf"
+    },
+    {
+      "guid": "",
+      "title": "「澳門2026」迎明信片日　畫出郵票故事比賽頒獎",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Fat0uXB"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FaGFXMB",
+      "title": "亞太經合組織第十三屆旅遊部長會議隆重舉行",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FaGFXMB"
+    }
+  ],
+  "generated_at": "2026-06-28T08:02:49.852276",
+  "model": "minimax/MiniMax-M3"
+}
