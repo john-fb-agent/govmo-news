@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-28",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FZXDfNt",
+      "title": "澳門中醫業界代表赴河南參訪交流 深化豫澳中醫藥合作  共商推動中醫藥走向國際",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FZXDfNt"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FbnyMM1",
+      "title": "逾1300名澳門青年赴考：橫琴執委會 員額制招聘筆試順利舉行",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FbnyMM1"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FbJi4FJ",
+      "title": "APEC旅遊部長會議參會代表感受澳門文旅魅力",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FbJi4FJ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26FbHDcWN",
+      "title": "「活力社區動起來」系列活動圓滿舉行",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FbHDcWN"
+    },
+    {
+      "guid": "",
+      "title": "衛生局聯同社會工作局推出\"夏日清涼補給行動\" 守護居民健康",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FbOdTlb"
+    },
+    {
+      "guid": "",
+      "title": "第十期 \"歷史文化大使培訓計劃\" 圓滿舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Fbubfik"
+    },
+    {
+      "guid": "",
+      "title": "\"澳門2026\"藝術日發行\"澳門街頭藝術\"新郵品",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26FbcWEqU"
+    }
+  ],
+  "generated_at": "2026-06-29T08:03:18.985528",
+  "model": "minimax/MiniMax-M3"
+}
