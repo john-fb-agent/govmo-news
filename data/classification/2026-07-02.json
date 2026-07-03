@@ -1,0 +1,224 @@
+{
+  "date": "2026-07-02",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBfvyzH",
+      "title": "勞工局呼籲做好建築物應對熱帶氣旋之安全措施",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBfvyzH"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBMHSh4",
+      "title": "公共渠務管理維護穩步推進 公建局多舉措應對風雨季來臨",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBMHSh4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBxZCQl",
+      "title": "何浩瀚：牢記歷史使命　勇擔時代重任",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBxZCQl"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GB8wZnN",
+      "title": "梁文昌：深入學習貫徹重要講話精神，戮力護航“一國兩制”，淬煉警務新質戰鬥力",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GB8wZnN"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GB5GJpN",
+      "title": "歐陽瑜：與時俱進闢新徑　求真務實謀發展",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GB5GJpN"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBc6tJQ",
+      "title": "歐陽湘：落實主席講話要求　堅定奮鬥反腐倡廉",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBc6tJQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GB1ua63",
+      "title": "唐曉峰：立足檢察為民，護航“一國兩制”行穩致遠",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GB1ua63"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GB1iJ7R",
+      "title": "受熱帶氣旋影響可能發佈之警告（更新時間：2026-07-02 11:00）",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GB1iJ7R"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBDymnZ",
+      "title": "受熱帶氣旋影響可能發佈之警告（更新時間：2026-07-02 17:00）",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBDymnZ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBSIOpr",
+      "title": "生產力與金山軟件簽署合作備忘 攜手培育數字化應用人才",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBSIOpr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBX6ryQ",
+      "title": "路環九澳油庫聯合消防演習",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBX6ryQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBzIJHA",
+      "title": "大三巴牌坊7月7日進行定期檢查維護 遺址內部及數字展覽暫停開放",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBzIJHA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GB2IP9T",
+      "title": "統計局加強與社團協作 共同推廣2026中期人口統計",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GB2IP9T"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBN4vfL",
+      "title": "配合提督馬路與拱形馬路下水道重整工程 7、9、9A、H2四巴士路線7月4日起調整",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBN4vfL"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBEZCcc",
+      "title": "澳門理工大學與地球物理氣象局合辦“氣象技術員培訓”課程結業 助力本澳氣象人才儲備",
+      "category": "人才發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBEZCcc"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBICgMC",
+      "title": "青年事務委員會全體大會舉行",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBICgMC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBXjpfM",
+      "title": "跨部門巡查促業界準確清楚標示動物診療服務收費",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBXjpfM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GCMy36I",
+      "title": "受熱帶氣旋影響可能發佈之警告（更新時間：2026-07-03 00:00）",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GCMy36I"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBw8ECi",
+      "title": "受熱帶氣旋影響可能發佈之警告（更新時間：2026-07-02 23:00）",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBw8ECi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBzMaAx",
+      "title": "澳大辦國際名校籃球邀請賽",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBzMaAx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBsssUi",
+      "title": "澳大舉行大學議庭及校董會聯席會議　岑浩輝冀澳大打造跨境延伸辦學新典範",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBsssUi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBn4T6I",
+      "title": "文化局呼籲文物建築負責人及時做好防範措施",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBn4T6I"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBvyOsR",
+      "title": "第六屆粵港澳大灣區中國戲劇文化節圓滿落幕 濠江壓軸好戲連台　青年對談共話未來",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBvyOsR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GByNucO",
+      "title": "第二期澳門青年讀書會順利舉行 解讀長征精神探尋時代價值",
+      "category": "人才發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GByNucO"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBec2SU",
+      "title": "“粵港澳大灣區教育文物主題遊徑”打卡抽獎活動",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBec2SU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBlw3ca",
+      "title": "第八屆內地與港澳中學生文化遺產暑期課堂 錄取名單公佈",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBlw3ca"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBHEhvb",
+      "title": "“藝遊雅文──周末藝文派對”7月起逢周五六日 創新元素打造盛夏休閒體驗",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBHEhvb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBLvX3G",
+      "title": "市政署關注西墳馬路有樹木斷枝跌落情況",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBLvX3G"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBIenAy",
+      "title": "衛生局接獲1宗腸病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBIenAy"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GBvzPYK",
+      "title": "衛生局接獲1宗新冠病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GBvzPYK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GB1CFk4",
+      "title": "衛生局接獲1宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GB1CFk4"
+    }
+  ],
+  "generated_at": "2026-07-03T08:04:06.725763",
+  "model": "minimax/MiniMax-M3"
+}
