@@ -1,0 +1,63 @@
+{
+  "date": "2026-07-04",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GDjvGcj",
+      "title": "受熱帶風暴美莎克影響可能發佈之警告（更新時間：2026-07-04 11:00）",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GDjvGcj"
+    },
+    {
+      "guid": "",
+      "title": "配合路面修補工作 往友誼大馬路方向一段北安大馬路7月6日及7日夜間至清晨有限度通車",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GDLYfNV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GDV3tKo",
+      "title": "職業導向網站技術比賽頒獎禮圓滿舉行 助力培育資訊科技人才",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GDV3tKo"
+    },
+    {
+      "guid": "",
+      "title": "\"年度中國歷史人物選舉2025\" 專題研習比賽頒獎禮暨成果總結會圓滿舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GDYzr68"
+    },
+    {
+      "guid": "",
+      "title": "\"世界青年技能日活動暨技能滿FUN嘉年華2026\"開幕 多元技能體驗推動青年學習職業技能",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GDv7McI"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GDmOUb7",
+      "title": "青海—澳門·葡語國家經貿文化交流合作活動在西寧啟幕",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GDmOUb7"
+    },
+    {
+      "guid": "",
+      "title": "【2026年校慶系列活動】 保安高校舉辦\"新時代警隊廉潔文化建設\"研討會",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GDcFzW9"
+    },
+    {
+      "guid": "",
+      "title": "\"年度中國歷史人物選舉2025\" 專題研習比賽頒獎禮暨成果總結會圓滿舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GDy37l8"
+    }
+  ],
+  "generated_at": "2026-07-05T08:04:03.833551",
+  "model": "minimax/MiniMax-M3"
+}
