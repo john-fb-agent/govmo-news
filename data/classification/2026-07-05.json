@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-05",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GEyb7Dd",
+      "title": "跨部門協作構建心理防護網  全面加強長者及照顧者支援",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GEyb7Dd"
+    },
+    {
+      "guid": "",
+      "title": "司警局持續進行「雷霆行動2026」",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GEkaBcm"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GFtGP8V",
+      "title": "中葡文化週首次走進青海",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GFtGP8V"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GEfB5YB",
+      "title": "衛生局接獲1宗新冠病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GEfB5YB"
+    }
+  ],
+  "generated_at": "2026-07-06T08:05:12.771654",
+  "model": "minimax/MiniMax-M3"
+}
