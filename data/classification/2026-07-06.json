@@ -1,0 +1,77 @@
+{
+  "date": "2026-07-06",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GF7BS6p",
+      "title": "行政會完成討論《公共採購法施行細則》行政法規草案",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GF7BS6p"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GF3z3Gr",
+      "title": "行政會完成討論《鞏固退休基金會的財政資源》法律草案",
+      "category": "金融財政",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GF3z3Gr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GFe52xP",
+      "title": "賦能葡語國家金融治理　澳門金管局舉辦東帝汶央行高管專題研修班",
+      "category": "金融財政",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GFe52xP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GFnLXOo",
+      "title": "配合友誼大橋設施維護工程 7月7日起實施燈控管制　10日晚起封往海港前地出口",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GFnLXOo"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GFnwgdP",
+      "title": "葡萄牙澳門科學文化中心主席Carmen Amado Mendes 到訪澳門理工大學深化中葡學術合作",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GFnwgdP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GF0mNiv",
+      "title": "司警局走訪社團推廣2026國安展線上問答遊戲 鼓勵全城參與共護國安",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GF0mNiv"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GFvgtcV",
+      "title": "澳大第40屆葡語暑期課程開幕",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GFvgtcV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GFfMERL",
+      "title": "行政公職局召開重組後首次領導主管會議 全力推進深化公共行政改革工作",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GFfMERL"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GFZVQe7",
+      "title": "生產力中心舉辦專業色彩講座 現正接受報名",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GFZVQe7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GFPDOXT",
+      "title": "衛生局接獲１例流感重症報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GFPDOXT"
+    }
+  ],
+  "generated_at": "2026-07-07T08:07:44.538399",
+  "model": "minimax/MiniMax-M3"
+}
