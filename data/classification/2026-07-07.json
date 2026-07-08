@@ -1,0 +1,77 @@
+{
+  "date": "2026-07-07",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GG31yXa",
+      "title": "司法警察局持續展開“雷霆2026”行動 預防和打擊罪案",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GG31yXa"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGdIJVg",
+      "title": "衛生局接獲1宗腸病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGdIJVg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGVd9OA",
+      "title": "統計局走進校園推廣2026中期人口統計",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGVd9OA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGGkiRV",
+      "title": "高樓斜巷臨時休憩區開展優化工程下周一起暫停開放",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGGkiRV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGOSamS",
+      "title": "“合作區社區議事員之工作分享及意見收集”普法活動",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGOSamS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGPOtpy",
+      "title": "第三班“擔任處長官職資格課程”結業典禮",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGPOtpy"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGSNR6l",
+      "title": "人才發展委員會舉行2026年度第一次平常全體會議",
+      "category": "人才發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGSNR6l"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGBemX8",
+      "title": "青海湖畔的萬里之約——中葡文化週打卡活動簡記",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGBemX8"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGqmOwQ",
+      "title": "一食肆再被檢出食品樣本不合格　市政署採取即時停業整頓措施",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGqmOwQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GGba3Qz",
+      "title": "市政署關注美國部分地區出現高致病性禽流感",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GGba3Qz"
+    }
+  ],
+  "generated_at": "2026-07-08T08:09:28.626166",
+  "model": "minimax/MiniMax-M3"
+}
