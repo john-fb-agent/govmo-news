@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-11",
+  "news": [
+    {
+      "guid": "",
+      "title": "司法警察局持續進行\"雷霆2026\"行動 維護社區治安秩序",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GKxBc8E"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GKQTGic",
+      "title": "文化局全力加強文物總體安全工作 跨部門聯合巡查築牢文物安全防線",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GKQTGic"
+    }
+  ],
+  "generated_at": "2026-07-12T08:00:45.107664",
+  "model": "minimax/MiniMax-M3"
+}
