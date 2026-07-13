@@ -1,0 +1,56 @@
+{
+  "date": "2026-07-12",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GJMz0E0",
+      "title": "“促進就業協調工作組”舉行工作會議 聚焦青年實習與職業發展",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GJMz0E0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GLZqAK7",
+      "title": "深耕培訓構築專業梯隊 以澳門人護航輕軌每一程",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GLZqAK7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GLofUfo",
+      "title": "治安警察局持續開展“雷霆2026”行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GLofUfo"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GLgFqPK",
+      "title": "衛生局接獲1宗腸病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GLgFqPK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GL1hY4B",
+      "title": "人才委率團赴杭拓展兩地教育及科技人才合作",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GL1hY4B"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GLG1nI7",
+      "title": "衛生局持續優化醫療衛生應急預案 開展安全風險隱患排查 保護居民生命安全與健康",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GLG1nI7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GL76jeg",
+      "title": "《特定業務及活動的規管制度》舉行首場公眾諮詢會",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GL76jeg"
+    }
+  ],
+  "generated_at": "2026-07-13T08:02:20.274663",
+  "model": "minimax/MiniMax-M3"
+}
