@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-18",
+  "news": [
+    {
+      "guid": "",
+      "title": "配合空中走廊鋼結構吊裝 東北大馬路部份路段7月20日起分階段實施夜間臨時交管",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GR9MtJV"
+    },
+    {
+      "guid": "",
+      "title": "天沐河畔奏響夏日序曲——橫琴天沐河2026盛夏音樂會正式啟幕",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GRnqTpp"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GRBkgNR",
+      "title": "衛生局接獲1宗新冠病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GRBkgNR"
+    },
+    {
+      "guid": "",
+      "title": "「慢性病管理計劃」新增社區服務點 衛生局攜手社團分工協作推進「醫防融合」",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GR06bUI"
+    },
+    {
+      "guid": "",
+      "title": "「分工協作、醫防融合」 衛生局聯動社團深耕社區「慢性病管理計劃」成效獲上海市專家肯定",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GRbtNEf"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GRql9wt",
+      "title": "港澳青少年網絡技能競賽圓滿舉行 澳門代表隊奪8金5銀4銅",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GRql9wt"
+    },
+    {
+      "guid": "",
+      "title": "治安警察局持續開展「雷霆2026」行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GRg39Za"
+    },
+    {
+      "guid": "",
+      "title": "「國際青年舞蹈節2026」拉開帷幕 逾八百青年舞者巡遊獻演場面盛大",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GRGSlt1"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GRr5jMb",
+      "title": "《特定業務及活動的規管制度》今舉行第二場公眾諮詢會",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GRr5jMb"
+    }
+  ],
+  "generated_at": "2026-07-19T08:03:30.042090",
+  "model": "minimax/MiniMax-M3"
+}
