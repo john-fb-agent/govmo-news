@@ -1,0 +1,56 @@
+{
+  "date": "2026-07-19",
+  "news": [
+    {
+      "guid": "",
+      "title": "\"拼船出海\" 共拓商機  招商局組團赴莫桑比克出席中葡經貿合作洽談會",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GQQZMEf"
+    },
+    {
+      "guid": "",
+      "title": "香港書展 \"澳門館\" 盛大亮相 澳基會攜手辦澳門填海史講座",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GS9P7Tr"
+    },
+    {
+      "guid": "",
+      "title": "司警局持續進行\"雷霆2026\" 行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GSGKqLB"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GS7AgUX",
+      "title": "衛生局滅蚊通知",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GS7AgUX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GQnLeGJ",
+      "title": "廉政公署誠信大使赴港交流展示傳誠成果",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GQnLeGJ"
+    },
+    {
+      "guid": "",
+      "title": "\"國際青年舞蹈節2026\"快閃演出展現多元舞蹈魅力",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GSLRlqP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GSDGFd1",
+      "title": "以賽促學育本地技能菁英　澳門代表團整裝待發迎戰第48屆世界技能大賽",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GSDGFd1"
+    }
+  ],
+  "generated_at": "2026-07-20T08:01:10.349238",
+  "model": "minimax/MiniMax-M3"
+}
