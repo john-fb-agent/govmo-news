@@ -122,15 +122,44 @@ def classify_batch(news_batch, batch_num, total_batches):
     prompt = build_classify_prompt(news_batch, batch_num, total_batches)
     log(f"  Batch {batch_num}/{total_batches}: calling OpenClaw agent ({len(news_batch)} items)...")
 
+    def _fix_inner_quotes(text):
+        """Replace inner ASCII \" inside JSON string values with curly quotes.
+        Handles common LLM output where smart quotes in input get converted to ASCII \"
+        inside string values, breaking JSON parsing.
+        """
+        lines = text.split('\n')
+        fixed = []
+        for line in lines:
+            m = re.match(r'^(\s*)"(.*?)"(\s*:\s*)"(.*)"(,?\s*)$', line)
+            if m and '"' in m.group(4):
+                indent, key, sep, value, end = m.groups()
+                new_val = ''
+                open_q = True
+                for c in value:
+                    if c == '"':
+                        new_val += '\u201c' if open_q else '\u201d'
+                        open_q = not open_q
+                    else:
+                        new_val += c
+                line = f'{indent}"{key}"{sep}"{new_val}"{end}'
+            fixed.append(line)
+        return '\n'.join(fixed)
+
     def _try_parse(raw):
         if "{" not in raw:
             return None, f"no brace: {raw[:80]}"
         start = raw.find("{")
         json_str = raw[start:]
+        # Strip trailing text after the JSON object ends
         try:
             obj, idx = json.JSONDecoder().raw_decode(json_str)
-        except json.JSONDecodeError as e:
-            return None, f"JSON error: {e}"
+        except json.JSONDecodeError:
+            # Try repairing common LLM JSON issue: ASCII " inside string values
+            json_str = _fix_inner_quotes(json_str)
+            try:
+                obj, idx = json.JSONDecoder().raw_decode(json_str)
+            except json.JSONDecodeError as e:
+                return None, f"JSON error: {e}"
         items = obj.get("all_news", [])
         return items, None
 
