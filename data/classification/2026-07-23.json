@@ -1,0 +1,182 @@
+{
+  "date": "2026-07-23",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWXzqYS",
+      "title": "“港澳與內地青年法律交流周”北京及新疆兩地舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWXzqYS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWj7lqa",
+      "title": "“石油氣及汽油價格補貼計劃”達短期紓困目標  將如期於周六晚結束",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWj7lqa"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWWrAWX",
+      "title": "海事局加強安全巡查　落實夏防工作部署",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWWrAWX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWn7255",
+      "title": "“軌”道疾馳轉動盛夏活力 輕軌爆旋陀螺比賽火熱召集",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWn7255"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GW0LRTJ",
+      "title": "2026粵澳名優商品展八月登場 經貿合作和休閒購物雙線並行",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GW0LRTJ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWAFDzK",
+      "title": "7月24至29日“健康加油站”暫停服務安排",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWAFDzK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWTHDJu",
+      "title": "倫斯泰特大馬路7月24日開通路口 提升區內交通通行效率",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWTHDJu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GW5KJfq",
+      "title": "新聞局開通Threads帳號  拓展政府資訊傳播新渠道",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GW5KJfq"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWE9Zan",
+      "title": "教育基金2026/2027學校年度“學費援助、膳食津貼及學習用品津貼”資助計劃即將截止申請",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWE9Zan"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWy5A4M",
+      "title": "司法警察局持續進行“雷霆2026”行動",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWy5A4M"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GW4ssrG",
+      "title": "生產力中心率本澳中學教師赴港交流 促進兩地資訊科技教學交流",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GW4ssrG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GW07Usz",
+      "title": "市政署“國風拾趣工房”手作坊  歡迎市民報名參加",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GW07Usz"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWlXCRr",
+      "title": "司警局落實“夏防”工作部署 全方位排查隱患守護社區安全",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWlXCRr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWhTwp2",
+      "title": "司警局走進校園辦禁毒講座 互動教學助青少年認清毒害",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWhTwp2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWC7EdY",
+      "title": "勞工局籲加強防暑措施應對酷熱天氣　嚴防工友中暑",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWC7EdY"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GXmEqcX",
+      "title": "「銀河娛樂集團世界女排聯賽澳門2026 - 總決賽」中國土耳其晉級準決賽",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GXmEqcX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWMxNh7",
+      "title": "“國際青年舞蹈節2026”圓滿閉幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWMxNh7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWyMYqN",
+      "title": "第18屆國際功利主義學會雙年會在澳大舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWyMYqN"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWrnu9m",
+      "title": "“國際青年舞蹈節2026”兩場戶外演出順利舉行    匯聚各地青年舞者打造藝術盛宴",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWrnu9m"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWcbBwK",
+      "title": "仁伯爵綜合醫院8月份專科衛教講座",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWcbBwK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWIp7dj",
+      "title": "衛生局聯同教青局舉辦“健康校園”專題培訓   共同守護學生身心健康",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWIp7dj"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWN6eji",
+      "title": "衛生局接獲1宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWN6eji"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWa7TD8",
+      "title": "2025至2026年度流感疫苗接種計劃至7月28日結束    正籌備新一年度接種計劃",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWa7TD8"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GW8LCzU",
+      "title": "衛生局率中醫業界參訪珠海“中醫藥一條街”   深化澳珠中醫藥合作 共踐“十五五”健康戰略",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GW8LCzU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GWHFZPD",
+      "title": "夏寶龍在京會見譚偉文一行",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GWHFZPD"
+    }
+  ],
+  "generated_at": "2026-07-24T08:01:56.266943",
+  "model": "deepseek/deepseek-v4-pro"
+}
