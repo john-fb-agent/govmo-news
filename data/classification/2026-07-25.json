@@ -147,8 +147,29 @@
       "category": "文化體育",
       "importance": 2,
       "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GYfSY2R"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZK1ExE",
+      "title": "停課通知（2026-07-26 06:08）",
+      "category": "教育發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZK1ExE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZESkGN",
+      "title": "受熱帶氣旋影響可能發佈之警告（更新時間：2026-07-26 05:00）",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZESkGN"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZnkaXh",
+      "title": "受熱帶氣旋影響可能發佈之警告（更新時間：2026-07-26 02:00）",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZnkaXh"
     }
   ],
-  "generated_at": "2026-07-26T08:01:40.222363",
+  "generated_at": "2026-07-26T10:08:49.957106",
   "model": "deepseek/deepseek-v4-pro"
 }
