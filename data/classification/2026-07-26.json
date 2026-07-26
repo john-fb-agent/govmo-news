@@ -1,0 +1,98 @@
+{
+  "date": "2026-07-26",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZQkQpW",
+      "title": "受強烈熱帶風暴紅霞影響可能發佈之警告（更新時間：2026-07-26 09:00）",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZQkQpW"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZhr1zd",
+      "title": "受颱風紅霞影響可能發佈之警告（更新時間：2026-07-26 08:00）",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZhr1zd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZgeke2",
+      "title": "受強烈熱帶風暴紅霞影響可能發佈之警告（更新時間：2026-07-26 11:00）",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZgeke2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZinFWd",
+      "title": "港澳客船今午復航 其他航線續暫停",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZinFWd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZ5d7fc",
+      "title": "受強烈熱帶風暴紅霞影響可能發佈之警告（更新時間：2026-07-26 14:00）",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZ5d7fc"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZSrtd8",
+      "title": "澳門國際機場逐步恢復受熱帶氣旋「紅霞」影響的航班運作",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZSrtd8"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZI4s7N",
+      "title": "衛生局接獲1宗新冠病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZI4s7N"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZOI3mQ",
+      "title": "跨部門跟進大阪飛澳門航班乘客滯留廣西南寧事件",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZOI3mQ"
+    },
+    {
+      "guid": "",
+      "title": "治安警察局持續開展「雷霆2026」行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZHku3G"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZ975X9",
+      "title": "澳門往返內地客船陸續復航",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZ975X9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GaZed3I",
+      "title": "「銀河娛樂集團世界女排聯賽澳門2026 - 總決賽」土耳其奪冠",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GaZed3I"
+    },
+    {
+      "guid": "",
+      "title": "兒童藝術展「騎風的艾可」開幕 帶領觀眾走進奇異可愛的平行世界",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZjKGVO"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GZBxFbZ",
+      "title": "「紅霞」影響回顧 本週天氣仍不穩定",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GZBxFbZ"
+    }
+  ],
+  "generated_at": "2026-07-27T07:01:03.198120",
+  "model": "deepseek/deepseek-v4-pro"
+}
