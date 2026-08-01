@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-01",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HAuYKKC",
+      "title": "澳大新設五學院兩研究院今正式運行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HAuYKKC"
+    },
+    {
+      "guid": "",
+      "title": "治安警察局持續開展「雷霆2026」行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HA2jWOQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26GePMxbu",
+      "title": "行政長官岑浩輝赴福建出席閩澳合作會議",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26GePMxbu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HARZSTO",
+      "title": "衛生局接獲1宗腸病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HARZSTO"
+    }
+  ],
+  "generated_at": "2026-08-02T07:10:22.943478",
+  "model": "deepseek/deepseek-v4-pro"
+}
