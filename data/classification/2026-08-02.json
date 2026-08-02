@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-02",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HBn9WjI",
+      "title": "經濟財政司司長率團隊落區走訪各社團 凝聚共識推進經濟民生各項工作",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HBn9WjI"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HBkMkBk",
+      "title": "經財資訊觸手可及　經濟財政司開通微信影音號、Facebook及Instagram官方帳號",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HBkMkBk"
+    },
+    {
+      "guid": "",
+      "title": "2026年 \"藝海流金‧相約內蒙古\"  內地與港澳文化和旅遊界交流活動圓滿舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HByLtE9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HBGKJVb",
+      "title": "治安警察局持續開展“雷霆2026”行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HBGKJVb"
+    }
+  ],
+  "generated_at": "2026-08-03T07:10:31.830945",
+  "model": "deepseek/deepseek-v4-flash"
+}
