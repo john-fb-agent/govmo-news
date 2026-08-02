@@ -55,7 +55,7 @@ log "Committing changes..."
 git add data/processed/
 git commit -m "data: 自動更新新聞數據 ($(date '+%Y-%m-%d'))
 
-🤖 Model: qwen/qwen3.5-plus" >> "$LOG_FILE" 2>&1
+🤖 Model: deepseek/deepseek-v4-flash" >> "$LOG_FILE" 2>&1
 
 if [ $? -ne 0 ]; then
     log "ERROR: Commit failed"

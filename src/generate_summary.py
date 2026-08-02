@@ -7,7 +7,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from collections import Counter, defaultdict
 
-MODEL    = "minimax/MiniMax-M3"
+MODEL    = "deepseek/deepseek-v4-flash"
 BATCH_SIZE      = 5
 REQUEST_TIMEOUT = 300
 API_DELAY       = 1
@@ -37,6 +37,7 @@ def call_openclaw(prompt):
     cmd = [
         "openclaw", "agent",
         "--session-key", "agent:main:main",
+        "--model", "deepseek/deepseek-v4-flash",
         "--message", prompt,
         "--timeout", str(REQUEST_TIMEOUT),
         "--json"

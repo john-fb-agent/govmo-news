@@ -59,7 +59,7 @@ def classify_single_news(title, summary, link, item_num, total_items):
         result = subprocess.run([
             '/home/js/.npm-global/bin/openclaw', 'infer', 'model', 'run',
             '--prompt', prompt,
-            '--model', 'qwen/qwen3.5-plus'
+            '--model', 'deepseek/deepseek-v4-flash'
         ], capture_output=True, text=True, timeout=300, env=env)
         
         if result.returncode == 0:
@@ -147,7 +147,7 @@ def main():
         "news": classified,
         "category_stats": category_counts,
         "generated_at": datetime.now().isoformat(),
-        "method": "AI (qwen/qwen3.5-plus)"
+        "method": "AI (deepseek/deepseek-v4-flash)"
     }
     
     with open(output_file, 'w', encoding='utf-8') as f:
