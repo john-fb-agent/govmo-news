@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-03",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCP1X5R",
+      "title": "氣象局8月親子活動即日起接受公眾報名",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCP1X5R"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Gcrlnut",
+      "title": "八月份稅務責任",
+      "category": "金融財政",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Gcrlnut"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCLeJEF",
+      "title": "澳大2027／2028學年研究生課程現正接受申請",
+      "category": "教育發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCLeJEF"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCSiVPx",
+      "title": "新城A區A1至A4及A12地段經屋單位售價公佈",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCSiVPx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCvYiHS",
+      "title": "司法警察局持續進行“雷霆2026”行動",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCvYiHS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCaXzMP",
+      "title": "勞工事務局持續拓展“商社通”電子服務　 推動公共服務現代化",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCaXzMP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCRbirt",
+      "title": "生態區8月生態活動接受報名",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCRbirt"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HC2tumQ",
+      "title": "勞工局與澳娛綜合合作推出就業+培訓專項計劃　 8月5日起接受網上申請",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HC2tumQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HC8nXYv",
+      "title": "恆常性產假報酬補貼推出　助中小企僱主紓緩壓力",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HC8nXYv"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HC0lvNg",
+      "title": "因未能證明符合條件 公司須返還2022年疫情援助款項",
+      "category": "金融財政",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HC0lvNg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCptedr",
+      "title": "“青年匯 文化緣 中華情”2026年青年研習營圓滿閉營",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCptedr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HC4Vwx9",
+      "title": "2026年6月貨幣及金融統計",
+      "category": "金融財政",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HC4Vwx9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCSNdn4",
+      "title": "澳門青年·中葡西企業專項實習啟動首批七名澳青赴橫琴培訓",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCSNdn4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCKl8xS",
+      "title": "岑浩輝在福建廈門、龍岩兩市考察調研",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCKl8xS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HCyzMKx",
+      "title": "體育局舉辦亞運會賽前反興奮劑專題培訓  築牢中國澳門代表團“零出現”防線",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HCyzMKx"
+    }
+  ],
+  "generated_at": "2026-08-04T07:11:06.625737",
+  "model": "deepseek/deepseek-v4-flash"
+}
