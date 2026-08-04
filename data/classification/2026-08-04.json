@@ -1,0 +1,105 @@
+{
+  "date": "2026-08-04",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HD9Dpwv",
+      "title": "受天雨影響 部份賽道重鋪工作順延進行",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HD9Dpwv"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDzp8PI",
+      "title": "勞工事務局聯同治安警辦講解會  提高會展及文體業合規聘用意識",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDzp8PI"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDZQNzu",
+      "title": "2026年第2期《澳門醫學雜誌》已經出版",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDZQNzu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDzZE1h",
+      "title": "市政署九月興趣班接受報名",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDzZE1h"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDxJGT6",
+      "title": "閩澳合作會議第五次會議在福建福州舉行",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDxJGT6"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HD8ejf9",
+      "title": "氹仔徐日昇寅公馬路臨時交管因天氣影響順延",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HD8ejf9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDb9fI6",
+      "title": "特區政府收回位於內港6A號碼頭的國有土地",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDb9fI6"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDWsWBs",
+      "title": "澳門理工大學舉行“第十八屆全澳資訊科技大賽–人工智能創作與三維編程比賽”頒獎禮",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDWsWBs"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDZmRsD",
+      "title": "2026 粵澳名優商品展本周四開鑼 參展規模創 18 年新高",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDZmRsD"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HD2IOvo",
+      "title": "治安警察局持續開展“雷霆2026”行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HD2IOvo"
+    },
+    {
+      "guid": "",
+      "title": "行政長官岑浩輝與福建省領導會面\n並在福州市進行考察調研",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDGbkgC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDqP4Am",
+      "title": "澳大本科生團隊於全國大學生生命科學競賽獲一等獎",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDqP4Am"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDVeeP4",
+      "title": "澳大“三法”推廣學習團赴京交流　深化法治素養與家國情懷",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDVeeP4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HDNv0Oq",
+      "title": "衛生局接獲1宗新冠病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HDNv0Oq"
+    }
+  ],
+  "generated_at": "2026-08-05T07:10:38.089012",
+  "model": "deepseek/deepseek-v4-flash"
+}
