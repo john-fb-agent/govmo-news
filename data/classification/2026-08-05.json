@@ -1,0 +1,224 @@
+{
+  "date": "2026-08-05",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEt9Ypz",
+      "title": "司法警察局持續進行“雷霆2026”行動 維護社區治安秩序",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEt9Ypz"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEaZMxh",
+      "title": "司警局開展防濫藥宣傳 強化青少年防罪守法意識",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEaZMxh"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEkb88E",
+      "title": "教青局為高潛能學生辦活動激發多元才能",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEkb88E"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEuP5iI",
+      "title": "天雨影響　友誼大橋氹仔端兩段引橋周六起再封閉交通",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEuP5iI"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEOF6kb",
+      "title": "文化局與澳門科學館合辦新一期“週五科普繪本遊樂園”即日起接受報名",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEOF6kb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEFE67b",
+      "title": "消委會優化“澳門物價情報站”助便捷格價",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEFE67b"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEak03E",
+      "title": "閩澳攜手共謀發展 “澳門-福建區域協同發展宣介會”在福州成功舉辦",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEak03E"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEcsD13",
+      "title": "社屋承租人因長期不在澳且疏於通報被解除合同",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEcsD13"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEQOeaJ",
+      "title": "第八屆內地與港澳中學生文化遺產暑期課堂 澳門學員赴閩展開七日研學之旅",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEQOeaJ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEzkKIJ",
+      "title": "2026中期人口統計有序推進    統計局籲獲抽中住戶踴躍參與",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEzkKIJ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEXKLbr",
+      "title": "配合路面維修工作　7日起大三巴街及大三巴斜巷等實施臨時交通安排",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEXKLbr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEn74ZM",
+      "title": "文化局新增28個項目列入非物質文化遺產清單",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEn74ZM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HE1tDve",
+      "title": "秋季塔石藝墟徵集創意手作坊",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HE1tDve"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HE3i1iH",
+      "title": "行政長官岑浩輝與福建企業代表會面交流",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HE3i1iH"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEUnBuV",
+      "title": "警情通告：提防網購“掃碼登記”詐騙 以免MPay帳號被盜用",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEUnBuV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HER7grF",
+      "title": "市政署本周四起辦食安街市快閃活動     推廣正確處理食材要訣",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HER7grF"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HETuaTl",
+      "title": "保安司司長陳子勁主持治安警察局局長伍素萍就職儀式",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HETuaTl"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HENBAnM",
+      "title": "澳門國際兒童藝術節多元藝文活動接連登場",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HENBAnM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEN0z0v",
+      "title": "“澳門館”再度亮相香港書展 薈萃本澳出版精華　展現城市創新活力",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEN0z0v"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HE3CAcB",
+      "title": "澳門海關晉升9名副關務監督",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HE3CAcB"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEIOPsf",
+      "title": "澳大校長訪問福州高校並與華大簽署合作協議",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEIOPsf"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEiA2sA",
+      "title": "澳大健康科學夏令營吸引澳門中學生探索生命科學",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEiA2sA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HENwfLx",
+      "title": "衛生局舉行新聞發佈會及“快閃活動”  向居民傳遞預防皮膚癌健康訊息",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HENwfLx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEVIoM3",
+      "title": "衛生局動態調整埃博拉病毒病防疫措施 維持對3個疫情受影響國家或地區進行加強入境防疫措施",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEVIoM3"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HE3JTc6",
+      "title": "《澳門癌症登記年報2024》已出版  居民應實踐健康生活方式及早篩查",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HE3JTc6"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEO3vmy",
+      "title": "崗頂劇院暫停開放",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEO3vmy"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HE1rNJ5",
+      "title": "市政署聯同消防局於飛能便度街小販區進行火警演習 提升緊急應變能力",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HE1rNJ5"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEnS9sG",
+      "title": "警察總局推進各項夏防工作部署 全力維護公共安全",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEnS9sG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEcXeHg",
+      "title": "市政署籲停止食用一款可能含異物的果醬",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEcXeHg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEXoPMG",
+      "title": "大潭山步行徑維修 部分路段臨時圍封",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEXoPMG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HEPDaVr",
+      "title": "理順交通秩序　倫斯泰特大馬路調整為全日禁止泊車",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HEPDaVr"
+    }
+  ],
+  "generated_at": "2026-08-06T07:11:22.875596",
+  "model": "deepseek/deepseek-v4-flash"
+}
