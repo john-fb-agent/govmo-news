@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-06",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HF24tbf",
+      "title": "避暑中心開放",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HF24tbf"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFpl43t",
+      "title": "第八場“社文茶座‧社文範疇齊齊傾”8月20日舉行 聚焦文體生活點亮身心　歡迎居民參與",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFpl43t"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFPBJrk",
+      "title": "旅遊局2027年三項資助計劃8月10日起接受申請",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFPBJrk"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFltUFa",
+      "title": "勞工局與工聯8月下旬合辦酒店營運及餐飲職業配對會",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFltUFa"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFXMGPk",
+      "title": "“澳門記憶”開站七周年 雙重慶祝活動同步上線  豐富好禮與全城同樂",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFXMGPk"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFteGa4",
+      "title": "市政署八月續辦多場動保活動   歡迎市民報名參加",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFteGa4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFPh8Vm",
+      "title": "澳門大專學生內地實習計劃項目陸續開展 助青年學生職涯探索",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFPh8Vm"
+    },
+    {
+      "guid": "",
+      "title": "教青局聯動消防局走進校園  跨部門築牢青少年安全防護屏障",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFoCQbF"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFLn022",
+      "title": "勞工局籲加強防暑措施應對酷熱天氣   嚴防工友中暑",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFLn022"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFhe7bt",
+      "title": "市政署茶文化館八月活動",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFhe7bt"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFGOiKR",
+      "title": "三場公共街市攤位公開競投解釋會逾三百三十人參與",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFGOiKR"
+    }
+  ],
+  "generated_at": "2026-08-07T07:11:13.623622",
+  "model": "deepseek/deepseek-v4-flash"
+}
