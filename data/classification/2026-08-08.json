@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-08",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HGl5j4z",
+      "title": "港珠澳大橋澳門跨境貨物轉運站啟用三周年 助力港澳物流高效聯通",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HGl5j4z"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HHO03gg",
+      "title": "最後兩天！萬款好物、1 元限定、百萬元抽獎齊集名優展",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HHO03gg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HHAWHzd",
+      "title": "譚偉文要求都更公司創新探索多元模式推動都市更新工作",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HHAWHzd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HHnnQ4j",
+      "title": "涉殺人未遂內地男子被羈押",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HHnnQ4j"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HHQ4n08",
+      "title": "機場部份航班取消 民航局籲乘客出發前留意航班動態",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HHQ4n08"
+    },
+    {
+      "guid": "",
+      "title": "治安警察局持續開展「雷霆2026」行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HHXL4o0"
+    }
+  ],
+  "generated_at": "2026-08-09T07:10:33.166885",
+  "model": "deepseek/deepseek-v4-flash"
+}
