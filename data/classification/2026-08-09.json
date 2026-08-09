@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-09",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HIVEYhR",
+      "title": "司法警察局持續進行“雷霆2026”行動   全力維護治安穩定",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HIVEYhR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HIJ7Uez",
+      "title": "2026年“琴澳杯”系列賽暨青少年系列賽羽毛球公開組賽事圓滿舉辦",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HIJ7Uez"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HIqceOy",
+      "title": "2026粵澳名優商品展今閉幕 四天展期吸引逾9萬人次入場",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HIqceOy"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HIrwuG3",
+      "title": "保安司與青年清茶談\r\n “平安城市 青年擔當”",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HIrwuG3"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HFpIITz",
+      "title": "廉政公署“愛‧誠信”入校活動  培育學生廉潔品格",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HFpIITz"
+    }
+  ],
+  "generated_at": "2026-08-10T07:10:45.430135",
+  "model": "deepseek/deepseek-v4-flash"
+}
