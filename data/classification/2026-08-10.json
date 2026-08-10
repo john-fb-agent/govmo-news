@@ -1,0 +1,105 @@
+{
+  "date": "2026-08-10",
+  "news": [
+    {
+      "guid": "",
+      "title": "中華人民共和國財政部將在澳門發行60億人民幣國債 支持澳門培育債券市場",
+      "category": "金融財政",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJNMyFB"
+    },
+    {
+      "guid": "",
+      "title": "中華人民共和國財政部、澳門特別行政區政府 關於中央政府在澳門發行人民幣國債的聯合公告",
+      "category": "金融財政",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJ24ngG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJFGqqy",
+      "title": "勞工局與永利合作推出“永利廚務新星培訓” 8月10日起接受報名",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJFGqqy"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJhAWnq",
+      "title": "緊急維修路面 風順大馬路行車天橋12日至14日夜間臨時交管",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJhAWnq"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJ5nVoF",
+      "title": "《社團法律制度》今起公開諮詢",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJ5nVoF"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJmvHuG",
+      "title": "澳大師生到英國杜倫大學交流",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJmvHuG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJMosKP",
+      "title": "復康事務委員會2026年度第二次全體會議及康復服務十年行動計劃 跨部門協調小組聯合會議",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJMosKP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJ3hNed",
+      "title": "市政署周三於石排灣活動中心禮堂舉行社區座談會",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJ3hNed"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJxDZDS",
+      "title": "“澳門城市清潔運動之學校宣傳推廣活動”九月開展 歡迎學校報名參加",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJxDZDS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJOZrp0",
+      "title": "市政署“有禮生活親子講故事”工作坊接受報名",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJOZrp0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJLm05h",
+      "title": "若在博彩中介人處存放款項非用於博彩 博彩承批公司無須負責",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJLm05h"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJYGHp8",
+      "title": "延伸“栢港停車場”巴士站範圍　提升通行效率　非利喇街部份路段12日起按序試行封閉交通",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJYGHp8"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJjEB50",
+      "title": "特區政府公佈《2026至2035年長者服務十年行動計劃》及 《2026至2035年康復服務十年行動計劃》",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJjEB50"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJrEuCd",
+      "title": "教青局組織澳門高校赴湖南研習國情 深化區域教育協同合作",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJrEuCd"
+    }
+  ],
+  "generated_at": "2026-08-11T07:11:05.268336",
+  "model": "deepseek/deepseek-v4-flash"
+}
