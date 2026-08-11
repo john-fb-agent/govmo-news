@@ -1,0 +1,105 @@
+{
+  "date": "2026-08-11",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKxkoUO",
+      "title": "行政公職局聯同多個部門舉行2026年度跨部門網絡安全攻防演練",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKxkoUO"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HK6gzWi",
+      "title": "金管局聯動多方育才儲才　搭建大學生多元實習平台",
+      "category": "金融財政",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HK6gzWi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKvaKSV",
+      "title": "配合伸縮縫維修　高士德大馬路行車天橋（往松山隧道方向）15日至18日封閉交通",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKvaKSV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HJPrJxS",
+      "title": "奮發有為開創澳門“三五”時期高質量發展新局面",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HJPrJxS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKI2MYy",
+      "title": "譚偉文聯同部門視察北區  指示全面檢視北區殘舊樓宇維修工作",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKI2MYy"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKS2iup",
+      "title": "營地及三盞燈活動中心翻新 下周一起分階段暫停開放",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKS2iup"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKFuDue",
+      "title": "衛生局有關遺體及物品待領啟事",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKFuDue"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKnY6a0",
+      "title": "2026中期人口統計資料收集期至8月15日結束    完成填報即可參加“合作住戶大抽獎”",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKnY6a0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKfhCCS",
+      "title": "《社團法律制度》公開諮詢舉行立法會專場諮詢會",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKfhCCS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKQh1By",
+      "title": "文化局認同廉政公署意見 完善採購監察機制　確保公平競爭",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKQh1By"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKIYRvP",
+      "title": "澳大暑期開辦逾三十研習營及培訓課程",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKIYRvP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKqymti",
+      "title": "“第八屆內地與港澳中學生文化遺產暑期課堂”圓滿舉行 深化三地青年交流　共築文化傳承橋樑",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKqymti"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKmpSWu",
+      "title": "澳大復旦金融學雙學士聯合培養計劃迎來首屆澳門畢業生",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKmpSWu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HKUdjt3",
+      "title": "生產力時尚創意競技今開幕 鼓勵青少年多元發展",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HKUdjt3"
+    }
+  ],
+  "generated_at": "2026-08-12T07:11:09.820241",
+  "model": "deepseek/deepseek-v4-flash"
+}
