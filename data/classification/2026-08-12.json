@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-12",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HLL2h7i",
+      "title": "友誼大橋今晚9時起解除超過3.5公噸車輛通行的限制",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HLL2h7i"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HLBIOC8",
+      "title": "賽道重鋪　8月13日起馬交石加思欄及海邊馬路臨時交管",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HLBIOC8"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HLhBkz0",
+      "title": "【力拓西葡國際市場】旅遊局組織西班牙業界來澳考察 推深度遊產品",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HLhBkz0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HLx8pUb",
+      "title": "財政局代表出席電台節目加強宣傳《公共採購法》  籲商號儘早登記加入供應商資料庫",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HLx8pUb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HLmjukb",
+      "title": "2025∕2026學年大專學生學習用品津貼的補充文件期將結束",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HLmjukb"
+    }
+  ],
+  "generated_at": "2026-08-13T08:13:59.765023",
+  "model": "deepseek/deepseek-v4-flash"
+}
