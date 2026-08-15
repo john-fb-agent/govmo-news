@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-15",
+  "news": [
+    {
+      "guid": "",
+      "title": "特區政府舉行2027年施政報告座談會 行政長官就編製施政報告聽取立法會議員意見",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HOpRsJi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HOt8J1J",
+      "title": "配合A3橋鋼箱樑頂推施工 友誼大橋18至24日深夜時段只可由氹仔往海港前地",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HOt8J1J"
+    }
+  ],
+  "generated_at": "2026-08-16T07:10:37.453458",
+  "model": "deepseek/deepseek-v4-flash"
+}
