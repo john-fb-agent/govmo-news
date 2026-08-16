@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-16",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HP2iQFE",
+      "title": "提防冒充財政局詐騙電話短訊",
+      "category": "金融財政",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HP2iQFE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HPCRXmc",
+      "title": "警情通告：提防假冒財政局催繳稅款短訊 以免個人及信用卡資料被盜用",
+      "category": "金融財政",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HPCRXmc"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HP5Dhve",
+      "title": "休漁期結束 海事局助漁船有序出港",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HP5Dhve"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HP9YGJz",
+      "title": "總規修改草案第三場公眾諮詢會順利舉行    諮詢期至8月27日呼籲市民踴躍提交意見",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HP9YGJz"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HPSwnDr",
+      "title": "岑浩輝召開政務會議　統籌部署加快推進都市更新",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HPSwnDr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HPKyAdo",
+      "title": "澳門特區政府為國務院原總理朱鎔基下半旗誌哀",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HPKyAdo"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HPlOy4N",
+      "title": "《社團法律制度》公開諮詢舉行首場公眾諮詢會",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HPlOy4N"
+    }
+  ],
+  "generated_at": "2026-08-17T07:11:08.434445",
+  "model": "deepseek/deepseek-v4-flash"
+}
