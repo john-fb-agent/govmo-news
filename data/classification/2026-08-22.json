@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-22",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HV59iB2",
+      "title": "打擊非法工作行動2026年7月份統計資料",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HV59iB2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HVMiA9I",
+      "title": "醫療器械審評專家顧問委員會舉行第一次全體會議",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HVMiA9I"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HVHrHvb",
+      "title": "築夢「桃花源」：琴澳協同聯動，夯實人才發展支撐",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HVHrHvb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HVNtO0u",
+      "title": "仁伯爵綜合醫院聯同消防局和治安警察局順利完成火警演習",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HVNtO0u"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HVLkEY4",
+      "title": "衛生局接獲1例軍團菌病例通報",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HVLkEY4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HV0ycze",
+      "title": "《社團法律制度》公開諮詢舉行第二場公眾諮詢會",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HV0ycze"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HVXaEys",
+      "title": "琴澳同心，健康同行｜雙向奔赴潤童心，琴澳共繪民生融合溫情畫卷",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HVXaEys"
+    }
+  ],
+  "generated_at": "2026-08-23T07:10:39.821846",
+  "model": "deepseek/deepseek-v4-flash"
+}
