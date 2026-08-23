@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-23",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HWNoXIG",
+      "title": "“港澳青年故宮實習計劃 2026”圓滿結束　澳門學子分享實習成果",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HWNoXIG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HVIP66p",
+      "title": "【圖文包】2027年施政報告意見收集",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HVIP66p"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HVElvqG",
+      "title": "匯集民智民意　攜手共創未來\r\n2027年施政報告意見收集明展開",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HVElvqG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HWnKrlf",
+      "title": "多國青少年同場競技 搭建科創交流平台 2026合作區人工智能大賽暨澳門國際邀請賽開幕",
+      "category": "科技創新",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HWnKrlf"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HW6Bevm",
+      "title": "橫琴桃花源農場九月底開放 一戶通優先報名體驗農耕樂",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HW6Bevm"
+    }
+  ],
+  "generated_at": "2026-08-24T07:10:53.000297",
+  "model": "deepseek/deepseek-v4-flash"
+}
