@@ -1,0 +1,105 @@
+{
+  "date": "2026-08-25",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYGdNrv",
+      "title": "2026年“中國京劇藝術團”赴澳門演出 京劇《漢明妃》即將上演",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYGdNrv"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYiJQg7",
+      "title": "社會服務界別法人應按時提交年度總結報告",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYiJQg7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYXu09F",
+      "title": "“2026普法義工考察交流團”赴深圳、東莞及惠州參訪",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYXu09F"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYRPEPJ",
+      "title": "第七屆內地與港澳郵政高層聯席會議於昆明召開",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYRPEPJ"
+    },
+    {
+      "guid": "",
+      "title": "行政長官就制定施政方針聽取教育、青年、文化及體育界別意見",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYaqzrd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HY4XTs3",
+      "title": "葡萄牙中華文化之友協會代表團來澳學習交流",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HY4XTs3"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HY1z6sN",
+      "title": "單車挑戰賽 8月29日至30日路氹體育館大馬路一帶實施臨時交管",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HY1z6sN"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYIR4ez",
+      "title": "市政署首7月檢控違法食材個案25 宗  重申業界須嚴格履行食品安全法",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYIR4ez"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYiVe0u",
+      "title": "“有禮生活親子講故事比賽”現正接受報名  歡迎家庭參加",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYiVe0u"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYsPtFU",
+      "title": "配合空中走廊鋼結構吊裝 東北大馬路部分路段8月27日起分階段實施夜間臨時交管",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYsPtFU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYy1Qjk",
+      "title": "行政長官就制定施政方針聽取公職人員社團代表意見",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYy1Qjk"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYeubpY",
+      "title": "第四十四屆澳門青年音樂比賽圓滿結束",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYeubpY"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYWpS4o",
+      "title": "衛生局接獲1例輸入性猴痘病例報告",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYWpS4o"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HYAdiL6",
+      "title": "澳大與清華國旗儀仗隊聯合升旗",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HYAdiL6"
+    }
+  ],
+  "generated_at": "2026-08-26T07:12:09.843411",
+  "model": "deepseek/deepseek-v4-flash"
+}
