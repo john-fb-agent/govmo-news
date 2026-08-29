@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-29",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HcSek1u",
+      "title": "澳門特區政府心繫西藏吉隆災情\r\n捐助三千萬支持災害救援及善後工作",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HcSek1u"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HcgYLnX",
+      "title": "“活力社區 - 2026夏日競技嘉年華” 親子體驗取消",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HcgYLnX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HcxKZyr",
+      "title": "澳門藥監局訪問國家藥監局兩個分中心 加強粵港澳大灣區藥械審評檢查交流合作",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HcxKZyr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HcEJiO4",
+      "title": "行政長官岑浩輝啟程出訪東南亞三國\r\n推介澳門“三五”時期機遇　為澳琴集聚更多國際資源",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HcEJiO4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Hcup2ki",
+      "title": "行政長官岑浩輝與中國駐新加坡大使曹忠明會面",
+      "category": "國家安全",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Hcup2ki"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HcuiGyd",
+      "title": "“澳門大學澳琴講壇”在大學城第一期校區開講人工智能",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HcuiGyd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Hc5jRdn",
+      "title": "全球大學演講賽　澳大奪冠",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Hc5jRdn"
+    }
+  ],
+  "generated_at": "2026-08-30T07:11:12.387127",
+  "model": "deepseek/deepseek-v4-flash"
+}

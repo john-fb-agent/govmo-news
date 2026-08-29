@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-29",
+  "news_count": 7,
+  "department_stats": {
+    "新聞局": 3,
+    "體育局": 1,
+    "藥物監督管理局": 1,
+    "澳門大學": 2
+  },
+  "no_department_count": 0,
+  "generated_at": "2026-08-30T01:00:11.320111"
+}
