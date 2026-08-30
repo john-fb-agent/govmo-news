@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-30",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HdS3KKx",
+      "title": "鼓勵業界善用泊車資源 媽閣交通樞紐重型客車停車場設首小時免費泊車優惠",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HdS3KKx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Hdn3uW7",
+      "title": "首期澳門公務員“AI賦能行政能力提升培訓”順利結課，助推琴澳人才協同發展",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Hdn3uW7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HaDyJ3w",
+      "title": "明（31）日起家庭醫學培訓基地“兒童早療技能專項培訓”接受報名",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HaDyJ3w"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HZ1lNDw",
+      "title": "氹仔濠景捐血站於9月起轉為常規捐血站提供捐血服務",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HZ1lNDw"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HdfLJid",
+      "title": "“活力社區—2026夏日競技嘉年華”競技比賽取消",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HdfLJid"
+    },
+    {
+      "guid": "",
+      "title": "行政長官岑浩輝與新加坡社會政策統籌部長兼保健衛生部長王乙康會面",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Hd4xAtV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Hd7LleQ",
+      "title": "行政長官岑浩輝與新加坡華社及商會代表會面",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Hd7LleQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HdFwF5D",
+      "title": "岑浩輝在新加坡考察都市更新和旅遊配套項目",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HdFwF5D"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HdtC5uo",
+      "title": "治安警察局全力保障開學首日通關及交通順暢",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HdtC5uo"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HdTufP0",
+      "title": "市政署籲停止食用一款預包裝米粉",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HdTufP0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26HdunDoy",
+      "title": "“記憶沙龍”公眾講座開鑼  首場聚焦路環古廟與山海地景  下半年以“離島”為主題  續推系列講座共探社區記憶",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26HdunDoy"
+    }
+  ],
+  "generated_at": "2026-08-31T07:11:57.714336",
+  "model": "deepseek/deepseek-v4-flash"
+}
