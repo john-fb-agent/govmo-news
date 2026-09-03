@@ -238,5 +238,15 @@
     "summary": "<p style=\"text-align: justify;\">衛生局今（2）日接獲1宗流感樣疾病群集性感染報告，具體如下：</p>\n<p style=\"text-align: justify;\">共4名患者（1男3女），均是澳門慕拉士大馬路澳門工會聯合總會望廈老人中心員工。</p>\n<p style=\"text-align: justify;\">上述患者於8月30日起出現發熱及咳嗽等上呼吸道症狀，部份患者已就醫，病情較輕，未見重症或其他嚴重併發症的情況。有關場所已加強清潔消毒和保持室內空氣流通等感染控制措施及嚴格執行患者隔離的規定。</p>\n<p style=\"text-align: justify;\">衛生局提醒，為避免患上流感或其他上呼吸道傳染性疾病，除接種流感疫苗外，還應採取以下措施：</p>\n<ol>\n <li style=\"text-align: justify;\">每年接種季節性流感疫苗；</li>\n <li style=\"text-align: justify;\">及時接種建議的新冠疫苗；</li>\n <li style=\"text-align: justify;\">確保自己及家人睡眠充足，飲食均衡以及適量運動；</li>\n <li style=\"text-align: justify;\">保持良好的個人衛生習慣，注意手部衛生；</li>\n <li style=\"text-align: justify;\">打噴嚏或咳嗽時應用紙巾掩住口鼻，用紙巾包好痰涎及分泌物，放入有蓋的垃圾桶內及儘快洗手；沒有紙巾時應用肘部掩住口鼻，而不應用手掌掩住口鼻；</li>\n <li style=\"text-align: justify;\">保持空氣流通及良好的環境衛生；</li>\n <li style=\"text-align: justify;\">避免前往人多擠迫的地方；</li>\n <li style=\"text-align: justify;\">凡有感冒病徵、需要照顧病人及進入醫院及診所的人士，都應戴上口罩；</li>\n <li style=\"text-align: justify;\">如有不適，及時就診及留在家中休息，若症狀加重必須儘快就醫。</li>\n</ol>",
     "department": "衛生局",
     "fetched_at": "2026-09-03T01:00:03.543629"
+  },
+  {
+    "title": "受熱帶風暴沙德爾影響可能發佈之警告（更新時間：2026-09-03 05:00）",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ICFYMMW",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ICFYMMW",
+    "published": "2026-09-03T05:00:00+08:00",
+    "published_parsed": "2026-09-02T21:00:00",
+    "summary": "<p style=\"text-align: center;\"><strong>受熱帶風暴沙德爾影響可能發佈之警告</strong></p>\n<p style=\"text-align: center;\">更新時間: 2026-09-03 05:00</p>\n<table border=\"0\" style=\"border-collapse: collapse;\" width=\"100%\">\n <tbody>\n  <tr align=\"center\">\n   <td style=\"border-width: 2px; border-style: solid;\" width=\"25%\"><strong>警告信號</strong></td>\n   <td style=\"border-width: 2px; border-style: solid;\"><strong>預計發佈時間</strong></td>\n   <td style=\"border-width: 2px; border-style: solid;\" width=\"25%\"><strong>可能性</strong></td>\n  </tr>\n  <tr align=\"center\">\n   <td style=\"border-width: 2px; border-style: solid;\">一號風球</td>\n   <td colspan=\"2\" style=\"border-width: 2px; border-style: solid;\">已發出</td>\n  </tr>\n  <tr align=\"center\">\n   <td style=\"border-width: 2px; border-style: solid;\">三號風球</td>\n   <td colspan=\"2\" style=\"border-width: 2px; border-style: solid;\">較低</td>\n  </tr>\n </tbody>\n</table>\n<p><em>備註: 機率表提供未來一至兩天警告信號的可能情況，市民可藉此了解熱帶氣旋於指定時段內影響澳門的可能性，從而更早地妥善安排相應預防措施。請市民留意本局發佈的最新消息。</em></p>",
+    "department": "地球物理氣象局",
+    "fetched_at": "2026-09-03T09:00:00.227265"
   }
 ]
