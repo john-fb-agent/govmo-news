@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-05",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IEL8oQA",
+      "title": "岑浩輝：訪問東南亞三國行程收穫多方面合作成果",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IEL8oQA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IEpFZjn",
+      "title": "協和澳門醫學中心舉辦“兩周年院慶暨醫療健康高峰論壇”  現正接受線上報名",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IEpFZjn"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IEjU378",
+      "title": "《總體方案》印發五年 從藍圖到實景，琴澳“桃花源”的豐與收",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IEjU378"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IEp3rxx",
+      "title": "休企保安勒索保護費主腦被羈押",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IEp3rxx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IEvhf65",
+      "title": "代表團完成東南亞三國商務考察 搭建澳門與東盟經貿旅遊合作新橋樑",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IEvhf65"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IEiXTeM",
+      "title": "協和澳門醫學中心舉辦“兩周年院慶暨公眾開放日” 與市民攜手共築健康防線",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IEiXTeM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IE5VoCL",
+      "title": "教青局將組織澳門師生參與天宮課堂·港澳專場共同認識航天科技成就",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IE5VoCL"
+    }
+  ],
+  "generated_at": "2026-09-06T07:11:54.005458",
+  "model": "deepseek/deepseek-v4-flash"
+}
