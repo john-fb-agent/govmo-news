@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-06",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IDMzv8l",
+      "title": "引多元電子支付便民出行　輕軌9月起分批更新閘機",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IDMzv8l"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IF8D6PD",
+      "title": "協和澳門醫學中心舉辦機構開放日專場活動",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IF8D6PD"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IFvxmqu",
+      "title": "「WTT 澳門冠軍賽2026由銀河娛樂集團呈獻」舉行抽籤儀式",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IFvxmqu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IFyAu1h",
+      "title": "活力社區─2026大眾康體嘉年華 一連兩天圓滿舉行",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IFyAu1h"
+    }
+  ],
+  "generated_at": "2026-09-07T07:11:08.236131",
+  "model": "deepseek/deepseek-v4-flash"
+}
