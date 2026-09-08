@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-08",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHbEfvt",
+      "title": "避暑中心開放",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHbEfvt"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IGjPhh0",
+      "title": "“家庭醫學基礎證書培訓課程＂今（8）日起接受報名",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IGjPhh0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHtaii9",
+      "title": "內地人士涉將假貨幣轉手被羈押",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHtaii9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHijVn1",
+      "title": "特區政府設立“民航業發展工作組”",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHijVn1"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHJvtty",
+      "title": "引入人工智能元素　車商今（8日）起可網上辦理“機動車輛商標及型號核准”申請服務",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHJvtty"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHtdYaY",
+      "title": "特區政府清拆大三巴附近兩危樓保公眾安全",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHtdYaY"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHSyfZ4",
+      "title": "澳琴國際教育（大學）城三高校首次聯合舉行開學禮",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHSyfZ4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHjBnl0",
+      "title": "“澳琴人才卡”正式發佈！ 享通關、醫療、教育等專屬權益",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHjBnl0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHcWtcq",
+      "title": "「WTT 澳門冠軍賽2026由銀河娛樂集團呈獻」揭開戰幔",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHcWtcq"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHEIMlQ",
+      "title": "澳門青年之家（廣州）正式啟用",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHEIMlQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHD9cyr",
+      "title": "青茂口岸啟用五周年-助力大灣區高速融合發展",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHD9cyr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IH83CZw",
+      "title": "拉丁美洲管理學院理事會主席訪澳大",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IH83CZw"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHybTu0",
+      "title": "澳門 PISA  2025：運算解難全球居首，卓越表現兼顧公平",
+      "category": "教育發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHybTu0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHHbGen",
+      "title": "2021年經屋首批65個合資格家團揀樓",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHHbGen"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IHgzQx7",
+      "title": "衛生局接獲2宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IHgzQx7"
+    }
+  ],
+  "generated_at": "2026-09-09T07:13:41.445443",
+  "model": "deepseek/deepseek-v4-flash"
+}
