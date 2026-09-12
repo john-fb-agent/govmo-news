@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-12",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IL0CoaW",
+      "title": "文化多點•幸福多點──文化走進社區 中華傳統文化深入社區共迎中秋",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IL0CoaW"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ILZdh6m",
+      "title": "澳門影視產業服務中心9月舉辦產業活動",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ILZdh6m"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ILqxVZd",
+      "title": "澳區國家統一法律職業資格考試客觀題考試已順利舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ILqxVZd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ILN99gK",
+      "title": "建築及工程檢測無人機應用課程舉行證書頒授儀式",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ILN99gK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IL3uEDr",
+      "title": "「WTT 澳門冠軍賽2026由銀河娛樂集團呈獻」四強席位誕生",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IL3uEDr"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26ILU5yLX",
+      "title": "【品牌盛事】第34屆澳門國際煙花比賽匯演今（12日）晚閃耀揭幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26ILU5yLX"
+    }
+  ],
+  "generated_at": "2026-09-13T07:10:58.567333",
+  "model": "deepseek/deepseek-v4-flash"
+}
