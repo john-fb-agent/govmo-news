@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-13",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IMRKPxb",
+      "title": "“活力社區-2026全澳長者運動日”圓滿舉行 長者齊聚展現健康活力",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IMRKPxb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IMhiea4",
+      "title": "澳門國際論壇暨“景行行止——中國畫名家學術邀請展”（澳門站）即將舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IMhiea4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IME3ae3",
+      "title": "行政長官岑浩輝與深圳市委書記靳磊會面",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IME3ae3"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IMFBmim",
+      "title": "「WTT 澳門冠軍賽2026由銀河娛樂集團呈獻」決出男、女子單打冠軍",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IMFBmim"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IMdjJRN",
+      "title": "「2026年國際汽聯亞太區小型賽車錦標賽」圓滿舉行",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IMdjJRN"
+    }
+  ],
+  "generated_at": "2026-09-14T07:10:28.975097",
+  "model": "deepseek/deepseek-v4-flash"
+}
