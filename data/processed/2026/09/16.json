@@ -1,0 +1,332 @@
+[
+  {
+    "title": "第四期基本生命支持課程（BLS）今（16）日起接受報名",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPvEJ19",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPvEJ19",
+    "published": "2026-09-16T10:53:00+08:00",
+    "published_parsed": "2026-09-16T02:53:00",
+    "summary": "<p style=\"text-align: justify;\">為貫徹特區政府“提升醫療服務水平”施政方針，落實社會文化領域“支持醫療人員發展”的重點工作，提高本澳醫療人員的臨床技能及競爭力，衛生局急救培訓中心於10月10及11日通過持續專業發展計劃舉辦 “第四期基本生命支持（BLS）” 通識課程，設有4個班別。課程旨在強化本澳醫療人員進行心肺復甦的知識與技能，並教授自動體外心臟去顫器的操作方法，具體安排如下：</p>\n<p style=\"text-align: justify;\">1. 課程內容：</p>\n<p style=\"text-align: justify;\">(1) 心肺復甦術（單人及雙人操作）；</p>\n<p style=\"text-align: justify;\">(2) 球囊面罩實施正壓通氣急救；</p>\n<p style=\"text-align: justify;\">(3) 介紹自動體外心臟去顫器（AED）及實務操作。</p>\n<p style=\"text-align: justify;\">2. 課程對象：未曾於2025年或2026年參加本課程的本澳醫療人員。</p>\n<p style=\"text-align: justify;\">3. 上課時間：</p>\n<p style=\"text-align: justify;\">A班：2026年10月10日（周六）10:00-12:00</p>\n<p style=\"text-align: justify;\">B班：2026年10月10日（周六）13:30-15:30</p>\n<p style=\"text-align: justify;\">C班：2026年10月11日（周日）10:00-12:00</p>\n<p style=\"text-align: justify;\">D班：2026年10月11日（周日）13:30-15:30</p>\n<p style=\"text-align: justify;\">4. 授課語言及名額：每班中文授課27個名額、英語授課3個名額；倘超額報名，將以抽籤方式確定最終錄取名單；完成課程者可獲發持續專業發展計劃培訓證書。</p>\n<p style=\"text-align: justify;\">5. 報名日期： 9月16日至10月2日</p>\n<p>6. 報名方式：登入下列連結進行報名</p>\n<p>中文 - https://www.ssm.gov.mo/portal1/article/lOEmRwY5Cf1WN6XIlCdZg</p>\n<p>葡文 - https://www.ssm.gov.mo/portal1/article/lOEmRwY5Cf1WN6XIlCdZg?lang=pt</p>\n<p>7. 注意事項：</p>\n<p style=\"text-align: justify;\">(1) 報名者須準確填寫執業准照編號，如未填寫或填寫錯誤，將影響獲取證書資格及CPD學分。</p>\n<p style=\"text-align: justify;\">(2) 有關執業准照編號查詢，可瀏覽以下連結：https://www.ssm.gov.mo/pubssmweb/Utlap/frmUtlapLic.aspx?licode=&amp;t=或https://app.isaf.gov.mo/pubisafweb/Daf/frmDil.aspx?_type=P&amp;t=202606181007</p>",
+    "department": "衛生局",
+    "fetched_at": "2026-09-16T11:00:02.644884"
+  },
+  {
+    "title": "澳門理工大學人工智能解析DNA甲基化研究成果獲國際頂尖期刊《自然通訊》刊登",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPLQJF5",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPLQJF5",
+    "published": "2026-09-16T10:20:00+08:00",
+    "published_parsed": "2026-09-16T02:20:00",
+    "summary": "<p style=\"text-align: justify;\">澳門理工大學機器翻譯暨人工智能應用技術教育部工程研究中心教授魏樂義及研究團隊，在運用人工智能解析DNA甲基化調控規律方面取得新進展，相關研究成果以“Decoding the Sequence Determinants of Locus-Specific DNA Methylation Across Human Tissues”為題，於國際頂尖學術期刊《Nature Communications》上刊登。研究團隊提出深度學習框架Melody，能夠成功預測39種人類細胞類型的DNA甲基化圖譜，並進一步分析遺傳變異對甲基化的影響。研究成果為理解基因組序列、細胞狀態與人類表觀遺傳調控之間的關係提供了新的人工智能工具。</p>\n<p style=\"text-align: justify;\">DNA甲基化是調控基因表達、細胞分化和維持基因組穩定性的重要表觀遺傳修飾，其異常變化與癌症、神經系統疾病及代謝綜合症等多種疾病密切相關。為解析特定位點甲基化狀態與DNA序列及細胞環境之間的關係，研究團隊研發了Melody模型。該模型以10kb基因組序列為輸入，通過卷積編碼器、解碼器及多任務學習，同時預測單堿基分辨率的甲基化水平、每個100bp區域的平均甲基化水平和CpG數量，從而整合局部與遠距離序列信息。團隊還構建了Melody-ST、Melody-MT和Melody-G三種模型，分別用於單一細胞類型、多種細胞類型及未見細胞類型的甲基化預測。</p>\n<p style=\"text-align: justify;\">在39個DNA甲基化數據集上測試，Melody在全染色體、低甲基化區域及細胞類型特異區域等多類任務中取得出色結果，在相關性指標上較現有方法平均相對提升約17%。研究結果還顯示，約10kb的輸入序列能夠在獲取充分調控信息與減少冗餘序列之間取得較好平衡。除甲基化圖譜預測外，Melody還可用於評估遺傳變異對甲基化的影響，並通過對282種轉錄因子基序開展計算擾動分析，揭示其作用強度和組織特異性。研究團隊進一步將單細胞RNA測序基礎模型生成的細胞狀態信息引入Melody-G，使其在5種訓練階段未見的細胞類型中，預測表現較基線模型最高提升10.1%，展現出良好的跨細胞類型泛化能力。</p>\n<p style=\"text-align: justify;\">《Nature Communications》由英國Nature Portfolio出版，旨在展示生命科學、健康、物理、化學、地球及社會科學等領域的重要突破。該學術期刊屬JCR一區，2025年影響因子為18.1，5年影響因子為18.9，屬中科院一區TOP期刊。本研究獲國家自然科學基金委員會青年科學基金項目（B類）（原優秀青年科學基金）資助。研究內容全文可瀏覽：https://www.nature.com/articles/s41467-026-76744-5。</p>",
+    "department": "澳門理工大學",
+    "fetched_at": "2026-09-16T11:00:02.644891"
+  },
+  {
+    "title": "快富樓及麗都停車場18日起部分時段實施只出不進臨時安排",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPicKRY",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPicKRY",
+    "published": "2026-09-16T12:35:00+08:00",
+    "published_parsed": "2026-09-16T04:35:00",
+    "summary": "<p style=\"text-align: justify;\">配合快富樓及麗都停車場出入口指示牌的更換工程，9月18日起兩停車場部分時段需實施只出不進的臨時交通安排，具體安排請見附表，敬請駕駛者留意，並按需選用周邊其他停泊設施。不便之處，敬請見諒。</p>\n<p align=\"center\" style=\"text-align: center;\"><strong>附表</strong><strong>：</strong><strong>快富樓及麗都停車場實施只出不進臨時交通安排</strong></p>\n<table align=\"center\" style=\"width: 432.1pt; border-collapse: collapse; border: solid 1pt;\" width=\"0\">\n <tbody>\n  <tr>\n   <td style=\"border: solid 1pt; width: 120.8pt;\" width=\"161\"> <p align=\"center\" style=\"text-align: center;\"><strong>日期</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 138.3pt; border-left: none;\" width=\"184\"> <p align=\"center\" style=\"text-align: center;\"><strong>時間</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 173pt; border-left: none;\" width=\"231\"> <p align=\"center\" style=\"text-align: center;\"><strong>停車場</strong></p> </td>\n  </tr>\n  <tr style=\"height: 36pt;\">\n   <td style=\"border: solid 1pt; width: 120.8pt; border-top: none; height: 36pt;\" width=\"161\"> <p align=\"center\" style=\"text-align: center;\">9月18日</p> </td>\n   <td rowspan=\"2\" style=\"border-bottom: solid 1pt; width: 138.3pt; border-top: none; border-left: none; border-right: solid 1pt; height: 36pt;\" width=\"184\"> <p align=\"center\" style=\"text-align: center;\">上午10時至12時及</p> <p align=\"center\" style=\"text-align: center;\">下午2時30分至4時</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 173pt; border-top: none; border-left: none; border-right: solid 1pt; height: 36pt;\" width=\"231\"> <p align=\"center\" style=\"text-align: center;\">快富樓停車場B出入口</p> </td>\n  </tr>\n  <tr style=\"height: 36pt;\">\n   <td style=\"border: solid 1pt; width: 120.8pt; border-top: none; height: 36pt;\" width=\"161\"> <p align=\"center\" style=\"text-align: center;\">9月19日</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 173pt; border-top: none; border-left: none; border-right: solid 1pt; height: 36pt;\" width=\"231\"> <p align=\"center\" style=\"text-align: center;\">快富樓停車場A出入口</p> </td>\n  </tr>\n  <tr style=\"height: 36pt;\">\n   <td style=\"border: solid 1pt; width: 120.8pt; border-top: none; height: 36pt;\" width=\"161\"> <p align=\"center\" style=\"text-align: center;\">9月21日</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 138.3pt; border-top: none; border-left: none; border-right: solid 1pt; height: 36pt;\" width=\"184\"> <p align=\"center\" style=\"text-align: center;\">上午9時至11時及</p> <p align=\"center\" style=\"text-align: center;\">下午2時至4時</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 173pt; border-top: none; border-left: none; border-right: solid 1pt; height: 36pt;\" width=\"231\"> <p align=\"center\" style=\"text-align: center;\">麗都停車場</p> </td>\n  </tr>\n </tbody>\n</table>",
+    "department": "交通事務局",
+    "fetched_at": "2026-09-16T13:00:02.818344"
+  },
+  {
+    "title": "教育基金公佈2026/2027學年“大專助學金資助計劃”及“資助於頂尖學府就讀獎學金計劃”的合資格及有條件限制的申請人名單",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPCAQWS",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPCAQWS",
+    "published": "2026-09-16T14:39:00+08:00",
+    "published_parsed": "2026-09-16T06:39:00",
+    "summary": "<p style=\"text-align: justify;\">教育基金2026/2027學年“大專助學金資助計劃”中的獎學金、指定學科助學金及赴葡升學助學金，以及 “資助於頂尖學府就讀獎學金計劃”的合資格申請人及有條件限制的申請人名單已公佈，申請人可透過“大專獎助學金”專頁，或到教育及青年發展局（地址：澳門約翰四世大馬路7-9號一樓）查閱。</p>\n<p style=\"text-align: justify;\">有條件限制的申請人須於2026年10月9日或之前就彌補缺漏或證明符合條件提交相關文件。透過“澳門公共服務一戶通”申請獎助學金的申請人，請以同一個人帳戶登入“一戶通”網頁版或手機應用程式中的“大專獎助學金”專區上載相關文件（系統關閉時間：澳門時間2026年10月9日23:59:59）；以紙本方式提交申請獎助學金的申請人，須於上述期限內的辦公時間到教育及青年發展局提交文件。</p>\n<p style=\"text-align: justify;\">“大專助學金資助計劃”獎學金、指定學科助學金及赴葡升學助學金，以及“資助於頂尖學府就讀獎學金計劃”的申請結果名單將於2026年12月15日公佈。待獲甄選者交齊符合要求的確認文件後，一般情況下，預計可於60至90日內安排發放獎助學金。</p>\n<p>如有查詢，可於辦公時間致電83972512或電郵至bolsa@dsedj.gov.mo，又或瀏覽“大專獎助學金”專頁：https://portal.dsedj.gov.mo/webdsejspace/internet/Inter_main_page.jsp?id=78500&amp;。</p>",
+    "department": "教育及青年發展局",
+    "fetched_at": "2026-09-16T15:00:02.892673"
+  },
+  {
+    "title": "衛生局接獲2宗流感樣疾病群集性感染報告",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPVlAgX",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPVlAgX",
+    "published": "2026-09-16T17:58:00+08:00",
+    "published_parsed": "2026-09-16T09:58:00",
+    "summary": "<p style=\"text-align: justify;\">衛生局今（16）日接獲2宗流感樣疾病群集性感染報告，具體如下：</p>\n<p style=\"text-align: justify;\">第一宗，共6名患者（2男4女），均是馬揸度博士大馬路婦聯學校K1A班學生。</p>\n<p style=\"text-align: justify;\">第二宗，共6名患者（3男3女），均是黑沙環中街澳門浸信中學初一信班學生。</p>\n<p style=\"text-align: justify;\">上述患者於9月13日起出現發熱及咳嗽等上呼吸道症狀，部分患者已就醫，病情較輕，未見重症或其他嚴重併發症的情況。經調查，2宗群集性事件中，患者的呼吸道樣本快速檢測顯示，3人甲型流感病毒陽性。有關場所已加強清潔消毒和保持室內空氣流通等感染控制措施及嚴格執行患者隔離的規定。</p>\n<p style=\"text-align: justify;\">衛生局提醒，為避免患上流感或其他上呼吸道傳染性疾病，應採取以下措施：</p>\n<ol>\n <li style=\"text-align: justify;\">每年接種季節性流感疫苗；</li>\n <li style=\"text-align: justify;\">及時接種建議的新冠疫苗；</li>\n <li style=\"text-align: justify;\">確保自己及家人睡眠充足，飲食均衡以及適量運動；</li>\n <li style=\"text-align: justify;\">保持良好的個人衛生習慣，注意手部衛生；</li>\n <li style=\"text-align: justify;\">打噴嚏或咳嗽時應用紙巾掩住口鼻，用紙巾包好痰涎及分泌物，放入有蓋的垃圾桶內及儘快洗手；沒有紙巾時應用肘部掩住口鼻，而不應用手掌掩住口鼻；</li>\n <li style=\"text-align: justify;\">保持空氣流通及良好的環境衛生；</li>\n <li style=\"text-align: justify;\">避免前往人多擠迫的地方；</li>\n <li style=\"text-align: justify;\">凡有感冒病徵、需要照顧病人及進入醫院及診所的人士，都應戴上口罩；</li>\n <li style=\"text-align: justify;\">如有不適，及時就診及留在家中休息，若症狀加重必須儘快就醫。</li>\n</ol>",
+    "department": "衛生局",
+    "fetched_at": "2026-09-16T18:00:02.665102"
+  },
+  {
+    "title": "配合行人天橋吊運及起卸　火船頭街部分路段9月19日凌晨實施封閉交通",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPclFGt",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPclFGt",
+    "published": "2026-09-16T17:50:00+08:00",
+    "published_parsed": "2026-09-16T09:50:00",
+    "summary": "<p>配合行人天橋吊運及起卸工作，近新馬路的一段火船頭街19日凌晨0時至清晨5時30分將分別實施有限度通車及臨時封閉交通。封閉交通期間，長度超過七米的車輛需繞經亞馬喇前地前往目的地；其餘車輛可取道蓬萊新街及清平街前往沙梨頭及新馬路方向，而前往媽閣方向則可取道新馬路及十月初五日街。屆時N3巴士路線之停靠站點亦將作調整。上述的臨時交通安排，詳情請見附表及附圖。</p>\n<p align=\"center\" style=\"text-align: center;\"><strong>附表一</strong><strong>：</strong><strong>臨時交通安排</strong></p>\n<table align=\"center\" style=\"width: 417.95pt; border-collapse: collapse; border: solid 1pt;\" width=\"0\">\n <tbody>\n  <tr>\n   <td style=\"border: solid 1pt; width: 91.9pt;\" width=\"123\"> <p align=\"center\" style=\"text-align: center;\"><strong>臨時交通措施</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 120.5pt; border-left: none;\" width=\"161\"> <p align=\"center\" style=\"text-align: center;\"><strong>日期及時間</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 205.55pt; border-left: none;\" width=\"274\"> <p align=\"center\" style=\"text-align: center;\"><strong>涉及路段</strong></p> </td>\n  </tr>\n  <tr style=\"height: 40.85pt;\">\n   <td style=\"border: solid 1pt; width: 91.9pt; border-top: none; height: 40.85pt;\" width=\"123\"> <p align=\"center\" style=\"text-align: center;\">有限度通車</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 120.5pt; border-top: none; border-left: none; border-right: solid 1pt; height: 40.85pt;\" width=\"161\"> <p align=\"center\" style=\"text-align: center;\">9月19日</p> <p align=\"center\" style=\"text-align: center;\">凌晨0時至2時</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 205.55pt; border-top: none; border-left: none; border-right: solid 1pt; height: 40.85pt;\" width=\"274\"> \n    <ul>\n     <li style=\"text-align: justify;\">近新馬路的一段火船頭街</li>\n    </ul> </td>\n  </tr>\n  <tr style=\"height: 32.95pt;\">\n   <td style=\"border: solid 1pt; width: 91.9pt; border-top: none; height: 32.95pt;\" width=\"123\"> <p align=\"center\" style=\"text-align: center;\">封閉交通</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 120.5pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"161\"> <p align=\"center\" style=\"text-align: center;\">9月19日</p> <p align=\"center\" style=\"text-align: center;\">凌晨2時至</p> <p align=\"center\" style=\"text-align: center;\">清晨5時30分</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 205.55pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"274\"> \n    <ul>\n     <li style=\"text-align: justify;\">近新馬路的一段火船頭街<br /> &nbsp;(進出萬事發酒店的車輛除外)</li>\n    </ul> </td>\n  </tr>\n </tbody>\n</table>\n<p align=\"center\" style=\"text-align: center;\"><strong>附表二：巴士服務臨時調整</strong></p>\n<table align=\"center\" style=\"width: 439.2pt; border-collapse: collapse; border: solid 1pt;\" width=\"0\">\n <tbody>\n  <tr>\n   <td style=\"border: solid 1pt; width: 77.75pt;\" width=\"104\"> <p align=\"center\" style=\"text-align: center;\"><strong>日期及時間</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 99.2pt; border-left: none;\" width=\"132\"> <p align=\"center\" style=\"text-align: center;\"><strong>巴士路線</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 127.6pt; border-left: none;\" width=\"170\"> <p align=\"center\" style=\"text-align: center;\"><strong>臨時不停靠之巴士站</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 134.65pt; border-left: none;\" width=\"180\"> <p align=\"center\" style=\"text-align: center;\"><strong>乘客可選用之巴士站</strong></p> </td>\n  </tr>\n  <tr style=\"height: 38.8pt;\">\n   <td rowspan=\"2\" style=\"border: solid 1pt; width: 77.75pt; border-top: none; height: 38.8pt;\" width=\"104\"> <p align=\"center\" style=\"text-align: center;\">9月19日凌晨2時至清晨5時30分</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 99.2pt; border-top: none; border-left: none; border-right: solid 1pt; height: 38.8pt;\" width=\"132\"> <p style=\"text-align: justify;\">往</p> <p style=\"text-align: justify;\">路環市區：N3</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 38.8pt;\" width=\"170\"> \n    <ul>\n     <li>新馬路／金碧坊</li>\n     <li>粵通碼頭</li>\n    </ul> </td>\n   <td style=\"border-bottom: solid 1pt; width: 134.65pt; border-top: none; border-left: none; border-right: solid 1pt; height: 38.8pt;\" width=\"180\"> \n    <ul>\n     <li>司打口</li>\n    </ul> </td>\n  </tr>\n  <tr style=\"height: 6.6pt;\">\n   <td style=\"border-bottom: solid 1pt; width: 99.2pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"132\"> <p style=\"text-align: justify;\">往</p> <p style=\"text-align: justify;\">亞馬喇前地：N3</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"170\"> \n    <ul>\n     <li>內港客運碼頭</li>\n     <li>新馬路／大豐</li>\n     <li>殷皇子馬路</li>\n    </ul> </td>\n   <td style=\"border-bottom: solid 1pt; width: 134.65pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"180\"> \n    <ul>\n     <li>河邊新街／李道巷</li>\n     <li>亞馬喇前地</li>\n    </ul> </td>\n  </tr>\n </tbody>\n</table>",
+    "department": "交通事務局",
+    "fetched_at": "2026-09-16T18:00:02.665110"
+  },
+  {
+    "title": "“藝術與科技融合創新”——第十七屆海峽兩岸暨港澳地區藝術論壇啟幕",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPdfhF4",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPdfhF4",
+    "published": "2026-09-16T17:48:00+08:00",
+    "published_parsed": "2026-09-16T09:48:00",
+    "summary": "<p style=\"text-align: justify;\">由中國文學藝術界聯合會、中國文聯香港會員總會（香港文聯）及中華文化傳承發展中心共同主辦，澳門基金會等協辦的“第十七屆海峽兩岸暨港澳地區藝術論壇”於2026年9月16日至18日在香港舉行。是次論壇以“藝術與科技融合創新”為主題，集合內地與港澳台地區專家學者約110人，共同探討全球文化發展前沿趨勢，探索數字化浪潮下科技與文藝融合發展及文化藝術的創新表達。</p>\n<p style=\"text-align: justify;\">論壇開幕式於9月16日上午9時於香港海洋公園萬豪酒店舉行，中國文聯黨組書記、副主席張政；中央政府駐港聯絡辦副主任孫尚武；香港文聯會長馬逢國；澳門基金會行政委員會副主席鍾怡；台灣“中國文藝協會”理事長王吉隆；香港藝術發展局主席霍啓剛；香港電影發展局主席王英偉、中央政府駐澳聯絡辦代表及中國文聯相關單位負責代表出席開幕式。並由香港特區政府政務司司長陳國基視頻致辭。</p>\n<p style=\"text-align: justify;\">馬逢國會長致歡迎辭時指出，期望論壇在香港舉辦為契機，匯聚專家智慧，共同探討數字時代文藝創作、文化傳播、文藝評價體與人才培養的新思路，進一步推動香港文藝與創科事業更好融入國家發展大局，助力粵港澳大灣區文化建設，讓同源共生的中華文脈，在跨界融合中煥發新生，在對外傳播中彰顯自信。</p>\n<p style=\"text-align: justify;\">鍾怡副主席致辭表示，澳門要增強中華文化在全球的競爭力與影響力，必須抓緊科技機遇，扮演好“東方美學的數字轉譯者”、“中葡文化貿易的數字驅動者”及“一國兩制成功實踐的文化智能傳播者”三個角色。並提出五點可參與並推動的發展方向，包括設立四地藝術家駐留創作基地、搭建文藝科技服務中心、重塑文旅演藝IP、建立開源數字IP資產庫，以及建立更穩健的協同機制，推動兩岸暨港澳文藝合作上更高層次方向持續發展。</p>\n<p style=\"text-align: justify;\">王吉隆表示，藝術創作者要學習各項科技功能，融合於創作精神裡，讓藝術創作與時俱進，展現創新的境界。</p>\n<p style=\"text-align: justify;\">接着，張政在主旨講話中談到，香港特區政府發佈香港第一個五年規劃以及2026年施政報告，明確提出建設中外文化藝術交流中心、國際創新科技中心的重要目標，這是中國文聯與香港廣大文藝工作者攜手建設文化強國的重要契機。當今世界，以人工智能、大數據等為代表的新一輪科技革命和產業變革迅猛發展，全球人工智能技術創新正在重塑藝術的形態與邊界、重構全球文化的發展格局。他表示，藝術是驅動人類文明發展的原生力量，藝術穿透科技，科技承載藝術。要以藝術思維審視造就“會創造的人”，在藝術科技融合發展中提升民族創造力。要堅定文化自信，拓展藝術人才培養路徑，攜手匯聚創新合力。中國文聯將持續拓展文化交流合作渠道，積極為廣大文藝工作者特別是青年一代搭建更多學術與實踐平台，培養更多引領行業未來發展的卓越人才和後備新秀，讓中華民族的創造力在守正創新中厚植根基、煥發光彩。</p>\n<p style=\"text-align: justify;\">本次論壇包括大會發言、四場平行論壇、論壇小結及閉幕式。內容聚焦“數字技術賦能中華優秀傳統文化藝術的傳承創新與傳播”、“人工智慧時代文藝評價體系建設”、“海峽兩岸暨港澳地區藝科融合實踐與人才培養”及“新時代香港電影創新發展”等相關議題討論。在主論壇大會發言中，澳門理工大學人文及社會科學學院院長林發欽探討文化遺產經數位技術與藝術轉化為當代創造資源；而澳門大學特聘教授、博士生導師、美術系數字藝術中心主任梁藍波；美圖媒體工作室執行董事李康及澳門音樂產業協會副會長潘君保分別在平行論壇上就數智科技培養中國藝術人才、數字技術賦能傳統文化傳承及人工智能時代文藝評價體系建設作分享。此外，本次參會的澳門發言嘉賓還有李俊傑、馬瑩瑩、張澤珣、張曦之、陳茗、劉瀟、潘秋婷、謝思齊及羅樂。</p>\n<p style=\"text-align: justify;\">“海峽兩岸暨港澳地區藝術論壇”自2009年起在內地、香港、澳門和台灣地區輪辦，為海峽兩岸暨港澳地區文藝理論和學術交流搭建了良好平台，推進海峽兩岸暨港澳地區文化藝術交流與合作上發揮了積極作用。代表團將於17日出席閉幕式及文化參訪，並於18日啟程回澳。</p>",
+    "department": "澳門基金會",
+    "fetched_at": "2026-09-16T18:00:02.665113"
+  },
+  {
+    "title": "入境口岸衛生專責委員會召開2026年工作會議 共同築牢本澳口岸公共衛生安全防線",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPih7hM",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPih7hM",
+    "published": "2026-09-16T17:41:00+08:00",
+    "published_parsed": "2026-09-16T09:41:00",
+    "summary": "<p>為主動對接國家“十五五”規劃中關於加快健康中國建設、實施健康優先發展戰略的部署，配合特區政府“三五”規劃，入境口岸衛生專責委員會於日前召開2026年度工作會議，由衛生局局長羅奕龍主持，總結過去一年跨部門協作成效，並為新一年的口岸公共衛生防控工作訂定方向。</p>\n<p>羅奕龍局長在會上表示，特區政府持續以《健康澳門藍圖》為頂層指引，落實“關口前移、資源下沉、觀念轉變”三大政策方向，推動“健康融入所有公共政策”，並配合特區政府“三五”規劃建設高水平安全城市的目標。委員會今年將循三個方向推進工作：一、緊扣國家與特區發展規劃，提升口岸防控效能；二、將健康理念融入城市建設與治理；三、深化跨部門聯動，築牢口岸公共衛生防控底線。</p>\n<p>隨後，入境口岸衛生專責委員會相關部門代表就2026年工作進行匯報。衛生局疾病預防及控制中心職務主管李佩儀介紹了口岸衛生檢疫，包括入境口岸衛生檢疫管理、風險防控、人員培訓與機制建設及跨部門合作推進；市政署食品檢驗檢疫處處長包碧琪和動物檢疫監管處顧問獸醫林雅詩簡介了進口食品檢驗檢疫和動物疫病防控工作，致力防止人畜共通傳染病及重大動物傳染病經動物或動物源性食品傳入本澳，保障進口動物和食品符合衛生要求，維護公眾健康；海關副關長李煜輝表示，將持續加強高風險來源地關檢工作，防止傳染病及有害物質入境本澳，同時利用科技手段輔助執法查驗，減低跨境公共衛生風險；海事及水務局副局長唐玉萍指出，會加強客運碼頭清潔與消毒，嚴防孳生源，擴大防疫宣傳，完善應急預案，嚴控客船及躉船衛生，要求船隻定期深層清潔、滅蚊及清除積水，全面防範蚊蟲滋生；民航局代局長馮偉龍表示，持續與衛生局落實機場衛生防控工作，對航空業界工作人員加強傳染病防控培訓，配合防疫宣導，全面提升機場口岸衛生防護能力；治安警察局出入境管制廳陸路管制處處長何志華強調，隨着跨境人員流動日趨頻繁，將始終緊扣口岸衛生安全，全力配合衛生當局，嚴守口岸防疫防線，透過專題培訓、演習、聯合巡查等跨部門合作，切實提升應變與協同能力；消防局副局長張智宏介紹了傳染病危機應變小組工作，包括持續關注公共衛生事件、定期對局內的防疫物資、出勤防護裝備進行檢視，並通過培訓及演練提升應急處置效率；環境保護局局長葉擴林則介紹了特殊和危險廢物的處理，透過進行傳染性廢物處理應急演習，提高人員應對突發洩漏事故的應變能力，全面強化廢物處理安全。</p>\n<p>為加強應對公共衛生事件，保障居民健康，會議達成共識，各部門將協同優化口岸衛生檢疫快速響應機制，包括提升本澳的船舶衛生檢疫能力等。值得指出的是，入境口岸衛生專責委員會作為跨部門協作平台，對維護本澳公共衛生安全發揮著至關重要的作用，年度的工作會議是檢視與提升工作成效的重要契機。未來各部門將繼續保持緊密合作、通力協調，持續推動各項機制優化，共同築牢本澳口岸公共衛生安全防線。</p>",
+    "department": "衛生局",
+    "fetched_at": "2026-09-16T18:00:02.665116"
+  },
+  {
+    "title": "提醒工商、金融界、勞工界及專業界法人應按時提交年度總結報告",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPkrawY",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPkrawY",
+    "published": "2026-09-16T17:35:00+08:00",
+    "published_parsed": "2026-09-16T09:35:00",
+    "summary": "<p style=\"text-align: justify;\">根據現行《選民登記法》第三十條第一款規定，已獲確認屬於工商、金融界，勞工界及專業界法人，應最遲於每年九月最後一個工作日，即本年九月三十日（星期三），將相關的年度總結報告送交社會協調常設委員會（地址為澳門勞動節巷先進廣場地下32號G鋪）。</p>\n<p style=\"text-align: justify;\">按照該法律第三十四條第一款規定，法人選民如未能在九月三十日或之前提交年度總結報告，且在隨後五個曆年內再次不提交年度總結報告，其法人選民登記的效力將自下一個選民登記冊完成展示之日起被中止。</p>\n<p style=\"text-align: justify;\">如欲查詢更多資訊，可瀏覽社會協調常設委員會網站www.cpcs.gov.mo，或於辦公時間致電28711822、28712751查詢。</p>",
+    "department": "社會協調常設委員會",
+    "fetched_at": "2026-09-16T18:00:02.665119"
+  },
+  {
+    "title": "一戶通及商社通9月16日起新增預約合作區 “澳政服務站”",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPoiswZ",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPoiswZ",
+    "published": "2026-09-16T17:30:00+08:00",
+    "published_parsed": "2026-09-16T09:30:00",
+    "summary": "<p style=\"text-align: justify;\">為持續高質量推進橫琴粵澳深度合作區建設，進一步便利澳門市民在合作區生活和發展，特區政府積極拓展跨境政務服務。由9月16日起，“一戶通”及“商社通”新增預約合作區“澳政服務站”服務。市民只需登入“一戶通”或“商社通”，進入“預約櫃枱服務”或“商社預約”，選擇“橫琴合作區澳政服務站”，即可根據需求預約相應的政務服務及辦理時間，在橫琴合作區政務服務中心辦理澳門政務，讓澳門居民在合作區生活更安心、更便利。</p>\n<p style=\"text-align: justify;\"><strong>63</strong><strong>項澳門服</strong><strong>務一站辦 提升跨境辦事便利度</strong></p>\n<p style=\"text-align: justify;\">橫琴合作區政務服務中心的“澳政服務站”設8個服務櫃枱，涵蓋身份證明、稅務、工業產權及藥事服務等63項常用政務服務。服務站現場設有澳方工作人員提供服務指導與協助，推動澳門政務服務跨境延伸至橫琴，切實回應澳門居民在合作區日益增多的政務辦理需求，深化跨境政務服務銜接，為身處合作區的居民帶來更靈活、高效率的辦事體驗。</p>\n<p style=\"text-align: justify;\"><strong>雙向聯通 打造澳琴優質生活圈</strong></p>\n<p style=\"text-align: justify;\">繼此前推出的“遙距服務櫃枱”成功實現雙向跨境聯通後，本次“澳政服務站”的設立與線上預約功能的開通，進一步豐富了澳琴跨境政務服務網絡，助力澳琴民生融合及政務一體化建設。</p>\n<p style=\"text-align: justify;\">如欲查詢更多詳情及預約服務，歡迎瀏覽“一戶通”專題網站（https://www.gov.mo/app/）或“商社通”專題網站（https://www.gov.mo/ab/）。</p>",
+    "department": "行政公職局",
+    "fetched_at": "2026-09-16T18:00:02.665121"
+  },
+  {
+    "title": "教青局與法務局合辦《國旗、國徽及國歌的使用及保護》法律短講活動",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPMEAGt",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPMEAGt",
+    "published": "2026-09-16T17:26:00+08:00",
+    "published_parsed": "2026-09-16T09:26:00",
+    "summary": "<p style=\"text-align: justify;\">為配合澳門青年政策（2021-2030）的政策方向與目標“傳承愛國愛澳，增強家國情懷”，進一步推動社區普法工作，<strong>教育及青年發展局與法務局於</strong><strong>2026</strong><strong>年</strong><strong>9</strong><strong>月至</strong><strong>11</strong><strong>月期間合辦</strong><strong>“</strong><strong>齊來認識《國旗、國徽及國歌的使用及保護》法律短講</strong><strong>”</strong><strong>，</strong>對象為澳門高小及初中學生，提供超過2,000個名額，並於本年9月8日由法務局法律推廣及公共關係廳廳長黃嘉慧、教青局青年廳代廳長柯敏茵及青年發展處代處長梁梓峰出席開班儀式。</p>\n<p style=\"text-align: justify;\">教青局與法務局多年來合辦法律短講活動，除了深化學生及青年對相關法律的認識，培養知法守法的精神；亦透過互動課堂加入愛國教育元素，以輕鬆生動的方式向學生教授使用國旗、國徽及奏唱國歌的法規，加強學生及青年對國家及中華民族象徵意義的認同感，培育愛國意識與法治精神。</p>\n<p style=\"text-align: justify;\">未來，教青局與法務局將繼續深化跨部門合作，持續拓展多元化、生動有趣的普法推廣活動；同時，將法治教育進一步昇華至精神層面的國家及民族認同，深植愛國愛澳精神，增強青年學生對國家的歸屬感與民族自豪感，為培育具備法治素養與家國情懷的新一代奠定堅實基礎。</p>\n<p style=\"text-align: justify;\">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\n<p style=\"text-align: justify;\">&nbsp;</p>",
+    "department": "教育及青年發展局",
+    "fetched_at": "2026-09-16T18:00:02.665124"
+  },
+  {
+    "title": "中院維持認定觀音堂多項改動工程導致文化價值受損",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPz16jG",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPz16jG",
+    "published": "2026-09-16T17:18:00+08:00",
+    "published_parsed": "2026-09-16T09:18:00",
+    "summary": "<p style=\"text-align: justify;\">甲為一間法人會址位於澳門美副將大馬路觀音堂的社團。2021年3月19日至11月15日期間，文化局人員多次對普濟禪院(觀音堂)進行巡查，發現上述不動產曾被作出共18項改動。文化局研究及計劃處就有關改動情況對不動產狀況的文化價值影響作出分析及製作報告，報告中指出共有9項改動情況，包括於壁畫裝上金屬條、更改通道牆身飾面顏色等改動導致文化價值受損。2021年7月30日及12月16日，文化局透過公函通知甲涉嫌違反有關法律規定在未領有工程准照下對被評定的不動產實施工程或工作而導致該不動產受損。2021年8月12日，甲對導致文化價值受損的其中3項改動情況提交書面解釋。2022年8月19日，文化局文化遺產廳廳長作出批示，就導致文化價值受損的其中1項改動情況，因超過處罰時效作歸檔處理，其餘8項改動情況則因涉嫌違反法律，決定對甲作出控訴。此決定於8月26日透過公函通知甲。2022年9月16日，甲向文化局提交書面辯護。2023年2月15日，文化局文化遺產廳廳長作出批示，決定向甲科處最低罰款額200,000澳門元。2023年3月23日，甲針對有關處罰決定向文化局局長提出必要訴願。2023年5月2日，文化局局長作出批示駁回其必要訴願並維持有關的處罰決定。</p>\n<p style=\"text-align: justify;\">2023年6月7日，甲針對文化局局長的決定向行政法院提起司法上訴，主張有權限判定涉案改動是否應被視為工程或工作並發出相關准照之實體為土地工務局，而非文化局，故認為被上訴行政決定沾有錯誤適用法律之瑕疵。此外，文化局未能證明普濟禪院(觀音堂)因涉案改動而存在任何實質性受損，雖然確實改變了紀念物的外觀，但皆為保護涉案文化遺產的舉措。行政法院裁定上訴敗訴。甲仍不服，向中級法院提起上訴。</p>\n<p style=\"text-align: justify;\">中級法院合議庭對案件作出審理。合議庭指出，無論是更改建築物牆身顏色，還是在水巷、門面、牆頭、花槽等位置新增其他物件，都對禪院建築物、其組成部份或者整體景觀產生影響，因此，為著第11/2013號法律第98條第1款（六）項之效力，甲對普濟禪院(觀音堂)作出的改動應視為須領取准照方可進行的“工程或工作”。其次，依據《民法典》第8條第3款解釋第11/2013號法律第38條第5款，立法者明智地將第11/2013號法律第98條第1款（六）項所指“工程或工作”的認定與決定權限賦予了文化局，而非土地工務局，因此，文化局才享有判定涉案行為是否屬第98條第1款（六）項所指之“工程或工作”的權限，這是“具強制性及約束力的意見”的宗旨和存在理由。</p>\n<p style=\"text-align: justify;\">關於普濟禪院(觀音堂)的受損問題，第11/2013號法律第10條第1款與第2款規定，任何人均承擔保存文化遺產的義務，包括不侵犯屬文化遺產之財產的完整性，防止屬文化遺產的財產破損、毀壞或滅失。該法律第12條（一）項要求被評定財產之所有權人必須履行“適當使用有關財產，以確保其保存及完整，避免該等財產破損、毀壞或滅失”的一般義務，其第13條則進一步要求此等財產之佔有人和其他物權權利人必須履行同樣的義務。其中，文化遺產之“完整性”不僅指其物化形態之結構與形體完好無損，而且涵蓋它們所體現的氣質、美感、景觀、整體布局之構思及它們與整體環境之融洽和諧。第11/2013號法律第98條第1款（六）項要求的“破損”須包括對文化遺產的“原真性、完整性、美學價值”的任何損害。循此理解，甲所謂“實質性損害”是對“破損”一詞的曲解。甲在普濟禪院(觀音堂)實施更改工程，改變了普濟禪院(觀音堂)的外觀特徵、空間氛圍不協調，導致紀念物的整體景觀、原真性及文化價值受損。</p>\n<p style=\"text-align: justify;\">合議庭續指，案中沒有發現甲故意損害文化遺產的證據與跡象，其所稱為追求保護文化遺產之目的亦屬可信。儘管如此，保護文化遺產的義務與依法實施工程或工作的義務之間並不存在衝突，甲完全可以先領取准照，再對涉案紀念物進行保護性工程或工作，以便履行維護及弘揚文化遺產之義務。故此，不存在能夠阻卻事實不法性的義務衝突。</p>\n<p style=\"text-align: justify;\">綜上所述，中級法院合議庭裁定上訴理由不成立，予以駁回。</p>\n<p style=\"text-align: justify;\">參閱中級法院第418/2025號案的合議庭裁判。</p>\n<p style=\"text-align: right;\">&nbsp;</p>",
+    "department": "終審法院院長辦公室",
+    "fetched_at": "2026-09-16T18:00:02.665126"
+  },
+  {
+    "title": "內地首個澳政服務站正式啟用",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPk005X",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPk005X",
+    "published": "2026-09-16T17:03:00+08:00",
+    "published_parsed": "2026-09-16T09:03:00",
+    "summary": "<p style=\"text-align: justify;\">9月16日上午，橫琴粵澳深度合作區（以下簡稱合作區）商事服務局與澳門特別行政區政府行政公職局聯合舉辦澳政服務站啟用儀式，標誌著內地首個澳門政務線下服務專區正式落地橫琴。合作區執委會副主任聶新平、符永革、曹晉鋒、張國基，合作區商事服務局局長張文驥、副局長蕭裕林，澳門身份證明局代局長陳婉麗、澳門行政公職局副局長陳子健、澳門經濟及科技發展局副局長余雨生、澳門藥物監督管理局副局長吳國良、澳門財政局代副局長容志聰等領導出席儀式。</p>\n<p style=\"text-align: justify;\"><strong>三大突破，打造跨境政務新標杆</strong></p>\n<p style=\"text-align: justify;\">澳政服務站啟用後將實現三方面重要突破：<strong>一是</strong>在內地首創澳門政務線下服務專區，推動澳門高頻政務服務事項以專窗形式延伸至合作區；<strong>二是</strong>開創澳門公務員駐點在橫琴現場受理澳門政務服務的先河，打造澳琴政務跨境合作創新範例；<strong>三是</strong>實現澳門政務服務在合作區線上、線下雙覆蓋，標誌澳琴政務服務跨境融合邁向新階段。</p>\n<p style=\"text-align: justify;\"><strong>首批四部門進駐，覆蓋高頻政務需求</strong></p>\n<p style=\"text-align: justify;\">澳政服務站（以下簡稱服務站）設在合作區政務服務中心二樓，面積約300平方米，是獨立設置的澳門政務服務窗口專區，致力於為澳門居民提供標準一致、體驗同源的本地化政務服務。澳門身份證明局、經濟及科技發展局、藥物監督管理局、財政局是首批進駐服務站的4個部門，可辦理63項澳門高頻線下政務服務事項，涵蓋身份證明、稅務、工業產權、藥事服務等業務領域。澳門居民可通過“一戶通”、“商社通”或“橫琴易辦事”微信小程序進行辦事預約。</p>\n<p style=\"text-align: justify;\"><strong>雙模式協同運作，辦事更靈活</strong></p>\n<p style=\"text-align: justify;\">服務站採用“澳門公務員定期駐點、合作區工作人員諮詢代收”的協同運作模式：駐點時段，由澳門相關部門安排工作人員每週定期駐點，現場受理、辦理澳門政務業務；非駐點時段，由合作區商事服務局工作人員承擔窗口服務工作，提供業務諮詢和申請文件代收服務。</p>\n<p style=\"text-align: justify;\"><strong>持續優化升級，實現跨境政務雙向通辦</strong></p>\n<p style=\"text-align: justify;\">合作區成立以來，澳琴兩地持續深化政務服務規則銜接“軟聯通”，推動澳琴政務服務跨境融合優化升級：從引入澳門自助服務設備，到建成投用“澳門新街坊”澳門政務24小時自助服務中心，再到雙向設置遙距服務櫃枱，逐步構建覆蓋澳門居民日常生活場景的跨境政務服務體系。截至目前，合作區共引入20台澳門自助服務機和3台遙距服務櫃枱，可辦理或查詢澳門35個部門共477項服務，實現澳門線上政務服務在橫琴基本覆蓋。</p>\n<p style=\"text-align: justify;\">此次澳政服務站啟用，既是積極回應在琴澳門居民便利辦理須線下人工受理的政務服務事項的迫切訴求，也是深化澳琴政務服務跨境融合、推進澳琴一體化的具體舉措。</p>\n<p style=\"text-align: justify;\"><strong>深化澳琴協作，助推澳琴一體化發展</strong></p>\n<p style=\"text-align: justify;\">下一步，澳琴兩地有關部門將以服務站啟用為新起點，以澳人澳企實際需求為核心導向，深化務實協作，堅持“線上+線下”協同發力，持續優化跨境政務服務模式、拓展服務場景、完善服務體系，切實提升澳琴“同城化”辦事體驗，全力將合作區打造為趨同澳門宜居宜業生活環境的“桃花源”，讓澳門居民在橫琴工作和生活更安心、更便利、更有歸屬感。</p>",
+    "department": "行政公職局 / 橫琴粵澳深度合作區商事服務局 / 身份證明局 / 經濟及科技發展局 / 藥物監督管理局 / 財政局",
+    "fetched_at": "2026-09-16T18:00:02.665128"
+  },
+  {
+    "title": "配合長跑接力賽　 西灣湖周邊道路周六及周日實施臨時交管",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPZhIyA",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPZhIyA",
+    "published": "2026-09-16T16:58:00+08:00",
+    "published_parsed": "2026-09-16T08:58:00",
+    "summary": "<p>配合體育局舉辦2026公路隊際長跑接力賽，西灣湖周邊一帶9月19日（周六）及20日（周日）實施臨時交通安排。當中，西灣湖景大馬路、西灣湖廣場及西灣湖街部分路段於20日上午實施封閉交通，而民國大馬路改為單一方向行車。屆時由媽閣往南灣及西灣湖廣場方向的車輛，需取道民國大馬路前往。另外，多條巴士路線亦於20日上午改道行駛及臨時調整停靠站點。上述安排詳情，請參閱附表或兩巴網頁（澳巴：http://www.tcm.com.mo、新福利：http://www.transmac.com.mo）。</p>\n<p align=\"center\" style=\"text-align: center;\"><strong>附表一</strong><strong>：</strong><strong>臨時交通安排</strong></p>\n<table align=\"center\" style=\"width: 417.95pt; border-collapse: collapse; border: solid 1pt;\" width=\"0\">\n <tbody>\n  <tr>\n   <td style=\"border: solid 1pt; width: 84.8pt;\" width=\"113\"> <p align=\"center\" style=\"text-align: center;\"><strong>臨時交通措施</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 127.6pt; border-left: none;\" width=\"170\"> <p align=\"center\" style=\"text-align: center;\"><strong>日期及時間</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 205.55pt; border-left: none;\" width=\"274\"> <p align=\"center\" style=\"text-align: center;\"><strong>涉及路段</strong></p> </td>\n  </tr>\n  <tr style=\"height: 40.85pt;\">\n   <td style=\"border: solid 1pt; width: 84.8pt; border-top: none; height: 40.85pt;\" width=\"113\"> <p align=\"center\" style=\"text-align: center;\">禁止車輛停泊</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 40.85pt;\" width=\"170\"> <p align=\"center\" style=\"text-align: center;\">9月19日上午9時至20日中午12時</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 205.55pt; border-top: none; border-left: none; border-right: solid 1pt; height: 40.85pt;\" width=\"274\"> \n    <ul>\n     <li style=\"text-align: justify;\">西灣湖廣場部分咪錶泊車位及電車泊車區</li>\n     <li style=\"text-align: justify;\">西灣湖景大馬路及西灣湖街部分咪錶泊車位</li>\n    </ul> </td>\n  </tr>\n  <tr style=\"height: 32.95pt;\">\n   <td rowspan=\"2\" style=\"border: solid 1pt; width: 84.8pt; border-top: none; height: 32.95pt;\" width=\"113\"> <p align=\"center\" style=\"text-align: center;\">有限度通車</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"170\"> <p align=\"center\" style=\"text-align: center;\">9月20日</p> <p align=\"center\" style=\"text-align: center;\">凌晨4時至上午6時</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 205.55pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"274\"> \n    <ul>\n     <li style=\"text-align: justify;\">西灣湖景大馬路與何鴻燊博士大馬路之間一段西灣湖廣場內路</li>\n     <li style=\"text-align: justify;\">西灣湖廣場與民國大馬路之間一段何鴻燊博士大馬路(靠湖一側)</li>\n     <li style=\"text-align: justify;\">何鴻燊博士大馬路與民國大馬路之間一段西灣湖街內路</li>\n     <li style=\"text-align: justify;\">民國大馬路(靠湖一側)</li>\n     <li style=\"text-align: justify;\">西灣湖景大馬路(靠湖一側)</li>\n    </ul> </td>\n  </tr>\n  <tr style=\"height: 32.95pt;\">\n   <td rowspan=\"2\" style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"170\"> <p align=\"center\" style=\"text-align: center;\">9月20日</p> <p align=\"center\" style=\"text-align: center;\">上午6時至中午12時</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 205.55pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"274\"> \n    <ul>\n     <li style=\"text-align: justify;\">西灣湖廣場與民國大馬路之間一段何鴻燊博士大馬路(靠湖一側)</li>\n    </ul> </td>\n  </tr>\n  <tr style=\"height: 32.95pt;\">\n   <td style=\"border: solid 1pt; width: 84.8pt; border-top: none; height: 32.95pt;\" width=\"113\"> <p align=\"center\" style=\"text-align: center;\">改作單一方向行車</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 205.55pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"274\"> \n    <ul>\n     <li style=\"text-align: justify;\">民國大馬路（即車輛可由媽閣方向往何鴻燊博士大馬路方向）</li>\n    </ul> </td>\n  </tr>\n  <tr style=\"height: 32.95pt;\">\n   <td style=\"border: solid 1pt; width: 84.8pt; border-top: none; height: 32.95pt;\" width=\"113\"> <p align=\"center\" style=\"text-align: center;\">封閉交通</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"170\"> <p align=\"center\" style=\"text-align: center;\">9月20日</p> <p align=\"center\" style=\"text-align: center;\">上午6時至中午12時</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 205.55pt; border-top: none; border-left: none; border-right: solid 1pt; height: 32.95pt;\" width=\"274\"> \n    <ul>\n     <li style=\"text-align: justify;\">西灣湖景大馬路與何鴻燊博士大馬路之間一段西灣湖廣場內路</li>\n     <li style=\"text-align: justify;\">何鴻燊博士大馬路與民國大馬路之間一段西灣湖街內路</li>\n     <li style=\"text-align: justify;\">西灣湖景大馬路內路(靠湖一側)</li>\n    </ul> </td>\n  </tr>\n </tbody>\n</table>\n<p align=\"center\" style=\"text-align: center;\"><strong>附表二：巴士服務臨時調整</strong></p>\n<table align=\"center\" style=\"width: 439.2pt; border-collapse: collapse; border: solid 1pt;\" width=\"0\">\n <tbody>\n  <tr>\n   <td style=\"border: solid 1pt; width: 77.75pt;\" width=\"104\"> <p align=\"center\" style=\"text-align: center;\"><strong>日期及時間</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 99.2pt; border-left: none;\" width=\"132\"> <p align=\"center\" style=\"text-align: center;\"><strong>巴士路線</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 127.6pt; border-left: none;\" width=\"170\"> <p align=\"center\" style=\"text-align: center;\"><strong>臨時不停靠之巴士站</strong></p> </td>\n   <td style=\"border: solid 1pt; width: 134.65pt; border-left: none;\" width=\"180\"> <p align=\"center\" style=\"text-align: center;\"><strong>乘客可選用之巴士站</strong></p> </td>\n  </tr>\n  <tr style=\"height: 38.8pt;\">\n   <td rowspan=\"6\" style=\"border: solid 1pt; width: 77.75pt; border-top: none; height: 38.8pt;\" width=\"104\"> <p align=\"center\" style=\"text-align: center;\">9月20日</p> <p align=\"center\" style=\"text-align: center;\">上午6時至中午12時</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 99.2pt; border-top: none; border-left: none; border-right: solid 1pt; height: 38.8pt;\" width=\"132\"> <p style=\"text-align: justify;\">往</p> <p style=\"text-align: justify;\">媽閣：9</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 38.8pt;\" width=\"170\"> \n    <ul>\n     <li>民國馬路／西灣湖</li>\n     <li>西灣</li>\n     <li>半邊橙</li>\n    </ul> </td>\n   <td style=\"border-bottom: solid 1pt; width: 134.65pt; border-top: none; border-left: none; border-right: solid 1pt; height: 38.8pt;\" width=\"180\"> \n    <ul>\n     <li>南灣湖景大馬路</li>\n     <li>西灣湖景大馬路／</li>\n    </ul> <p>媽閣碼頭</p> </td>\n  </tr>\n  <tr style=\"height: 6.6pt;\">\n   <td style=\"border-bottom: solid 1pt; width: 99.2pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"132\"> <p style=\"text-align: justify;\">往</p> <p style=\"text-align: justify;\">筷子基北灣：26</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"170\"> \n    <ul>\n     <li>澳門旅遊塔</li>\n    </ul> </td>\n   <td style=\"border-bottom: solid 1pt; width: 134.65pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"180\"> \n    <ul>\n     <li>西灣湖景大馬路／</li>\n    </ul> <p>媽閣碼頭</p> </td>\n  </tr>\n  <tr style=\"height: 6.6pt;\">\n   <td style=\"border-bottom: solid 1pt; width: 99.2pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"132\"> <p style=\"text-align: justify;\">往</p> <p style=\"text-align: justify;\">路環市區：26</p> </td>\n   <td style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"170\"> \n    <ul>\n     <li>旅遊塔／行車隧道</li>\n    </ul> </td>\n   <td rowspan=\"3\" style=\"border-bottom: solid 1pt; width: 134.65pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"180\"> \n    <ul>\n     <li>西灣湖景大馬路／</li>\n    </ul> <p>媽閣交通樞紐</p> </td>\n  </tr>\n  <tr style=\"height: 6.6pt;\">\n   <td style=\"border-bottom: solid 1pt; width: 99.2pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"132\"> <p style=\"text-align: justify;\">往</p> <p style=\"text-align: justify;\">外港碼頭：60</p> </td>\n   <td rowspan=\"2\" style=\"border-bottom: solid 1pt; width: 127.6pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"170\"> \n    <ul>\n     <li>澳門旅遊塔</li>\n    </ul> </td>\n  </tr>\n  <tr style=\"height: 6.6pt;\">\n   <td style=\"border-bottom: solid 1pt; width: 99.2pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"132\"> <p style=\"text-align: justify;\">往</p> <p style=\"text-align: justify;\">牧場街：65</p> </td>\n  </tr>\n  <tr style=\"height: 6.6pt;\">\n   <td style=\"border-bottom: solid 1pt; width: 99.2pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"132\"> <p style=\"text-align: justify;\">往</p> <p style=\"text-align: justify;\">筷子基北灣：N2</p> </td>\n   <td colspan=\"2\" style=\"border-bottom: solid 1pt; width: 262.25pt; border-top: none; border-left: none; border-right: solid 1pt; height: 6.6pt;\" width=\"350\"> <p>改道行駛，沿途停靠之巴士站點維持不變。</p> </td>\n  </tr>\n </tbody>\n</table>",
+    "department": "交通事務局",
+    "fetched_at": "2026-09-16T18:00:02.665131"
+  },
+  {
+    "title": "友誼大馬路油脂淤塞致街渠反湧　 政府呼籲業界妥善履行隔油設施保養責任",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPw9uZC",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPw9uZC",
+    "published": "2026-09-16T16:24:00+08:00",
+    "published_parsed": "2026-09-16T08:24:00",
+    "summary": "<p style=\"text-align: justify;\">為持續保障本澳排水及渠網系統運作穩定，有效防範管道淤塞、積水等問題，公共建設局持續開展渠網恆常巡查與保養清理工作。近日發現友誼大馬路近廣州街的街渠出現反湧現象。由於廣州街至北京街一帶下游排水管網積聚大量油脂，導致渠網淤塞，為盡快恢復渠網排水功能，公共建設局已即時調度通渠泵車及機具開展疏通清理，因應渠道內油脂淤積情況，並引入鑽頭機具以作加強處理。</p>\n<p style=\"text-align: justify;\">公共建設局呼籲餐飲業界遵守第5/2026號法律《餐飲及相關場所業務法》規定，妥善履行隔油設施的保養責任，避免油脂物排入公共渠網，造成渠管內徑縮小、排水受阻，若長期積累未處理，易引發管道堵塞、污水滲漏、環境衛生惡化等問題。</p>",
+    "department": "公共建設局",
+    "fetched_at": "2026-09-16T18:00:02.665133"
+  },
+  {
+    "title": "生產力中心國際及專業考試中心揭幕 引進國際認證考試",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPRMZds",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPRMZds",
+    "published": "2026-09-16T16:20:00+08:00",
+    "published_parsed": "2026-09-16T08:20:00",
+    "summary": "<p style=\"text-align: justify;\">為配合特區政府人才培養政策，引進更多專業培訓及國際認證考試落戶澳門，澳門生產力暨科技轉移中心（下稱“生產力中心”）轄下的國際及專業考試中心（下稱“考試中心”）於9月16日舉行開幕儀式，由經濟財政司司長吳惠嫻主禮，並在生產力中心會員大會主席徐偉坤、理事會主席楊俊文及理事長關治平陪同下為考試中心揭牌。</p>\n<p style=\"text-align: justify;\">出席儀式的主要嘉賓包括勞工事務局局長陳元童、澳門金融管理局行政管理委員會主席黃善文、旅遊局代局長程衛東、經濟及科技發展局副局長陳祖榮、人才發展委員會副秘書長黃健武等。</p>\n<p style=\"text-align: justify;\">生產力中心理事會主席楊俊文致辭時表示，中心過往已協助近85,000人次考取專業證書。他強調，新成立的考試中心不僅提供更完善、更多元的專業考試平台，亦將引進更多國際認證的專業考試落戶澳門，為澳門經濟適度多元發展培育更多專業人才。他更提到，生產力中心最近舉行了一場大型考試，吸引了不少周邊地區考生前來參加，為未來發展“考證＋旅遊”研學新模式奠定基礎。</p>\n<p style=\"text-align: justify;\">國際及專業考試中心位於世界貿易中心三樓，設有獨立的註冊室和考試室，並配備國際權威機構認可的嚴謹考務管理系統，以及先進的電腦軟硬件設備，為各類專業與國際認證考試提供完善的場地與技術支援。</p>\n<p style=\"text-align: justify;\">生產力中心表示，未來將積極配合“三五”規劃，持續引進符合產業發展需要的國際及專業認證考試，為澳門長遠發展培育更多專業人才，助力推動經濟產業多元發展與提升本澳國際競爭力。</p>",
+    "department": "生產力暨科技轉移中心",
+    "fetched_at": "2026-09-16T18:00:02.665136"
+  },
+  {
+    "title": "“有禮生活四格漫畫故事創作比賽”接受報名  發揮創意傳遞有禮生活",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IP6hpnG",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IP6hpnG",
+    "published": "2026-09-16T16:16:00+08:00",
+    "published_parsed": "2026-09-16T08:16:00",
+    "summary": "<p style=\"text-align: justify;\">市政署舉辦“有禮生活四格漫畫故事創作比賽”，鼓勵市民發揮創意，融入生活與故事，以四格漫畫的形式呈現，傳遞守禮、友善、尊重與包容的價值觀，共同營造全城有禮、互助友愛的社會氛圍。比賽由即日起至10月31日接受報名，歡迎市民及中學生踴躍參加。</p>\n<p style=\"text-align: justify;\">比賽分別設公開組（年滿18歲或以上人士）以及中學組（中學一至六年級學生）兩個參賽組別。參賽作品須以四格漫畫形式創作，內容以“有禮生活約章”為主題，可圍繞中華傳統美德、人際相處、社交禮儀、助人為樂、愛護環境等日常生活情境進行創作，傳遞正面、積極、健康的價值觀。歡迎熱愛繪畫及關心社區的市民與中學生參與，以創意筆觸傳遞禮貌正能量，共建文明和諧社會。</p>\n<p style=\"text-align: justify;\">為鼓勵優秀創作，主辦單位設立豐富獎項，每組別均設冠、亞、季軍及優異獎，其中公開組冠軍可獲現金獎三千澳門元及獎狀，中學組冠軍則可獲二千澳門元及獎狀。此外，所有得獎作品將會於氹仔花城公園活動室展出，並同步於市政署網頁、市政署微信帳號信及“公民教育樂之家”FACEBOOK平台作線上展示。部分優秀作品更有機會被選用製作成宣傳品，於社區持續推廣有禮生活理念。</p>\n<p style=\"text-align: justify;\">比賽報名辦法、作品規格、提交方式及獎項詳情，請參閱比賽章程。章程及報名表可於市政署官方網站（<span style=\"text-decoration: none;\">www.iam.gov.mo</span>）下載或於市政署轄下公民教育資源中心、各區服務中心索取。有關活動詳情，可致電市政署市民服務熱線2833 7676、公民教育資源中心2847 1371查詢。</p>",
+    "department": "市政署",
+    "fetched_at": "2026-09-16T18:00:02.665138"
+  },
+  {
+    "title": "“2026公民教育好友營”順利舉辦",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPoZcrI",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPoZcrI",
+    "published": "2026-09-16T16:15:00+08:00",
+    "published_parsed": "2026-09-16T08:15:00",
+    "summary": "<p style=\"text-align: justify;\">由市政署主辦，澳門基督教青年會承辦的“2026公民教育好友營”已於7至8月期間圓滿舉行，系列活動包括“公民教育好友營”、“公民教育好友親子營”及首次推出的“公民教育橫琴行”，參加活動的學生善用餘暇，在輕鬆愉快的氛圍中學習良好的公民行為，並深化對市容美化與社區共治的認識。活動共吸引200多人參與，反應理想。</p>\n<p style=\"text-align: justify;\">“公民教育好友營”及“公民教育好友親子營”於黑沙海灘培訓中心合共舉辦8場，近200人參與。活動分別設有益智遊戲和互動教學環節，推廣“有禮生活約章”所倡導的12個良好公民行為，同時融入市容美化理念，引導參加者在實踐中學習尊重他人、愛護環境、遵守秩序等公民素養，從而培養對社會的責任感與正向價值觀。</p>\n<p style=\"text-align: justify;\">本年新增的“公民教育橫琴行”於橫琴粵澳深度合作區舉行，兩場活動共吸引60多名青少年參與。活動結合生態保育、城市可持續發展與公民教育元素，一眾青少年走進橫琴國家濕地公園實地考察，近距離認識生態物種；透過團隊互動遊戲，讓參加者彼此扶持，展現互信、合作共建的精神。同時，亦安排參加者了解橫琴的規劃建設與生態保護成果，促進對粵澳協同發展的認識與認同。</p>\n<p style=\"text-align: justify;\">“2026公民教育好友營”的參加者積極投入各項環節，發揮合作精神與責任感，充分體現良好公民行為。活動不僅深化青少年對“有禮生活約章”與“市容美化”的理解，更引導他們反思日常行為對環境、社區乃至保育的影響，成功將公民教育融入休閒與跨境學習體驗之中，從而鼓勵青少年將文明意識帶入家庭與社區，共同推動澳門建設成為更和諧、宜居的城市。</p>",
+    "department": "市政署",
+    "fetched_at": "2026-09-16T18:00:02.665140"
+  },
+  {
+    "title": "澳門理工大學持續教育中心2026年第四季度課程 現正接受報名",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPLeK0P",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPLeK0P",
+    "published": "2026-09-16T15:53:00+08:00",
+    "published_parsed": "2026-09-16T07:53:00",
+    "summary": "<p style=\"text-align: justify;\">澳門理工大學持續教育中心已於2026年第四季度開辦一系列專業培訓課程，範疇涵蓋公共行政、金融及企業管理、社工及護理實務、語言及傳意、科技及工程應用、青少年培養、休閒旅遊會展、藝術及設計、體適能等。本期更首次開辦“從神經多樣性出發：特殊需求孩童的系統化教養”專業培訓課程。課程現正接受報名，歡迎報讀。</p>\n<p style=\"text-align: justify;\">“從神經多樣性出發：特殊需求孩童的系統化教養”課程旨在讓學員理解自閉症光譜(ASD)與注意力不足過動症(ADHD)的核心特徵與支持方向，並以“優勢視角”及“適性教養策略”為主軸，建立可立即應用的情緒教養、環境調整與社交策略。同時引導照顧者培養自我關懷與壓力管理能力，並透過個案研討提升分析與實務介入的能力。</p>\n<p style=\"text-align: justify;\">另外，中心將繼續推出商業應用及企業管理系列實用課程，提升本澳各行業從業員的專業管理能力與服務技巧，包括針對優質服務與溝通規範的“前線人員的溝通和接待技巧”；結合人資實務與勞動法規應用的“人事管理與勞動關係法律實務”；著重提升衝突調解與困難情境應對的“處理投訴技巧”；涵蓋風險評估與危機應變的“危機管理”；以及深化人資需求預測與招聘留任規劃的“人力資源管理及規劃”。</p>\n<p style=\"text-align: justify;\">澳理工持續教育中心本季度課程全獲納入教青局持續進修發展計劃，報讀課程可透過網上或親臨中心報名。學員達課程出席要求及通過評測，可獲頒發中心簽發的證書。查詢課程資訊及報名請瀏覽網頁：www.mpu.edu.mo/cec/zh/courses.html。澳理工持續教育中心開辦多元化的公開招生課程，同時歡迎機構或團體委託開辦各類型專業培訓。查詢請於辦公時間致電：87950707/87950750/87950844或電郵至：cec@mpu.edu.mo。</p>",
+    "department": "澳門理工大學",
+    "fetched_at": "2026-09-16T18:00:02.665143"
+  },
+  {
+    "title": "網絡設備維護 藥監局網絡服務暫停運作",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPNeKfF",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPNeKfF",
+    "published": "2026-09-16T15:03:00+08:00",
+    "published_parsed": "2026-09-16T07:03:00",
+    "summary": "<p style=\"text-align: justify;\">藥物監督管理局將於2026年9月18日（星期五）晚上11時至9月19日（星期六）上午6時進行網絡服務維護及升級，期間藥物監督管理局網站、商社通藥物監督管理局服務及部份對外網絡服務將會間歇性暫停運作。</p>\n<p style=\"text-align: justify;\">待上述網絡服務維護及升級工作完成後，即恢復運作。藥物監督管理局提醒居民留意上述安排。居民如有疑問，可致電8598 3251與藥物監督管理局陳先生聯絡。</p>",
+    "department": "藥物監督管理局",
+    "fetched_at": "2026-09-16T18:00:02.665145"
+  },
+  {
+    "title": "澳琴協同推進通關便利化｜橫琴粵澳深度合作區成立五周年",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IQd0n18",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IQd0n18",
+    "published": "2026-09-17T00:13:00+08:00",
+    "published_parsed": "2026-09-16T16:13:00",
+    "summary": "<p>9月17日，橫琴粵澳深度合作區成立五周年。五年來，澳琴合作持續深化，通關便利化不斷推進，「澳門+橫琴」一體化發展日趨蓬勃，澳琴兩地持續推進規則機制「軟聯通」和基礎設施「硬聯通」，提升口岸通關效率，打造更加安全、高效、便捷的跨境通行環境。</p>\n<p>&nbsp;</p>\n<p>在保安司司長陳子勁的帶領下，保安範疇相關部門積極參與合作區的建設，打造澳琴創新通關模式。今年適逢澳門特別行政區「三五規劃」開局之年，同時也是合作區第二階段攻堅之年，保安範疇相關部門將繼續深度參與「澳琴一體化」發展，以重大通關建設項目為牽引，全力投入橫琴口岸及車道創新智能通關、橫琴口岸擴展旅檢通道、澳門大學橫琴口岸附屬通道等多項工程，並持續研究建設澳琴跨境新通道，為合作區高質量發展提供有力支撐。</p>\n<p>&nbsp;</p>\n<p>01</p>\n<p>堅守使命，高度參與澳琴合作區發展</p>\n<p>&nbsp;</p>\n<p>2025年6月18日，「琴澳口岸合作創新發展和通關便利化工作專責小組」成立，負責統籌推進澳門與橫琴各相關單位的口岸合作，圍繞旅檢大廳、車道擴容、軟硬件升級及通關模式革新開展研究與落實。2026年4月30日，保安司司長陳子勁首次率隊赴橫琴粵澳深度合作區，與合作區執委會副主任聶新平共同主持召開「琴澳口岸合作創新發展和通關便利化工作專責小組」第二次會議，確立了澳琴發展創新通關模式的工作方案。為此，澳門保安部隊事務局將聯同治安警察局、澳門海關等相關部門，切實執行「琴澳口岸合作創新發展和通關便利化工作專責小組」製定的工作策略，以建設澳琴新型智慧口岸作為本局的重要任務。</p>\n<p>&nbsp;</p>\n<p>02</p>\n<p>持續優化規則運行「軟聯通」</p>\n<p>&nbsp;</p>\n<p>橫琴口岸於2020年8月18日通關運行，是澳琴合作的重要里程碑。同時，橫琴口岸優化建設也是合作區深耕五載的重要任務。「合作查驗自助通道」以及「聯合一站式車道」的通關模式，將澳琴兩地查驗手續合二為一，為市民提供便捷的通關模式。五年間，澳門保安部隊事務局與合作區及兩地查驗部門加強協作，逐步形成堅固的合作體系。</p>\n<p>橫琴口岸建成後，澳門保安部隊事務局繼續積極進行通關系統技術協調，優化查驗設備與業務流程，以及提供運行期間的技術支援，讓旅客及車輛享有更快捷、更順暢的通關體驗。澳琴兩地持續優化「合作查驗、一次放行」模式：包括推出旅檢大廳及隨車人員驗放廳「刷臉」智能通關。聯合一站式車道亦於2026年5月推出「指紋+面相」智能通關。另外，在車道智能通關基礎上，澳琴正推進車道「人臉+虹膜」智能通關先導項目。現時已進入實車測試階段，並計劃於本年內進行試運行，為日後聯合一站式車道全面部署「人臉+虹膜」智能通關作準備。</p>\n<p>&nbsp;</p>\n<p>03</p>\n<p>穩步推進基礎設施「硬聯通」</p>\n<p>&nbsp;</p>\n<p>現時，橫琴口岸旅檢大廳正進行改擴建工程。澳門保安部隊事務局與合作區及相關部門就工程項目緊密合作和溝通，並進行了二十八次跨部門聯合工程會議。工程完成後，屆時新增四十六條合作查驗自助通道及六條人工通道，有效提升口岸旅客查驗容量和高峰時段的疏導能力。工程由澳琴雙方按職責分工協同推進，澳門保安部隊事務局重點承擔澳方的技術統籌：主力建設新合作查驗自助通道，部署人工查驗通道的設備，以及口岸相關的配套設備。同時，保安部隊事務局亦主導設備調試環節、組織分階段聯調聯試、通關流程驗證和異常情況測試，以及後續運行保障及智能通關功能優化。</p>\n<p>&nbsp;</p>\n<p>04</p>\n<p>有序建設澳門大學橫琴附屬通道</p>\n<p>&nbsp;</p>\n<p>根據《橫琴粵澳深度合作區建設總體方案》和中央區域協調發展領導小組辦公室關於《深入推進合作區建設一攬子政策舉措》有關要求，積極推進澳門大學橫琴口岸附屬通道建設。目前，項目正在有序推進，保安部隊事務局聯同橫琴產業發展局等相關部門持續研究人員通關空間佈局、查驗系統、通信及安全保障，為通道建設打下堅實基礎。</p>\n<p>&nbsp;</p>\n<p>05</p>\n<p>緊扣「三五規劃」，深耕「澳琴一體化」</p>\n<p>&nbsp;</p>\n<p>澳門保安部隊事務局堅守使命，以「三五規劃」及「澳琴一體化」發展為綱，持續深化與合作區的交流，推進智能通關及新型口岸拓展，建設更安全、更高效、更智慧的跨境通關樞紐，以規則銜接、機制對接作為突破口，推動澳琴一體化，助力合作區高質量發展。</p>",
+    "department": "澳門保安部隊事務局",
+    "fetched_at": "2026-09-17T01:00:02.415663"
+  },
+  {
+    "title": "文化局推出多項影視產業服務措施 助力業界專業化發展及拓展業務機遇",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPuPYQH",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPuPYQH",
+    "published": "2026-09-16T22:12:00+08:00",
+    "published_parsed": "2026-09-16T14:12:00",
+    "summary": "<p style=\"text-align: justify;\">為扎實推進經濟適度多元發展，澳琴協同“走出去、引進來”的影視產業發展目標，文化局設立“澳門影視產業服務中心”、推出“澳門影視專題網站”，以及舉辦文化人才實訓計劃“影視製作行政程序申辦與風險管理”課程，透過專屬平台整合行業資訊與服務，為本澳影視從業人員提供一站式的實務支援及培訓，助力澳門影視行業邁向專業化及國際化發展。</p>\n<p style=\"text-align: justify;\"><strong>舉辦“影視製作行政程序申辦與風險管理”課程　提升影視人才專業能力與實務運作技能</strong></p>\n<p style=\"text-align: justify;\">文化人才實訓計劃“影視製作行政程序申辦與風險管理”課程亦將於9月22日起至10月12日接受報名，課程聚焦製片行政程序、政府部門拍攝申請實務、片場風險評估與安全控制，並設有模擬審核環節，提升學員在影視製作方面的行政能力與安全風險管控，有意者可於報名期間登入一戶通的“活動報名”（activity.mo.gov.mo/activity-h5/activity-list-web）瀏覽課程詳情及報名。</p>\n<p style=\"text-align: justify;\"><strong>推出澳門影視專題網站　助澳琴協同發展</strong></p>\n<p style=\"text-align: justify;\">為向影視業界提供行業資訊與服務，文化局新推出“澳門影視專題網站”（macaofilming.icm.gov.mo），設有資料庫及資源對接等功能。“影視焦點”介紹政策資助及橫琴粵澳深度合作區專訊等資訊，以及發佈行業動態與政策扶持等消息；“影視機構”及“影視人才”資料庫，協助本地及外地業界對接資源，媒合影視人員的合作，歡迎業界登錄並加入資料庫。此外，網站圖文並茂介紹澳門世界遺產、文化設施、歷史片區、特色街區、橫琴國際影視城等拍攝場地資訊，以及提供“拍攝申請”的申請須知與常見問題。網站旨在為業界提供更便捷、高效的作業環境，賦能影視產業創作，達至資源共享與優勢互補的目標。</p>\n<p style=\"text-align: justify;\">文化局將持續優化及增添網站功能，並透過多元化措施及優化拍攝支援服務，積極吸引更多外國拍攝活動來到澳門取景，提升澳門影視產業的國際知名度與競爭力。</p>\n<p style=\"text-align: justify;\"><strong>澳門影視產業交流團參訪橫琴國際影視城　拓寬澳琴文創合作空間</strong></p>\n<p style=\"text-align: justify;\">為推動澳琴影視產業深度融合與聯動發展，文化局設立的“澳門影視產業服務中心”於9月9日組織澳門影視產業交流團赴橫琴國際影視城考察，實地走訪影視城各項設施，瞭解其影視製作資源及營運實務等情況。其間舉行交流座談會，影視城代表詳細講解在合作區開展真人及AI微短劇製作及上線的實務操作；文化局亦介紹現正試營運的“澳門影視產業服務中心”，以及“澳門影視專題網站”，協助業界掌握最新產業支援服務。團體代表踴躍發言，普遍認為影視城的拍攝資源豐富，有意於影視城進行實拍及AI製作，並希望透過“澳門影視產業服務中心”認識更多內地開拓業務合作的相關情況。</p>\n<p style=\"text-align: justify;\">本次參訪單位包括：澳門江門同鄉會、澳門婦女聯合總會、澳門青年聯合會、澳門街坊會聯合總會、民眾建澳聯盟、澳門福建同鄉總會、澳門工會聯合總會、澳門歸僑總會、澳門天下國際文化傳媒有限公司、澳門理工大學及澳門影視文創藝術協會（排名不分先後）。</p>\n<p style=\"text-align: justify;\">文化局期望透過澳門影視產業服務中心組織實地參訪、推出澳門影視專題網站，以及舉辦文化人才實訓計劃等措施，進一步促進澳琴影視產業協同發展，拓寬澳琴文創合作空間，聯合社團及業界力量，推動中華文化國際傳播，以影像講好澳門故事、助力中華文化出海。未來，文化局將持續組織各類交流活動及培訓課程，推動兩地文化產業實現規模化與協同發展的方向。</p>",
+    "department": "文化局",
+    "fetched_at": "2026-09-17T01:00:02.415670"
+  },
+  {
+    "title": "獻禮合作區五周年 “陝”耀中華文物展在橫琴重磅啟幕  247件（套）三秦瑰寶串聯萬年文明",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPlc0ag",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPlc0ag",
+    "published": "2026-09-16T21:41:00+08:00",
+    "published_parsed": "2026-09-16T13:41:00",
+    "summary": "<p align=\"justify\" style=\"text-align: justify;\">9月16日下午，一場匯聚千年華夏文明精華的文博盛典——“陝”耀中華文物展，於橫琴文化藝術中心正式拉開帷幕。來自陝西省、廣東省及澳門特別行政區相關單位的嘉賓齊聚現場，共同見證這場文化盛典啟幕。</p>\n<p align=\"justify\" style=\"text-align: justify;\">本次“陝”耀中華文物展由國家文物局、陝西省人民政府、橫琴粵澳深度合作區執行委員會、澳門特別行政區政府社會文化司指導，陝西省文物局、橫琴粵澳深度合作區民生事務局、澳門特區政府文化局聯合主辦，陝西歷史博物館、保利文化集團股份有限公司、橫琴文化藝術中心共同承辦。</p>\n<p align=\"justify\" style=\"text-align: justify;\">橫琴粵澳深度合作區執行委員會副主任張國基，陝西省文物局黨組成員、副局長王潤錄分別致辭，陝西歷史博物館黨委書記、館長龐雅妮作展覽推介。</p>\n<p align=\"justify\" style=\"text-align: justify;\">張國基指出，今年恰逢橫琴粵澳深度合作區成立五周年，舉辦本次展覽，正是以文化為紐帶深化祖國內地與澳門交流交融的具體實踐，也是深入貫徹落實習近平主席關於“澳門+橫琴”新定位重要指示精神、支持澳門建設“一基地”要求的生動體現。他堅信，本次展覽必將成為連接內地與澳門、溝通歷史與當下的重要橋樑，為促進粵港澳大灣區文化交流互鑒、推動中華文化國際傳播貢獻橫琴力量，為合作區成立五周年獻上一份厚重的文化賀禮。</p>\n<p align=\"justify\" style=\"text-align: justify;\">王潤錄在致辭中表示，本次展覽是陝澳既往文化合作的延續與升華。陝西是中華民族和華夏文明的重要發祥地，全省5.5萬餘處不可移動文物、810餘萬件可移動文物，完整呈現中華文明百萬年人類史、一萬年文化史、五千多年文明史的發展軌跡，是中華文明連續性、創新性、統一性、包容性、和平性的重要實證。此次展覽既是陝西推動三秦大地文明瑰寶走進大灣區、以文物實證講好“何以中國”故事的具體舉措，也是服務澳門建設“以中華文化為主流、多元文化共存的交流合作基地”的有力實踐。他希望以此次特展為契機，陝澳兩地通過聯合策劃精品展陳、協同開展學術研究、互鑒活化利用經驗等方式，推動文物資源雙向互通、文博成果共建共享，共同書寫中華文脈傳承的時代新篇。</p>\n<p align=\"justify\" style=\"text-align: justify;\">龐雅妮在展覽推介中介紹，本次展覽遴選247件（套）陝西珍貴文物，立足陝西得天獨厚的山水與文物稟賦，以文物實證解讀中華文明的連續性、創新性、統一性、包容性、和平性五大突出特性。展覽設置“根與源”“天與人”“通與融”“新與續”四大單元，循著百萬年人類史、一萬年文化史、五千多年文明史的時間線索，串聯起從遠古足跡、周秦漢唐到絲路互鑒、文脈永續的文明演進，真正做到“讓文物成為證據，讓歷史彼此印證”。她希望，這場三秦大地的文明長卷落地南海之濱，能助琴澳觀眾透過文物讀懂“何以中國”，也為陝澳文博交流搭建新的對話平台。</p>\n<p style=\"text-align: justify;\">開幕式上，合作區執行委員會副主任張國基，陝西省文物局黨組成員、副局長王潤錄，合作區民生事務局局長馮方丹，陝西歷史博物館黨委書記、館長龐雅妮，合作區民生事務局副局長蘇凱慈，澳門特區政府文化局文化遺產廳廳長蘇建明，保利文化集團股份有限公司高級專家徐碚，珠海市文化廣電旅遊體育局四級調研員吳德祥，漢景帝陽陵博物院副院長王寶強共同為“陝”耀中華文物展啟動。</p>\n<p align=\"justify\" style=\"text-align: justify;\">展覽以四大單元層層鋪展。<strong>第一單元“根與源”</strong>從百萬年前到國家誕生，呈現藍田人、洛南舊石器遺址等古人類早期足跡，渭河流域七千至五千年的文化整合，以及四千年前後石峁文明興起所推動的早期國家形成，展現“人類足跡—文化匯聚—國家誕生”的完整脈絡。<strong>第二單元“天與人”</strong>聚焦西周到秦漢的文明演進：周人以德重構天人關係，以理性精神奠定禮樂秩序；秦效法天道，法令由一統，開創中央集權範式；漢朝凝練“德主刑輔”治理體系，以德法合治將天人秩序化為可循的制度智慧。<strong>第三單元“通與融”</strong>以張騫出使西域、絲綢之路貫通為線索，展現物產交流、貿易往來與文化傳播，以及異域來客、入仕為官、深耕市井、傳道講學等歷史圖景，彰顯中華文明在吸納中改良、在融合中升華的開放包容。<strong>第四單元“新與續”</strong>聚焦宋元明清的陝西，呈現經世致用、金石考訂、禮制研究等文脈傳承，展現中華文明於因革之間愈見深沉、於互鑒之間舒展枝葉的生命力。</p>\n<p align=\"justify\" style=\"text-align: justify;\">步入展廳，觀眾將與跨越千年的珍貴文物相遇，在歷史故事與文物瑰寶中感受華夏文明的深厚底蘊。在四大單元的敘事動線中，觀眾既能沉浸式領略三秦瑰寶的藝術魅力，更能在時空對話中真切感悟中華文明生生不息的強大生命力與凝聚力。從三秦大地到南海之濱，展覽以“華夏根脈、禮樂源頭、制度原點、絲路核心、文脈沃土”為敘事底色，讓觀眾在歷史回望中厚植家國情懷、堅定文化自信。</p>\n<p align=\"center\" style=\"text-align: center;\"><strong>展覽名稱</strong></p>\n<p align=\"center\" style=\"text-align: center;\">“陝”耀中華文物展</p>\n<p align=\"center\" style=\"text-align: center;\"><strong>展覽時間</strong></p>\n<p align=\"center\" style=\"text-align: center;\">2026年9月17日至2027年1月16日</p>\n<p align=\"center\" style=\"text-align: center;\">每周二至周日10:00-18:00（17:00後停止入館）</p>\n<p align=\"center\" style=\"text-align: center;\">逢周一閉館（法定節假日除外）</p>\n<p align=\"center\" style=\"text-align: center;\"><strong>展覽地點</strong></p>\n<p align=\"center\" style=\"text-align: center;\">橫琴文化藝術中心三樓（從西側觀眾入口排隊入場）</p>\n<p align=\"center\" style=\"text-align: center;\"><strong>入場規則</strong></p>\n<p align=\"center\" style=\"text-align: center;\">免費實名制預約</p>\n<p align=\"center\" style=\"text-align: center;\"><strong>預約方式</strong></p>\n<p align=\"center\" style=\"text-align: center;\">1.關注“橫琴民生”微信公眾號進行預約</p>\n<p style=\"text-align: center;\">2.掃描“橫琴文體通”小程序二維碼進行預約</p>",
+    "department": "橫琴粵澳深度合作區民生事務局",
+    "fetched_at": "2026-09-17T01:00:02.415674"
+  },
+  {
+    "title": "推進中山與澳門合作專責小組2026年工作會議今(16)日舉行",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPY13Y5",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPY13Y5",
+    "published": "2026-09-16T21:09:00+08:00",
+    "published_parsed": "2026-09-16T13:09:00",
+    "summary": "<p style=\"text-align: justify;\">“推進中山與澳門合作專責小組2026年工作會議”於9月16日在澳門中葡綜合體召開，雙方以“深化中山澳門協同發展 共建灣區產業融合高地”為主題，圍繞國家“十五五”規劃與澳門特區“三五”規劃的戰略部署，以經貿投資、生物醫藥與大健康、文化旅遊、人才合作等重點領域為切入點，回顧各合作專班的工作成果，籌劃未來發力方向，並達成多項合作協議。澳門特別行政區政府經濟財政司司長吳惠嫻，中山市人民政府市長尹念紅共同主持會議。</p>\n<p style=\"text-align: justify;\">吳惠嫻司長表示，澳門與中山自古同屬香山縣，兩地地緣相近、人緣相親，隨着粵港澳大灣區建設深入推進，兩地交流日趨緊密。特區政府高度重視與中山的各領域合作，經過專責小組多輪工作會議，合作機制已逐漸完善，去年更將下設的工作小組升級為涵蓋七大領域的合作專班，為彼此協同發展提供有力的機制支撐。吳惠嫻期待雙方在既有合作基礎上，進一步拓展合作的廣度和深度，精準對接國家“十五五”規劃部署，攜手建設富有活力和國際競爭力的一流灣區，引領兩地合作邁上新台階。</p>\n<p style=\"text-align: justify;\">尹念紅市長表示，中山與澳門根脈同源、情誼深厚。近年來，兩地不斷深化產業協同、科技創新、文旅融合、民生互惠等領域合作，共同推動粵港澳大灣區建設向更高質量、更深層次邁進。中山將進一步深化與澳門在經濟、社會、文化等方面合作，拓展澳門經濟適度多元發展新空間。期待通過推進中山與澳門合作專責小組工作會議等機制，進一步加強與澳門的常態化溝通合作，推動澳門科研成果在中山落地，攜手培育發展戰略性新興產業和未來產業，紮實推動合作事項落地見效，攜手書寫中山與澳門協同發展新篇章。</p>\n<p style=\"text-align: justify;\">會議期間，政策研究和區域發展局局長張作文就澳門“三五”規劃的編製情況作專題報告，介紹“三五”規劃的編製原則、主要指標與重點工作，並闡述經濟適度多元發展、深化澳琴一體化、推進都市更新及拓展高水平對外開放等四大核心任務；並歡迎中山把握“三五”規劃的發展機遇，拓展雙方在產業協同、科技創新、民生融合等領域的合作。</p>\n<p style=\"text-align: justify;\">另外，各合作專班的牽頭單位分別就經貿投資、生物醫藥與大健康、文化旅遊、人才合作等領域匯報工作進展。雙方圍繞強化展會聯動與資源對接、跨境醫療服務與中藥製劑流通、中醫藥產業合作、深化文博交流與區域旅遊聯盟協作、推動科創成果落地，以及優化澳門青年在中山就業創業政策等議題，介紹了過去一年的工作成果，並就未來深化合作提出了明確方向。</p>\n<p style=\"text-align: justify;\">專責小組雙方圍繞經貿投資、醫療合作、人才培養、藥物研發、低空經濟等領域，共簽署六份合作文件，包括：《澳門-中山經貿投資與展會聯動合作協議》、《澳門大學與中科中山藥物創新研究院合作備忘錄》、《醫療合作及人才培養框架協議》、《低空經濟應用場景開發與產業化落地戰略合作框架協議》、《醫療機構中藥製劑跨境使用合作框架協議》、《低空經濟戰略合作框架協議》。簽約方涵蓋政府部門、高校科研機構、醫院及產業園區，為拓展兩地合作版圖、深化務實協作提供了有力支撐。</p>\n<p>中央政府駐澳門聯絡辦公室經濟金融部副部長楊全州、澳門特區政府經濟財政司司長辦公室主任羅志輝、中山市副市長歐陽錦全，兩地經貿投資、衛生、文化、旅遊、人才、科技等相關部門主要負責人，以及學術和業界代表等約五十人出席會議。</p>",
+    "department": "經濟財政司司長辦公室",
+    "fetched_at": "2026-09-17T01:00:02.415676"
+  },
+  {
+    "title": "“我與中華文化・從文創裡看澳門歷史”文創大賽 現正接受報名　發掘澳門文化創意潛力",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPNw6do",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPNw6do",
+    "published": "2026-09-16T20:49:00+08:00",
+    "published_parsed": "2026-09-16T12:49:00",
+    "summary": "<p style=\"text-align: justify;\">由澳門特別行政區政府與文化和旅遊部聯合主辦，澳門特別行政區政府文化局與中國國家博物館承辦的“我與中華文化•從文創裡看澳門歷史”文創大賽，即日（9月16日）起至10月30日接受報名，歡迎公眾參賽，設計充分展現中華文化與澳門特色的文創產品。</p>\n<p style=\"text-align: justify;\">作為“我與中華文化・從文創裡看澳門歷史”文創大賽及系列交流活動的重點項目之一，本次大賽的參賽作品須以“推薦使用的文化元素”為核心，從文創視野挖掘文化資源的價值與內涵，突出澳門城市符號與文化特質，展現澳門作為“以中華文化為主流、多元文化共存的交流合作基地”的定位；作品需融合文化元素與生活應用，兼具原創性、市場潛力及量產可行性，符合現代審美及消費需求。</p>\n<p style=\"text-align: justify;\">大賽設金、銀、銅獎各1名及優異獎7名，設有獎金及獎狀。參賽者須年滿18歲，每位參賽者最多可提交5件參賽作品；評審團將根據主題內涵、市場潛力、美感及創意進行甄選。為推動創作成果轉化為具體產品，獲獎作品將由文化局製作成產品。活動章程及報名表可瀏覽專題網頁https://mcc.icm.gov.mo，參賽者可於辦公時間親臨文化局大樓或以郵寄方式提交參賽文件，亦可電郵至register_dpicc@icm.gov.mo。查詢可於辦公時間致電8399 6279或8590 4325聯絡。</p>",
+    "department": "文化局",
+    "fetched_at": "2026-09-17T01:00:02.415679"
+  },
+  {
+    "title": "協和澳門醫學中心舉行兩周年院慶暨醫療健康高峰論壇開幕式",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPaPlWl",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPaPlWl",
+    "published": "2026-09-16T20:38:00+08:00",
+    "published_parsed": "2026-09-16T12:38:00",
+    "summary": "<p style=\"text-align: justify;\">離島醫療綜合體北京協和醫院澳門醫學中心（下稱“協和澳門醫學中心”）於今（16）日舉行“兩周年院慶暨醫療健康高峰論壇開幕式”，澳門特別行政區行政長官代表、社會文化司柯嵐司長，外交部駐澳門特別行政區特派員公署卞立新特派員，中央人民政府駐澳門特别行政區聯络辦公室人事部、社會發展部艾一平部長，中華醫學會會長、北京協和醫院名譽院長趙玉沛院士，復旦大學附屬中山醫院院長周儉院士，北京協和醫院張抒揚院長，中華醫學會何翔秘書長，國家衛生健康委港澳台辦李維副主任，衛生局羅奕龍局長及協和澳門醫學中心劉正印院長共同擔任開幕式的主禮嘉賓。</p>\n<p style=\"text-align: justify;\">柯嵐司長致辭時表示，協和澳門醫學中心是在中央大力支持、國家衛健委指導下，自2023年年底試運行開始，特區政府就賦予了中心“優化公共醫療、開拓高端醫療、培育本地人才”三大定位，她期望協和澳門醫學中心持續深化與仁伯爵綜合醫院及其他醫療機構的協作，形成錯位發展、優勢互補；充分發揮北京協和醫院的專業、技術和人才優勢，持續提升本澳疑難重症和特色醫療服務水平，加強本地醫療人才培養，穩步拓展國際醫療服務，推動“醫療+旅遊”發展，賦能大健康産業提質增效；積極探索成立“境外醫學研究中心”，推動醫療、教學、科研資源更好融合，做好人才培養工作，逐步打造面向大灣區、連接國際的醫學研究及轉化平台，提升澳門在醫學科研領域的影響力。</p>\n<p style=\"text-align: justify;\">趙玉沛院士在致辭時則表示，習近平總書記在《求是》雜誌上發表重要文章《加快建設健康中國》，強調必須堅持人民至上、生命至上，走中國特色衛生與健康發展道路。協和澳門醫學中心的每一步跨越，正是對2035年建成健康中國戰略部署的生動踐行。從頂層設計到藍圖落地，從起步探索到全面步入高質量發展新階段，國家和特區政府始終給予堅強的領導和大力支持，“一國兩制”的制度優勢和政策紅利，為京澳醫療深度協同開闢了廣闊的空間。同時依託著協和澳門醫學中心特邀專家庫機制，通過實地帶教，線上大查房制和多學科會診，澳門醫療團隊在實戰中快速成長，推動“輸血式”幫扶專向“造血式”的培育，加速實現“大病不出澳”的民生願景。</p>\n<p style=\"text-align: justify;\">張抒揚院長致辭指出，兩年來北京協和醫院牢記囑託，把“國家所需、澳門所盼、協和所能”緊密結合，推動中心從起步營運穩步邁向高質量發展的新階段。包括第四代達芬奇機器人胰腺手術，一批高難度技術相繼落地；全澳最大的腫瘤放療中心、首個公營核醫學科，輔助生殖中心，從無到有，6月啟用重症病房。“大病不出澳”，從美好願景逐步成為澳門居民觸手可及的健康現實，這正是“一國兩制”制度優勢在衛生健康領域最生動、最深刻的實踐。她寄語協和澳門醫學中心不僅要做好本地醫療服務，更要主動融入國家發展大局，精準契合澳門“1+4”經濟適度多元發展戰略，既做澳門居民的健康港灣，更做中國醫療對外開放走向世界的名片。</p>\n<p style=\"text-align: justify;\">開幕式期間，協和澳門醫學中心宣佈“特邀專家庫”正式建立，並由柯嵐司長、張抒揚院長、羅奕龍局長、劉正印院長頒發聘書予以復旦大學附屬中山醫院院長周儉院士，國家傳染病醫學中心主任、復旦大學附屬華山醫院張文宏教授，中華護理學會理事長、北京協和醫院吳欣娟教授，北京協和醫院楊愛明教授、宋紅梅教授、冷曉梅教授、王遷教授以及徐強副教授8位特邀專家代表。</p>\n<p style=\"text-align: justify;\">此外，本次醫療健康高峰論壇亦邀請到周儉院士，張文宏教授分別以“學科人才建設、科技成果轉化賦能醫院高質量發展”和“構建國際醫療中心的感染防禦與公衛韌性”為題作主旨報告分享，最後由協和澳門醫學中心柳曉輝副院長作主旨報告的總結演講。</p>\n<p style=\"text-align: justify;\">出席今(16)日活動的嘉賓，還包括：澳門政府各部門代表；協和澳門醫學中心策略發展委員會及監事會成員、北京協和醫院代表、北京協和醫院駐澳專家；金融業界代表、綜合旅遊休閒企業代表、社團代表、協和澳門醫學中心醫療及行政管理人員、受邀專家及講者、本澳醫療人員等，共逾500多人。</p>",
+    "department": "離島醫療綜合體北京協和醫院澳門醫學中心",
+    "fetched_at": "2026-09-17T01:00:02.415681"
+  },
+  {
+    "title": "公共建設局於路環荔枝碗馬路開展緊急渠道維修工程",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPaatac",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPaatac",
+    "published": "2026-09-16T19:55:00+08:00",
+    "published_parsed": "2026-09-16T11:55:00",
+    "summary": "<p style=\"text-align: justify;\">因應路環荔枝碗馬路12至16號一帶出現泵房壓力管破損情況，公共建設局經現場檢查，為解決渠水湧出所引發的環境衛生問題，並保障行人與車輛通行安全，經協調相關部門，將於2026年9月17日起展開緊急維修工程，預計工期為5個工作天。</p>\n<p style=\"text-align: justify;\">鑒於工程地點鄰近荔枝碗船廠片區，為縮短工期及減少對周邊休閒活動的影響，施工期間將對部分荔枝碗馬路實施臨時交通封閉(見附圖)，以盡快完成緊急渠道維修。公共建設局呼籲駕駛者及市民留意工程期間的臨時交通安排，提前規劃出行路線，並遵守現場交通標誌及執勤人員指示。</p>",
+    "department": "公共建設局",
+    "fetched_at": "2026-09-17T01:00:02.415684"
+  },
+  {
+    "title": "澳大法學院學生論文在學術徵文比賽奪佳績",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IP8duJ4",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IP8duJ4",
+    "published": "2026-09-16T19:53:00+08:00",
+    "published_parsed": "2026-09-16T11:53:00",
+    "summary": "<p>由澳門大學法學院博士生李浩、碩士生林詠琳與王思莼共同撰寫的論文在“天沐英才——第二屆澳門大學生學術徵文比賽”中獲得二等獎。澳大法學院學生已連續兩年在該比賽獲得獎項，體現了該院較高的學術研究水準以及為琴澳“規則銜接，機制對接”提供智力支持的積極性。</p>\n<p>比賽主題為“以學術為橋樑、以青年為主體、以橫琴為坐標”，匯聚海內外70多所高校600多名青年學子參賽。賽事評審團由內地與港澳30多所大學、研究機構的專家學者組成，經多輪評審及資格審核，最終評選出57篇獲獎論文。</p>\n<p>澳大得獎論文題為《粵澳數據跨境SCCs後續傳輸規則與橫琴試點路徑——以“隱私場景”理論為視閾》，由澳大法學院副院長、博士生導師魏丹指導。論文借助“隱私場景”理論發現在以標準合同為法律工具的前提下，粵港澳大灣區內外傳輸主要在“接收者”、“數據類型”以及“傳輸原則”上存在差異。為此，論文建議應利用橫琴粵澳深度合作區“先試先行”的政策優勢實現試點創新，完善數據傳輸標準合同制度，從而為粵澳數據外循環與一體化高水平對外開放提供法律保障。</p>\n<p>比賽由中央人民政府駐澳門特別行政區聯絡辦公室北京聯絡部、中央人民政府駐澳門特別行政區聯絡辦公室社會工作部（研究室）、澳門特別行政區政府駐北京辦事處，以及澳門特別行政區政府教育及青年發展局指導，中央港澳工作辦公室港澳研究所提供學術指導，澳門學人發展協會以及澳生之家主辦，中央財經大學、橫琴深合集團有限公司、澳門商務印書館、澳門經濟學會協辦。</p>",
+    "department": "澳門大學",
+    "fetched_at": "2026-09-17T01:00:02.415686"
+  },
+  {
+    "title": "會展服務首次納入“深合杯”　珠澳琴技能競賽於澳旅大收官",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPJ9FUW",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPJ9FUW",
+    "published": "2026-09-16T19:51:00+08:00",
+    "published_parsed": "2026-09-16T11:51:00",
+    "summary": "<p style=\"text-align: justify;\">2026珠澳琴職業技能大賽暨“深合杯”職業技能競賽會展服務項目於9月16日在澳門旅遊大學完成決賽及頒獎。會展服務今年首次納入“深合杯”競賽項目，標誌珠澳琴職業技能合作進一步拓展至會展產業，為三地共同培育專業會展人才建立新平台。</p>\n<p style=\"text-align: justify;\">賽事由珠海市人力資源和社會保障局、澳門特別行政區政府勞工事務局及橫琴粵澳深度合作區人才發展和社會保障局聯合主辦，澳門旅遊大學、珠海市技師學院及南光國際會議展覽有限公司共同實施，結合三地院校的專業培訓力量及會展企業的實務經驗。</p>\n<p style=\"text-align: justify;\">本屆共有79名選手取得初賽資格。賽事採取“一賽兩地”模式，9月7日在珠海及澳門同步舉行理論決賽，晉級選手其後於澳旅大望廈校區進行實操決賽，接受包括會展策劃與設計、現場統籌、專業服務、作品展示及答辯等綜合考核。</p>\n<p style=\"text-align: justify;\">會展業是澳門“1+4”經濟適度多元發展策略的重要產業之一。是次“深合杯”首次引入會展服務項目，不僅為珠澳琴會展從業員及青年提供跨區域技能交流平台，亦透過競賽推動三地在技能標準、人才培養及行業實踐方面進一步銜接，為珠澳琴會展產業協同發展培育更多專業人才。</p>",
+    "department": "澳門旅遊大學",
+    "fetched_at": "2026-09-17T01:00:02.415688"
+  },
+  {
+    "title": "“女皇天下──武則天與神都洛陽”展覽下周三揭幕",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPbA3WP",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPbA3WP",
+    "published": "2026-09-16T19:11:00+08:00",
+    "published_parsed": "2026-09-16T11:11:00",
+    "summary": "<p style=\"text-align: justify;\">為促進豫澳兩地歷史文化交流，發揮澳門作為中西文明交流互鑒重要窗口的優勢，由澳門特別行政區政府文化局與河南省文物局主辦的“女皇天下──武則天與神都洛陽”展覽將於2026年9月24日至2027年2月28日在澳門博物館三樓對外開放，開幕式於9月23日（周三）下午6時在大炮台花園舉行，歡迎公眾蒞臨參觀。</p>\n<p style=\"text-align: justify;\">展覽匯聚河南省8所文博機構共126件（組）文物珍品，設有“巍巍宮闕”“百花齊放”“盛世和晏”“千秋哀榮”及“四海一家”五個主題展區，透過建築構件、碑文、金簡、雕像、瓷器及陶俑等文物，呈現唐代城市規劃、傳統工藝、宗教藝術與經濟貿易的高度發展，以及多元文化交融與對外開放的社會氣象。為提升觀展體驗，是次展覽設有唐風場景打卡區、互動遊戲裝置及AI主題拍照，讓公眾以趣味互動的方式感受唐代社會文化。</p>\n<p style=\"text-align: justify;\">為與公眾同慶中秋佳節，澳門博物館推出“明空之下──中秋特別開放計劃”，澳門博物館及大炮台花園將於9月25日（周五）延長開放至晚上10時30分，9月26日至27日（周六、日）延長開放至晚上9時正，屆時大炮台花園將設置唐代主題裝飾、即影即有拍照區及匹克球體驗區等，澳門博物館於延長開放時段免費入場。此外，澳門博物館將於9月26日舉辦兩場“唐代服飾及妝造工作坊”，並於翌日（27日）開辦兩場親子專場，讓一家大小同享唐風之美。有興趣市民可於即日起至9月21日登入一戶通的“活動報名”（<span style=\"text-decoration: none;\">activity.mo.gov.mo/activity-h5/activity-list-web</span>）瞭解詳情及登記，倘報名人數多於指定名額時，將以電腦抽籤決定，獲錄取者將以短訊通知。</p>\n<p style=\"text-align: justify;\">澳門博物館開放時間為上午10時至下午6時（下午5時30分停止售票），周一休館。持澳門居民身份證免費入場參觀，逢周二及每月15日對公眾免費開放。展覽詳情可瀏覽澳門博物館網站www.macaumuseum.gov.mo，或辦公時間致電2835 7911查詢。</p>",
+    "department": "文化局",
+    "fetched_at": "2026-09-17T01:00:02.415691"
+  },
+  {
+    "title": "橫琴“育苗培優”計劃周年成績單出爐！",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPe0PgO",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPe0PgO",
+    "published": "2026-09-16T18:53:00+08:00",
+    "published_parsed": "2026-09-16T10:53:00",
+    "summary": "<p style=\"text-align: justify;\">9月16日，橫琴粵澳深度合作區“育苗培優”一周年成果發佈會在星享&middot;橫琴天沐酒店舉行。活動全面總結“育苗培優”計劃一周年建設成果，正式發佈第二批共35家入庫企業名單，並啟動“育苗培優2.0”服務升級，標誌著合作區企業培育服務體系邁入2.0階段。</p>\n<p style=\"text-align: justify;\"><strong>一周年成果豐碩，梯度培育體系初步成型</strong></p>\n<p style=\"text-align: justify;\">澳門特區政府經濟財政司司長、橫琴粵澳深度合作區執委會主任吳惠嫻出席並致辭。她表示，“育苗培優”計劃透過從服務、資金、場景等方面對企業多維度精準滴灌，護航企業茁壯成長。圍繞企業成長發展需求，合作區還設立了“育苗培優”基金，規模20億元人民幣，將聚焦新一代信息技術、具身智能、半導體、創新藥等“四新”產業重點領域，優先支持納入“育苗培優”企業庫的成長型企業，重點通過資本支持、產業資源鏈接、投後賦能等方式，助力企業提升核心競爭力。她期待，廣大企業把握琴澳一體化的時代機遇，用好兩地疊加優勢，在合作區實現高質量新發展。</p>\n<p style=\"text-align: justify;\">省委橫琴工委副書記、省橫琴辦主任、執委會副主任聶新平表示，合作區實施“育苗培優”計劃的初衷，是希望企業在橫琴真正“旺”起來。一年來，“育苗培優”標誌性成果持續湧現，39家首批入庫實現實際辦公人數增長，其中11家人員規模倍增；一批企業在集成電路細分賽道實現技術突破。接下來，合作區將更好發揮“育苗培優”基金作用，加大對入庫企業投後賦能，通過強化跨部門協同，聯合投資機構設立“育苗培優賦能官”機制，進一步匯聚資本、場景、市場多方資源，實施“育苗企業成長倍增計劃”和“培優企業賦能躍升計劃”，努力讓有潛力的企業成長得更快，讓有實力的企業走得更遠。</p>\n<p style=\"text-align: justify;\">活動現場，合作區產業發展局局長吳創偉系統解讀項目年度成效、企業認定選拔標準及育苗培優全維度服務體系。他表示，產業發展局將持續優化精準服務，同時，健全動態出入庫管理機制，堅持優中選優、有進有出，確保培育體系的活力與質量的同時，持續打造“政策有溫度、服務有速度、資源有力度、產業有生態”的發展環境，助力更多優質企業實現更高質量發展。</p>\n<p style=\"text-align: justify;\"><strong>第二批企業入庫，育苗培優2.0啟航</strong></p>\n<p style=\"text-align: justify;\">活動現場舉行表彰授牌儀式，10家企業榮獲育苗企業成長倍增計劃・卓越發展標桿獎，表彰其在人才倍增方面的突出表現；8位高瓴投資代表獲授&quot;育苗培優賦能官&quot;，進一步將專業投資力量深度融入企業培育。</p>\n<p style=\"text-align: justify;\">合作區同步發佈第二批入庫企業名單並授牌。本批35家企業覆蓋“四新”產業領域，既有數字科技、生物醫藥、集成電路、低空經濟等科技創新型企業，也有跨境電商、文旅消費等現代服務業企業，均展現出紮實的發展基礎、較強的人才集聚能力和扎根合作區的發展意願。</p>\n<p style=\"text-align: justify;\">首批入庫企業代表分享成長經驗，“育苗培優2.0”服務升級在政企代表共同見證下正式啟動，企業培育服務體系全面迭代升級。據悉，目前已有119家儲備企業申請入庫，覆蓋數字經濟、先進製造、生物醫藥、集成電路等重點領域，優質企業正加快集聚。邁入第二階段攻堅突破關鍵期，合作區將立足“澳門+橫琴”戰略定位，政企同心、同向發力，把“育苗培優”打造成全力促進澳門經濟適度多元發展的“強引擎”，以更高的服務效率、更精準的政策支持，當好企業發展的“助推器”，幫助一棵棵企業“幼苗”成長為枝繁葉茂的“產業森林”，打造百花齊放、萬木爭榮的“桃花源”。</p>\n<p style=\"text-align: justify;\">當天，合作區執委會副主任符永革、曹晉鋒、張國基，省委橫琴工委、省橫琴辦副主任魏以軍，合作區執委會各工作機構、澳門特區政府相關部門，受邀基金機構、澳門社團、行業協會、企業代表逾300人參加活動。</p>\n<p style=\"text-align: justify;\">&nbsp;</p>",
+    "department": "橫琴粵澳深度合作區產業發展局",
+    "fetched_at": "2026-09-17T01:00:02.415693"
+  },
+  {
+    "title": "新城A區9月19日起全面開通東城第六街以北公共道路",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPtAYsD",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPtAYsD",
+    "published": "2026-09-16T18:42:00+08:00",
+    "published_parsed": "2026-09-16T10:42:00",
+    "summary": "<p style=\"text-align: justify;\">公共建設局與交通事務局持續推進新城A區的路網建設，將於9月18日及19日分階段開通東城第六街以北的公共道路，同時調整部分道路的行車方向及陸續啟用新設的交通燈，進一步理順區內交通運作。</p>\n<p style=\"text-align: justify;\">當中，9月18日將率先開通東城中大馬路及啟用該路口之交通燈；9月19日將全面開通東城第六街以北尚未開通路段，同步啟用馬萬祺博士大馬路與東城第一街交界路口的交通燈、調整部分路段的行車方向，以及臨時封閉鄰近澳門橋大馬路的一段東城第六街，以便駕駛者逐步適應新路網。</p>\n<p style=\"text-align: justify;\">交通事務局及公共建設局早前向交通諮詢委員會及社團代表實地介紹相關交通安排及聽取意見，將密切留意各道路開通後的交通情況及居民出行需求變化，適時調整及優化交通配套設施。</p>",
+    "department": "交通事務局 / 公共建設局",
+    "fetched_at": "2026-09-17T01:00:02.415695"
+  },
+  {
+    "title": "澳門文旅範疇首個“一試多證”考點落戶澳旅大 粵澳技能人才合作邁向新里程碑",
+    "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IPmYBjZ",
+    "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IPmYBjZ",
+    "published": "2026-09-16T18:11:00+08:00",
+    "published_parsed": "2026-09-16T10:11:00",
+    "summary": "<p>澳門旅遊大學正式成為澳門文旅範疇首個“一試多證”考點，在9月16日於望廈校區舉行揭牌儀式，標誌着粵澳職業技能合作由標準共建及資格銜接，進一步邁向考核落地，為澳門文旅從業員提供更便捷的專業技能認證渠道。</p>\n<p>揭牌儀式由澳門旅遊大學代校長呂劍英、澳門特別行政區政府勞工事務局代副局長李小娉、及廣東省職業技能服務指導中心主任葉磊主禮，澳門酒店協會及多家綜合度假休閒企業代表出席見證。</p>\n<p>粵澳職業技能評價合作自2021年展開，並將由澳旅大建立的“澳門職業技能認可基準（MORS）”納入相關技能人才評價體系。在“一試多證”機制下，考生透過一次考核，可按相關安排取得由廣東省、澳門勞工事務局及澳門旅遊大學頒發的相關技能證書，推動兩地技能標準銜接及資格互認。</p>\n<p>是次啟用的考點首階段涵蓋前廳服務員、客房服務員及餐廳服務員三個工種。多年來，粵澳雙方已共同完成多個考核標準及題庫開發，其中咖啡師職業技能評價更拓展至技師級別，成為廣東省首個技師級“一試多證”工種。</p>\n<p>呂劍英代校長表示，澳旅大成為澳門文旅範疇首個“一試多證”考點，是將標準、培訓、考核及認證進一步銜接的重要里程碑，有助提升澳門文旅人才專業水平，並推動澳門技能標準融入粵港澳大灣區發展。</p>\n<p>未來，澳旅大將繼續推動“一試多證”拓展至更多文旅相關工種及更高技能級別，促進粵澳技能人才培養、認證及流動，為澳門世界旅遊休閒中心建設及經濟適度多元發展提供人才支撐。</p>",
+    "department": "澳門旅遊大學",
+    "fetched_at": "2026-09-17T01:00:02.415698"
+  }
+]
