@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-26",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IZ4vCQc",
+      "title": "東北空中走廊長者公寓至海名居及樂居一段周二率先啟用 人車分隔提升過路安全及出行便捷度",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IZ4vCQc"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IZJotKM",
+      "title": "避暑中心開放",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IZJotKM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IZo1WdH",
+      "title": "市政署跟進兩宗懷疑胃腸炎個案",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IZo1WdH"
+    }
+  ],
+  "generated_at": "2026-09-27T07:10:42.909856",
+  "model": "deepseek/deepseek-v4-flash"
+}
