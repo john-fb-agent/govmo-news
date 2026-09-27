@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-27",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IaKpDpp",
+      "title": "9月29日起塔石衛生工作組遷往塔石廣場商業中心辦公",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IaKpDpp"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IaXrwhR",
+      "title": "岑浩輝祝賀第48屆世界技能大賽中國澳門代表團取得一金一銀一銅佳績",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IaXrwhR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IagF3Ed",
+      "title": "第48屆世界技能大賽中國澳門代表團報捷  勇奪一金一銀一銅佳績",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IagF3Ed"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IaoSaDb",
+      "title": "【響應“世界旅遊日”】旅遊局辦“托盤比賽”及歡迎幸運旅客",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IaoSaDb"
+    }
+  ],
+  "generated_at": "2026-09-28T07:10:45.883816",
+  "model": "deepseek/deepseek-v4-flash"
+}

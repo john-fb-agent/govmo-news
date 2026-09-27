@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-27",
+  "news_count": 4,
+  "department_stats": {
+    "衛生局": 1,
+    "新聞局": 1,
+    "勞工事務局": 1,
+    "旅遊局": 1
+  },
+  "no_department_count": 0,
+  "generated_at": "2026-09-28T01:00:06.425324"
+}
