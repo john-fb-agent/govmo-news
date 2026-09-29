@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-28",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IZ9ZwIA",
+      "title": "“一戶通”升級“忘記用戶名稱和密碼”功能　強化帳戶安全與使用便利",
+      "category": "科技創新",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IZ9ZwIA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IYDX2lM",
+      "title": "政府跨部門行動清拆珊瑚里一殘危樓宇",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IYDX2lM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IYVMnLt",
+      "title": "響應世界狂犬病日 籲飼主按時帶犬隻接種疫苗",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IYVMnLt"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Ibhz8Kb",
+      "title": "琴澳合辦“中醫藥健康保健系列培訓”正式開班  提升兩地中醫藥從業人員專業技術能力",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ibhz8Kb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Ib5d9Hu",
+      "title": "第48屆世界技能大賽中國澳門代表團凱旋回澳 經濟財政司司長吳惠嫻冀青年選手發揚敢於挑戰、追求卓越精神",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ib5d9Hu"
+    }
+  ],
+  "generated_at": "2026-09-29T11:32:27.814455",
+  "model": "deepseek/deepseek-flash"
+}
