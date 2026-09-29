@@ -1,0 +1,273 @@
+{
+  "date": "2026-09-29",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcwipMU",
+      "title": "勞工局職業健康有獎遊戲得獎名單揭曉",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcwipMU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Icmf3Vk",
+      "title": "教育基金2026/2027學校年度學費援助、膳食津貼及學習用品津貼第一批次結果名單公佈",
+      "category": "教育發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Icmf3Vk"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IclKGQL",
+      "title": "跨部門協作部署國慶交通安排",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IclKGQL"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcprTmq",
+      "title": "生態區10月生態活動接受報名",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcprTmq"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcnNq3W",
+      "title": "國慶歡樂跑活動　金蓮花廣場及周邊29日起實施臨時交通安排",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcnNq3W"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcQgZcX",
+      "title": "“一戶通”和“商社通”推出智能客服“政問通” 10月5日上線  方便市民查詢服務或反映意見",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcQgZcX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcCajlN",
+      "title": "政府部門作充分部署　迎國慶長假訪澳旅客",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcCajlN"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Icxe8ti",
+      "title": "教青局組織澳門教育界國慶訪問團 落實立德樹人根本任務 培養愛國愛澳優秀人才",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Icxe8ti"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcusGXC",
+      "title": "司警局國慶前強化警務部署 巡視娛樂場並開展防罪宣傳",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcusGXC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcpVSdO",
+      "title": "十月起四自由波地分階段翻新 有序暫停開放",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcpVSdO"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcBUm9u",
+      "title": "第十八期澳門旅遊大學-聯合國世界旅遊組織培訓課程圓滿結束",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcBUm9u"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Icp3STl",
+      "title": "市政署茶文化館十一月活動十月五日接受報名",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Icp3STl"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IccEZvQ",
+      "title": "市政署諮委管委熱線於下週一接聽市民意見",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IccEZvQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcRC2Mg",
+      "title": "經科局多措並舉維護澳門誠信優質消費環境",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcRC2Mg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Ic6VAYa",
+      "title": "【國慶黃金周】旅遊局積極部署全力保障服務質素 展現澳門旅遊活力",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ic6VAYa"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Icywbea",
+      "title": "橫琴口岸52條新建旅客查驗通道 9月30日全面開通試運行",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Icywbea"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Ich92O5",
+      "title": "澳門理工大學研發SIMDA多尺度模擬框架 繪製心臟KCNQ1通道PIP2結合圖譜 揭示脂質調控新機制",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ich92O5"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcA7i22",
+      "title": "合作區執委會主任吳惠嫻調研橫琴口岸進境免稅店：五周年新起點，擦亮 “文旅購物桃花源”金名片",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcA7i22"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Ict5P6D",
+      "title": "房屋局（總部）正式啟用 整合資源提升公共服務效能",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ict5P6D"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcusKqc",
+      "title": "2026年第三季度“巴士服務評鑑季度問卷調查＂10月進行",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcusKqc"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcVW7RX",
+      "title": "打造琴澳融合宜居社區  「澳門新街坊」成熟配套助力居民樂享優質生活",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcVW7RX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcWYnQK",
+      "title": "澳大校長訪四川高校推務實合作",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcWYnQK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcVX9v0",
+      "title": "衛生局滅蚊通知",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcVX9v0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcS4JS0",
+      "title": "熱烈慶祝國慶77周年\r\n澳門特區政府舉辦多項活動",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcS4JS0"
+    },
+    {
+      "guid": "",
+      "title": "衛生局攜手社團完成本年“全城家家戶戶清積水”行動 深入社區宣導走訪超過3萬住戶 共築預防“雙熱”防疫網",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcNnwRp"
+    },
+    {
+      "guid": "",
+      "title": "衛生局與世衛合辦非洲葡語國家衛生應急能力建設工作坊 發揮中葡平台作用 貢獻澳門力量",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcXEHYZ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcHBD0h",
+      "title": "市容美化整潔工作組召開2026年第二次全體會議 匯報階段成果謀劃明年工作",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcHBD0h"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcstEEx",
+      "title": "新聞局局長黃樂宜、副局長楊寶琴宣誓就職",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcstEEx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcgAvOI",
+      "title": "政府總部事務局局長雷子燊、副局長潘勁生宣誓就職",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcgAvOI"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcfpNcJ",
+      "title": "國慶期間警方人潮管制及交通管制措施",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcfpNcJ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcTD4Xq",
+      "title": "治安警察局國慶黃金周警務措施",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcTD4Xq"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcspEec",
+      "title": "2026年穗澳合作專責小組會議今(29)日舉行",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcspEec"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcI0LJR",
+      "title": "粵澳貨物“一單兩報”工作交流會議在穗順利舉行 促進跨境通關便利化",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcI0LJR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcCVZ9y",
+      "title": "市政署檢出一款黑松露醬含過量重金屬     呼籲停止食用",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcCVZ9y"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcFAm3A",
+      "title": "衛生局接獲6宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcFAm3A"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Ich1wHC",
+      "title": "衛生局接獲2宗腸病毒群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Ich1wHC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcTSY4n",
+      "title": "市政署加強長假期食安巡查監管  提醒業界市民共守食品安全",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcTSY4n"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IcULoI8",
+      "title": "市政署關注美國部分地區出現高致病性禽流感",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IcULoI8"
+    }
+  ],
+  "generated_at": "2026-09-30T07:17:19.402260",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
