@@ -7,7 +7,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from collections import Counter, defaultdict
 
-MODEL    = "deepseek/deepseek-flash"
+MODEL    = "qwencloud-token-plan/qwen3.8-flash"
 BATCH_SIZE      = 5
 REQUEST_TIMEOUT = 300
 API_DELAY       = 1
@@ -44,7 +44,7 @@ def call_openclaw(prompt):
     cmd = [
         "openclaw", "infer", "model", "run",
         "--prompt", prompt,
-        "--model", "deepseek/deepseek-flash",
+        "--model", "qwencloud-token-plan/qwen3.8-flash",
         "--json"
     ]
     result = subprocess.run(cmd, capture_output=True, text=True, timeout=REQUEST_TIMEOUT)
