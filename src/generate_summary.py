@@ -7,7 +7,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from collections import Counter, defaultdict
 
-MODEL    = "deepseek/deepseek-v4-flash"
+MODEL    = "deepseek/deepseek-flash"
 BATCH_SIZE      = 5
 REQUEST_TIMEOUT = 300
 API_DELAY       = 1
@@ -33,32 +33,70 @@ def log(msg):
         f.write(line + "\n")
 
 def call_openclaw(prompt):
-    """Call OpenClaw agent via CLI instead of direct API."""
+    """Call a self-contained OpenClaw inference (session-safe).
+
+    Uses `openclaw infer model run` instead of routing through the main
+    agent session. The old approach (`openclaw agent --session-key
+    agent:main:main`) works interactively but returns empty/unparseable
+    results when this script runs from an isolated cron context. A direct
+    inference call has no cross-session dependency.
+    """
     cmd = [
-        "openclaw", "agent",
-        "--session-key", "agent:main:main",
-        "--model", "deepseek/deepseek-v4-flash",
-        "--message", prompt,
-        "--timeout", str(REQUEST_TIMEOUT),
+        "openclaw", "infer", "model", "run",
+        "--prompt", prompt,
+        "--model", "deepseek/deepseek-flash",
         "--json"
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=REQUEST_TIMEOUT + 30)
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=REQUEST_TIMEOUT)
     if result.returncode != 0:
-        raise RuntimeError(f"openclaw agent failed: {result.stderr}")
+        raise RuntimeError(f"openclaw infer failed: {result.stderr}")
     output = result.stdout.strip()
-    # Parse JSON wrapper to extract actual response text
-    try:
-        response_obj = json.loads(output)
-        if "result" in response_obj and "payloads" in response_obj["result"]:
-            payloads = response_obj["result"]["payloads"]
-            if payloads and "text" in payloads[0]:
-                content = payloads[0]["text"]
-                content = re.sub(r"<[^>]*>", "", content).strip()
-                return content
-    except (json.JSONDecodeError, KeyError, IndexError):
-        pass
-    content = re.sub(r"<[^>]*>", "", output).strip()
+    # The raw output mixes OpenClaw log lines with the model's JSON. Extract the
+    # complete balanced JSON object from anywhere in the output (multi-line and/or
+    # wrapped in markdown code fences). Falls back to the last non-empty line if
+    # no balanced JSON object is found (e.g. plain-text summary output).
+    content = _extract_json_object(output)
+    if content is None:
+        lines = [ln for ln in output.splitlines() if ln.strip()]
+        content = lines[-1].strip() if lines else ""
     return content
+
+
+def _extract_json_object(text):
+    """Return the first balanced JSON object found in text (ignoring log lines),
+    or None if none is present. Handles code fences and trailing commentary."""
+    if not text:
+        return None
+    start = text.find("{")
+    while start != -1:
+        depth = 0
+        in_str = False
+        esc = False
+        for i in range(start, len(text)):
+            c = text[i]
+            if in_str:
+                if esc:
+                    esc = False
+                elif c == "\\":
+                    esc = True
+                elif c == '"':
+                    in_str = False
+                continue
+            if c == '"':
+                in_str = True
+            elif c == "{":
+                depth += 1
+            elif c == "}":
+                depth -= 1
+                if depth == 0:
+                    candidate = text[start:i + 1]
+                    try:
+                        json.loads(candidate)
+                        return candidate
+                    except json.JSONDecodeError:
+                        break  # malformed; keep scanning for next '{'
+        start = text.find("{", start + 1)
+    return None
 
 def load_news(date):
     """Load news JSON for a given date."""
@@ -147,22 +185,37 @@ def classify_batch(news_batch, batch_num, total_batches):
         return '\n'.join(fixed)
 
     def _try_parse(raw):
-        if "{" not in raw:
-            return None, f"no brace: {raw[:80]}"
-        start = raw.find("{")
-        json_str = raw[start:]
-        # Strip trailing text after the JSON object ends
-        try:
-            obj, idx = json.JSONDecoder().raw_decode(json_str)
-        except json.JSONDecodeError:
-            # Try repairing common LLM JSON issue: ASCII " inside string values
-            json_str = _fix_inner_quotes(json_str)
+        # Strip markdown code fences (``` ... ```) which the model sometimes wraps output in
+        if '```' in raw:
+            fence = re.search(r'```(?:json)?\s*(.*?)```', raw, re.DOTALL)
+            if fence:
+                raw = fence.group(1)
+        s = raw.strip()
+        if "{" not in s:
+            return None, f"no brace: {s[:80]}"
+        # Find the first '{' and try to decode the full JSON object (fences removed)
+        start = s.find("{")
+        json_str = s[start:]
+        candidates = [json_str]
+        # Also try trimming trailing text after the last '}'
+        end = json_str.rfind("}")
+        if end != -1:
+            candidates.append(json_str[:end+1])
+        for cand in candidates:
             try:
-                obj, idx = json.JSONDecoder().raw_decode(json_str)
-            except json.JSONDecodeError as e:
-                return None, f"JSON error: {e}"
-        items = obj.get("all_news", [])
-        return items, None
+                obj, idx = json.JSONDecoder().raw_decode(cand)
+                items = obj.get("all_news", [])
+                return items, None
+            except json.JSONDecodeError:
+                pass
+        # Try repairing common LLM JSON issue: ASCII " inside string values
+        repaired = _fix_inner_quotes(json_str)
+        try:
+            obj, idx = json.JSONDecoder().raw_decode(repaired)
+            items = obj.get("all_news", [])
+            return items, None
+        except json.JSONDecodeError as e:
+            return None, f"JSON error: {e}"
 
     for attempt in range(2):
         try:
