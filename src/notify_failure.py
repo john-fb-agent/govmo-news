@@ -36,10 +36,30 @@ def log_failure(script_name: str, error_message: str):
     # Keep only last 10 failures
     failures = failures[-10:]
     
-    # Save
-    with open(NOTIFICATION_FILE, 'w', encoding='utf-8') as f:
-        json.dump(failures, f, indent=2, ensure_ascii=False)
-    
+    # Save atomically: write to a temp file in the same directory, fsync, then
+    # os.replace() so a crash/interruption can never leave a truncated/partial
+    # cron-failures.json behind (which would break the heartbeat JSON parse).
+    import os
+    import tempfile
+    NOTIFICATION_FILE.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp_path = tempfile.mkstemp(
+        dir=str(NOTIFICATION_FILE.parent),
+        prefix=".cron-failures.",
+        suffix=".tmp",
+    )
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as f:
+            json.dump(failures, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, NOTIFICATION_FILE)
+    except BaseException:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+        raise
+
     print(f"✅ Failure logged to {NOTIFICATION_FILE}")
     return True
 
