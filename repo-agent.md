@@ -1,6 +1,6 @@
 # AI Agent 指南
 
-**創建：** 2026-04-16 20:04 | **Provider:** OpenClaw | **Model:** minimax/MiniMax-M2.7-highspeed
+**創建：** 2026-04-16 20:04 | **Provider:** OpenClaw | **Model:** deepseek/deepseek-flash
 **最後更新：** 2026-06-24 | **Last Review：** 2026-06-24
 
 ---
@@ -151,7 +151,7 @@ public/YYYY/MM/YYYY-MM-DD.html          # 每日新聞頁
   <div class="footer">
       <strong>資料來源：</strong>澳門特別行政區政府新聞局 (GCS)<br>
       <strong>生成時間：</strong>YYYY-MM-DD HH:MM (Asia/Macau)<br>
-      <strong>Provider:</strong> OpenClaw | <strong>Model:</strong> minimax/MiniMax-M2.7
+      <strong>Provider:</strong> OpenClaw | <strong>Model:</strong> deepseek/deepseek-flash
   </div>
   ```
 
