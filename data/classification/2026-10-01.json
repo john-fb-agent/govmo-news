@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-01",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IdmSRJQ",
+      "title": "正步邁新篇　同心顯國威",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IdmSRJQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JAR1m5l",
+      "title": "澳大國慶日舉行升旗儀式",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JAR1m5l"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JArU9EC",
+      "title": "澳門旅遊大學舉行慶祝中華人民共和國成立77周年升旗儀式",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JArU9EC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JAh8JcM",
+      "title": "岑浩輝：澳門前行離不開祖國的關懷支持和溫暖托舉",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JAh8JcM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JA3DvUV",
+      "title": "慶祝中華人民共和國成立77周年  「澳人齊賀國慶世界步行日歡樂跑」今舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JA3DvUV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JAqd7OY",
+      "title": "岑浩輝與“向國旗敬禮”青少年互動交流",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JAqd7OY"
+    },
+    {
+      "guid": "",
+      "title": "保安司司長親臨跨部門聯合行動指揮中心 要求強化聯動協作 築牢安全防線",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JAXiI0m"
+    }
+  ],
+  "generated_at": "2026-10-02T07:10:46.240991",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
