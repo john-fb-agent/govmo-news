@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-02",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JBhX5NC",
+      "title": "社會工作局高度關注兒青院舍員工涉嫌性侵院童事件",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JBhX5NC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Idpaqw5",
+      "title": "陳子勁就制定保安範疇2027年施政方針聽取社團意見",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Idpaqw5"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IdOULBU",
+      "title": "吳惠嫻率經財團隊收集社團對明年施政方針的意見",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IdOULBU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JBCHf2B",
+      "title": "衛生局滅蚊通知",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JBCHf2B"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JBTy7yd",
+      "title": "衛生局接獲1宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JBTy7yd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JBF7BVs",
+      "title": "第三十八屆澳門國際音樂節盛大開幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JBF7BVs"
+    }
+  ],
+  "generated_at": "2026-10-03T07:10:45.081771",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
