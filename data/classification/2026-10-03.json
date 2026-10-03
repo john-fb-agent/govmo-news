@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-03",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JCZkjup",
+      "title": "【最後兩場】澳門國際煙花比賽匯演 菲律賓英國煙花明（4日）綻放",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JCZkjup"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JCpI8aS",
+      "title": "文化遺產保護推廣嘉年華2026今明祐漢街市公園舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JCpI8aS"
+    }
+  ],
+  "generated_at": "2026-10-04T07:10:34.591270",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
