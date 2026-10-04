@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-04",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26IdVIp5w",
+      "title": "“心之造像——張焉如書畫展”將揭幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26IdVIp5w"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JDkwLMA",
+      "title": "衛生局接獲1例流感重症報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JDkwLMA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JDDxLSx",
+      "title": "第34屆澳門國際煙花比賽匯演 韓國煙花公司奪冠",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JDDxLSx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JD5vEEe",
+      "title": "“動物保護同樂日”今開幕 倡寵物友善共融社區",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JD5vEEe"
+    }
+  ],
+  "generated_at": "2026-10-05T07:10:42.299807",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
