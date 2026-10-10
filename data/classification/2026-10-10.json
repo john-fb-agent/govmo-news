@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-10",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JJ2SyQH",
+      "title": "文化局舉行“樂齡導賞員培訓計劃2026”結業禮",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JJ2SyQH"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JJ9TKD0",
+      "title": "澳門非物質文化遺產新生代研培計劃2026開班",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JJ9TKD0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JJvrTe9",
+      "title": "“澳琴人才卡”澳門專場推介會首赴澳門！ 超百名人才齊聚，一卡聯通澳琴機遇！",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JJvrTe9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JJ0VpTm",
+      "title": "岑浩輝：明年施政方針回應社會關注範疇\r\n着力推進特區“三五”規劃",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JJ0VpTm"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JJQDNRs",
+      "title": "“守護心晴．相伴同行”2026世界精神健康日社區推廣活動今舉行    逾2,300人次參與   攜手共建“健康社區”",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JJQDNRs"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JJvLgMC",
+      "title": "治安警察局開展“雷霆2026”行動",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JJvLgMC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JJSXLk4",
+      "title": "岑浩輝與公眾相聚政總\r\n共度開放日歡樂時光",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JJSXLk4"
+    }
+  ],
+  "generated_at": "2026-10-11T07:10:49.043007",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
