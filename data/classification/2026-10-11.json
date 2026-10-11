@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-11",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JKlGseT",
+      "title": "司法警察局持續進行“雷霆2026”行動 預防和打擊博彩相關犯罪",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JKlGseT"
+    },
+    {
+      "guid": "",
+      "title": "澳門與菲律賓達成新雙邊航班協定及諒解備忘錄 大幅放寛運力並開放貨運第五航權",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JKLhiQt"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JKD2O83",
+      "title": "官宣回歸！“葡”面而來！ 10月16日橫琴桃花源上新！",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JKD2O83"
+    },
+    {
+      "guid": "",
+      "title": "衛生局、教青局聯同醫務界舉辦“學童保健計劃”說明會 深化跨部門及公私營協作 攜手保障學童健康成長",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JKPJUDX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JKUjIIp",
+      "title": "「活力社區—2026澳門競技障礙挑戰賽」第二回合圓滿舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JKUjIIp"
+    }
+  ],
+  "generated_at": "2026-10-12T07:10:42.546281",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
