@@ -59,6 +59,17 @@ def call_openclaw(prompt):
     if content is None:
         lines = [ln for ln in output.splitlines() if ln.strip()]
         content = lines[-1].strip() if lines else ""
+    # `openclaw infer model run --json` wraps the model reply in a result
+    # envelope: {"ok": true, "outputs": [{"text": "..."}]}. Unwrap it so
+    # callers see the model's actual output, not the envelope.
+    try:
+        obj = json.loads(content)
+    except (ValueError, TypeError):
+        obj = None
+    if isinstance(obj, dict) and isinstance(obj.get("outputs"), list):
+        texts = [o.get("text", "") for o in obj["outputs"]
+                 if isinstance(o, dict) and o.get("text")]
+        return "\n".join(texts).strip()
     return content
 
 
