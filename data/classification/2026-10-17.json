@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-17",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JQkMb2m",
+      "title": "橫琴2026葡風琴韻嘉年華啟幕 文化美食串聯琴澳 三天活動展多元風情",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JQkMb2m"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JQA9omR",
+      "title": "司警局持續進行“雷霆2026” 行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JQA9omR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JPbw6AV",
+      "title": "托兒所負責人涉嫌詐騙公帑被羈押",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JPbw6AV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JQNKXUx",
+      "title": "“2026國際籃聯三人籃球澳門大師賽” 揭幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JQNKXUx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JQ9m2ia",
+      "title": "修改《行政程序法典》舉行首場公眾諮詢專場",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JQ9m2ia"
+    },
+    {
+      "guid": "",
+      "title": "第一屆“全城有禮”系列活動今開幕 深化公民教育理念 營造友善社會氛圍",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JQeMS30"
+    }
+  ],
+  "generated_at": "2026-10-18T07:10:54.860841",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
