@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-18",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JRuCVXm",
+      "title": "澳區2026年度國家統一法律職業資格考試 主觀題考試已順利舉行",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JRuCVXm"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JRZxPsw",
+      "title": "治安警察局持續開展“雷霆2026”行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JRZxPsw"
+    },
+    {
+      "guid": "",
+      "title": "配合路面維修工作 馬萬祺博士大馬路 A1連接橋（往澳門半島方向）20日起實施有限度通車",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JRrI1U2"
+    },
+    {
+      "guid": "",
+      "title": "衛生局於重陽節假期派員到墳場向居民宣傳防控“雙熱” 提醒掃墓時應清除積水和做好個人防護",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JRcqxUZ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JRhNlCR",
+      "title": "【有禮都市】旅遊局辦“澳門有禮運動 - 社區悅來同樂日”宣揚好客精神",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JRhNlCR"
+    }
+  ],
+  "generated_at": "2026-10-19T07:11:06.624763",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
