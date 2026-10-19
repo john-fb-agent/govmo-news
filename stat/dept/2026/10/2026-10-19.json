@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-19",
+  "news_count": 4,
+  "department_stats": {
+    "財政局": 1,
+    "司法警察局": 1,
+    "體育局": 1,
+    "藥物監督管理局": 1
+  },
+  "no_department_count": 0,
+  "generated_at": "2026-10-20T01:00:04.291502"
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-19",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JPEy5Ya",
+      "title": "2025年度多繳職業稅10月27起有序退還",
+      "category": "金融財政",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JPEy5Ya"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JSNWRFQ",
+      "title": "司法警察局進行“雷霆2026”行動    淨化社區治安環境",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JSNWRFQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JSXadQE",
+      "title": "“2026大灣區3×3籃球巡迴賽”澳門總決賽揭幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JSXadQE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JSWSzy6",
+      "title": "藥物監督管理局參加2026世界傳統醫藥大會",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JSWSzy6"
+    }
+  ],
+  "generated_at": "2026-10-20T07:10:40.397195",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
