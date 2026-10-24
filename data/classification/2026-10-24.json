@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-24",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JXk1MgU",
+      "title": "澳門協和醫院公共停車場本月26至31日臨時調整服務",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXk1MgU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JXT06DE",
+      "title": "社工局支援路環業興大廈火警受影響住戶",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXT06DE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JXLVR6P",
+      "title": "旅遊局對法國發出第一級旅遊警示",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXLVR6P"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JXdrotU",
+      "title": "治安警察局持續開展“雷霆2026”行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXdrotU"
+    },
+    {
+      "guid": "",
+      "title": "勞工局舉辦兩場修改《勞動關係法》講解會 介紹調升產假及年假日數新規定",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXUNtBL"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JXSpoIE",
+      "title": "澳門服裝節2026圓滿閉幕 四日活動彰顯澳門時尚魅力",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXSpoIE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JXzPe07",
+      "title": "2026年最佳誠信店頒獎儀式圓滿舉行 攜手打造優質誠信消費環境",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXzPe07"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JXQD7HV",
+      "title": "“記憶沙龍”十月公眾講座圓滿舉行  深入探索離島聚落空間與客家文化脈絡",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXQD7HV"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JXYVZIm",
+      "title": "三展圓滿閉幕 促成多項跨域合作 深化以展招商實效",
+      "category": "經濟產業",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JXYVZIm"
+    }
+  ],
+  "generated_at": "2026-10-25T07:11:01.076069",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
