@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-25",
+  "news": [
+    {
+      "guid": "",
+      "title": "衛生中心、仁伯爵綜合醫院等13個地點設立電子煙棄置點 便利居民妥善棄置電子煙",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JW7uu9O"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JWLeVW7",
+      "title": "澳門“一國兩制”成功實踐歐洲巡展 — 葡萄牙站獲熱烈迴響",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JWLeVW7"
+    },
+    {
+      "guid": "",
+      "title": "2026海事節啟動 多元活動推廣海事專業和文化",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JY3eTcM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JYbB54N",
+      "title": "“2026國際青少年乒乓球訓練營”圓滿舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JYbB54N"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JYFfyX5",
+      "title": "人才委組團赴東莞出席第四屆粵港澳大灣區人才高質量發展大會 推介澳門優勢機遇 共築灣區人才高地",
+      "category": "人才發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JYFfyX5"
+    }
+  ],
+  "generated_at": "2026-10-26T07:10:56.048938",
+  "model": "qwencloud-token-plan/qwen3.8-flash"
+}
