@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Generate Daily News Summary HTML using OpenClaw agent CLI."""
 
-import json, re, subprocess, time, os
+import json, re, subprocess, time, os, fcntl
 from pathlib import Path
 from datetime import datetime, timedelta
 from collections import Counter, defaultdict
@@ -13,6 +13,7 @@ REQUEST_TIMEOUT = 300
 API_DELAY       = 1
 MAX_TOKENS      = 2500
 
+LOCK_FILE   = Path(__file__).parent.parent / "data" / ".summary.lock"
 PROMPT_FILE = Path(__file__).parent / "summary_prompt.txt"
 OUTPUT_DIR  = Path(__file__).parent.parent / "public"
 LOG_FILE    = Path(__file__).parent.parent / "data" / "summary.log"
@@ -108,6 +109,28 @@ def _extract_json_object(text):
                         break  # malformed; keep scanning for next '{'
         start = text.find("{", start + 1)
     return None
+
+def acquire_lock():
+    """Take an exclusive non-blocking lock; return the fd, or None if another
+    run holds it. Prevents overlapping cron invocations (and the repeated
+    API calls + duplicate commits they cause)."""
+    LOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
+    fd = os.open(str(LOCK_FILE), os.O_RDWR | os.O_CREAT, 0o644)
+    try:
+        fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        os.close(fd)
+        return None
+    os.truncate(fd, 0)
+    os.write(fd, f"{os.getpid()} {datetime.now().isoformat()}\n".encode())
+    return fd
+
+def already_done(date):
+    """True when this date's summary HTML and classification already exist."""
+    date_str = date.strftime("%Y-%m-%d")
+    html = OUTPUT_DIR / date.strftime("%Y") / date.strftime("%m") / f"{date_str}.html"
+    cls = Path(__file__).parent.parent / "data" / "classification" / f"{date_str}.json"
+    return html.exists() and cls.exists()
 
 def load_news(date):
     """Load news JSON for a given date."""
@@ -773,4 +796,15 @@ def main(target_date=None):
 
 if __name__ == "__main__":
     import sys
-    sys.exit(main())
+    _fd = acquire_lock()
+    if _fd is None:
+        print("Another summary run is in progress (lock held). Exiting.")
+        sys.exit(0)
+    try:
+        _target = datetime.now() - timedelta(days=1)
+        if already_done(_target):
+            log(f"Summary for {_target.strftime('%Y-%m-%d')} already complete; nothing to do.")
+            sys.exit(0)
+        sys.exit(main())
+    finally:
+        os.close(_fd)
