@@ -38,3 +38,4 @@ htmlcov/
 *.log.*
 data/cron.log*
 data/cron-failures.json.truncated-backup-*
+data/.summary.lock
