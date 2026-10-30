@@ -1,0 +1,294 @@
+{
+  "date": "2026-10-30",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JddR6AQ",
+      "title": "一戶通”擴展“車輛續保”及“生活繳費”服務 涵蓋更多企業機構",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JddR6AQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdGYmFU",
+      "title": "配合大潭山隧道工程  飛機場圓形地一帶臨時交管維持至明年2月底",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdGYmFU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jdt1eIu",
+      "title": "澳門理工大學舉辦數智化視野下的語言文化傳承與創新 ——“數智時代澳門語言文化建設”學術研討會",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jdt1eIu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jc1Q7Ca",
+      "title": "粵港澳大灣區旅遊教育培訓基地(順德合作中心)舉辦專題培訓 　助力灣區旅遊教育發展",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jc1Q7Ca"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdiTW4G",
+      "title": "5,500個澳門私家車往來港澳常規配額抽籤結果公佈",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdiTW4G"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdsAk2n",
+      "title": "配合施工　告利雅施利華街11月3日起凌晨封路　 施督憲正街交管維持至12日",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdsAk2n"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JcSrmtB",
+      "title": "土地工務局最新建築數據",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JcSrmtB"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdkyJPi",
+      "title": "十一月份清洗小販區時間安排",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdkyJPi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdV78cE",
+      "title": "市政署持續對公園及墳場等市政設施進行滅蚊",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdV78cE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdScV1D",
+      "title": "配合行車天橋橋面箱樑吊裝施工  澳門大橋電單車專道氹仔出口臨時封閉交通",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdScV1D"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jdl9zyA",
+      "title": "治安警察局持續開展“雷霆2026”行動",
+      "category": "國家安全",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jdl9zyA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdJmsuR",
+      "title": "“一戶通”增加系列身份證明範疇服務功能",
+      "category": "科技創新",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdJmsuR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jc8uoAM",
+      "title": "法務局舉辦2026“法治澳門”全澳中學生毛筆書法比賽",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jc8uoAM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdYI0sN",
+      "title": "市政署關注丹麥和荷蘭部分地區出現高致病性禽流感",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdYI0sN"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd1BFZH",
+      "title": "教青局首辦認識合作區中醫藥大健康研學活動 助學生了解產業發展",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd1BFZH"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd74mDd",
+      "title": "市政署11月1至7日設臨時大型廢舊家具收集站",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd74mDd"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jdl0lba",
+      "title": "立法會今公佈第一會期工作報告",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jdl0lba"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd7q7ZU",
+      "title": "長跑賽氹仔多處道路10月31日起實施臨時交通安排",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd7q7ZU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdWCoh1",
+      "title": "2026/2027學年中學生戶外教育營正式開營",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdWCoh1"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdJRrNa",
+      "title": "秋日郊遊享山林之美　做好安全防護共護生態資源",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdJRrNa"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd1BOsJ",
+      "title": "2026年首三季本地生產總值初步數值",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd1BOsJ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdEm6wQ",
+      "title": "“報關清關一件事”舉行三場線下輔助方案座談會",
+      "category": "經濟產業",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdEm6wQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdiZZbK",
+      "title": "2026年首三季對外商品貿易統計",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdiZZbK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdfEo9B",
+      "title": "【警情通告】司警局呼籲公眾防範群暉科技Synology網絡儲存設備受到勒索軟件攻擊",
+      "category": "科技創新",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdfEo9B"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdiLxsL",
+      "title": "2026年9月電子支付交易額統計 - 飲食業及零售業",
+      "category": "金融財政",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdiLxsL"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdGWgHi",
+      "title": "2026年7月至9月就業調查",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdGWgHi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd4Jmk4",
+      "title": "2026年首三季旅行團及酒店入住率",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jd4Jmk4"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdMN2ny",
+      "title": "《科技企業認證計劃》11月開放新一輪申請 持續支持優質科技企業落戶發展",
+      "category": "科技創新",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdMN2ny"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdC3Nx2",
+      "title": "市政署資訊系統維護 部分電子服務將間歇中斷",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdC3Nx2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdmT1CK",
+      "title": "市政署茶文化館12月活動下周二接受報名",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdmT1CK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdDTG4g",
+      "title": "澳門情懷：「銀幕‧時代」戲院業的城市記憶展覽",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdDTG4g"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdlvOhu",
+      "title": "“2026粵港澳青少年足球交流活動” 明起一連兩日舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdlvOhu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdSEJVB",
+      "title": "「澳門青年·中葡西企業專項實習計劃」結營　六名澳青完成十二週跨境實戰",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdSEJVB"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdQzPNq",
+      "title": "文化局三文博設施部分區域暫停開放",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdQzPNq"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdKPD5m",
+      "title": "文明互鑒國際論壇11月舉行為搭建高端文明交流對話平台貢獻澳門力量",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdKPD5m"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26Jdaill5",
+      "title": "第四屆粵港澳大灣區法律部門人員培訓課程順利舉辦",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26Jdaill5"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdTO18s",
+      "title": "中葡論壇主辦“中國—葡語國家電子商務研修班”圓滿結業",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdTO18s"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdqLkZb",
+      "title": "港中大校長將於澳大談創造分子診斷領域範式轉變",
+      "category": "科技創新",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdqLkZb"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdpA4Vg",
+      "title": "立法會完成細則性審議《社會房屋樓宇內商業空間的分配法律制度》法案",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdpA4Vg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdzIr6P",
+      "title": "粵澳遊艇自由行首批粵艇抵澳　邁入雙向往來新階段",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdzIr6P"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdR9Dbw",
+      "title": "統計局“年度合作商戶大抽獎”得獎名單公佈",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdR9Dbw"
+    }
+  ],
+  "generated_at": "2026-10-31T07:15:16.871571",
+  "model": "deepseek/deepseek-flash"
+}
