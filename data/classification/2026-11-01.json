@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-01",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KA4HSGI",
+      "title": "旅遊局藉“廣交會”平台宣傳 拓一程多站國際商務客源",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KA4HSGI"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KAhmScn",
+      "title": "“力行致遠 築夢青春”內地澳生參訪團 -天安門廣場觀看升旗儀式",
+      "category": "教育發展",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KAhmScn"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KApj1gM",
+      "title": "岑浩輝：深化粵港澳科技合作助推高質量發展",
+      "category": "科技創新",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KApj1gM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KA5uFuz",
+      "title": "南灣湖C8地段運動場地建造工程竣工  推動臨時利用土地惠及民生",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KA5uFuz"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KANKV0d",
+      "title": "衛生局滅蚊通知",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KANKV0d"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KAN5Z0n",
+      "title": "海事節吸引逾萬人次參與　深入體驗海事專業和航海文化",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KAN5Z0n"
+    }
+  ],
+  "generated_at": "2026-11-02T07:11:15.059965",
+  "model": "deepseek/deepseek-flash"
+}
