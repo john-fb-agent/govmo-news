@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-02",
+  "news_count": 5,
+  "department_stats": {
+    "澳門基金會": 1,
+    "身份證明局": 1,
+    "衛生局": 2,
+    "旅遊局": 1
+  },
+  "no_department_count": 0,
+  "generated_at": "2026-11-03T01:00:04.308010"
+}

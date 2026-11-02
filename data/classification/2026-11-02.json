@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-02",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26JdHAfnM",
+      "title": "回顧高教歷程與離島百年變遷 “記憶沙龍”公眾講座11月3日起開放報名",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26JdHAfnM"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KB7r9L0",
+      "title": "澳門特區護照持有人轉機前往墨西哥時被拒登機的個案",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KB7r9L0"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KB8FQbP",
+      "title": "衛生局接獲1宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KB8FQbP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KBsSZuA",
+      "title": "國家衛健委基層司率團訪澳考察社區醫療衛生工作 持續深化內地與澳門基層醫療交流合作",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KBsSZuA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KBYntis",
+      "title": "【廚藝界殿堂級盛事】2026博古斯世界烹飪大賽亞太區選拔賽五強出爐　晉級明年1月全球總決賽",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KBYntis"
+    }
+  ],
+  "generated_at": "2026-11-03T07:10:48.120735",
+  "model": "deepseek/deepseek-flash"
+}
