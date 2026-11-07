@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-07",
+  "news": [
+    {
+      "guid": "",
+      "title": "立法會堅決支持法院判決 強烈反對外部勢力干涉特區司法獨立",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KGK7blC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KG6WFMG",
+      "title": "澳門特區政府強烈譴責外部勢力干預澳門內部事務、污衊抹黑特區司法",
+      "category": "國家安全",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KG6WFMG"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KFhmXY2",
+      "title": "廣納銀髮力量　推動樂齡就業　輕軌公司招募兼職車站助理員",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KFhmXY2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KGjKosS",
+      "title": "衛生局接獲2宗流感樣疾病群集性感染報告",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KGjKosS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KGVeuXQ",
+      "title": "經濟財政司司長吳惠嫻赴穗出席“2026國際灣區經濟論壇”開幕式",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KGVeuXQ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KGXbFJ9",
+      "title": "治安警無人機立體執法，大賽車前夕嚴打飆車及非法改裝車",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KGXbFJ9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KGKuiwu",
+      "title": "文明互鑒國際論壇分論壇聚焦人工智能",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KGKuiwu"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KGRCMlU",
+      "title": "“第73屆澳門格蘭披治大賽車 - 親子嘉年華” 今日開幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KGRCMlU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KGdNtJU",
+      "title": "第三場“悅讀‧友共鳴”青年讀書會順利舉行 探討賡續文脈與文化自信",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KGdNtJU"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KG2GeSb",
+      "title": "聚焦開放協同與包容性增長　2026國際灣區經濟論壇在穗召開",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KG2GeSb"
+    }
+  ],
+  "generated_at": "2026-11-08T07:11:20.030743",
+  "model": "deepseek/deepseek-flash"
+}
