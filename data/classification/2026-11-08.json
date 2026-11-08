@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-08",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KHjARgS",
+      "title": "濠江十載伴，健康啟新程—大熊貓“健健”和“康康”展開學習成長之旅",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KHjARgS"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KHxHZmp",
+      "title": "大熊貓“健健”“康康”平安抵達成都",
+      "category": "社會服務",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KHxHZmp"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KH8AJuK",
+      "title": "市政署首辦“街市繽紛嘉年華”  著力推廣街市特色文化",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KH8AJuK"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KH5pI6e",
+      "title": "“958”條碼商品走進社區 助力本澳品牌拓展市場商機",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KH5pI6e"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KH73KL7",
+      "title": "文明互鑒國際論壇分論壇探討中葡國家的文明連接　積極發揮澳門作為中國與葡語國家“精準聯繫人”作用",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KH73KL7"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KHZxmyz",
+      "title": "文明互鑒國際論壇分論壇以跨越山海的文明對話踐行全球文明倡議",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KHZxmyz"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KHGqInX",
+      "title": "司警局首辦“反詐跑暨防騙嘉年華”　創新形式推廣全民防騙理念",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KHGqInX"
+    }
+  ],
+  "generated_at": "2026-11-09T07:11:13.370885",
+  "model": "deepseek/deepseek-flash"
+}
