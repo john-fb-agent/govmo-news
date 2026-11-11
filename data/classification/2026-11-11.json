@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-11",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKgqsa5",
+      "title": "“第十屆中華經典誦讀澳門展演交流活動”圓滿舉行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKgqsa5"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKMwSVA",
+      "title": "教青局組織教學人員參與人工智能教材專題培訓",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKMwSVA"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKdsmAg",
+      "title": "最高人民檢察院檢察長應勇訪問特區檢察院",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKdsmAg"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKHLwbc",
+      "title": "葡萄牙科英布拉大學代表團回訪澳門理工大學 拓展深化機械工程及跨學科領域合作",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKHLwbc"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKSOhqs",
+      "title": "配合路面維修工作 蓮花路近司法警察局之掉頭位本月12日起臨時封閉",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKSOhqs"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKo4LIi",
+      "title": "大賽車期間 往來協和澳門醫學中心的臨時接駁巴士將調整上車點位置",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKo4LIi"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKGrcIE",
+      "title": "特區政府公佈《社團法律制度》公開諮詢總結報告",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKGrcIE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKrlHPz",
+      "title": "兩項公共工程項目公開招標",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKrlHPz"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKKhnzE",
+      "title": "祐漢小販大樓成衣區及祐漢街市小販區22攤位今起接受公開競投申請",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKKhnzE"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKlcQ7Z",
+      "title": "澳投率團赴巴西拓展國際合作 推動中醫藥高質量“走出去”",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKlcQ7Z"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKEnVz9",
+      "title": "首批“訂單式培訓”現已接受報名   助力培訓就業精準對接",
+      "category": "教育發展",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKEnVz9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKSTl9k",
+      "title": "市政署關注英國一地區出現高致病性禽流感",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKSTl9k"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKAIlKw",
+      "title": "社文範疇官員應邀出席《澳門講場》回顧2026年度施政工作",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKAIlKw"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKmPm5Z",
+      "title": "施督憲正街本月17日恢復通車",
+      "category": "交通運輸",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKmPm5Z"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKpLzaj",
+      "title": "“第23屆葡語國家共同體總檢察長及澳門特別行政區檢察長會議”暨“檢察院應對複雜犯罪”研討會圓滿閉幕",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKpLzaj"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKpJYNx",
+      "title": "澳門理工大學校長周仲榮隨團參加內地與澳門科技合作委員會議並作專題發言",
+      "category": "科技創新",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKpJYNx"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KK4OtEc",
+      "title": "2026年粵港澳大灣區消費權益保障會議召開 共商建設安心消費圈",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KK4OtEc"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKvTVUJ",
+      "title": "上葡京火警疏散演習",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKvTVUJ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKU6NS8",
+      "title": "教青局開展紀念孫中山先生誕辰160周年系列活動",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKU6NS8"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KK4FuyC",
+      "title": "“長者健康膳食計劃”啟動禮",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KK4FuyC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKa80Zm",
+      "title": "衛生局滅蚊通知",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKa80Zm"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKgUOEJ",
+      "title": "11月16日起開放全澳居民免費接種2026至2027年度流感疫苗 明（12）日起開放網上預約",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKgUOEJ"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKPVCUk",
+      "title": "澳門故宮文化遺產保護傳承中心 舉辦歷史城市保護專題講座",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKPVCUk"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKPhAix",
+      "title": "第八屆中國與葡語國家電影展周五開幕 近30部佳作展現多元中葡文化風貌",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKPhAix"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KK9WyhP",
+      "title": "莫桑比克傳奇歌手Stewart Sukuma與指揮張列跨界合作",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KK9WyhP"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKYdeF9",
+      "title": "行政長官岑浩輝與“第23屆葡語國家共同體總檢察長及澳門特別行政區檢察長會議”各成員方代表團團長會面",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKYdeF9"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKJcTPD",
+      "title": "諾獎得主於澳大談私人貨幣與公共權力",
+      "category": "教育發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKJcTPD"
+    },
+    {
+      "guid": "",
+      "title": "保安高校舉辦“大型活動安全及應急防控”研討會",
+      "category": "政府管治",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKk83ll"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KKLyMH3",
+      "title": "都更公司推動舊樓重建邁實質進展 紅街市原郵局宿舍正式委託重建",
+      "category": "社會服務",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KKLyMH3"
+    }
+  ],
+  "generated_at": "2026-11-12T07:13:33.390291",
+  "model": "deepseek/deepseek-flash"
+}
