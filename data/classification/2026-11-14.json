@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-14",
+  "news": [
+    {
+      "guid": "",
+      "title": "紀念孫中山先生誕辰160周年圖片展 一代偉人從澳啟航　在鏡湖行醫濟世",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KM6YEwN"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KNTmp3X",
+      "title": "“第23屆葡語國家共同體總檢察長及澳門特別行政區檢察長會議”各代表團參訪深圳市、珠海市和澳門大學",
+      "category": "政府管治",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KNTmp3X"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KNT4WA2",
+      "title": "“hush! 沙灘音樂會 x 城市運動節 2026”開幕 “能量島嶼”打造音樂與運動的海岸盛會",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KNT4WA2"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KNC5bnC",
+      "title": "“第73屆澳門格蘭披治大賽車及澳門城市文化節”今日開幕",
+      "category": "文化體育",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KNC5bnC"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KNA3JZX",
+      "title": "第四屆“粵澳共此時”花海歡樂季歡樂啟幕 ——首周活動親子同樂，開啟琴澳活力之旅",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KNA3JZX"
+    }
+  ],
+  "generated_at": "2026-11-15T07:10:36.080882",
+  "model": "deepseek/deepseek-flash"
+}
