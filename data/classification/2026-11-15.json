@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-15",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KNbMUrO",
+      "title": "行政長官岑浩輝明（16）日發表2027年施政報告",
+      "category": "政府管治",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KNbMUrO"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KMIwKku",
+      "title": "【施政回顧】生產力中心助力企業提質升級 培育人才助力經濟適度多元發展",
+      "category": "經濟產業",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KMIwKku"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KOw5FwG",
+      "title": "名校齊聚天沐河！2026“天沐盃”橫琴名校賽艇邀請賽下周六開賽",
+      "category": "文化體育",
+      "importance": 1,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KOw5FwG"
+    }
+  ],
+  "generated_at": "2026-11-16T07:10:33.205674",
+  "model": "deepseek/deepseek-flash"
+}
