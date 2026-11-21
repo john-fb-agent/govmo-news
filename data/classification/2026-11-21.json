@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-21",
+  "news": [
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KUCt7xR",
+      "title": "沙梨頭海邊大馬路開闢新道路便利人車通行 23日起配合施工實施臨時交通措施",
+      "category": "交通運輸",
+      "importance": 3,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KUCt7xR"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KUtD4Sb",
+      "title": "百舸爭流！2026“天沐盃”橫琴名校 賽艇邀請賽今日開幕",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KUtD4Sb"
+    }
+  ],
+  "generated_at": "2026-11-22T07:10:27.336275",
+  "model": "deepseek/deepseek-flash"
+}
