@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-22",
+  "news_count": 3,
+  "department_stats": {
+    "衛生局": 2,
+    "新聞局": 1
+  },
+  "no_department_count": 0,
+  "generated_at": "2026-11-23T01:00:06.254872"
+}

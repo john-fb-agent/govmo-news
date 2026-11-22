@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-22",
+  "news": [
+    {
+      "guid": "",
+      "title": "衛生局與協和澳門醫學中心舉行聯合座談會 講解專科培訓實習醫生就業前景與職涯發展",
+      "category": "人才發展",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KVsqprQ"
+    },
+    {
+      "guid": "",
+      "title": "紀念孫中山先生誕辰160周年圖片展 中華兒女的共同守望 接續使命、砥礪前行",
+      "category": "文化體育",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KTMw3IX"
+    },
+    {
+      "guid": "https://www.gcs.gov.mo/detail/zh-hant/N26KVIxSjl",
+      "title": "衛生局接獲1例軍團菌病例通報",
+      "category": "社會服務",
+      "importance": 2,
+      "link": "https://www.gcs.gov.mo/detail/zh-hant/N26KVIxSjl"
+    }
+  ],
+  "generated_at": "2026-11-23T07:10:28.491952",
+  "model": "deepseek/deepseek-flash"
+}
